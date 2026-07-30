@@ -1,0 +1,24 @@
+## Water Quality Dataset.xlsx
+Date : 1 Octobre 2024
+DOI  : 10.17632/y78ty2g293.1
+Accès : https://data.mendeley.com/datasets/y78ty2g293/1
+Source : Analyse de qualité d'eau dans les étang à poissons pour la croissance des poissons.
+
+## fish_life_quality.csv
+Date : -
+DOI  : -
+Accès : https://www.kaggle.com/datasets/muzamilaslam/fish-life-prediction/data
+Source : Observation de qualité de l'eau et l'état de poisson
+
+
+## realfishdataset.csv
+Date : 29 Septembre 2023
+DOI  : 10.17632/hxd382z2fg.2
+Accès : https://data.mendeley.com/datasets/hxd382z2fg/2
+Source : Suivi en temps-réel d'environnement aquatique des différents type de poissons dans 5 étangs différent via des microcontrolleurs .
+
+## Monteria_Aquaculture_Data.xlsx
+Date : 15 November 2024
+DOI  : 10.17632/dgdr2kfbyt.1
+Accès : https://data.mendeley.com/datasets/dgdr2kfbyt/1
+Source : Suivi de qualité de l'eau d'un Étang pour Tilapia à Monteria,Colombia

@@ -1,0 +1,5 @@
+,Wrapper,Model,Best_Params,Execution_Time_Sec,Temperature_RMSE,Temperature_R2,Dissolved_Oxygen_RMSE,Dissolved_Oxygen_R2,pH_RMSE,pH_R2,Turbidity_RMSE,Turbidity_R2
+0,MultiOutput,SVM,"{'model__estimator__C': 0.1, 'model__estimator__epsilon': 0.2, 'model__estimator__kernel': 'linear'}",1265.93,0.6145,-0.0075,0.6285,-0.0075,0.2072,0.0001,0.4257,-0.0058
+1,MultiOutput,XGBoost,"{'model__estimator__learning_rate': 0.01, 'model__estimator__max_depth': 5, 'model__estimator__n_estimators': 10, 'model__estimator__subsample': 1.0}",637.36,0.6129,-0.0024,0.6269,-0.0024,0.2073,-0.0006,0.4247,-0.0009
+2,RegressorChain,SVM,"{'model__base_estimator__C': 0.1, 'model__base_estimator__epsilon': 0.1, 'model__base_estimator__kernel': 'rbf'}",1601.22,0.6187,-0.0213,0.6277,-0.0048,0.2075,-0.0028,0.4254,-0.0043
+3,RegressorChain,XGBoost,"{'model__base_estimator__learning_rate': 0.01, 'model__base_estimator__max_depth': 10, 'model__base_estimator__n_estimators': 10, 'model__base_estimator__subsample': 1.0}",704.84,0.6129,-0.0023,0.6278,-0.0051,0.2071,0.0012,0.4246,-0.0007

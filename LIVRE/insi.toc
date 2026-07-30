@@ -1,0 +1,10 @@
+\contentsline {chapter}{\numberline {1}Présentation de l'INSI}{1}{}%
+\contentsline {section}{\numberline {1.1}Information d'ordre général}{1}{}%
+\contentsline {section}{\numberline {1.2}Missions et historiques}{1}{}%
+\contentsline {section}{\numberline {1.3}Organigramme de l'INSI}{2}{}%
+\contentsline {section}{\numberline {1.4}Domaine de spécialisation}{3}{}%
+\contentsline {subsection}{\numberline {1.4.1}Licences professionnelles}{3}{}%
+\contentsline {subsection}{\numberline {1.4.2}Masters professionnels}{4}{}%
+\contentsline {subsection}{\numberline {1.4.3}Formations professionnelles continues}{4}{}%
+\contentsline {subsection}{\numberline {1.4.4}Mobilité internationale et double diplôme}{4}{}%
+\contentsline {section}{\numberline {1.5}Architectures des formations pédagogiques}{4}{}%

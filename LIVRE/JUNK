@@ -1,0 +1,9 @@
+IMAGE INSI ORGANIGRAMME
+\usepackage{float}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=10cm]{organigramme.png}
+    \caption{Organigramme de l’INSI }
+        \caption*{\textit{Source : INSI, 2025}} % n'apparaît pas dans la liste des figures
+    \label{fig:organigramme}
+\end{figure}

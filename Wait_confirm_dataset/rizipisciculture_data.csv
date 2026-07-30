@@ -1,0 +1,2001 @@
+id,Texture_sol,Couleur_sol,Type_irrigation,Hauteur_Eau,Niveau_Engrais,Temperature_Actuelle,Densite_Tilapia_Are
+1,Sableux,Brun-Grisatre,Irrigue (Continu),15,Fort (Zezika + NPK),chaud,44
+2,Limoneux,Brun-Grisatre,Pluvial,6,Moyen (Zezika Omby),froid,10
+3,Argileux (Madity),Orange / Rouge,Irrigue (Continu),11,Fort (Zezika + NPK),très chaud,41
+4,Argileux (Madity),Orange / Rouge,Irrigue (Continu),14,Moyen (Zezika Omby),chaud,45
+5,Limoneux,Brun-Grisatre,Pluvial,5,Nul,chaud,23
+6,Sableux,Brun-Grisatre,Irrigue (Continu),15,Nul,froid,10
+7,Limoneux,Orange / Rouge,Pluvial,18,Fort (Zezika + NPK),froid,17
+8,Argileux (Madity),Orange / Rouge,Pluvial,16,Moyen (Zezika Omby),tres froid,22
+9,Argileux (Madity),Brun-Grisatre,Pluvial,10,Fort (Zezika + NPK),très chaud,32
+10,Sableux,Noiratre (Rich),Pluvial,16,Nul,humide,26
+11,Argileux (Madity),Orange / Rouge,Pluvial,16,Moyen (Zezika Omby),très chaud,33
+12,Limoneux,Noiratre (Rich),Pluvial,10,Moyen (Zezika Omby),chaud,42
+13,Argileux (Madity),Noiratre (Rich),Irrigue (Continu),18,Nul,chaud,44
+14,Argileux (Madity),Orange / Rouge,Pluvial,5,Moyen (Zezika Omby),froid,11
+15,Argileux (Madity),Brun-Grisatre,Pluvial,14,Nul,très chaud,22
+16,Argileux (Madity),Noiratre (Rich),Pluvial,15,Moyen (Zezika Omby),froid,31
+17,Argileux (Madity),Noiratre (Rich),Pluvial,15,Fort (Zezika + NPK),humide,46
+18,Sableux,Brun-Grisatre,Pluvial,7,Nul,chaud,10
+19,Argileux (Madity),Brun-Grisatre,Pluvial,11,Moyen (Zezika Omby),très chaud,33
+20,Limoneux,Orange / Rouge,Irrigue (Continu),16,Nul,froid,17
+21,Limoneux,Noiratre (Rich),Irrigue (Continu),8,Moyen (Zezika Omby),chaud,44
+22,Sableux,Brun-Grisatre,Pluvial,11,Moyen (Zezika Omby),chaud,31
+23,Limoneux,Brun-Grisatre,Irrigue (Continu),10,Moyen (Zezika Omby),humide,37
+24,Sableux,Orange / Rouge,Irrigue (Continu),13,Moyen (Zezika Omby),froid,32
+25,Sableux,Brun-Grisatre,Pluvial,13,Moyen (Zezika Omby),froid,19
+26,Argileux (Madity),Orange / Rouge,Irrigue (Continu),9,Nul,chaud,31
+27,Argileux (Madity),Brun-Grisatre,Pluvial,9,Fort (Zezika + NPK),très chaud,38
+28,Sableux,Brun-Grisatre,Pluvial,13,Fort (Zezika + NPK),chaud,37
+29,Argileux (Madity),Brun-Grisatre,Irrigue (Continu),16,Nul,humide,36
+30,Limoneux,Noiratre (Rich),Irrigue (Continu),6,Nul,froid,31
+31,Argileux (Madity),Noiratre (Rich),Irrigue (Continu),16,Nul,très chaud,47
+32,Argileux (Madity),Orange / Rouge,Irrigue (Continu),20,Moyen (Zezika Omby),humide,40
+33,Argileux (Madity),Noiratre (Rich),Pluvial,6,Fort (Zezika + NPK),chaud,49
+34,Argileux (Madity),Orange / Rouge,Pluvial,8,Fort (Zezika + NPK),tres froid,17
+35,Sableux,Brun-Grisatre,Irrigue (Continu),7,Fort (Zezika + NPK),tres froid,17
+36,Argileux (Madity),Brun-Grisatre,Pluvial,20,Fort (Zezika + NPK),humide,33
+37,Limoneux,Brun-Grisatre,Pluvial,6,Moyen (Zezika Omby),très chaud,17
+38,Argileux (Madity),Orange / Rouge,Pluvial,8,Nul,froid,10
+39,Argileux (Madity),Orange / Rouge,Pluvial,13,Nul,très chaud,14
+40,Sableux,Brun-Grisatre,Irrigue (Continu),11,Nul,chaud,26
+41,Argileux (Madity),Orange / Rouge,Pluvial,9,Nul,très chaud,10
+42,Argileux (Madity),Noiratre (Rich),Irrigue (Continu),15,Nul,très chaud,37
+43,Argileux (Madity),Brun-Grisatre,Pluvial,12,Moyen (Zezika Omby),humide,26
+44,Sableux,Brun-Grisatre,Irrigue (Continu),20,Nul,humide,20
+45,Sableux,Orange / Rouge,Irrigue (Continu),16,Moyen (Zezika Omby),très chaud,44
+46,Limoneux,Orange / Rouge,Pluvial,10,Moyen (Zezika Omby),chaud,43
+47,Argileux (Madity),Noiratre (Rich),Irrigue (Continu),10,Moyen (Zezika Omby),chaud,50
+48,Sableux,Orange / Rouge,Pluvial,5,Moyen (Zezika Omby),froid,10
+49,Limoneux,Brun-Grisatre,Pluvial,9,Moyen (Zezika Omby),humide,25
+50,Sableux,Brun-Grisatre,Irrigue (Continu),16,Nul,humide,21
+51,Sableux,Brun-Grisatre,Irrigue (Continu),16,Moyen (Zezika Omby),froid,26
+52,Sableux,Brun-Grisatre,Pluvial,15,Nul,chaud,27
+53,Sableux,Orange / Rouge,Pluvial,13,Fort (Zezika + NPK),très chaud,20
+54,Sableux,Orange / Rouge,Pluvial,13,Nul,chaud,15
+55,Sableux,Brun-Grisatre,Irrigue (Continu),8,Moyen (Zezika Omby),tres froid,10
+56,Sableux,Orange / Rouge,Pluvial,6,Fort (Zezika + NPK),chaud,10
+57,Argileux (Madity),Noiratre (Rich),Irrigue (Continu),9,Fort (Zezika + NPK),très chaud,50
+58,Limoneux,Noiratre (Rich),Pluvial,16,Nul,tres froid,11
+59,Limoneux,Orange / Rouge,Pluvial,13,Moyen (Zezika Omby),tres froid,10
+60,Limoneux,Brun-Grisatre,Irrigue (Continu),12,Moyen (Zezika Omby),froid,25
+61,Argileux (Madity),Brun-Grisatre,Pluvial,20,Fort (Zezika + NPK),tres froid,28
+62,Limoneux,Brun-Grisatre,Pluvial,11,Moyen (Zezika Omby),tres froid,10
+63,Limoneux,Orange / Rouge,Pluvial,20,Nul,tres froid,10
+64,Sableux,Orange / Rouge,Irrigue (Continu),9,Fort (Zezika + NPK),chaud,40
+65,Limoneux,Orange / Rouge,Irrigue (Continu),5,Nul,humide,12
+66,Limoneux,Orange / Rouge,Irrigue (Continu),14,Fort (Zezika + NPK),très chaud,33
+67,Argileux (Madity),Noiratre (Rich),Pluvial,19,Moyen (Zezika Omby),très chaud,30
+68,Sableux,Brun-Grisatre,Irrigue (Continu),12,Moyen (Zezika Omby),froid,18
+69,Argileux (Madity),Brun-Grisatre,Pluvial,10,Fort (Zezika + NPK),froid,21
+70,Sableux,Brun-Grisatre,Irrigue (Continu),7,Fort (Zezika + NPK),humide,23
+71,Limoneux,Noiratre (Rich),Pluvial,6,Moyen (Zezika Omby),très chaud,19
+72,Argileux (Madity),Orange / Rouge,Pluvial,12,Nul,chaud,21
+73,Argileux (Madity),Noiratre (Rich),Irrigue (Continu),13,Nul,tres froid,11
+74,Sableux,Noiratre (Rich),Pluvial,13,Nul,chaud,34
+75,Limoneux,Brun-Grisatre,Irrigue (Continu),20,Moyen (Zezika Omby),tres froid,31
+76,Sableux,Noiratre (Rich),Irrigue (Continu),7,Moyen (Zezika Omby),humide,25
+77,Argileux (Madity),Noiratre (Rich),Pluvial,18,Nul,tres froid,20
+78,Sableux,Noiratre (Rich),Irrigue (Continu),13,Nul,froid,27
+79,Argileux (Madity),Brun-Grisatre,Irrigue (Continu),17,Fort (Zezika + NPK),froid,50
+80,Limoneux,Orange / Rouge,Pluvial,19,Nul,chaud,19
+81,Sableux,Brun-Grisatre,Pluvial,12,Fort (Zezika + NPK),chaud,31
+82,Argileux (Madity),Orange / Rouge,Pluvial,9,Fort (Zezika + NPK),tres froid,20
+83,Argileux (Madity),Noiratre (Rich),Pluvial,7,Nul,tres froid,10
+84,Limoneux,Brun-Grisatre,Pluvial,7,Fort (Zezika + NPK),tres froid,16
+85,Sableux,Brun-Grisatre,Pluvial,14,Moyen (Zezika Omby),chaud,34
+86,Sableux,Noiratre (Rich),Pluvial,12,Moyen (Zezika Omby),chaud,21
+87,Argileux (Madity),Noiratre (Rich),Irrigue (Continu),18,Fort (Zezika + NPK),chaud,50
+88,Sableux,Brun-Grisatre,Irrigue (Continu),15,Moyen (Zezika Omby),chaud,44
+89,Sableux,Brun-Grisatre,Irrigue (Continu),5,Moyen (Zezika Omby),chaud,33
+90,Argileux (Madity),Noiratre (Rich),Pluvial,13,Moyen (Zezika Omby),froid,36
+91,Limoneux,Orange / Rouge,Irrigue (Continu),8,Fort (Zezika + NPK),humide,33
+92,Sableux,Noiratre (Rich),Pluvial,14,Nul,tres froid,10
+93,Argileux (Madity),Orange / Rouge,Pluvial,18,Nul,chaud,27
+94,Argileux (Madity),Orange / Rouge,Irrigue (Continu),13,Fort (Zezika + NPK),humide,50
+95,Argileux (Madity),Noiratre (Rich),Irrigue (Continu),20,Nul,froid,34
+96,Sableux,Brun-Grisatre,Pluvial,12,Moyen (Zezika Omby),très chaud,15
+97,Sableux,Noiratre (Rich),Irrigue (Continu),14,Moyen (Zezika Omby),humide,41
+98,Limoneux,Brun-Grisatre,Irrigue (Continu),7,Nul,tres froid,10
+99,Limoneux,Brun-Grisatre,Irrigue (Continu),18,Nul,humide,31
+100,Argileux (Madity),Noiratre (Rich),Pluvial,12,Fort (Zezika + NPK),tres froid,24
+101,Sableux,Orange / Rouge,Irrigue (Continu),16,Nul,très chaud,11
+102,Sableux,Brun-Grisatre,Pluvial,7,Moyen (Zezika Omby),tres froid,10
+103,Sableux,Noiratre (Rich),Pluvial,13,Nul,froid,10
+104,Sableux,Orange / Rouge,Pluvial,7,Fort (Zezika + NPK),chaud,24
+105,Argileux (Madity),Noiratre (Rich),Pluvial,8,Nul,tres froid,20
+106,Argileux (Madity),Noiratre (Rich),Irrigue (Continu),9,Fort (Zezika + NPK),froid,40
+107,Sableux,Brun-Grisatre,Pluvial,12,Nul,chaud,30
+108,Limoneux,Noiratre (Rich),Irrigue (Continu),15,Fort (Zezika + NPK),chaud,50
+109,Sableux,Noiratre (Rich),Irrigue (Continu),9,Moyen (Zezika Omby),froid,34
+110,Argileux (Madity),Brun-Grisatre,Irrigue (Continu),16,Nul,froid,33
+111,Limoneux,Brun-Grisatre,Irrigue (Continu),5,Nul,froid,10
+112,Sableux,Orange / Rouge,Pluvial,15,Nul,très chaud,10
+113,Sableux,Brun-Grisatre,Irrigue (Continu),19,Fort (Zezika + NPK),très chaud,43
+114,Sableux,Noiratre (Rich),Irrigue (Continu),17,Moyen (Zezika Omby),chaud,40
+115,Sableux,Brun-Grisatre,Irrigue (Continu),5,Fort (Zezika + NPK),tres froid,10
+116,Argileux (Madity),Brun-Grisatre,Pluvial,12,Nul,très chaud,23
+117,Limoneux,Brun-Grisatre,Pluvial,18,Nul,chaud,34
+118,Argileux (Madity),Orange / Rouge,Pluvial,16,Fort (Zezika + NPK),froid,29
+119,Sableux,Brun-Grisatre,Pluvial,8,Nul,froid,10
+120,Limoneux,Orange / Rouge,Pluvial,15,Fort (Zezika + NPK),humide,31
+121,Limoneux,Orange / Rouge,Pluvial,18,Moyen (Zezika Omby),chaud,15
+122,Sableux,Noiratre (Rich),Irrigue (Continu),14,Nul,tres froid,20
+123,Limoneux,Noiratre (Rich),Irrigue (Continu),17,Fort (Zezika + NPK),froid,42
+124,Sableux,Orange / Rouge,Irrigue (Continu),5,Moyen (Zezika Omby),très chaud,10
+125,Sableux,Noiratre (Rich),Irrigue (Continu),10,Fort (Zezika + NPK),humide,38
+126,Argileux (Madity),Noiratre (Rich),Pluvial,18,Nul,froid,24
+127,Limoneux,Brun-Grisatre,Irrigue (Continu),7,Moyen (Zezika Omby),chaud,42
+128,Sableux,Noiratre (Rich),Pluvial,14,Moyen (Zezika Omby),tres froid,11
+129,Argileux (Madity),Noiratre (Rich),Pluvial,14,Fort (Zezika + NPK),très chaud,40
+130,Argileux (Madity),Noiratre (Rich),Pluvial,6,Fort (Zezika + NPK),humide,36
+131,Sableux,Brun-Grisatre,Pluvial,12,Fort (Zezika + NPK),froid,17
+132,Argileux (Madity),Noiratre (Rich),Irrigue (Continu),9,Nul,chaud,41
+133,Argileux (Madity),Brun-Grisatre,Pluvial,9,Fort (Zezika + NPK),tres froid,22
+134,Sableux,Brun-Grisatre,Pluvial,8,Fort (Zezika + NPK),très chaud,23
+135,Sableux,Noiratre (Rich),Irrigue (Continu),14,Moyen (Zezika Omby),chaud,36
+136,Limoneux,Orange / Rouge,Irrigue (Continu),12,Fort (Zezika + NPK),tres froid,15
+137,Sableux,Brun-Grisatre,Pluvial,13,Fort (Zezika + NPK),froid,16
+138,Limoneux,Brun-Grisatre,Pluvial,6,Fort (Zezika + NPK),froid,18
+139,Argileux (Madity),Noiratre (Rich),Irrigue (Continu),10,Fort (Zezika + NPK),froid,45
+140,Limoneux,Brun-Grisatre,Pluvial,7,Nul,très chaud,10
+141,Sableux,Brun-Grisatre,Pluvial,6,Fort (Zezika + NPK),très chaud,10
+142,Argileux (Madity),Brun-Grisatre,Irrigue (Continu),12,Nul,chaud,45
+143,Sableux,Orange / Rouge,Irrigue (Continu),20,Nul,humide,16
+144,Argileux (Madity),Orange / Rouge,Pluvial,16,Nul,très chaud,26
+145,Sableux,Orange / Rouge,Pluvial,15,Nul,humide,10
+146,Limoneux,Noiratre (Rich),Pluvial,16,Fort (Zezika + NPK),humide,45
+147,Argileux (Madity),Orange / Rouge,Pluvial,18,Moyen (Zezika Omby),chaud,43
+148,Limoneux,Brun-Grisatre,Pluvial,11,Nul,tres froid,10
+149,Argileux (Madity),Orange / Rouge,Irrigue (Continu),20,Nul,humide,37
+150,Limoneux,Orange / Rouge,Pluvial,17,Moyen (Zezika Omby),très chaud,26
+151,Sableux,Orange / Rouge,Irrigue (Continu),9,Nul,froid,14
+152,Sableux,Orange / Rouge,Pluvial,12,Fort (Zezika + NPK),chaud,31
+153,Argileux (Madity),Brun-Grisatre,Irrigue (Continu),10,Moyen (Zezika Omby),chaud,10
+154,Limoneux,Orange / Rouge,Irrigue (Continu),12,Moyen (Zezika Omby),humide,33
+155,Limoneux,Orange / Rouge,Irrigue (Continu),15,Nul,humide,47
+156,Argileux (Madity),Orange / Rouge,Irrigue (Continu),12,Moyen (Zezika Omby),chaud,50
+157,Limoneux,Orange / Rouge,Pluvial,17,Moyen (Zezika Omby),tres froid,16
+158,Limoneux,Noiratre (Rich),Pluvial,7,Moyen (Zezika Omby),très chaud,19
+159,Sableux,Orange / Rouge,Pluvial,16,Fort (Zezika + NPK),tres froid,10
+160,Argileux (Madity),Orange / Rouge,Pluvial,18,Fort (Zezika + NPK),tres froid,28
+161,Sableux,Brun-Grisatre,Irrigue (Continu),20,Moyen (Zezika Omby),froid,32
+162,Limoneux,Brun-Grisatre,Pluvial,13,Nul,très chaud,16
+163,Sableux,Brun-Grisatre,Pluvial,14,Moyen (Zezika Omby),tres froid,10
+164,Argileux (Madity),Brun-Grisatre,Pluvial,17,Nul,très chaud,27
+165,Argileux (Madity),Orange / Rouge,Irrigue (Continu),9,Moyen (Zezika Omby),tres froid,26
+166,Sableux,Noiratre (Rich),Irrigue (Continu),10,Fort (Zezika + NPK),froid,36
+167,Argileux (Madity),Orange / Rouge,Pluvial,11,Moyen (Zezika Omby),froid,20
+168,Argileux (Madity),Orange / Rouge,Irrigue (Continu),11,Moyen (Zezika Omby),humide,36
+169,Sableux,Noiratre (Rich),Irrigue (Continu),20,Nul,humide,32
+170,Limoneux,Orange / Rouge,Pluvial,11,Nul,tres froid,10
+171,Limoneux,Noiratre (Rich),Irrigue (Continu),5,Fort (Zezika + NPK),très chaud,35
+172,Sableux,Orange / Rouge,Pluvial,5,Moyen (Zezika Omby),froid,10
+173,Argileux (Madity),Orange / Rouge,Irrigue (Continu),20,Moyen (Zezika Omby),chaud,32
+174,Sableux,Orange / Rouge,Pluvial,7,Nul,froid,10
+175,Sableux,Orange / Rouge,Irrigue (Continu),19,Nul,humide,12
+176,Limoneux,Noiratre (Rich),Pluvial,9,Nul,tres froid,13
+177,Sableux,Noiratre (Rich),Irrigue (Continu),12,Moyen (Zezika Omby),très chaud,27
+178,Argileux (Madity),Orange / Rouge,Irrigue (Continu),13,Fort (Zezika + NPK),froid,25
+179,Sableux,Noiratre (Rich),Irrigue (Continu),5,Fort (Zezika + NPK),tres froid,12
+180,Argileux (Madity),Orange / Rouge,Irrigue (Continu),17,Fort (Zezika + NPK),très chaud,50
+181,Sableux,Orange / Rouge,Irrigue (Continu),16,Moyen (Zezika Omby),très chaud,11
+182,Argileux (Madity),Brun-Grisatre,Pluvial,20,Moyen (Zezika Omby),chaud,48
+183,Argileux (Madity),Noiratre (Rich),Irrigue (Continu),17,Moyen (Zezika Omby),chaud,50
+184,Argileux (Madity),Brun-Grisatre,Pluvial,8,Fort (Zezika + NPK),chaud,47
+185,Argileux (Madity),Noiratre (Rich),Irrigue (Continu),17,Moyen (Zezika Omby),froid,46
+186,Sableux,Noiratre (Rich),Pluvial,9,Nul,humide,17
+187,Limoneux,Brun-Grisatre,Pluvial,18,Moyen (Zezika Omby),froid,20
+188,Limoneux,Noiratre (Rich),Pluvial,8,Nul,humide,18
+189,Argileux (Madity),Noiratre (Rich),Pluvial,8,Nul,chaud,39
+190,Sableux,Orange / Rouge,Irrigue (Continu),20,Moyen (Zezika Omby),tres froid,29
+191,Limoneux,Noiratre (Rich),Pluvial,5,Fort (Zezika + NPK),humide,26
+192,Limoneux,Brun-Grisatre,Irrigue (Continu),14,Nul,très chaud,22
+193,Limoneux,Noiratre (Rich),Irrigue (Continu),8,Fort (Zezika + NPK),humide,45
+194,Sableux,Noiratre (Rich),Irrigue (Continu),11,Fort (Zezika + NPK),tres froid,26
+195,Sableux,Orange / Rouge,Pluvial,10,Nul,tres froid,10
+196,Argileux (Madity),Noiratre (Rich),Pluvial,5,Fort (Zezika + NPK),chaud,45
+197,Limoneux,Orange / Rouge,Pluvial,8,Nul,tres froid,10
+198,Argileux (Madity),Brun-Grisatre,Pluvial,15,Moyen (Zezika Omby),froid,31
+199,Argileux (Madity),Noiratre (Rich),Irrigue (Continu),16,Fort (Zezika + NPK),chaud,50
+200,Argileux (Madity),Noiratre (Rich),Pluvial,17,Fort (Zezika + NPK),tres froid,30
+201,Argileux (Madity),Orange / Rouge,Irrigue (Continu),18,Nul,tres froid,18
+202,Sableux,Noiratre (Rich),Irrigue (Continu),13,Moyen (Zezika Omby),humide,27
+203,Limoneux,Brun-Grisatre,Pluvial,9,Moyen (Zezika Omby),chaud,35
+204,Argileux (Madity),Brun-Grisatre,Irrigue (Continu),15,Moyen (Zezika Omby),tres froid,34
+205,Limoneux,Orange / Rouge,Pluvial,8,Fort (Zezika + NPK),tres froid,23
+206,Limoneux,Brun-Grisatre,Pluvial,9,Fort (Zezika + NPK),humide,29
+207,Limoneux,Noiratre (Rich),Pluvial,19,Moyen (Zezika Omby),tres froid,48
+208,Argileux (Madity),Noiratre (Rich),Irrigue (Continu),10,Moyen (Zezika Omby),froid,40
+209,Limoneux,Brun-Grisatre,Pluvial,10,Moyen (Zezika Omby),tres froid,11
+210,Argileux (Madity),Brun-Grisatre,Pluvial,15,Fort (Zezika + NPK),humide,34
+211,Argileux (Madity),Noiratre (Rich),Irrigue (Continu),9,Nul,très chaud,36
+212,Argileux (Madity),Noiratre (Rich),Pluvial,8,Fort (Zezika + NPK),tres froid,17
+213,Sableux,Brun-Grisatre,Pluvial,12,Nul,tres froid,10
+214,Argileux (Madity),Noiratre (Rich),Irrigue (Continu),9,Nul,humide,28
+215,Sableux,Orange / Rouge,Irrigue (Continu),5,Nul,chaud,14
+216,Limoneux,Brun-Grisatre,Pluvial,6,Fort (Zezika + NPK),chaud,29
+217,Sableux,Noiratre (Rich),Pluvial,11,Fort (Zezika + NPK),chaud,37
+218,Limoneux,Noiratre (Rich),Irrigue (Continu),19,Nul,humide,35
+219,Argileux (Madity),Brun-Grisatre,Irrigue (Continu),18,Nul,tres froid,19
+220,Sableux,Noiratre (Rich),Pluvial,8,Fort (Zezika + NPK),tres froid,14
+221,Sableux,Orange / Rouge,Irrigue (Continu),7,Nul,humide,10
+222,Argileux (Madity),Brun-Grisatre,Pluvial,6,Fort (Zezika + NPK),froid,15
+223,Sableux,Noiratre (Rich),Irrigue (Continu),19,Moyen (Zezika Omby),froid,26
+224,Limoneux,Orange / Rouge,Irrigue (Continu),5,Nul,tres froid,10
+225,Sableux,Noiratre (Rich),Irrigue (Continu),11,Nul,tres froid,14
+226,Limoneux,Orange / Rouge,Pluvial,19,Nul,humide,15
+227,Sableux,Noiratre (Rich),Pluvial,7,Moyen (Zezika Omby),tres froid,13
+228,Argileux (Madity),Orange / Rouge,Pluvial,13,Nul,froid,15
+229,Sableux,Orange / Rouge,Pluvial,8,Nul,chaud,14
+230,Argileux (Madity),Brun-Grisatre,Pluvial,11,Nul,très chaud,21
+231,Limoneux,Orange / Rouge,Pluvial,14,Moyen (Zezika Omby),humide,17
+232,Limoneux,Brun-Grisatre,Pluvial,16,Nul,très chaud,22
+233,Limoneux,Noiratre (Rich),Pluvial,13,Fort (Zezika + NPK),humide,39
+234,Argileux (Madity),Noiratre (Rich),Pluvial,16,Nul,froid,30
+235,Limoneux,Orange / Rouge,Irrigue (Continu),19,Nul,très chaud,17
+236,Sableux,Noiratre (Rich),Pluvial,13,Moyen (Zezika Omby),froid,18
+237,Limoneux,Orange / Rouge,Pluvial,19,Nul,tres froid,10
+238,Limoneux,Brun-Grisatre,Irrigue (Continu),11,Nul,très chaud,27
+239,Limoneux,Orange / Rouge,Irrigue (Continu),17,Nul,très chaud,26
+240,Limoneux,Orange / Rouge,Irrigue (Continu),18,Moyen (Zezika Omby),chaud,44
+241,Sableux,Noiratre (Rich),Irrigue (Continu),9,Fort (Zezika + NPK),chaud,46
+242,Limoneux,Noiratre (Rich),Pluvial,13,Moyen (Zezika Omby),humide,35
+243,Limoneux,Orange / Rouge,Pluvial,8,Moyen (Zezika Omby),chaud,39
+244,Argileux (Madity),Noiratre (Rich),Pluvial,6,Moyen (Zezika Omby),humide,27
+245,Limoneux,Noiratre (Rich),Irrigue (Continu),5,Nul,chaud,33
+246,Limoneux,Brun-Grisatre,Irrigue (Continu),14,Nul,tres froid,16
+247,Sableux,Noiratre (Rich),Pluvial,15,Nul,tres froid,10
+248,Argileux (Madity),Noiratre (Rich),Pluvial,7,Nul,tres froid,10
+249,Limoneux,Noiratre (Rich),Pluvial,11,Moyen (Zezika Omby),froid,36
+250,Limoneux,Noiratre (Rich),Irrigue (Continu),20,Fort (Zezika + NPK),froid,39
+251,Limoneux,Brun-Grisatre,Pluvial,10,Nul,froid,10
+252,Limoneux,Brun-Grisatre,Irrigue (Continu),20,Nul,froid,32
+253,Argileux (Madity),Brun-Grisatre,Irrigue (Continu),10,Moyen (Zezika Omby),tres froid,26
+254,Argileux (Madity),Noiratre (Rich),Irrigue (Continu),20,Nul,chaud,50
+255,Sableux,Brun-Grisatre,Irrigue (Continu),8,Nul,tres froid,13
+256,Sableux,Orange / Rouge,Irrigue (Continu),20,Fort (Zezika + NPK),tres froid,31
+257,Limoneux,Noiratre (Rich),Pluvial,12,Fort (Zezika + NPK),très chaud,24
+258,Argileux (Madity),Brun-Grisatre,Pluvial,11,Moyen (Zezika Omby),humide,24
+259,Limoneux,Orange / Rouge,Pluvial,9,Fort (Zezika + NPK),froid,20
+260,Sableux,Orange / Rouge,Irrigue (Continu),15,Nul,très chaud,10
+261,Sableux,Brun-Grisatre,Pluvial,16,Fort (Zezika + NPK),humide,21
+262,Sableux,Orange / Rouge,Irrigue (Continu),7,Moyen (Zezika Omby),tres froid,13
+263,Limoneux,Brun-Grisatre,Irrigue (Continu),10,Nul,chaud,45
+264,Argileux (Madity),Noiratre (Rich),Irrigue (Continu),14,Fort (Zezika + NPK),chaud,50
+265,Sableux,Brun-Grisatre,Irrigue (Continu),10,Nul,tres froid,14
+266,Limoneux,Orange / Rouge,Pluvial,18,Fort (Zezika + NPK),humide,29
+267,Sableux,Orange / Rouge,Pluvial,9,Fort (Zezika + NPK),tres froid,10
+268,Sableux,Brun-Grisatre,Irrigue (Continu),9,Nul,très chaud,18
+269,Limoneux,Brun-Grisatre,Pluvial,8,Moyen (Zezika Omby),froid,17
+270,Argileux (Madity),Orange / Rouge,Pluvial,20,Fort (Zezika + NPK),tres froid,32
+271,Limoneux,Noiratre (Rich),Irrigue (Continu),11,Fort (Zezika + NPK),très chaud,42
+272,Sableux,Orange / Rouge,Pluvial,5,Fort (Zezika + NPK),très chaud,10
+273,Sableux,Orange / Rouge,Pluvial,11,Fort (Zezika + NPK),humide,18
+274,Limoneux,Noiratre (Rich),Irrigue (Continu),20,Nul,très chaud,41
+275,Argileux (Madity),Noiratre (Rich),Irrigue (Continu),14,Fort (Zezika + NPK),très chaud,40
+276,Sableux,Noiratre (Rich),Irrigue (Continu),6,Nul,tres froid,10
+277,Argileux (Madity),Noiratre (Rich),Irrigue (Continu),15,Moyen (Zezika Omby),tres froid,37
+278,Limoneux,Brun-Grisatre,Irrigue (Continu),17,Moyen (Zezika Omby),très chaud,50
+279,Limoneux,Noiratre (Rich),Pluvial,7,Moyen (Zezika Omby),humide,28
+280,Limoneux,Brun-Grisatre,Pluvial,9,Moyen (Zezika Omby),humide,27
+281,Limoneux,Noiratre (Rich),Irrigue (Continu),19,Fort (Zezika + NPK),froid,45
+282,Argileux (Madity),Brun-Grisatre,Irrigue (Continu),12,Nul,humide,26
+283,Limoneux,Brun-Grisatre,Pluvial,18,Nul,chaud,27
+284,Limoneux,Brun-Grisatre,Irrigue (Continu),10,Nul,chaud,32
+285,Argileux (Madity),Noiratre (Rich),Pluvial,16,Nul,très chaud,11
+286,Sableux,Brun-Grisatre,Irrigue (Continu),5,Fort (Zezika + NPK),tres froid,17
+287,Limoneux,Noiratre (Rich),Irrigue (Continu),14,Fort (Zezika + NPK),chaud,50
+288,Limoneux,Noiratre (Rich),Pluvial,10,Moyen (Zezika Omby),froid,26
+289,Argileux (Madity),Orange / Rouge,Irrigue (Continu),19,Fort (Zezika + NPK),humide,50
+290,Sableux,Noiratre (Rich),Pluvial,10,Fort (Zezika + NPK),tres froid,10
+291,Argileux (Madity),Noiratre (Rich),Pluvial,12,Moyen (Zezika Omby),chaud,45
+292,Sableux,Noiratre (Rich),Irrigue (Continu),6,Nul,tres froid,10
+293,Limoneux,Brun-Grisatre,Irrigue (Continu),5,Nul,très chaud,11
+294,Sableux,Orange / Rouge,Irrigue (Continu),20,Fort (Zezika + NPK),très chaud,35
+295,Argileux (Madity),Orange / Rouge,Pluvial,8,Moyen (Zezika Omby),très chaud,33
+296,Limoneux,Brun-Grisatre,Irrigue (Continu),13,Nul,tres froid,10
+297,Sableux,Orange / Rouge,Pluvial,16,Moyen (Zezika Omby),très chaud,17
+298,Argileux (Madity),Noiratre (Rich),Irrigue (Continu),15,Moyen (Zezika Omby),tres froid,34
+299,Argileux (Madity),Brun-Grisatre,Irrigue (Continu),13,Fort (Zezika + NPK),tres froid,29
+300,Limoneux,Orange / Rouge,Pluvial,9,Moyen (Zezika Omby),très chaud,23
+301,Argileux (Madity),Orange / Rouge,Irrigue (Continu),18,Moyen (Zezika Omby),humide,45
+302,Sableux,Orange / Rouge,Irrigue (Continu),6,Nul,humide,13
+303,Limoneux,Noiratre (Rich),Irrigue (Continu),7,Nul,froid,13
+304,Argileux (Madity),Noiratre (Rich),Pluvial,14,Fort (Zezika + NPK),froid,24
+305,Argileux (Madity),Orange / Rouge,Irrigue (Continu),17,Nul,très chaud,24
+306,Sableux,Brun-Grisatre,Irrigue (Continu),12,Nul,tres froid,10
+307,Limoneux,Noiratre (Rich),Pluvial,11,Nul,tres froid,10
+308,Sableux,Brun-Grisatre,Irrigue (Continu),20,Moyen (Zezika Omby),humide,40
+309,Sableux,Noiratre (Rich),Pluvial,8,Nul,humide,16
+310,Argileux (Madity),Noiratre (Rich),Irrigue (Continu),19,Fort (Zezika + NPK),humide,50
+311,Sableux,Brun-Grisatre,Irrigue (Continu),20,Nul,chaud,37
+312,Argileux (Madity),Noiratre (Rich),Irrigue (Continu),15,Fort (Zezika + NPK),humide,47
+313,Sableux,Orange / Rouge,Irrigue (Continu),14,Moyen (Zezika Omby),très chaud,27
+314,Limoneux,Noiratre (Rich),Irrigue (Continu),8,Moyen (Zezika Omby),chaud,48
+315,Limoneux,Noiratre (Rich),Pluvial,19,Moyen (Zezika Omby),chaud,43
+316,Limoneux,Brun-Grisatre,Irrigue (Continu),12,Moyen (Zezika Omby),froid,21
+317,Sableux,Noiratre (Rich),Pluvial,16,Moyen (Zezika Omby),froid,21
+318,Sableux,Orange / Rouge,Pluvial,6,Moyen (Zezika Omby),très chaud,11
+319,Sableux,Brun-Grisatre,Irrigue (Continu),12,Fort (Zezika + NPK),tres froid,13
+320,Limoneux,Brun-Grisatre,Pluvial,9,Nul,très chaud,31
+321,Argileux (Madity),Brun-Grisatre,Pluvial,9,Fort (Zezika + NPK),tres froid,23
+322,Limoneux,Brun-Grisatre,Pluvial,18,Nul,humide,11
+323,Sableux,Noiratre (Rich),Irrigue (Continu),14,Nul,très chaud,31
+324,Limoneux,Orange / Rouge,Irrigue (Continu),12,Fort (Zezika + NPK),humide,28
+325,Limoneux,Orange / Rouge,Pluvial,6,Moyen (Zezika Omby),chaud,29
+326,Limoneux,Noiratre (Rich),Irrigue (Continu),14,Fort (Zezika + NPK),tres froid,36
+327,Sableux,Noiratre (Rich),Pluvial,11,Nul,froid,10
+328,Argileux (Madity),Noiratre (Rich),Irrigue (Continu),12,Moyen (Zezika Omby),humide,44
+329,Argileux (Madity),Orange / Rouge,Pluvial,16,Nul,chaud,26
+330,Argileux (Madity),Noiratre (Rich),Pluvial,7,Moyen (Zezika Omby),humide,23
+331,Argileux (Madity),Orange / Rouge,Irrigue (Continu),11,Moyen (Zezika Omby),froid,28
+332,Argileux (Madity),Brun-Grisatre,Irrigue (Continu),16,Nul,très chaud,29
+333,Sableux,Brun-Grisatre,Pluvial,8,Nul,froid,10
+334,Sableux,Noiratre (Rich),Pluvial,7,Nul,froid,10
+335,Limoneux,Brun-Grisatre,Irrigue (Continu),19,Fort (Zezika + NPK),humide,35
+336,Sableux,Brun-Grisatre,Pluvial,6,Fort (Zezika + NPK),tres froid,10
+337,Sableux,Noiratre (Rich),Pluvial,10,Fort (Zezika + NPK),humide,50
+338,Sableux,Noiratre (Rich),Irrigue (Continu),13,Moyen (Zezika Omby),très chaud,29
+339,Argileux (Madity),Orange / Rouge,Irrigue (Continu),10,Nul,chaud,22
+340,Sableux,Orange / Rouge,Irrigue (Continu),8,Nul,très chaud,16
+341,Limoneux,Orange / Rouge,Pluvial,15,Fort (Zezika + NPK),froid,22
+342,Sableux,Noiratre (Rich),Irrigue (Continu),7,Nul,humide,18
+343,Limoneux,Brun-Grisatre,Pluvial,10,Moyen (Zezika Omby),humide,31
+344,Limoneux,Noiratre (Rich),Pluvial,20,Fort (Zezika + NPK),chaud,40
+345,Limoneux,Brun-Grisatre,Irrigue (Continu),18,Moyen (Zezika Omby),chaud,47
+346,Sableux,Brun-Grisatre,Irrigue (Continu),10,Fort (Zezika + NPK),chaud,50
+347,Limoneux,Noiratre (Rich),Pluvial,8,Moyen (Zezika Omby),humide,30
+348,Sableux,Orange / Rouge,Irrigue (Continu),17,Moyen (Zezika Omby),chaud,42
+349,Limoneux,Orange / Rouge,Pluvial,16,Fort (Zezika + NPK),froid,29
+350,Sableux,Orange / Rouge,Irrigue (Continu),20,Nul,humide,13
+351,Limoneux,Brun-Grisatre,Pluvial,20,Fort (Zezika + NPK),très chaud,31
+352,Sableux,Orange / Rouge,Pluvial,6,Fort (Zezika + NPK),froid,12
+353,Argileux (Madity),Noiratre (Rich),Pluvial,19,Fort (Zezika + NPK),froid,30
+354,Sableux,Orange / Rouge,Irrigue (Continu),6,Fort (Zezika + NPK),tres froid,13
+355,Sableux,Orange / Rouge,Pluvial,7,Nul,chaud,10
+356,Sableux,Orange / Rouge,Pluvial,6,Nul,très chaud,10
+357,Limoneux,Brun-Grisatre,Irrigue (Continu),6,Fort (Zezika + NPK),froid,27
+358,Limoneux,Brun-Grisatre,Irrigue (Continu),20,Moyen (Zezika Omby),tres froid,18
+359,Sableux,Orange / Rouge,Irrigue (Continu),11,Fort (Zezika + NPK),chaud,34
+360,Limoneux,Orange / Rouge,Pluvial,9,Fort (Zezika + NPK),tres froid,18
+361,Limoneux,Orange / Rouge,Pluvial,17,Moyen (Zezika Omby),tres froid,14
+362,Limoneux,Brun-Grisatre,Pluvial,19,Moyen (Zezika Omby),chaud,42
+363,Limoneux,Brun-Grisatre,Pluvial,18,Fort (Zezika + NPK),humide,39
+364,Argileux (Madity),Brun-Grisatre,Pluvial,7,Moyen (Zezika Omby),tres froid,16
+365,Limoneux,Orange / Rouge,Pluvial,19,Nul,humide,10
+366,Argileux (Madity),Orange / Rouge,Pluvial,20,Moyen (Zezika Omby),froid,27
+367,Sableux,Orange / Rouge,Irrigue (Continu),16,Nul,tres froid,10
+368,Sableux,Brun-Grisatre,Pluvial,9,Moyen (Zezika Omby),très chaud,18
+369,Limoneux,Noiratre (Rich),Irrigue (Continu),12,Nul,humide,30
+370,Argileux (Madity),Brun-Grisatre,Irrigue (Continu),9,Nul,humide,26
+371,Sableux,Noiratre (Rich),Irrigue (Continu),19,Fort (Zezika + NPK),froid,24
+372,Limoneux,Noiratre (Rich),Pluvial,6,Nul,froid,15
+373,Argileux (Madity),Brun-Grisatre,Irrigue (Continu),18,Moyen (Zezika Omby),très chaud,41
+374,Limoneux,Orange / Rouge,Pluvial,9,Moyen (Zezika Omby),chaud,37
+375,Limoneux,Brun-Grisatre,Pluvial,20,Fort (Zezika + NPK),froid,31
+376,Argileux (Madity),Noiratre (Rich),Irrigue (Continu),13,Fort (Zezika + NPK),froid,41
+377,Sableux,Brun-Grisatre,Pluvial,14,Nul,humide,15
+378,Sableux,Orange / Rouge,Irrigue (Continu),5,Moyen (Zezika Omby),chaud,27
+379,Limoneux,Noiratre (Rich),Irrigue (Continu),7,Fort (Zezika + NPK),froid,32
+380,Argileux (Madity),Orange / Rouge,Irrigue (Continu),20,Fort (Zezika + NPK),chaud,50
+381,Limoneux,Brun-Grisatre,Irrigue (Continu),15,Nul,très chaud,28
+382,Limoneux,Orange / Rouge,Irrigue (Continu),20,Moyen (Zezika Omby),tres froid,30
+383,Limoneux,Brun-Grisatre,Pluvial,6,Fort (Zezika + NPK),humide,14
+384,Limoneux,Noiratre (Rich),Irrigue (Continu),18,Fort (Zezika + NPK),chaud,50
+385,Limoneux,Orange / Rouge,Irrigue (Continu),11,Fort (Zezika + NPK),humide,29
+386,Sableux,Noiratre (Rich),Irrigue (Continu),11,Moyen (Zezika Omby),tres froid,21
+387,Sableux,Brun-Grisatre,Pluvial,14,Fort (Zezika + NPK),chaud,43
+388,Limoneux,Orange / Rouge,Pluvial,20,Moyen (Zezika Omby),chaud,41
+389,Sableux,Orange / Rouge,Irrigue (Continu),16,Fort (Zezika + NPK),tres froid,17
+390,Limoneux,Brun-Grisatre,Irrigue (Continu),14,Moyen (Zezika Omby),tres froid,15
+391,Argileux (Madity),Orange / Rouge,Irrigue (Continu),20,Moyen (Zezika Omby),froid,38
+392,Limoneux,Noiratre (Rich),Pluvial,15,Nul,tres froid,21
+393,Limoneux,Noiratre (Rich),Irrigue (Continu),12,Fort (Zezika + NPK),humide,36
+394,Argileux (Madity),Brun-Grisatre,Pluvial,16,Moyen (Zezika Omby),humide,29
+395,Limoneux,Brun-Grisatre,Irrigue (Continu),7,Nul,humide,17
+396,Sableux,Orange / Rouge,Irrigue (Continu),13,Moyen (Zezika Omby),froid,28
+397,Argileux (Madity),Orange / Rouge,Irrigue (Continu),18,Fort (Zezika + NPK),froid,45
+398,Sableux,Brun-Grisatre,Irrigue (Continu),10,Fort (Zezika + NPK),chaud,44
+399,Sableux,Noiratre (Rich),Pluvial,9,Moyen (Zezika Omby),humide,21
+400,Sableux,Brun-Grisatre,Irrigue (Continu),14,Nul,froid,22
+401,Limoneux,Brun-Grisatre,Irrigue (Continu),6,Fort (Zezika + NPK),très chaud,25
+402,Limoneux,Brun-Grisatre,Irrigue (Continu),17,Moyen (Zezika Omby),froid,30
+403,Limoneux,Noiratre (Rich),Irrigue (Continu),7,Nul,tres froid,10
+404,Argileux (Madity),Noiratre (Rich),Pluvial,6,Fort (Zezika + NPK),très chaud,29
+405,Sableux,Brun-Grisatre,Pluvial,9,Fort (Zezika + NPK),chaud,37
+406,Limoneux,Orange / Rouge,Pluvial,11,Fort (Zezika + NPK),chaud,37
+407,Sableux,Noiratre (Rich),Pluvial,9,Fort (Zezika + NPK),chaud,22
+408,Limoneux,Noiratre (Rich),Pluvial,7,Fort (Zezika + NPK),tres froid,10
+409,Argileux (Madity),Noiratre (Rich),Irrigue (Continu),20,Nul,tres froid,29
+410,Sableux,Brun-Grisatre,Irrigue (Continu),6,Nul,froid,10
+411,Argileux (Madity),Noiratre (Rich),Pluvial,9,Moyen (Zezika Omby),chaud,48
+412,Sableux,Noiratre (Rich),Irrigue (Continu),7,Moyen (Zezika Omby),froid,24
+413,Sableux,Orange / Rouge,Pluvial,6,Moyen (Zezika Omby),froid,10
+414,Argileux (Madity),Orange / Rouge,Pluvial,17,Moyen (Zezika Omby),très chaud,22
+415,Sableux,Orange / Rouge,Irrigue (Continu),9,Nul,très chaud,14
+416,Argileux (Madity),Brun-Grisatre,Pluvial,9,Nul,froid,18
+417,Limoneux,Orange / Rouge,Pluvial,9,Nul,tres froid,10
+418,Argileux (Madity),Brun-Grisatre,Pluvial,11,Fort (Zezika + NPK),très chaud,18
+419,Sableux,Orange / Rouge,Pluvial,14,Moyen (Zezika Omby),chaud,27
+420,Sableux,Orange / Rouge,Pluvial,12,Nul,froid,10
+421,Sableux,Noiratre (Rich),Pluvial,10,Moyen (Zezika Omby),très chaud,28
+422,Sableux,Noiratre (Rich),Irrigue (Continu),10,Moyen (Zezika Omby),tres froid,20
+423,Limoneux,Brun-Grisatre,Pluvial,12,Moyen (Zezika Omby),très chaud,28
+424,Limoneux,Brun-Grisatre,Irrigue (Continu),10,Nul,humide,27
+425,Sableux,Noiratre (Rich),Pluvial,5,Moyen (Zezika Omby),chaud,28
+426,Sableux,Brun-Grisatre,Irrigue (Continu),20,Fort (Zezika + NPK),tres froid,27
+427,Sableux,Orange / Rouge,Pluvial,8,Nul,tres froid,10
+428,Limoneux,Orange / Rouge,Pluvial,5,Nul,tres froid,10
+429,Sableux,Noiratre (Rich),Irrigue (Continu),5,Moyen (Zezika Omby),froid,10
+430,Limoneux,Noiratre (Rich),Irrigue (Continu),10,Fort (Zezika + NPK),très chaud,32
+431,Sableux,Brun-Grisatre,Pluvial,11,Nul,chaud,14
+432,Limoneux,Brun-Grisatre,Irrigue (Continu),19,Fort (Zezika + NPK),très chaud,36
+433,Argileux (Madity),Brun-Grisatre,Irrigue (Continu),18,Fort (Zezika + NPK),froid,36
+434,Limoneux,Noiratre (Rich),Irrigue (Continu),15,Nul,humide,33
+435,Sableux,Orange / Rouge,Irrigue (Continu),13,Moyen (Zezika Omby),humide,24
+436,Sableux,Noiratre (Rich),Irrigue (Continu),10,Nul,très chaud,12
+437,Argileux (Madity),Orange / Rouge,Pluvial,12,Nul,tres froid,10
+438,Sableux,Orange / Rouge,Pluvial,8,Nul,chaud,10
+439,Limoneux,Noiratre (Rich),Pluvial,19,Moyen (Zezika Omby),froid,50
+440,Limoneux,Brun-Grisatre,Pluvial,17,Fort (Zezika + NPK),chaud,44
+441,Sableux,Brun-Grisatre,Irrigue (Continu),13,Fort (Zezika + NPK),chaud,38
+442,Sableux,Orange / Rouge,Pluvial,5,Nul,chaud,10
+443,Argileux (Madity),Orange / Rouge,Pluvial,7,Moyen (Zezika Omby),chaud,34
+444,Argileux (Madity),Noiratre (Rich),Pluvial,5,Nul,tres froid,47
+445,Sableux,Brun-Grisatre,Pluvial,13,Nul,tres froid,10
+446,Sableux,Noiratre (Rich),Irrigue (Continu),9,Fort (Zezika + NPK),froid,24
+447,Limoneux,Orange / Rouge,Pluvial,19,Fort (Zezika + NPK),chaud,46
+448,Limoneux,Noiratre (Rich),Irrigue (Continu),14,Moyen (Zezika Omby),tres froid,23
+449,Sableux,Orange / Rouge,Irrigue (Continu),10,Nul,humide,11
+450,Sableux,Brun-Grisatre,Irrigue (Continu),8,Nul,froid,10
+451,Sableux,Noiratre (Rich),Pluvial,5,Fort (Zezika + NPK),tres froid,10
+452,Limoneux,Brun-Grisatre,Pluvial,6,Fort (Zezika + NPK),très chaud,13
+453,Limoneux,Orange / Rouge,Irrigue (Continu),13,Fort (Zezika + NPK),très chaud,45
+454,Limoneux,Brun-Grisatre,Pluvial,13,Nul,humide,15
+455,Sableux,Noiratre (Rich),Irrigue (Continu),10,Moyen (Zezika Omby),très chaud,23
+456,Sableux,Noiratre (Rich),Pluvial,15,Fort (Zezika + NPK),très chaud,42
+457,Sableux,Brun-Grisatre,Irrigue (Continu),14,Fort (Zezika + NPK),humide,28
+458,Argileux (Madity),Brun-Grisatre,Irrigue (Continu),12,Moyen (Zezika Omby),froid,44
+459,Argileux (Madity),Orange / Rouge,Pluvial,11,Fort (Zezika + NPK),chaud,43
+460,Limoneux,Brun-Grisatre,Irrigue (Continu),20,Nul,chaud,38
+461,Limoneux,Noiratre (Rich),Irrigue (Continu),19,Nul,froid,29
+462,Sableux,Brun-Grisatre,Pluvial,13,Nul,froid,14
+463,Argileux (Madity),Brun-Grisatre,Irrigue (Continu),10,Moyen (Zezika Omby),tres froid,23
+464,Limoneux,Noiratre (Rich),Irrigue (Continu),18,Fort (Zezika + NPK),chaud,50
+465,Limoneux,Noiratre (Rich),Irrigue (Continu),18,Nul,humide,41
+466,Argileux (Madity),Orange / Rouge,Pluvial,14,Moyen (Zezika Omby),froid,30
+467,Sableux,Noiratre (Rich),Pluvial,14,Nul,tres froid,10
+468,Limoneux,Orange / Rouge,Irrigue (Continu),14,Fort (Zezika + NPK),très chaud,41
+469,Argileux (Madity),Noiratre (Rich),Irrigue (Continu),14,Moyen (Zezika Omby),tres froid,34
+470,Limoneux,Brun-Grisatre,Pluvial,18,Moyen (Zezika Omby),chaud,40
+471,Limoneux,Orange / Rouge,Pluvial,20,Nul,froid,11
+472,Argileux (Madity),Noiratre (Rich),Pluvial,6,Fort (Zezika + NPK),tres froid,24
+473,Limoneux,Brun-Grisatre,Pluvial,6,Nul,chaud,21
+474,Argileux (Madity),Brun-Grisatre,Pluvial,7,Moyen (Zezika Omby),froid,26
+475,Limoneux,Brun-Grisatre,Irrigue (Continu),9,Nul,humide,24
+476,Limoneux,Noiratre (Rich),Pluvial,16,Moyen (Zezika Omby),tres froid,28
+477,Limoneux,Noiratre (Rich),Pluvial,12,Fort (Zezika + NPK),froid,28
+478,Limoneux,Brun-Grisatre,Pluvial,16,Nul,froid,16
+479,Sableux,Noiratre (Rich),Irrigue (Continu),20,Nul,chaud,40
+480,Limoneux,Orange / Rouge,Irrigue (Continu),20,Moyen (Zezika Omby),froid,24
+481,Argileux (Madity),Orange / Rouge,Irrigue (Continu),20,Nul,froid,25
+482,Limoneux,Orange / Rouge,Irrigue (Continu),11,Moyen (Zezika Omby),humide,37
+483,Sableux,Noiratre (Rich),Pluvial,8,Moyen (Zezika Omby),froid,13
+484,Limoneux,Noiratre (Rich),Pluvial,11,Fort (Zezika + NPK),froid,29
+485,Sableux,Orange / Rouge,Irrigue (Continu),15,Nul,chaud,18
+486,Sableux,Orange / Rouge,Pluvial,15,Fort (Zezika + NPK),humide,24
+487,Limoneux,Noiratre (Rich),Irrigue (Continu),13,Moyen (Zezika Omby),très chaud,34
+488,Argileux (Madity),Noiratre (Rich),Irrigue (Continu),14,Moyen (Zezika Omby),tres froid,31
+489,Argileux (Madity),Noiratre (Rich),Pluvial,16,Fort (Zezika + NPK),très chaud,39
+490,Argileux (Madity),Brun-Grisatre,Pluvial,7,Fort (Zezika + NPK),chaud,34
+491,Argileux (Madity),Orange / Rouge,Irrigue (Continu),15,Moyen (Zezika Omby),chaud,50
+492,Limoneux,Orange / Rouge,Pluvial,11,Fort (Zezika + NPK),chaud,33
+493,Limoneux,Brun-Grisatre,Pluvial,10,Fort (Zezika + NPK),chaud,37
+494,Sableux,Noiratre (Rich),Pluvial,14,Fort (Zezika + NPK),chaud,30
+495,Limoneux,Orange / Rouge,Irrigue (Continu),13,Fort (Zezika + NPK),chaud,50
+496,Sableux,Noiratre (Rich),Irrigue (Continu),16,Nul,très chaud,31
+497,Limoneux,Noiratre (Rich),Pluvial,19,Nul,très chaud,23
+498,Limoneux,Noiratre (Rich),Irrigue (Continu),16,Nul,froid,34
+499,Argileux (Madity),Orange / Rouge,Pluvial,20,Nul,très chaud,26
+500,Limoneux,Brun-Grisatre,Irrigue (Continu),13,Fort (Zezika + NPK),tres froid,34
+501,Limoneux,Brun-Grisatre,Irrigue (Continu),15,Fort (Zezika + NPK),tres froid,34
+502,Limoneux,Noiratre (Rich),Irrigue (Continu),10,Moyen (Zezika Omby),très chaud,34
+503,Limoneux,Orange / Rouge,Pluvial,10,Nul,très chaud,15
+504,Argileux (Madity),Orange / Rouge,Irrigue (Continu),9,Moyen (Zezika Omby),tres froid,35
+505,Argileux (Madity),Orange / Rouge,Irrigue (Continu),17,Moyen (Zezika Omby),très chaud,36
+506,Sableux,Brun-Grisatre,Irrigue (Continu),19,Moyen (Zezika Omby),humide,38
+507,Limoneux,Orange / Rouge,Pluvial,17,Nul,chaud,23
+508,Sableux,Noiratre (Rich),Pluvial,15,Nul,tres froid,10
+509,Sableux,Noiratre (Rich),Irrigue (Continu),20,Nul,froid,30
+510,Sableux,Orange / Rouge,Pluvial,10,Moyen (Zezika Omby),très chaud,24
+511,Argileux (Madity),Orange / Rouge,Pluvial,8,Fort (Zezika + NPK),humide,30
+512,Limoneux,Orange / Rouge,Pluvial,15,Nul,humide,16
+513,Argileux (Madity),Brun-Grisatre,Pluvial,9,Fort (Zezika + NPK),humide,31
+514,Sableux,Orange / Rouge,Pluvial,16,Nul,très chaud,10
+515,Limoneux,Orange / Rouge,Pluvial,20,Fort (Zezika + NPK),tres froid,39
+516,Limoneux,Brun-Grisatre,Pluvial,11,Fort (Zezika + NPK),froid,20
+517,Limoneux,Noiratre (Rich),Pluvial,20,Nul,froid,25
+518,Limoneux,Noiratre (Rich),Pluvial,7,Nul,humide,12
+519,Sableux,Brun-Grisatre,Pluvial,16,Moyen (Zezika Omby),humide,27
+520,Limoneux,Orange / Rouge,Pluvial,10,Fort (Zezika + NPK),froid,23
+521,Argileux (Madity),Noiratre (Rich),Pluvial,14,Fort (Zezika + NPK),froid,42
+522,Argileux (Madity),Noiratre (Rich),Pluvial,12,Nul,chaud,40
+523,Argileux (Madity),Orange / Rouge,Pluvial,18,Nul,chaud,30
+524,Argileux (Madity),Orange / Rouge,Irrigue (Continu),11,Nul,tres froid,10
+525,Argileux (Madity),Orange / Rouge,Pluvial,16,Moyen (Zezika Omby),chaud,35
+526,Sableux,Noiratre (Rich),Pluvial,11,Moyen (Zezika Omby),humide,21
+527,Limoneux,Noiratre (Rich),Irrigue (Continu),19,Fort (Zezika + NPK),chaud,49
+528,Limoneux,Orange / Rouge,Pluvial,13,Moyen (Zezika Omby),humide,23
+529,Sableux,Brun-Grisatre,Irrigue (Continu),11,Moyen (Zezika Omby),humide,18
+530,Argileux (Madity),Brun-Grisatre,Pluvial,16,Moyen (Zezika Omby),très chaud,34
+531,Sableux,Brun-Grisatre,Pluvial,9,Nul,très chaud,10
+532,Argileux (Madity),Orange / Rouge,Irrigue (Continu),10,Moyen (Zezika Omby),froid,36
+533,Sableux,Brun-Grisatre,Irrigue (Continu),19,Nul,humide,16
+534,Sableux,Noiratre (Rich),Pluvial,12,Moyen (Zezika Omby),froid,16
+535,Argileux (Madity),Brun-Grisatre,Pluvial,6,Moyen (Zezika Omby),humide,20
+536,Sableux,Noiratre (Rich),Irrigue (Continu),15,Nul,tres froid,18
+537,Argileux (Madity),Orange / Rouge,Irrigue (Continu),20,Moyen (Zezika Omby),humide,41
+538,Limoneux,Noiratre (Rich),Irrigue (Continu),10,Nul,humide,28
+539,Argileux (Madity),Orange / Rouge,Irrigue (Continu),20,Fort (Zezika + NPK),chaud,50
+540,Limoneux,Orange / Rouge,Pluvial,19,Fort (Zezika + NPK),très chaud,26
+541,Argileux (Madity),Orange / Rouge,Pluvial,9,Moyen (Zezika Omby),froid,25
+542,Sableux,Brun-Grisatre,Irrigue (Continu),13,Nul,chaud,23
+543,Sableux,Noiratre (Rich),Irrigue (Continu),19,Nul,humide,31
+544,Sableux,Brun-Grisatre,Irrigue (Continu),7,Fort (Zezika + NPK),très chaud,25
+545,Argileux (Madity),Orange / Rouge,Pluvial,9,Fort (Zezika + NPK),chaud,35
+546,Limoneux,Brun-Grisatre,Pluvial,19,Fort (Zezika + NPK),humide,28
+547,Limoneux,Noiratre (Rich),Irrigue (Continu),10,Nul,très chaud,33
+548,Limoneux,Brun-Grisatre,Pluvial,10,Fort (Zezika + NPK),humide,32
+549,Sableux,Brun-Grisatre,Irrigue (Continu),11,Moyen (Zezika Omby),chaud,34
+550,Limoneux,Noiratre (Rich),Pluvial,9,Moyen (Zezika Omby),tres froid,16
+551,Sableux,Noiratre (Rich),Pluvial,16,Fort (Zezika + NPK),chaud,33
+552,Argileux (Madity),Orange / Rouge,Irrigue (Continu),13,Nul,humide,24
+553,Argileux (Madity),Brun-Grisatre,Irrigue (Continu),18,Moyen (Zezika Omby),très chaud,45
+554,Limoneux,Brun-Grisatre,Irrigue (Continu),19,Moyen (Zezika Omby),chaud,50
+555,Argileux (Madity),Orange / Rouge,Irrigue (Continu),13,Moyen (Zezika Omby),très chaud,11
+556,Sableux,Brun-Grisatre,Pluvial,7,Fort (Zezika + NPK),froid,10
+557,Argileux (Madity),Noiratre (Rich),Irrigue (Continu),14,Fort (Zezika + NPK),tres froid,36
+558,Sableux,Noiratre (Rich),Pluvial,13,Fort (Zezika + NPK),tres froid,18
+559,Argileux (Madity),Noiratre (Rich),Pluvial,13,Nul,chaud,30
+560,Argileux (Madity),Brun-Grisatre,Irrigue (Continu),17,Moyen (Zezika Omby),chaud,38
+561,Limoneux,Brun-Grisatre,Pluvial,16,Moyen (Zezika Omby),humide,31
+562,Sableux,Brun-Grisatre,Irrigue (Continu),13,Nul,humide,21
+563,Limoneux,Orange / Rouge,Pluvial,13,Fort (Zezika + NPK),très chaud,23
+564,Sableux,Noiratre (Rich),Pluvial,9,Moyen (Zezika Omby),humide,20
+565,Sableux,Brun-Grisatre,Pluvial,13,Nul,chaud,22
+566,Argileux (Madity),Orange / Rouge,Irrigue (Continu),14,Fort (Zezika + NPK),froid,34
+567,Argileux (Madity),Brun-Grisatre,Irrigue (Continu),10,Fort (Zezika + NPK),tres froid,35
+568,Limoneux,Brun-Grisatre,Irrigue (Continu),7,Fort (Zezika + NPK),froid,48
+569,Limoneux,Brun-Grisatre,Pluvial,13,Moyen (Zezika Omby),froid,27
+570,Limoneux,Orange / Rouge,Irrigue (Continu),5,Moyen (Zezika Omby),chaud,33
+571,Argileux (Madity),Orange / Rouge,Irrigue (Continu),11,Nul,froid,16
+572,Limoneux,Noiratre (Rich),Irrigue (Continu),11,Moyen (Zezika Omby),très chaud,11
+573,Argileux (Madity),Orange / Rouge,Irrigue (Continu),19,Fort (Zezika + NPK),très chaud,50
+574,Argileux (Madity),Brun-Grisatre,Pluvial,10,Moyen (Zezika Omby),très chaud,42
+575,Argileux (Madity),Noiratre (Rich),Pluvial,6,Nul,très chaud,13
+576,Argileux (Madity),Noiratre (Rich),Pluvial,14,Fort (Zezika + NPK),très chaud,46
+577,Limoneux,Brun-Grisatre,Irrigue (Continu),6,Moyen (Zezika Omby),tres froid,48
+578,Sableux,Brun-Grisatre,Irrigue (Continu),5,Nul,humide,10
+579,Limoneux,Orange / Rouge,Irrigue (Continu),13,Nul,humide,27
+580,Argileux (Madity),Noiratre (Rich),Pluvial,18,Moyen (Zezika Omby),froid,35
+581,Sableux,Noiratre (Rich),Pluvial,7,Moyen (Zezika Omby),tres froid,10
+582,Limoneux,Brun-Grisatre,Irrigue (Continu),16,Fort (Zezika + NPK),tres froid,32
+583,Limoneux,Noiratre (Rich),Irrigue (Continu),6,Moyen (Zezika Omby),tres froid,23
+584,Limoneux,Brun-Grisatre,Pluvial,6,Fort (Zezika + NPK),froid,12
+585,Argileux (Madity),Noiratre (Rich),Pluvial,6,Fort (Zezika + NPK),très chaud,31
+586,Limoneux,Orange / Rouge,Pluvial,11,Moyen (Zezika Omby),très chaud,22
+587,Argileux (Madity),Orange / Rouge,Irrigue (Continu),14,Moyen (Zezika Omby),froid,48
+588,Sableux,Orange / Rouge,Irrigue (Continu),7,Moyen (Zezika Omby),chaud,31
+589,Sableux,Orange / Rouge,Irrigue (Continu),16,Moyen (Zezika Omby),tres froid,22
+590,Argileux (Madity),Brun-Grisatre,Irrigue (Continu),14,Fort (Zezika + NPK),froid,37
+591,Argileux (Madity),Brun-Grisatre,Pluvial,9,Moyen (Zezika Omby),très chaud,27
+592,Limoneux,Noiratre (Rich),Irrigue (Continu),17,Nul,très chaud,33
+593,Sableux,Noiratre (Rich),Irrigue (Continu),19,Nul,très chaud,29
+594,Limoneux,Orange / Rouge,Pluvial,11,Moyen (Zezika Omby),très chaud,19
+595,Sableux,Brun-Grisatre,Irrigue (Continu),9,Nul,très chaud,14
+596,Sableux,Brun-Grisatre,Pluvial,8,Fort (Zezika + NPK),très chaud,10
+597,Limoneux,Brun-Grisatre,Pluvial,7,Moyen (Zezika Omby),froid,20
+598,Argileux (Madity),Noiratre (Rich),Pluvial,5,Moyen (Zezika Omby),froid,21
+599,Argileux (Madity),Brun-Grisatre,Irrigue (Continu),15,Nul,tres froid,22
+600,Argileux (Madity),Orange / Rouge,Irrigue (Continu),13,Moyen (Zezika Omby),froid,30
+601,Sableux,Noiratre (Rich),Irrigue (Continu),15,Fort (Zezika + NPK),tres froid,30
+602,Limoneux,Brun-Grisatre,Irrigue (Continu),6,Nul,humide,22
+603,Sableux,Noiratre (Rich),Pluvial,13,Moyen (Zezika Omby),froid,48
+604,Argileux (Madity),Brun-Grisatre,Irrigue (Continu),11,Nul,humide,27
+605,Argileux (Madity),Orange / Rouge,Pluvial,7,Fort (Zezika + NPK),froid,18
+606,Argileux (Madity),Orange / Rouge,Pluvial,6,Moyen (Zezika Omby),chaud,38
+607,Limoneux,Brun-Grisatre,Pluvial,19,Fort (Zezika + NPK),très chaud,29
+608,Sableux,Noiratre (Rich),Irrigue (Continu),15,Nul,tres froid,21
+609,Sableux,Noiratre (Rich),Pluvial,9,Fort (Zezika + NPK),humide,27
+610,Argileux (Madity),Brun-Grisatre,Irrigue (Continu),12,Fort (Zezika + NPK),tres froid,28
+611,Limoneux,Brun-Grisatre,Pluvial,11,Nul,humide,16
+612,Sableux,Brun-Grisatre,Irrigue (Continu),11,Moyen (Zezika Omby),chaud,37
+613,Argileux (Madity),Brun-Grisatre,Irrigue (Continu),19,Moyen (Zezika Omby),froid,31
+614,Sableux,Noiratre (Rich),Irrigue (Continu),6,Nul,froid,14
+615,Sableux,Orange / Rouge,Pluvial,8,Fort (Zezika + NPK),très chaud,23
+616,Sableux,Brun-Grisatre,Irrigue (Continu),13,Fort (Zezika + NPK),très chaud,27
+617,Sableux,Orange / Rouge,Pluvial,9,Moyen (Zezika Omby),chaud,25
+618,Limoneux,Brun-Grisatre,Irrigue (Continu),8,Moyen (Zezika Omby),froid,34
+619,Sableux,Noiratre (Rich),Irrigue (Continu),14,Moyen (Zezika Omby),chaud,50
+620,Sableux,Brun-Grisatre,Irrigue (Continu),12,Nul,humide,18
+621,Limoneux,Brun-Grisatre,Irrigue (Continu),10,Moyen (Zezika Omby),tres froid,16
+622,Limoneux,Orange / Rouge,Irrigue (Continu),18,Moyen (Zezika Omby),froid,36
+623,Limoneux,Brun-Grisatre,Irrigue (Continu),17,Nul,très chaud,17
+624,Argileux (Madity),Noiratre (Rich),Irrigue (Continu),9,Nul,humide,40
+625,Argileux (Madity),Noiratre (Rich),Pluvial,9,Fort (Zezika + NPK),froid,38
+626,Argileux (Madity),Brun-Grisatre,Pluvial,10,Moyen (Zezika Omby),tres froid,20
+627,Argileux (Madity),Brun-Grisatre,Irrigue (Continu),13,Nul,humide,34
+628,Argileux (Madity),Brun-Grisatre,Irrigue (Continu),11,Moyen (Zezika Omby),froid,20
+629,Argileux (Madity),Noiratre (Rich),Pluvial,13,Moyen (Zezika Omby),chaud,44
+630,Limoneux,Noiratre (Rich),Irrigue (Continu),19,Fort (Zezika + NPK),humide,50
+631,Limoneux,Orange / Rouge,Pluvial,7,Fort (Zezika + NPK),humide,21
+632,Sableux,Noiratre (Rich),Pluvial,13,Fort (Zezika + NPK),froid,26
+633,Argileux (Madity),Noiratre (Rich),Pluvial,11,Moyen (Zezika Omby),humide,29
+634,Argileux (Madity),Orange / Rouge,Irrigue (Continu),13,Fort (Zezika + NPK),chaud,50
+635,Sableux,Noiratre (Rich),Pluvial,14,Nul,froid,15
+636,Limoneux,Brun-Grisatre,Irrigue (Continu),5,Nul,tres froid,10
+637,Limoneux,Noiratre (Rich),Irrigue (Continu),19,Fort (Zezika + NPK),humide,50
+638,Argileux (Madity),Noiratre (Rich),Pluvial,14,Moyen (Zezika Omby),très chaud,39
+639,Argileux (Madity),Noiratre (Rich),Irrigue (Continu),17,Moyen (Zezika Omby),humide,45
+640,Limoneux,Brun-Grisatre,Irrigue (Continu),16,Fort (Zezika + NPK),froid,32
+641,Limoneux,Noiratre (Rich),Irrigue (Continu),17,Moyen (Zezika Omby),très chaud,49
+642,Limoneux,Brun-Grisatre,Irrigue (Continu),7,Fort (Zezika + NPK),très chaud,22
+643,Sableux,Brun-Grisatre,Irrigue (Continu),15,Moyen (Zezika Omby),humide,36
+644,Limoneux,Brun-Grisatre,Irrigue (Continu),6,Fort (Zezika + NPK),chaud,44
+645,Argileux (Madity),Noiratre (Rich),Pluvial,10,Moyen (Zezika Omby),froid,25
+646,Limoneux,Orange / Rouge,Irrigue (Continu),8,Moyen (Zezika Omby),froid,35
+647,Limoneux,Brun-Grisatre,Pluvial,15,Fort (Zezika + NPK),très chaud,32
+648,Limoneux,Orange / Rouge,Pluvial,12,Nul,chaud,15
+649,Sableux,Brun-Grisatre,Irrigue (Continu),10,Moyen (Zezika Omby),chaud,32
+650,Sableux,Brun-Grisatre,Irrigue (Continu),20,Nul,chaud,37
+651,Limoneux,Brun-Grisatre,Pluvial,16,Nul,froid,50
+652,Limoneux,Orange / Rouge,Pluvial,5,Moyen (Zezika Omby),humide,10
+653,Limoneux,Orange / Rouge,Pluvial,8,Fort (Zezika + NPK),très chaud,15
+654,Limoneux,Noiratre (Rich),Irrigue (Continu),13,Nul,chaud,42
+655,Sableux,Orange / Rouge,Pluvial,13,Nul,très chaud,10
+656,Argileux (Madity),Orange / Rouge,Irrigue (Continu),10,Fort (Zezika + NPK),humide,39
+657,Limoneux,Orange / Rouge,Pluvial,19,Nul,chaud,27
+658,Argileux (Madity),Noiratre (Rich),Pluvial,20,Nul,froid,29
+659,Limoneux,Noiratre (Rich),Irrigue (Continu),8,Fort (Zezika + NPK),froid,35
+660,Sableux,Orange / Rouge,Pluvial,16,Nul,tres froid,10
+661,Sableux,Orange / Rouge,Pluvial,10,Moyen (Zezika Omby),humide,12
+662,Argileux (Madity),Brun-Grisatre,Pluvial,19,Fort (Zezika + NPK),froid,30
+663,Sableux,Brun-Grisatre,Pluvial,9,Nul,froid,10
+664,Sableux,Orange / Rouge,Pluvial,13,Nul,froid,10
+665,Argileux (Madity),Orange / Rouge,Irrigue (Continu),16,Fort (Zezika + NPK),froid,43
+666,Sableux,Orange / Rouge,Irrigue (Continu),9,Fort (Zezika + NPK),chaud,42
+667,Limoneux,Noiratre (Rich),Irrigue (Continu),8,Nul,humide,26
+668,Argileux (Madity),Orange / Rouge,Pluvial,10,Fort (Zezika + NPK),très chaud,31
+669,Sableux,Brun-Grisatre,Pluvial,9,Moyen (Zezika Omby),très chaud,17
+670,Limoneux,Noiratre (Rich),Irrigue (Continu),5,Fort (Zezika + NPK),chaud,50
+671,Sableux,Noiratre (Rich),Irrigue (Continu),16,Moyen (Zezika Omby),froid,32
+672,Argileux (Madity),Noiratre (Rich),Pluvial,19,Nul,très chaud,24
+673,Argileux (Madity),Noiratre (Rich),Irrigue (Continu),15,Moyen (Zezika Omby),froid,45
+674,Argileux (Madity),Noiratre (Rich),Pluvial,7,Fort (Zezika + NPK),tres froid,23
+675,Limoneux,Orange / Rouge,Pluvial,16,Nul,froid,10
+676,Limoneux,Noiratre (Rich),Pluvial,7,Nul,humide,10
+677,Limoneux,Noiratre (Rich),Pluvial,13,Moyen (Zezika Omby),tres froid,15
+678,Sableux,Brun-Grisatre,Pluvial,16,Moyen (Zezika Omby),très chaud,18
+679,Argileux (Madity),Orange / Rouge,Irrigue (Continu),19,Fort (Zezika + NPK),très chaud,40
+680,Argileux (Madity),Noiratre (Rich),Pluvial,11,Moyen (Zezika Omby),humide,37
+681,Sableux,Brun-Grisatre,Irrigue (Continu),8,Fort (Zezika + NPK),très chaud,31
+682,Sableux,Noiratre (Rich),Pluvial,11,Moyen (Zezika Omby),tres froid,13
+683,Argileux (Madity),Orange / Rouge,Irrigue (Continu),11,Moyen (Zezika Omby),froid,33
+684,Limoneux,Noiratre (Rich),Pluvial,7,Nul,tres froid,10
+685,Argileux (Madity),Brun-Grisatre,Irrigue (Continu),12,Fort (Zezika + NPK),froid,39
+686,Limoneux,Orange / Rouge,Irrigue (Continu),20,Moyen (Zezika Omby),froid,38
+687,Limoneux,Orange / Rouge,Pluvial,18,Fort (Zezika + NPK),froid,24
+688,Argileux (Madity),Noiratre (Rich),Irrigue (Continu),20,Moyen (Zezika Omby),chaud,50
+689,Limoneux,Orange / Rouge,Irrigue (Continu),20,Nul,très chaud,22
+690,Sableux,Brun-Grisatre,Pluvial,8,Nul,très chaud,10
+691,Sableux,Brun-Grisatre,Pluvial,7,Nul,très chaud,10
+692,Argileux (Madity),Orange / Rouge,Pluvial,7,Moyen (Zezika Omby),tres froid,10
+693,Argileux (Madity),Orange / Rouge,Irrigue (Continu),12,Fort (Zezika + NPK),très chaud,37
+694,Argileux (Madity),Brun-Grisatre,Pluvial,18,Nul,humide,32
+695,Limoneux,Brun-Grisatre,Irrigue (Continu),7,Fort (Zezika + NPK),froid,24
+696,Argileux (Madity),Orange / Rouge,Pluvial,15,Fort (Zezika + NPK),tres froid,28
+697,Limoneux,Noiratre (Rich),Irrigue (Continu),14,Nul,humide,34
+698,Limoneux,Orange / Rouge,Irrigue (Continu),11,Fort (Zezika + NPK),humide,32
+699,Sableux,Brun-Grisatre,Irrigue (Continu),20,Nul,tres froid,12
+700,Argileux (Madity),Orange / Rouge,Pluvial,10,Fort (Zezika + NPK),froid,19
+701,Limoneux,Noiratre (Rich),Pluvial,13,Fort (Zezika + NPK),chaud,44
+702,Argileux (Madity),Orange / Rouge,Irrigue (Continu),13,Moyen (Zezika Omby),chaud,50
+703,Argileux (Madity),Noiratre (Rich),Pluvial,6,Nul,tres froid,12
+704,Argileux (Madity),Brun-Grisatre,Pluvial,13,Fort (Zezika + NPK),humide,31
+705,Argileux (Madity),Noiratre (Rich),Irrigue (Continu),10,Nul,chaud,50
+706,Argileux (Madity),Brun-Grisatre,Irrigue (Continu),10,Nul,chaud,49
+707,Limoneux,Orange / Rouge,Irrigue (Continu),6,Moyen (Zezika Omby),très chaud,28
+708,Argileux (Madity),Noiratre (Rich),Pluvial,8,Fort (Zezika + NPK),chaud,43
+709,Limoneux,Noiratre (Rich),Pluvial,10,Moyen (Zezika Omby),humide,26
+710,Argileux (Madity),Noiratre (Rich),Irrigue (Continu),18,Nul,froid,37
+711,Argileux (Madity),Brun-Grisatre,Pluvial,7,Moyen (Zezika Omby),humide,15
+712,Limoneux,Brun-Grisatre,Pluvial,12,Fort (Zezika + NPK),froid,29
+713,Limoneux,Brun-Grisatre,Pluvial,8,Moyen (Zezika Omby),humide,19
+714,Argileux (Madity),Noiratre (Rich),Irrigue (Continu),17,Moyen (Zezika Omby),tres froid,37
+715,Sableux,Brun-Grisatre,Irrigue (Continu),20,Moyen (Zezika Omby),humide,31
+716,Sableux,Brun-Grisatre,Pluvial,15,Nul,très chaud,10
+717,Argileux (Madity),Orange / Rouge,Pluvial,5,Nul,froid,10
+718,Argileux (Madity),Brun-Grisatre,Irrigue (Continu),16,Fort (Zezika + NPK),humide,41
+719,Argileux (Madity),Orange / Rouge,Irrigue (Continu),16,Fort (Zezika + NPK),humide,14
+720,Limoneux,Brun-Grisatre,Pluvial,16,Moyen (Zezika Omby),humide,28
+721,Argileux (Madity),Orange / Rouge,Irrigue (Continu),16,Fort (Zezika + NPK),froid,39
+722,Sableux,Brun-Grisatre,Irrigue (Continu),12,Nul,humide,18
+723,Argileux (Madity),Orange / Rouge,Irrigue (Continu),12,Fort (Zezika + NPK),froid,46
+724,Limoneux,Brun-Grisatre,Pluvial,12,Fort (Zezika + NPK),humide,31
+725,Argileux (Madity),Orange / Rouge,Pluvial,19,Fort (Zezika + NPK),chaud,47
+726,Limoneux,Brun-Grisatre,Pluvial,9,Moyen (Zezika Omby),très chaud,26
+727,Argileux (Madity),Noiratre (Rich),Pluvial,8,Moyen (Zezika Omby),tres froid,19
+728,Limoneux,Noiratre (Rich),Irrigue (Continu),14,Fort (Zezika + NPK),tres froid,37
+729,Sableux,Orange / Rouge,Irrigue (Continu),16,Moyen (Zezika Omby),humide,26
+730,Limoneux,Orange / Rouge,Irrigue (Continu),8,Fort (Zezika + NPK),humide,40
+731,Argileux (Madity),Noiratre (Rich),Irrigue (Continu),15,Fort (Zezika + NPK),très chaud,48
+732,Limoneux,Brun-Grisatre,Pluvial,13,Moyen (Zezika Omby),très chaud,38
+733,Sableux,Orange / Rouge,Pluvial,14,Fort (Zezika + NPK),humide,23
+734,Argileux (Madity),Orange / Rouge,Pluvial,13,Moyen (Zezika Omby),froid,27
+735,Sableux,Noiratre (Rich),Irrigue (Continu),6,Moyen (Zezika Omby),très chaud,19
+736,Argileux (Madity),Brun-Grisatre,Pluvial,15,Nul,très chaud,32
+737,Sableux,Orange / Rouge,Irrigue (Continu),14,Moyen (Zezika Omby),très chaud,25
+738,Sableux,Noiratre (Rich),Irrigue (Continu),5,Moyen (Zezika Omby),très chaud,19
+739,Limoneux,Noiratre (Rich),Pluvial,13,Moyen (Zezika Omby),très chaud,50
+740,Limoneux,Noiratre (Rich),Pluvial,15,Moyen (Zezika Omby),très chaud,22
+741,Argileux (Madity),Noiratre (Rich),Irrigue (Continu),13,Nul,chaud,50
+742,Sableux,Noiratre (Rich),Pluvial,13,Moyen (Zezika Omby),froid,10
+743,Limoneux,Orange / Rouge,Pluvial,11,Fort (Zezika + NPK),très chaud,31
+744,Argileux (Madity),Noiratre (Rich),Pluvial,9,Nul,très chaud,38
+745,Argileux (Madity),Orange / Rouge,Irrigue (Continu),17,Fort (Zezika + NPK),très chaud,50
+746,Argileux (Madity),Brun-Grisatre,Pluvial,6,Moyen (Zezika Omby),très chaud,32
+747,Limoneux,Noiratre (Rich),Pluvial,14,Fort (Zezika + NPK),humide,21
+748,Sableux,Noiratre (Rich),Irrigue (Continu),8,Moyen (Zezika Omby),tres froid,14
+749,Argileux (Madity),Noiratre (Rich),Irrigue (Continu),15,Nul,chaud,50
+750,Limoneux,Noiratre (Rich),Pluvial,5,Fort (Zezika + NPK),tres froid,16
+751,Argileux (Madity),Brun-Grisatre,Pluvial,16,Moyen (Zezika Omby),très chaud,37
+752,Limoneux,Noiratre (Rich),Pluvial,9,Nul,tres froid,18
+753,Sableux,Orange / Rouge,Pluvial,6,Fort (Zezika + NPK),froid,10
+754,Argileux (Madity),Orange / Rouge,Irrigue (Continu),17,Fort (Zezika + NPK),humide,49
+755,Argileux (Madity),Noiratre (Rich),Irrigue (Continu),18,Nul,chaud,46
+756,Sableux,Orange / Rouge,Irrigue (Continu),18,Fort (Zezika + NPK),froid,25
+757,Sableux,Orange / Rouge,Irrigue (Continu),19,Fort (Zezika + NPK),chaud,48
+758,Sableux,Brun-Grisatre,Pluvial,13,Fort (Zezika + NPK),chaud,44
+759,Argileux (Madity),Noiratre (Rich),Pluvial,15,Nul,humide,25
+760,Sableux,Orange / Rouge,Irrigue (Continu),6,Moyen (Zezika Omby),chaud,35
+761,Argileux (Madity),Brun-Grisatre,Pluvial,13,Moyen (Zezika Omby),humide,41
+762,Sableux,Noiratre (Rich),Irrigue (Continu),15,Nul,froid,31
+763,Argileux (Madity),Brun-Grisatre,Irrigue (Continu),17,Moyen (Zezika Omby),tres froid,33
+764,Limoneux,Orange / Rouge,Pluvial,15,Fort (Zezika + NPK),très chaud,28
+765,Limoneux,Brun-Grisatre,Irrigue (Continu),17,Moyen (Zezika Omby),tres froid,25
+766,Argileux (Madity),Noiratre (Rich),Pluvial,14,Moyen (Zezika Omby),humide,33
+767,Argileux (Madity),Orange / Rouge,Pluvial,14,Fort (Zezika + NPK),humide,34
+768,Argileux (Madity),Brun-Grisatre,Irrigue (Continu),12,Moyen (Zezika Omby),chaud,50
+769,Limoneux,Orange / Rouge,Irrigue (Continu),12,Nul,humide,17
+770,Limoneux,Noiratre (Rich),Irrigue (Continu),6,Moyen (Zezika Omby),très chaud,22
+771,Sableux,Noiratre (Rich),Pluvial,13,Fort (Zezika + NPK),tres froid,16
+772,Limoneux,Noiratre (Rich),Irrigue (Continu),9,Moyen (Zezika Omby),humide,26
+773,Sableux,Noiratre (Rich),Pluvial,12,Fort (Zezika + NPK),humide,21
+774,Sableux,Noiratre (Rich),Pluvial,16,Fort (Zezika + NPK),chaud,42
+775,Sableux,Noiratre (Rich),Pluvial,14,Moyen (Zezika Omby),tres froid,16
+776,Argileux (Madity),Orange / Rouge,Irrigue (Continu),9,Fort (Zezika + NPK),chaud,50
+777,Limoneux,Brun-Grisatre,Irrigue (Continu),12,Moyen (Zezika Omby),tres froid,28
+778,Limoneux,Orange / Rouge,Pluvial,18,Nul,froid,10
+779,Argileux (Madity),Brun-Grisatre,Irrigue (Continu),18,Fort (Zezika + NPK),humide,47
+780,Argileux (Madity),Noiratre (Rich),Irrigue (Continu),15,Nul,humide,50
+781,Sableux,Noiratre (Rich),Irrigue (Continu),17,Fort (Zezika + NPK),froid,34
+782,Sableux,Brun-Grisatre,Pluvial,9,Moyen (Zezika Omby),chaud,48
+783,Sableux,Noiratre (Rich),Irrigue (Continu),5,Moyen (Zezika Omby),froid,13
+784,Argileux (Madity),Brun-Grisatre,Pluvial,9,Nul,froid,19
+785,Limoneux,Brun-Grisatre,Pluvial,7,Fort (Zezika + NPK),tres froid,10
+786,Argileux (Madity),Orange / Rouge,Irrigue (Continu),11,Moyen (Zezika Omby),froid,33
+787,Limoneux,Orange / Rouge,Pluvial,10,Fort (Zezika + NPK),très chaud,35
+788,Argileux (Madity),Brun-Grisatre,Pluvial,12,Fort (Zezika + NPK),chaud,50
+789,Limoneux,Noiratre (Rich),Pluvial,11,Nul,humide,26
+790,Sableux,Noiratre (Rich),Pluvial,5,Fort (Zezika + NPK),humide,10
+791,Limoneux,Orange / Rouge,Pluvial,16,Moyen (Zezika Omby),humide,24
+792,Sableux,Brun-Grisatre,Pluvial,5,Moyen (Zezika Omby),tres froid,10
+793,Limoneux,Brun-Grisatre,Irrigue (Continu),8,Nul,froid,20
+794,Limoneux,Orange / Rouge,Irrigue (Continu),14,Fort (Zezika + NPK),chaud,46
+795,Sableux,Brun-Grisatre,Irrigue (Continu),14,Moyen (Zezika Omby),tres froid,17
+796,Limoneux,Brun-Grisatre,Pluvial,17,Nul,très chaud,12
+797,Argileux (Madity),Brun-Grisatre,Irrigue (Continu),9,Nul,froid,28
+798,Limoneux,Orange / Rouge,Pluvial,19,Fort (Zezika + NPK),froid,24
+799,Argileux (Madity),Orange / Rouge,Pluvial,15,Nul,tres froid,10
+800,Sableux,Noiratre (Rich),Irrigue (Continu),12,Fort (Zezika + NPK),froid,33
+801,Sableux,Noiratre (Rich),Pluvial,11,Moyen (Zezika Omby),très chaud,14
+802,Argileux (Madity),Noiratre (Rich),Irrigue (Continu),17,Moyen (Zezika Omby),tres froid,33
+803,Limoneux,Orange / Rouge,Pluvial,12,Moyen (Zezika Omby),chaud,34
+804,Limoneux,Orange / Rouge,Pluvial,5,Nul,humide,10
+805,Limoneux,Brun-Grisatre,Irrigue (Continu),14,Nul,tres froid,18
+806,Sableux,Orange / Rouge,Pluvial,12,Nul,froid,10
+807,Argileux (Madity),Brun-Grisatre,Pluvial,9,Moyen (Zezika Omby),tres froid,19
+808,Limoneux,Brun-Grisatre,Pluvial,5,Moyen (Zezika Omby),tres froid,10
+809,Argileux (Madity),Noiratre (Rich),Pluvial,13,Fort (Zezika + NPK),très chaud,43
+810,Limoneux,Orange / Rouge,Pluvial,18,Nul,chaud,29
+811,Sableux,Orange / Rouge,Pluvial,9,Moyen (Zezika Omby),chaud,30
+812,Argileux (Madity),Brun-Grisatre,Irrigue (Continu),14,Fort (Zezika + NPK),humide,50
+813,Sableux,Noiratre (Rich),Irrigue (Continu),10,Nul,humide,28
+814,Argileux (Madity),Orange / Rouge,Irrigue (Continu),20,Moyen (Zezika Omby),chaud,50
+815,Limoneux,Noiratre (Rich),Pluvial,8,Moyen (Zezika Omby),très chaud,29
+816,Limoneux,Orange / Rouge,Irrigue (Continu),20,Moyen (Zezika Omby),tres froid,17
+817,Argileux (Madity),Orange / Rouge,Irrigue (Continu),20,Nul,chaud,32
+818,Argileux (Madity),Orange / Rouge,Irrigue (Continu),15,Nul,humide,33
+819,Argileux (Madity),Noiratre (Rich),Irrigue (Continu),13,Fort (Zezika + NPK),froid,49
+820,Argileux (Madity),Brun-Grisatre,Irrigue (Continu),11,Nul,très chaud,25
+821,Sableux,Brun-Grisatre,Irrigue (Continu),11,Moyen (Zezika Omby),tres froid,15
+822,Sableux,Brun-Grisatre,Irrigue (Continu),12,Moyen (Zezika Omby),très chaud,31
+823,Argileux (Madity),Brun-Grisatre,Pluvial,7,Nul,très chaud,14
+824,Sableux,Noiratre (Rich),Irrigue (Continu),14,Fort (Zezika + NPK),chaud,41
+825,Argileux (Madity),Brun-Grisatre,Irrigue (Continu),17,Nul,tres froid,24
+826,Sableux,Orange / Rouge,Irrigue (Continu),11,Moyen (Zezika Omby),tres froid,12
+827,Argileux (Madity),Orange / Rouge,Pluvial,19,Nul,chaud,28
+828,Sableux,Brun-Grisatre,Pluvial,10,Moyen (Zezika Omby),froid,10
+829,Limoneux,Orange / Rouge,Pluvial,17,Fort (Zezika + NPK),froid,26
+830,Argileux (Madity),Orange / Rouge,Pluvial,18,Fort (Zezika + NPK),très chaud,10
+831,Limoneux,Orange / Rouge,Pluvial,8,Nul,froid,10
+832,Argileux (Madity),Brun-Grisatre,Irrigue (Continu),12,Fort (Zezika + NPK),chaud,48
+833,Argileux (Madity),Brun-Grisatre,Pluvial,8,Fort (Zezika + NPK),très chaud,34
+834,Limoneux,Noiratre (Rich),Pluvial,6,Nul,humide,10
+835,Sableux,Brun-Grisatre,Irrigue (Continu),15,Fort (Zezika + NPK),chaud,28
+836,Sableux,Orange / Rouge,Pluvial,14,Fort (Zezika + NPK),très chaud,21
+837,Sableux,Orange / Rouge,Irrigue (Continu),14,Nul,froid,10
+838,Sableux,Noiratre (Rich),Pluvial,6,Nul,chaud,12
+839,Limoneux,Brun-Grisatre,Pluvial,18,Nul,très chaud,19
+840,Sableux,Orange / Rouge,Irrigue (Continu),11,Moyen (Zezika Omby),humide,20
+841,Argileux (Madity),Orange / Rouge,Pluvial,11,Fort (Zezika + NPK),très chaud,28
+842,Limoneux,Brun-Grisatre,Irrigue (Continu),14,Nul,humide,27
+843,Sableux,Noiratre (Rich),Irrigue (Continu),12,Fort (Zezika + NPK),chaud,45
+844,Limoneux,Brun-Grisatre,Pluvial,11,Moyen (Zezika Omby),froid,24
+845,Sableux,Noiratre (Rich),Irrigue (Continu),11,Fort (Zezika + NPK),très chaud,35
+846,Argileux (Madity),Brun-Grisatre,Irrigue (Continu),16,Fort (Zezika + NPK),humide,44
+847,Limoneux,Orange / Rouge,Pluvial,18,Nul,chaud,21
+848,Limoneux,Noiratre (Rich),Irrigue (Continu),19,Fort (Zezika + NPK),tres froid,37
+849,Argileux (Madity),Noiratre (Rich),Irrigue (Continu),16,Fort (Zezika + NPK),tres froid,38
+850,Argileux (Madity),Noiratre (Rich),Irrigue (Continu),13,Nul,très chaud,39
+851,Argileux (Madity),Orange / Rouge,Pluvial,12,Fort (Zezika + NPK),froid,28
+852,Argileux (Madity),Orange / Rouge,Irrigue (Continu),16,Fort (Zezika + NPK),chaud,50
+853,Sableux,Noiratre (Rich),Irrigue (Continu),5,Nul,chaud,28
+854,Argileux (Madity),Brun-Grisatre,Pluvial,20,Moyen (Zezika Omby),chaud,50
+855,Sableux,Brun-Grisatre,Pluvial,13,Nul,chaud,16
+856,Limoneux,Noiratre (Rich),Irrigue (Continu),8,Nul,humide,35
+857,Limoneux,Orange / Rouge,Irrigue (Continu),14,Nul,humide,13
+858,Limoneux,Brun-Grisatre,Pluvial,7,Moyen (Zezika Omby),tres froid,10
+859,Argileux (Madity),Brun-Grisatre,Irrigue (Continu),18,Moyen (Zezika Omby),tres froid,33
+860,Sableux,Orange / Rouge,Pluvial,11,Moyen (Zezika Omby),très chaud,13
+861,Limoneux,Noiratre (Rich),Irrigue (Continu),14,Fort (Zezika + NPK),tres froid,36
+862,Argileux (Madity),Brun-Grisatre,Irrigue (Continu),10,Nul,humide,34
+863,Argileux (Madity),Noiratre (Rich),Irrigue (Continu),12,Fort (Zezika + NPK),froid,32
+864,Limoneux,Orange / Rouge,Pluvial,13,Moyen (Zezika Omby),humide,34
+865,Sableux,Noiratre (Rich),Pluvial,16,Nul,tres froid,10
+866,Sableux,Orange / Rouge,Irrigue (Continu),9,Moyen (Zezika Omby),chaud,40
+867,Argileux (Madity),Noiratre (Rich),Pluvial,9,Nul,chaud,39
+868,Argileux (Madity),Brun-Grisatre,Irrigue (Continu),11,Fort (Zezika + NPK),humide,47
+869,Argileux (Madity),Noiratre (Rich),Pluvial,9,Moyen (Zezika Omby),tres froid,21
+870,Limoneux,Brun-Grisatre,Irrigue (Continu),19,Moyen (Zezika Omby),humide,42
+871,Argileux (Madity),Noiratre (Rich),Pluvial,16,Nul,très chaud,26
+872,Argileux (Madity),Orange / Rouge,Irrigue (Continu),11,Fort (Zezika + NPK),tres froid,28
+873,Limoneux,Noiratre (Rich),Irrigue (Continu),19,Nul,humide,34
+874,Limoneux,Orange / Rouge,Pluvial,20,Moyen (Zezika Omby),très chaud,28
+875,Sableux,Noiratre (Rich),Irrigue (Continu),18,Moyen (Zezika Omby),humide,30
+876,Sableux,Brun-Grisatre,Pluvial,7,Nul,froid,10
+877,Argileux (Madity),Orange / Rouge,Irrigue (Continu),13,Fort (Zezika + NPK),tres froid,32
+878,Argileux (Madity),Noiratre (Rich),Pluvial,12,Fort (Zezika + NPK),tres froid,26
+879,Argileux (Madity),Orange / Rouge,Pluvial,6,Moyen (Zezika Omby),très chaud,17
+880,Limoneux,Noiratre (Rich),Irrigue (Continu),5,Nul,chaud,33
+881,Limoneux,Brun-Grisatre,Pluvial,9,Fort (Zezika + NPK),très chaud,28
+882,Sableux,Noiratre (Rich),Pluvial,15,Fort (Zezika + NPK),chaud,47
+883,Limoneux,Noiratre (Rich),Irrigue (Continu),6,Nul,froid,23
+884,Limoneux,Noiratre (Rich),Irrigue (Continu),14,Fort (Zezika + NPK),très chaud,29
+885,Limoneux,Noiratre (Rich),Irrigue (Continu),14,Fort (Zezika + NPK),froid,28
+886,Argileux (Madity),Noiratre (Rich),Irrigue (Continu),19,Fort (Zezika + NPK),chaud,50
+887,Argileux (Madity),Noiratre (Rich),Irrigue (Continu),20,Nul,froid,42
+888,Argileux (Madity),Noiratre (Rich),Pluvial,16,Nul,tres froid,14
+889,Argileux (Madity),Noiratre (Rich),Irrigue (Continu),13,Moyen (Zezika Omby),chaud,50
+890,Limoneux,Noiratre (Rich),Irrigue (Continu),11,Nul,humide,21
+891,Limoneux,Orange / Rouge,Pluvial,13,Moyen (Zezika Omby),humide,28
+892,Argileux (Madity),Orange / Rouge,Irrigue (Continu),16,Moyen (Zezika Omby),tres froid,32
+893,Argileux (Madity),Noiratre (Rich),Irrigue (Continu),13,Fort (Zezika + NPK),tres froid,40
+894,Sableux,Orange / Rouge,Irrigue (Continu),17,Fort (Zezika + NPK),humide,31
+895,Argileux (Madity),Orange / Rouge,Pluvial,5,Nul,chaud,21
+896,Argileux (Madity),Brun-Grisatre,Irrigue (Continu),20,Fort (Zezika + NPK),très chaud,38
+897,Argileux (Madity),Brun-Grisatre,Pluvial,10,Nul,tres froid,10
+898,Sableux,Orange / Rouge,Pluvial,8,Fort (Zezika + NPK),humide,21
+899,Sableux,Orange / Rouge,Pluvial,13,Nul,tres froid,10
+900,Limoneux,Brun-Grisatre,Pluvial,16,Moyen (Zezika Omby),chaud,49
+901,Argileux (Madity),Brun-Grisatre,Pluvial,11,Fort (Zezika + NPK),tres froid,14
+902,Argileux (Madity),Brun-Grisatre,Irrigue (Continu),15,Nul,chaud,47
+903,Argileux (Madity),Noiratre (Rich),Irrigue (Continu),14,Moyen (Zezika Omby),tres froid,36
+904,Limoneux,Brun-Grisatre,Pluvial,9,Nul,tres froid,10
+905,Sableux,Orange / Rouge,Irrigue (Continu),7,Moyen (Zezika Omby),humide,21
+906,Limoneux,Orange / Rouge,Irrigue (Continu),17,Nul,tres froid,10
+907,Argileux (Madity),Brun-Grisatre,Pluvial,20,Nul,froid,27
+908,Limoneux,Noiratre (Rich),Pluvial,6,Moyen (Zezika Omby),humide,16
+909,Argileux (Madity),Orange / Rouge,Irrigue (Continu),17,Nul,chaud,44
+910,Argileux (Madity),Noiratre (Rich),Pluvial,8,Moyen (Zezika Omby),froid,27
+911,Argileux (Madity),Orange / Rouge,Irrigue (Continu),13,Moyen (Zezika Omby),très chaud,43
+912,Sableux,Orange / Rouge,Irrigue (Continu),15,Nul,chaud,22
+913,Argileux (Madity),Brun-Grisatre,Pluvial,10,Nul,tres froid,17
+914,Sableux,Orange / Rouge,Irrigue (Continu),15,Nul,froid,16
+915,Limoneux,Noiratre (Rich),Irrigue (Continu),9,Moyen (Zezika Omby),très chaud,39
+916,Limoneux,Brun-Grisatre,Pluvial,18,Fort (Zezika + NPK),chaud,38
+917,Sableux,Brun-Grisatre,Pluvial,7,Moyen (Zezika Omby),humide,10
+918,Sableux,Noiratre (Rich),Pluvial,5,Fort (Zezika + NPK),chaud,28
+919,Limoneux,Noiratre (Rich),Pluvial,19,Moyen (Zezika Omby),tres froid,23
+920,Limoneux,Brun-Grisatre,Pluvial,10,Nul,froid,17
+921,Argileux (Madity),Brun-Grisatre,Irrigue (Continu),17,Fort (Zezika + NPK),froid,42
+922,Limoneux,Noiratre (Rich),Pluvial,7,Nul,très chaud,13
+923,Argileux (Madity),Brun-Grisatre,Pluvial,8,Fort (Zezika + NPK),humide,29
+924,Sableux,Orange / Rouge,Irrigue (Continu),7,Nul,tres froid,10
+925,Argileux (Madity),Noiratre (Rich),Pluvial,18,Fort (Zezika + NPK),froid,36
+926,Limoneux,Noiratre (Rich),Irrigue (Continu),10,Fort (Zezika + NPK),froid,36
+927,Limoneux,Brun-Grisatre,Pluvial,15,Fort (Zezika + NPK),froid,27
+928,Sableux,Noiratre (Rich),Irrigue (Continu),13,Fort (Zezika + NPK),tres froid,33
+929,Limoneux,Orange / Rouge,Irrigue (Continu),15,Moyen (Zezika Omby),humide,29
+930,Sableux,Brun-Grisatre,Pluvial,15,Nul,froid,13
+931,Sableux,Brun-Grisatre,Pluvial,5,Nul,humide,10
+932,Sableux,Brun-Grisatre,Irrigue (Continu),18,Moyen (Zezika Omby),très chaud,35
+933,Sableux,Noiratre (Rich),Pluvial,12,Fort (Zezika + NPK),humide,24
+934,Sableux,Brun-Grisatre,Irrigue (Continu),17,Nul,froid,10
+935,Sableux,Brun-Grisatre,Irrigue (Continu),15,Nul,chaud,26
+936,Sableux,Orange / Rouge,Irrigue (Continu),16,Moyen (Zezika Omby),froid,26
+937,Sableux,Brun-Grisatre,Irrigue (Continu),11,Moyen (Zezika Omby),chaud,42
+938,Argileux (Madity),Orange / Rouge,Pluvial,7,Moyen (Zezika Omby),froid,12
+939,Sableux,Orange / Rouge,Pluvial,12,Moyen (Zezika Omby),tres froid,10
+940,Limoneux,Orange / Rouge,Pluvial,10,Fort (Zezika + NPK),humide,19
+941,Sableux,Orange / Rouge,Pluvial,15,Fort (Zezika + NPK),tres froid,10
+942,Limoneux,Orange / Rouge,Pluvial,13,Moyen (Zezika Omby),chaud,43
+943,Argileux (Madity),Brun-Grisatre,Pluvial,10,Fort (Zezika + NPK),tres froid,31
+944,Limoneux,Brun-Grisatre,Irrigue (Continu),18,Moyen (Zezika Omby),froid,27
+945,Argileux (Madity),Brun-Grisatre,Irrigue (Continu),11,Moyen (Zezika Omby),tres froid,27
+946,Argileux (Madity),Brun-Grisatre,Irrigue (Continu),16,Nul,humide,35
+947,Limoneux,Brun-Grisatre,Irrigue (Continu),5,Nul,chaud,18
+948,Argileux (Madity),Orange / Rouge,Irrigue (Continu),18,Fort (Zezika + NPK),froid,45
+949,Sableux,Noiratre (Rich),Irrigue (Continu),6,Nul,humide,11
+950,Limoneux,Orange / Rouge,Irrigue (Continu),12,Moyen (Zezika Omby),chaud,46
+951,Sableux,Orange / Rouge,Irrigue (Continu),18,Moyen (Zezika Omby),humide,39
+952,Argileux (Madity),Brun-Grisatre,Irrigue (Continu),10,Fort (Zezika + NPK),tres froid,32
+953,Argileux (Madity),Brun-Grisatre,Irrigue (Continu),16,Fort (Zezika + NPK),tres froid,34
+954,Argileux (Madity),Brun-Grisatre,Irrigue (Continu),18,Fort (Zezika + NPK),très chaud,42
+955,Argileux (Madity),Brun-Grisatre,Irrigue (Continu),20,Moyen (Zezika Omby),très chaud,44
+956,Argileux (Madity),Noiratre (Rich),Irrigue (Continu),20,Fort (Zezika + NPK),très chaud,50
+957,Argileux (Madity),Brun-Grisatre,Pluvial,15,Nul,très chaud,33
+958,Limoneux,Brun-Grisatre,Pluvial,6,Moyen (Zezika Omby),froid,18
+959,Limoneux,Orange / Rouge,Pluvial,20,Fort (Zezika + NPK),humide,27
+960,Argileux (Madity),Orange / Rouge,Irrigue (Continu),19,Fort (Zezika + NPK),chaud,50
+961,Sableux,Brun-Grisatre,Pluvial,7,Fort (Zezika + NPK),chaud,10
+962,Sableux,Orange / Rouge,Irrigue (Continu),15,Nul,humide,18
+963,Argileux (Madity),Brun-Grisatre,Pluvial,16,Nul,humide,27
+964,Limoneux,Noiratre (Rich),Pluvial,17,Moyen (Zezika Omby),tres froid,21
+965,Limoneux,Orange / Rouge,Pluvial,14,Moyen (Zezika Omby),chaud,36
+966,Argileux (Madity),Noiratre (Rich),Irrigue (Continu),15,Nul,tres froid,37
+967,Limoneux,Orange / Rouge,Pluvial,11,Nul,tres froid,10
+968,Limoneux,Noiratre (Rich),Pluvial,14,Nul,très chaud,27
+969,Sableux,Orange / Rouge,Irrigue (Continu),17,Fort (Zezika + NPK),chaud,49
+970,Argileux (Madity),Noiratre (Rich),Pluvial,15,Fort (Zezika + NPK),froid,31
+971,Argileux (Madity),Brun-Grisatre,Irrigue (Continu),17,Nul,froid,25
+972,Sableux,Orange / Rouge,Irrigue (Continu),5,Fort (Zezika + NPK),humide,19
+973,Argileux (Madity),Orange / Rouge,Pluvial,12,Nul,humide,15
+974,Argileux (Madity),Orange / Rouge,Irrigue (Continu),17,Moyen (Zezika Omby),très chaud,35
+975,Limoneux,Noiratre (Rich),Irrigue (Continu),18,Nul,tres froid,23
+976,Sableux,Brun-Grisatre,Irrigue (Continu),12,Fort (Zezika + NPK),humide,28
+977,Sableux,Noiratre (Rich),Irrigue (Continu),12,Fort (Zezika + NPK),tres froid,29
+978,Sableux,Noiratre (Rich),Irrigue (Continu),20,Fort (Zezika + NPK),chaud,40
+979,Limoneux,Orange / Rouge,Irrigue (Continu),17,Nul,chaud,26
+980,Argileux (Madity),Noiratre (Rich),Irrigue (Continu),15,Fort (Zezika + NPK),froid,34
+981,Limoneux,Noiratre (Rich),Pluvial,9,Nul,très chaud,27
+982,Limoneux,Noiratre (Rich),Pluvial,8,Moyen (Zezika Omby),tres froid,10
+983,Argileux (Madity),Noiratre (Rich),Pluvial,9,Fort (Zezika + NPK),très chaud,37
+984,Argileux (Madity),Orange / Rouge,Irrigue (Continu),12,Nul,très chaud,21
+985,Sableux,Brun-Grisatre,Irrigue (Continu),15,Fort (Zezika + NPK),froid,28
+986,Sableux,Noiratre (Rich),Pluvial,12,Fort (Zezika + NPK),très chaud,22
+987,Argileux (Madity),Orange / Rouge,Irrigue (Continu),15,Nul,très chaud,11
+988,Limoneux,Brun-Grisatre,Pluvial,12,Fort (Zezika + NPK),humide,27
+989,Argileux (Madity),Brun-Grisatre,Irrigue (Continu),14,Nul,chaud,12
+990,Argileux (Madity),Noiratre (Rich),Irrigue (Continu),11,Fort (Zezika + NPK),très chaud,41
+991,Limoneux,Brun-Grisatre,Pluvial,9,Moyen (Zezika Omby),tres froid,12
+992,Sableux,Orange / Rouge,Pluvial,12,Nul,humide,10
+993,Limoneux,Orange / Rouge,Pluvial,5,Nul,très chaud,10
+994,Argileux (Madity),Orange / Rouge,Pluvial,16,Fort (Zezika + NPK),froid,30
+995,Argileux (Madity),Brun-Grisatre,Irrigue (Continu),13,Moyen (Zezika Omby),tres froid,29
+996,Limoneux,Orange / Rouge,Irrigue (Continu),7,Fort (Zezika + NPK),chaud,39
+997,Limoneux,Brun-Grisatre,Irrigue (Continu),12,Nul,chaud,34
+998,Sableux,Orange / Rouge,Irrigue (Continu),14,Fort (Zezika + NPK),froid,29
+999,Limoneux,Brun-Grisatre,Irrigue (Continu),5,Nul,tres froid,10
+1000,Limoneux,Noiratre (Rich),Irrigue (Continu),14,Moyen (Zezika Omby),chaud,50
+1001,Limoneux,Brun-Grisatre,Irrigue (Continu),8,Nul,très chaud,20
+1002,Sableux,Orange / Rouge,Pluvial,13,Moyen (Zezika Omby),tres froid,10
+1003,Argileux (Madity),Noiratre (Rich),Irrigue (Continu),10,Fort (Zezika + NPK),froid,34
+1004,Limoneux,Noiratre (Rich),Pluvial,17,Moyen (Zezika Omby),chaud,35
+1005,Limoneux,Noiratre (Rich),Pluvial,6,Fort (Zezika + NPK),très chaud,12
+1006,Argileux (Madity),Orange / Rouge,Irrigue (Continu),15,Moyen (Zezika Omby),chaud,50
+1007,Limoneux,Orange / Rouge,Pluvial,18,Fort (Zezika + NPK),froid,27
+1008,Argileux (Madity),Brun-Grisatre,Irrigue (Continu),20,Fort (Zezika + NPK),tres froid,50
+1009,Argileux (Madity),Noiratre (Rich),Irrigue (Continu),20,Nul,tres froid,32
+1010,Limoneux,Noiratre (Rich),Pluvial,6,Nul,très chaud,10
+1011,Limoneux,Noiratre (Rich),Irrigue (Continu),7,Nul,très chaud,27
+1012,Limoneux,Brun-Grisatre,Pluvial,18,Nul,chaud,27
+1013,Sableux,Noiratre (Rich),Pluvial,13,Moyen (Zezika Omby),chaud,43
+1014,Argileux (Madity),Noiratre (Rich),Irrigue (Continu),16,Moyen (Zezika Omby),tres froid,32
+1015,Limoneux,Orange / Rouge,Pluvial,16,Nul,humide,14
+1016,Sableux,Brun-Grisatre,Irrigue (Continu),10,Nul,humide,19
+1017,Limoneux,Brun-Grisatre,Irrigue (Continu),5,Fort (Zezika + NPK),chaud,43
+1018,Sableux,Orange / Rouge,Irrigue (Continu),6,Moyen (Zezika Omby),très chaud,10
+1019,Limoneux,Orange / Rouge,Irrigue (Continu),11,Nul,tres froid,11
+1020,Limoneux,Brun-Grisatre,Irrigue (Continu),8,Fort (Zezika + NPK),froid,25
+1021,Limoneux,Orange / Rouge,Pluvial,7,Nul,tres froid,10
+1022,Sableux,Brun-Grisatre,Pluvial,15,Nul,tres froid,10
+1023,Sableux,Orange / Rouge,Irrigue (Continu),16,Moyen (Zezika Omby),chaud,47
+1024,Argileux (Madity),Orange / Rouge,Irrigue (Continu),16,Nul,tres froid,12
+1025,Sableux,Orange / Rouge,Pluvial,16,Fort (Zezika + NPK),chaud,38
+1026,Sableux,Noiratre (Rich),Irrigue (Continu),6,Moyen (Zezika Omby),froid,21
+1027,Limoneux,Noiratre (Rich),Pluvial,14,Nul,très chaud,14
+1028,Limoneux,Orange / Rouge,Pluvial,10,Moyen (Zezika Omby),froid,20
+1029,Sableux,Brun-Grisatre,Pluvial,15,Moyen (Zezika Omby),tres froid,10
+1030,Argileux (Madity),Noiratre (Rich),Pluvial,20,Fort (Zezika + NPK),tres froid,28
+1031,Sableux,Orange / Rouge,Pluvial,10,Fort (Zezika + NPK),chaud,41
+1032,Limoneux,Brun-Grisatre,Irrigue (Continu),18,Fort (Zezika + NPK),très chaud,49
+1033,Limoneux,Noiratre (Rich),Irrigue (Continu),14,Moyen (Zezika Omby),froid,33
+1034,Sableux,Orange / Rouge,Irrigue (Continu),17,Fort (Zezika + NPK),humide,35
+1035,Sableux,Orange / Rouge,Pluvial,13,Nul,froid,10
+1036,Argileux (Madity),Noiratre (Rich),Irrigue (Continu),18,Moyen (Zezika Omby),froid,43
+1037,Limoneux,Orange / Rouge,Irrigue (Continu),12,Nul,froid,19
+1038,Limoneux,Noiratre (Rich),Pluvial,14,Nul,très chaud,22
+1039,Sableux,Orange / Rouge,Pluvial,14,Fort (Zezika + NPK),humide,21
+1040,Limoneux,Orange / Rouge,Pluvial,16,Moyen (Zezika Omby),très chaud,34
+1041,Argileux (Madity),Orange / Rouge,Irrigue (Continu),11,Moyen (Zezika Omby),chaud,50
+1042,Sableux,Noiratre (Rich),Irrigue (Continu),9,Nul,chaud,40
+1043,Limoneux,Orange / Rouge,Pluvial,15,Nul,chaud,37
+1044,Argileux (Madity),Noiratre (Rich),Pluvial,6,Moyen (Zezika Omby),très chaud,10
+1045,Limoneux,Noiratre (Rich),Pluvial,18,Nul,tres froid,22
+1046,Argileux (Madity),Brun-Grisatre,Irrigue (Continu),18,Fort (Zezika + NPK),très chaud,39
+1047,Sableux,Noiratre (Rich),Pluvial,14,Moyen (Zezika Omby),très chaud,26
+1048,Sableux,Noiratre (Rich),Pluvial,11,Moyen (Zezika Omby),humide,37
+1049,Limoneux,Brun-Grisatre,Pluvial,19,Fort (Zezika + NPK),très chaud,22
+1050,Argileux (Madity),Noiratre (Rich),Pluvial,10,Fort (Zezika + NPK),très chaud,32
+1051,Argileux (Madity),Noiratre (Rich),Pluvial,8,Fort (Zezika + NPK),humide,45
+1052,Limoneux,Noiratre (Rich),Irrigue (Continu),13,Nul,humide,33
+1053,Argileux (Madity),Noiratre (Rich),Pluvial,8,Nul,chaud,35
+1054,Sableux,Brun-Grisatre,Irrigue (Continu),12,Moyen (Zezika Omby),chaud,40
+1055,Sableux,Noiratre (Rich),Pluvial,9,Moyen (Zezika Omby),humide,20
+1056,Limoneux,Noiratre (Rich),Pluvial,17,Nul,tres froid,20
+1057,Argileux (Madity),Brun-Grisatre,Irrigue (Continu),13,Moyen (Zezika Omby),chaud,50
+1058,Limoneux,Brun-Grisatre,Irrigue (Continu),19,Moyen (Zezika Omby),humide,43
+1059,Argileux (Madity),Brun-Grisatre,Irrigue (Continu),12,Nul,tres froid,20
+1060,Argileux (Madity),Brun-Grisatre,Pluvial,5,Nul,très chaud,10
+1061,Argileux (Madity),Noiratre (Rich),Irrigue (Continu),17,Moyen (Zezika Omby),tres froid,38
+1062,Sableux,Noiratre (Rich),Pluvial,13,Fort (Zezika + NPK),tres froid,15
+1063,Limoneux,Brun-Grisatre,Pluvial,20,Nul,chaud,36
+1064,Limoneux,Orange / Rouge,Irrigue (Continu),18,Fort (Zezika + NPK),chaud,50
+1065,Argileux (Madity),Brun-Grisatre,Irrigue (Continu),11,Fort (Zezika + NPK),froid,48
+1066,Limoneux,Noiratre (Rich),Irrigue (Continu),15,Fort (Zezika + NPK),humide,41
+1067,Limoneux,Orange / Rouge,Pluvial,19,Fort (Zezika + NPK),chaud,47
+1068,Limoneux,Noiratre (Rich),Pluvial,12,Fort (Zezika + NPK),chaud,42
+1069,Argileux (Madity),Brun-Grisatre,Irrigue (Continu),19,Fort (Zezika + NPK),humide,41
+1070,Argileux (Madity),Brun-Grisatre,Irrigue (Continu),18,Nul,humide,41
+1071,Limoneux,Orange / Rouge,Irrigue (Continu),14,Moyen (Zezika Omby),chaud,50
+1072,Limoneux,Noiratre (Rich),Pluvial,20,Nul,froid,14
+1073,Argileux (Madity),Brun-Grisatre,Pluvial,18,Fort (Zezika + NPK),chaud,50
+1074,Sableux,Brun-Grisatre,Pluvial,12,Nul,chaud,18
+1075,Sableux,Brun-Grisatre,Pluvial,12,Fort (Zezika + NPK),très chaud,21
+1076,Sableux,Noiratre (Rich),Pluvial,9,Moyen (Zezika Omby),tres froid,48
+1077,Limoneux,Orange / Rouge,Irrigue (Continu),11,Nul,humide,24
+1078,Limoneux,Brun-Grisatre,Pluvial,7,Nul,très chaud,10
+1079,Sableux,Orange / Rouge,Irrigue (Continu),6,Fort (Zezika + NPK),humide,24
+1080,Sableux,Orange / Rouge,Irrigue (Continu),17,Fort (Zezika + NPK),tres froid,25
+1081,Limoneux,Noiratre (Rich),Pluvial,12,Nul,tres froid,10
+1082,Sableux,Brun-Grisatre,Pluvial,16,Fort (Zezika + NPK),tres froid,35
+1083,Sableux,Brun-Grisatre,Pluvial,6,Nul,froid,10
+1084,Argileux (Madity),Orange / Rouge,Irrigue (Continu),15,Fort (Zezika + NPK),froid,41
+1085,Sableux,Orange / Rouge,Pluvial,12,Nul,chaud,16
+1086,Argileux (Madity),Orange / Rouge,Pluvial,20,Fort (Zezika + NPK),humide,34
+1087,Sableux,Orange / Rouge,Irrigue (Continu),8,Fort (Zezika + NPK),humide,27
+1088,Sableux,Noiratre (Rich),Irrigue (Continu),15,Nul,humide,22
+1089,Sableux,Brun-Grisatre,Pluvial,5,Nul,chaud,10
+1090,Limoneux,Noiratre (Rich),Irrigue (Continu),5,Moyen (Zezika Omby),chaud,41
+1091,Sableux,Brun-Grisatre,Pluvial,15,Fort (Zezika + NPK),humide,26
+1092,Limoneux,Orange / Rouge,Irrigue (Continu),8,Fort (Zezika + NPK),humide,26
+1093,Limoneux,Orange / Rouge,Pluvial,6,Moyen (Zezika Omby),froid,14
+1094,Limoneux,Noiratre (Rich),Irrigue (Continu),17,Moyen (Zezika Omby),froid,43
+1095,Limoneux,Noiratre (Rich),Irrigue (Continu),13,Fort (Zezika + NPK),froid,44
+1096,Sableux,Orange / Rouge,Pluvial,15,Moyen (Zezika Omby),chaud,39
+1097,Argileux (Madity),Noiratre (Rich),Irrigue (Continu),16,Moyen (Zezika Omby),humide,50
+1098,Limoneux,Noiratre (Rich),Pluvial,14,Fort (Zezika + NPK),très chaud,31
+1099,Argileux (Madity),Orange / Rouge,Irrigue (Continu),9,Fort (Zezika + NPK),humide,46
+1100,Sableux,Noiratre (Rich),Irrigue (Continu),18,Nul,chaud,40
+1101,Sableux,Noiratre (Rich),Irrigue (Continu),6,Nul,très chaud,16
+1102,Argileux (Madity),Noiratre (Rich),Irrigue (Continu),20,Moyen (Zezika Omby),tres froid,29
+1103,Argileux (Madity),Orange / Rouge,Pluvial,6,Fort (Zezika + NPK),humide,31
+1104,Sableux,Orange / Rouge,Pluvial,9,Fort (Zezika + NPK),humide,19
+1105,Limoneux,Noiratre (Rich),Irrigue (Continu),9,Fort (Zezika + NPK),très chaud,39
+1106,Sableux,Noiratre (Rich),Pluvial,11,Fort (Zezika + NPK),tres froid,18
+1107,Argileux (Madity),Noiratre (Rich),Pluvial,13,Moyen (Zezika Omby),tres froid,28
+1108,Limoneux,Brun-Grisatre,Irrigue (Continu),8,Fort (Zezika + NPK),tres froid,27
+1109,Limoneux,Noiratre (Rich),Irrigue (Continu),5,Moyen (Zezika Omby),chaud,41
+1110,Limoneux,Noiratre (Rich),Irrigue (Continu),7,Fort (Zezika + NPK),très chaud,33
+1111,Sableux,Noiratre (Rich),Irrigue (Continu),11,Moyen (Zezika Omby),chaud,40
+1112,Sableux,Brun-Grisatre,Irrigue (Continu),17,Nul,chaud,34
+1113,Argileux (Madity),Brun-Grisatre,Irrigue (Continu),19,Moyen (Zezika Omby),humide,49
+1114,Limoneux,Brun-Grisatre,Irrigue (Continu),13,Moyen (Zezika Omby),froid,36
+1115,Limoneux,Brun-Grisatre,Pluvial,10,Nul,humide,16
+1116,Sableux,Brun-Grisatre,Pluvial,8,Moyen (Zezika Omby),tres froid,11
+1117,Limoneux,Brun-Grisatre,Pluvial,6,Nul,tres froid,10
+1118,Sableux,Orange / Rouge,Pluvial,9,Nul,chaud,15
+1119,Limoneux,Orange / Rouge,Pluvial,20,Nul,très chaud,13
+1120,Sableux,Noiratre (Rich),Irrigue (Continu),14,Moyen (Zezika Omby),très chaud,32
+1121,Limoneux,Orange / Rouge,Irrigue (Continu),6,Moyen (Zezika Omby),chaud,36
+1122,Sableux,Noiratre (Rich),Pluvial,13,Fort (Zezika + NPK),chaud,42
+1123,Sableux,Noiratre (Rich),Irrigue (Continu),19,Nul,très chaud,28
+1124,Limoneux,Orange / Rouge,Irrigue (Continu),18,Nul,tres froid,10
+1125,Argileux (Madity),Brun-Grisatre,Pluvial,14,Moyen (Zezika Omby),tres froid,21
+1126,Sableux,Brun-Grisatre,Pluvial,8,Moyen (Zezika Omby),chaud,20
+1127,Limoneux,Brun-Grisatre,Pluvial,20,Moyen (Zezika Omby),très chaud,29
+1128,Limoneux,Noiratre (Rich),Irrigue (Continu),16,Fort (Zezika + NPK),tres froid,40
+1129,Sableux,Brun-Grisatre,Irrigue (Continu),18,Nul,humide,37
+1130,Argileux (Madity),Brun-Grisatre,Pluvial,13,Fort (Zezika + NPK),froid,33
+1131,Limoneux,Noiratre (Rich),Pluvial,12,Moyen (Zezika Omby),froid,17
+1132,Argileux (Madity),Orange / Rouge,Irrigue (Continu),13,Fort (Zezika + NPK),humide,47
+1133,Limoneux,Orange / Rouge,Irrigue (Continu),10,Fort (Zezika + NPK),froid,33
+1134,Sableux,Brun-Grisatre,Irrigue (Continu),17,Nul,chaud,28
+1135,Argileux (Madity),Brun-Grisatre,Irrigue (Continu),13,Moyen (Zezika Omby),chaud,50
+1136,Limoneux,Brun-Grisatre,Pluvial,11,Fort (Zezika + NPK),très chaud,21
+1137,Argileux (Madity),Orange / Rouge,Irrigue (Continu),20,Fort (Zezika + NPK),humide,48
+1138,Sableux,Brun-Grisatre,Pluvial,11,Moyen (Zezika Omby),humide,10
+1139,Sableux,Orange / Rouge,Pluvial,5,Moyen (Zezika Omby),chaud,10
+1140,Limoneux,Orange / Rouge,Pluvial,20,Nul,chaud,25
+1141,Argileux (Madity),Brun-Grisatre,Pluvial,10,Fort (Zezika + NPK),tres froid,50
+1142,Sableux,Orange / Rouge,Irrigue (Continu),5,Nul,chaud,11
+1143,Sableux,Brun-Grisatre,Irrigue (Continu),16,Moyen (Zezika Omby),chaud,39
+1144,Sableux,Orange / Rouge,Irrigue (Continu),19,Moyen (Zezika Omby),chaud,37
+1145,Sableux,Brun-Grisatre,Pluvial,9,Nul,chaud,14
+1146,Limoneux,Orange / Rouge,Irrigue (Continu),19,Moyen (Zezika Omby),très chaud,42
+1147,Limoneux,Noiratre (Rich),Irrigue (Continu),12,Nul,tres froid,11
+1148,Sableux,Brun-Grisatre,Pluvial,7,Nul,tres froid,10
+1149,Argileux (Madity),Noiratre (Rich),Pluvial,11,Moyen (Zezika Omby),chaud,39
+1150,Limoneux,Orange / Rouge,Irrigue (Continu),16,Fort (Zezika + NPK),humide,41
+1151,Limoneux,Orange / Rouge,Irrigue (Continu),16,Nul,très chaud,14
+1152,Argileux (Madity),Brun-Grisatre,Pluvial,11,Fort (Zezika + NPK),tres froid,18
+1153,Limoneux,Brun-Grisatre,Irrigue (Continu),10,Fort (Zezika + NPK),tres froid,29
+1154,Argileux (Madity),Orange / Rouge,Irrigue (Continu),14,Fort (Zezika + NPK),froid,41
+1155,Limoneux,Orange / Rouge,Irrigue (Continu),15,Fort (Zezika + NPK),tres froid,33
+1156,Limoneux,Orange / Rouge,Pluvial,14,Moyen (Zezika Omby),chaud,38
+1157,Argileux (Madity),Brun-Grisatre,Pluvial,9,Nul,humide,23
+1158,Argileux (Madity),Noiratre (Rich),Pluvial,10,Nul,froid,23
+1159,Limoneux,Noiratre (Rich),Pluvial,12,Fort (Zezika + NPK),très chaud,28
+1160,Argileux (Madity),Brun-Grisatre,Pluvial,12,Fort (Zezika + NPK),humide,36
+1161,Argileux (Madity),Noiratre (Rich),Pluvial,10,Moyen (Zezika Omby),très chaud,30
+1162,Sableux,Brun-Grisatre,Irrigue (Continu),6,Nul,très chaud,10
+1163,Sableux,Orange / Rouge,Pluvial,7,Nul,tres froid,10
+1164,Argileux (Madity),Noiratre (Rich),Irrigue (Continu),12,Fort (Zezika + NPK),froid,33
+1165,Argileux (Madity),Brun-Grisatre,Irrigue (Continu),11,Nul,chaud,28
+1166,Limoneux,Brun-Grisatre,Irrigue (Continu),6,Moyen (Zezika Omby),tres froid,14
+1167,Limoneux,Brun-Grisatre,Irrigue (Continu),7,Nul,très chaud,14
+1168,Limoneux,Noiratre (Rich),Pluvial,5,Nul,chaud,29
+1169,Limoneux,Noiratre (Rich),Irrigue (Continu),17,Nul,humide,39
+1170,Limoneux,Brun-Grisatre,Pluvial,6,Moyen (Zezika Omby),humide,22
+1171,Limoneux,Noiratre (Rich),Irrigue (Continu),20,Nul,humide,41
+1172,Sableux,Brun-Grisatre,Pluvial,13,Moyen (Zezika Omby),très chaud,24
+1173,Limoneux,Orange / Rouge,Irrigue (Continu),15,Moyen (Zezika Omby),humide,43
+1174,Sableux,Orange / Rouge,Pluvial,13,Nul,très chaud,10
+1175,Limoneux,Noiratre (Rich),Irrigue (Continu),5,Moyen (Zezika Omby),froid,25
+1176,Sableux,Noiratre (Rich),Irrigue (Continu),14,Nul,tres froid,28
+1177,Argileux (Madity),Brun-Grisatre,Pluvial,12,Moyen (Zezika Omby),chaud,26
+1178,Limoneux,Brun-Grisatre,Pluvial,7,Moyen (Zezika Omby),humide,19
+1179,Limoneux,Orange / Rouge,Irrigue (Continu),7,Moyen (Zezika Omby),tres froid,10
+1180,Sableux,Brun-Grisatre,Irrigue (Continu),14,Nul,chaud,33
+1181,Sableux,Noiratre (Rich),Irrigue (Continu),5,Nul,humide,20
+1182,Argileux (Madity),Orange / Rouge,Pluvial,15,Moyen (Zezika Omby),chaud,34
+1183,Argileux (Madity),Brun-Grisatre,Irrigue (Continu),17,Nul,chaud,45
+1184,Limoneux,Noiratre (Rich),Irrigue (Continu),14,Nul,très chaud,31
+1185,Argileux (Madity),Orange / Rouge,Pluvial,18,Moyen (Zezika Omby),froid,29
+1186,Sableux,Orange / Rouge,Pluvial,15,Moyen (Zezika Omby),chaud,32
+1187,Sableux,Brun-Grisatre,Irrigue (Continu),5,Moyen (Zezika Omby),tres froid,10
+1188,Limoneux,Brun-Grisatre,Pluvial,13,Fort (Zezika + NPK),tres froid,17
+1189,Sableux,Orange / Rouge,Irrigue (Continu),12,Moyen (Zezika Omby),tres froid,14
+1190,Limoneux,Noiratre (Rich),Pluvial,19,Fort (Zezika + NPK),tres froid,28
+1191,Sableux,Noiratre (Rich),Pluvial,12,Nul,très chaud,15
+1192,Argileux (Madity),Noiratre (Rich),Pluvial,14,Fort (Zezika + NPK),chaud,50
+1193,Limoneux,Brun-Grisatre,Pluvial,5,Nul,humide,10
+1194,Sableux,Noiratre (Rich),Pluvial,11,Nul,chaud,12
+1195,Limoneux,Orange / Rouge,Pluvial,20,Moyen (Zezika Omby),chaud,38
+1196,Argileux (Madity),Orange / Rouge,Pluvial,5,Fort (Zezika + NPK),chaud,28
+1197,Argileux (Madity),Noiratre (Rich),Irrigue (Continu),11,Moyen (Zezika Omby),très chaud,33
+1198,Argileux (Madity),Brun-Grisatre,Pluvial,17,Fort (Zezika + NPK),humide,40
+1199,Limoneux,Orange / Rouge,Irrigue (Continu),8,Moyen (Zezika Omby),froid,34
+1200,Argileux (Madity),Noiratre (Rich),Irrigue (Continu),18,Nul,humide,42
+1201,Argileux (Madity),Brun-Grisatre,Irrigue (Continu),9,Fort (Zezika + NPK),très chaud,37
+1202,Limoneux,Orange / Rouge,Pluvial,13,Moyen (Zezika Omby),humide,26
+1203,Limoneux,Brun-Grisatre,Pluvial,10,Moyen (Zezika Omby),froid,26
+1204,Sableux,Noiratre (Rich),Pluvial,9,Fort (Zezika + NPK),chaud,38
+1205,Sableux,Brun-Grisatre,Irrigue (Continu),7,Fort (Zezika + NPK),chaud,38
+1206,Limoneux,Brun-Grisatre,Irrigue (Continu),5,Moyen (Zezika Omby),chaud,23
+1207,Sableux,Orange / Rouge,Pluvial,9,Moyen (Zezika Omby),humide,20
+1208,Argileux (Madity),Noiratre (Rich),Pluvial,19,Fort (Zezika + NPK),froid,33
+1209,Argileux (Madity),Brun-Grisatre,Pluvial,6,Fort (Zezika + NPK),très chaud,21
+1210,Argileux (Madity),Noiratre (Rich),Pluvial,11,Moyen (Zezika Omby),très chaud,19
+1211,Limoneux,Orange / Rouge,Pluvial,19,Nul,très chaud,19
+1212,Limoneux,Noiratre (Rich),Pluvial,15,Nul,froid,24
+1213,Argileux (Madity),Orange / Rouge,Pluvial,15,Fort (Zezika + NPK),tres froid,30
+1214,Sableux,Noiratre (Rich),Pluvial,13,Fort (Zezika + NPK),froid,18
+1215,Sableux,Noiratre (Rich),Pluvial,12,Nul,tres froid,10
+1216,Sableux,Brun-Grisatre,Pluvial,14,Nul,tres froid,10
+1217,Argileux (Madity),Orange / Rouge,Pluvial,8,Fort (Zezika + NPK),humide,48
+1218,Argileux (Madity),Noiratre (Rich),Pluvial,11,Fort (Zezika + NPK),très chaud,39
+1219,Sableux,Noiratre (Rich),Pluvial,7,Nul,très chaud,48
+1220,Argileux (Madity),Brun-Grisatre,Pluvial,7,Moyen (Zezika Omby),humide,26
+1221,Limoneux,Brun-Grisatre,Irrigue (Continu),18,Moyen (Zezika Omby),humide,33
+1222,Sableux,Noiratre (Rich),Irrigue (Continu),11,Nul,humide,23
+1223,Sableux,Brun-Grisatre,Pluvial,10,Moyen (Zezika Omby),chaud,30
+1224,Argileux (Madity),Noiratre (Rich),Irrigue (Continu),14,Nul,chaud,50
+1225,Limoneux,Noiratre (Rich),Irrigue (Continu),10,Fort (Zezika + NPK),chaud,50
+1226,Sableux,Orange / Rouge,Pluvial,6,Nul,très chaud,10
+1227,Limoneux,Orange / Rouge,Irrigue (Continu),11,Nul,tres froid,13
+1228,Limoneux,Orange / Rouge,Irrigue (Continu),16,Nul,humide,50
+1229,Sableux,Brun-Grisatre,Irrigue (Continu),13,Fort (Zezika + NPK),humide,41
+1230,Argileux (Madity),Noiratre (Rich),Irrigue (Continu),19,Moyen (Zezika Omby),chaud,50
+1231,Argileux (Madity),Brun-Grisatre,Pluvial,17,Nul,humide,31
+1232,Argileux (Madity),Brun-Grisatre,Irrigue (Continu),20,Nul,froid,26
+1233,Sableux,Noiratre (Rich),Pluvial,8,Moyen (Zezika Omby),tres froid,10
+1234,Limoneux,Noiratre (Rich),Pluvial,14,Nul,humide,26
+1235,Argileux (Madity),Brun-Grisatre,Pluvial,17,Nul,très chaud,18
+1236,Sableux,Noiratre (Rich),Irrigue (Continu),15,Moyen (Zezika Omby),chaud,45
+1237,Sableux,Orange / Rouge,Pluvial,16,Moyen (Zezika Omby),chaud,38
+1238,Limoneux,Brun-Grisatre,Irrigue (Continu),11,Nul,chaud,37
+1239,Argileux (Madity),Noiratre (Rich),Pluvial,16,Nul,humide,30
+1240,Argileux (Madity),Noiratre (Rich),Irrigue (Continu),9,Nul,très chaud,35
+1241,Sableux,Noiratre (Rich),Irrigue (Continu),10,Nul,froid,35
+1242,Argileux (Madity),Noiratre (Rich),Pluvial,17,Fort (Zezika + NPK),humide,34
+1243,Sableux,Orange / Rouge,Pluvial,12,Moyen (Zezika Omby),humide,22
+1244,Sableux,Noiratre (Rich),Irrigue (Continu),18,Moyen (Zezika Omby),tres froid,21
+1245,Argileux (Madity),Orange / Rouge,Pluvial,9,Moyen (Zezika Omby),froid,20
+1246,Argileux (Madity),Orange / Rouge,Irrigue (Continu),18,Fort (Zezika + NPK),chaud,50
+1247,Argileux (Madity),Brun-Grisatre,Irrigue (Continu),12,Nul,froid,22
+1248,Sableux,Brun-Grisatre,Irrigue (Continu),12,Fort (Zezika + NPK),chaud,47
+1249,Sableux,Noiratre (Rich),Pluvial,6,Moyen (Zezika Omby),chaud,10
+1250,Argileux (Madity),Orange / Rouge,Pluvial,15,Moyen (Zezika Omby),très chaud,28
+1251,Limoneux,Noiratre (Rich),Irrigue (Continu),6,Moyen (Zezika Omby),très chaud,23
+1252,Argileux (Madity),Orange / Rouge,Irrigue (Continu),19,Fort (Zezika + NPK),très chaud,46
+1253,Argileux (Madity),Orange / Rouge,Irrigue (Continu),20,Fort (Zezika + NPK),humide,46
+1254,Limoneux,Orange / Rouge,Irrigue (Continu),16,Fort (Zezika + NPK),chaud,40
+1255,Limoneux,Orange / Rouge,Pluvial,19,Nul,humide,13
+1256,Argileux (Madity),Brun-Grisatre,Pluvial,20,Moyen (Zezika Omby),très chaud,37
+1257,Argileux (Madity),Noiratre (Rich),Pluvial,8,Nul,froid,25
+1258,Limoneux,Orange / Rouge,Irrigue (Continu),14,Fort (Zezika + NPK),humide,38
+1259,Argileux (Madity),Noiratre (Rich),Pluvial,10,Nul,chaud,39
+1260,Sableux,Noiratre (Rich),Pluvial,7,Nul,tres froid,10
+1261,Sableux,Noiratre (Rich),Pluvial,6,Fort (Zezika + NPK),tres froid,10
+1262,Limoneux,Brun-Grisatre,Irrigue (Continu),20,Fort (Zezika + NPK),humide,48
+1263,Sableux,Orange / Rouge,Pluvial,12,Fort (Zezika + NPK),chaud,24
+1264,Argileux (Madity),Noiratre (Rich),Pluvial,14,Moyen (Zezika Omby),froid,30
+1265,Sableux,Brun-Grisatre,Pluvial,5,Nul,tres froid,10
+1266,Limoneux,Brun-Grisatre,Irrigue (Continu),8,Nul,froid,16
+1267,Sableux,Noiratre (Rich),Irrigue (Continu),17,Nul,chaud,50
+1268,Argileux (Madity),Orange / Rouge,Irrigue (Continu),12,Moyen (Zezika Omby),très chaud,42
+1269,Argileux (Madity),Brun-Grisatre,Pluvial,20,Fort (Zezika + NPK),froid,31
+1270,Argileux (Madity),Orange / Rouge,Pluvial,11,Moyen (Zezika Omby),tres froid,15
+1271,Argileux (Madity),Brun-Grisatre,Pluvial,11,Fort (Zezika + NPK),humide,27
+1272,Argileux (Madity),Noiratre (Rich),Pluvial,12,Fort (Zezika + NPK),froid,33
+1273,Limoneux,Noiratre (Rich),Pluvial,8,Moyen (Zezika Omby),très chaud,24
+1274,Sableux,Orange / Rouge,Pluvial,7,Moyen (Zezika Omby),très chaud,10
+1275,Sableux,Noiratre (Rich),Irrigue (Continu),13,Nul,chaud,38
+1276,Sableux,Brun-Grisatre,Irrigue (Continu),17,Fort (Zezika + NPK),tres froid,30
+1277,Argileux (Madity),Brun-Grisatre,Irrigue (Continu),13,Moyen (Zezika Omby),froid,33
+1278,Argileux (Madity),Orange / Rouge,Irrigue (Continu),13,Moyen (Zezika Omby),humide,40
+1279,Sableux,Orange / Rouge,Irrigue (Continu),5,Moyen (Zezika Omby),très chaud,19
+1280,Sableux,Brun-Grisatre,Irrigue (Continu),13,Fort (Zezika + NPK),chaud,37
+1281,Limoneux,Orange / Rouge,Irrigue (Continu),12,Nul,humide,19
+1282,Sableux,Orange / Rouge,Pluvial,8,Fort (Zezika + NPK),très chaud,20
+1283,Sableux,Noiratre (Rich),Irrigue (Continu),19,Fort (Zezika + NPK),chaud,50
+1284,Limoneux,Noiratre (Rich),Irrigue (Continu),8,Moyen (Zezika Omby),humide,39
+1285,Argileux (Madity),Noiratre (Rich),Pluvial,17,Moyen (Zezika Omby),très chaud,31
+1286,Sableux,Noiratre (Rich),Irrigue (Continu),10,Nul,très chaud,13
+1287,Argileux (Madity),Orange / Rouge,Irrigue (Continu),12,Moyen (Zezika Omby),très chaud,37
+1288,Argileux (Madity),Orange / Rouge,Pluvial,9,Nul,tres froid,10
+1289,Limoneux,Orange / Rouge,Pluvial,20,Moyen (Zezika Omby),très chaud,21
+1290,Limoneux,Brun-Grisatre,Pluvial,18,Fort (Zezika + NPK),très chaud,30
+1291,Argileux (Madity),Orange / Rouge,Pluvial,11,Fort (Zezika + NPK),humide,33
+1292,Argileux (Madity),Orange / Rouge,Pluvial,17,Nul,humide,26
+1293,Limoneux,Brun-Grisatre,Irrigue (Continu),11,Moyen (Zezika Omby),chaud,44
+1294,Sableux,Brun-Grisatre,Pluvial,15,Fort (Zezika + NPK),tres froid,16
+1295,Argileux (Madity),Brun-Grisatre,Pluvial,9,Nul,chaud,28
+1296,Argileux (Madity),Brun-Grisatre,Pluvial,12,Moyen (Zezika Omby),chaud,35
+1297,Limoneux,Orange / Rouge,Pluvial,17,Fort (Zezika + NPK),froid,29
+1298,Sableux,Brun-Grisatre,Irrigue (Continu),8,Fort (Zezika + NPK),tres froid,33
+1299,Limoneux,Noiratre (Rich),Pluvial,10,Moyen (Zezika Omby),tres froid,14
+1300,Limoneux,Brun-Grisatre,Irrigue (Continu),12,Nul,tres froid,10
+1301,Limoneux,Brun-Grisatre,Irrigue (Continu),6,Moyen (Zezika Omby),tres froid,11
+1302,Limoneux,Orange / Rouge,Pluvial,14,Fort (Zezika + NPK),tres froid,25
+1303,Sableux,Orange / Rouge,Irrigue (Continu),10,Nul,humide,15
+1304,Sableux,Noiratre (Rich),Irrigue (Continu),7,Nul,humide,13
+1305,Limoneux,Orange / Rouge,Irrigue (Continu),15,Nul,froid,17
+1306,Argileux (Madity),Noiratre (Rich),Irrigue (Continu),14,Moyen (Zezika Omby),tres froid,31
+1307,Limoneux,Orange / Rouge,Irrigue (Continu),20,Nul,froid,21
+1308,Argileux (Madity),Brun-Grisatre,Pluvial,20,Moyen (Zezika Omby),humide,29
+1309,Limoneux,Noiratre (Rich),Pluvial,14,Fort (Zezika + NPK),tres froid,24
+1310,Sableux,Brun-Grisatre,Irrigue (Continu),18,Moyen (Zezika Omby),humide,35
+1311,Argileux (Madity),Noiratre (Rich),Pluvial,15,Fort (Zezika + NPK),chaud,47
+1312,Limoneux,Noiratre (Rich),Irrigue (Continu),17,Nul,très chaud,27
+1313,Argileux (Madity),Brun-Grisatre,Pluvial,15,Nul,chaud,41
+1314,Argileux (Madity),Noiratre (Rich),Irrigue (Continu),19,Fort (Zezika + NPK),chaud,50
+1315,Limoneux,Orange / Rouge,Pluvial,20,Nul,très chaud,14
+1316,Argileux (Madity),Brun-Grisatre,Pluvial,6,Fort (Zezika + NPK),humide,27
+1317,Sableux,Brun-Grisatre,Pluvial,10,Nul,chaud,21
+1318,Argileux (Madity),Noiratre (Rich),Irrigue (Continu),12,Fort (Zezika + NPK),froid,50
+1319,Sableux,Brun-Grisatre,Irrigue (Continu),12,Moyen (Zezika Omby),très chaud,31
+1320,Limoneux,Orange / Rouge,Pluvial,7,Fort (Zezika + NPK),froid,17
+1321,Limoneux,Noiratre (Rich),Irrigue (Continu),19,Nul,très chaud,33
+1322,Argileux (Madity),Orange / Rouge,Irrigue (Continu),13,Fort (Zezika + NPK),humide,44
+1323,Limoneux,Orange / Rouge,Pluvial,6,Nul,chaud,17
+1324,Limoneux,Brun-Grisatre,Pluvial,15,Nul,très chaud,23
+1325,Sableux,Noiratre (Rich),Irrigue (Continu),18,Nul,humide,36
+1326,Limoneux,Noiratre (Rich),Irrigue (Continu),20,Moyen (Zezika Omby),très chaud,48
+1327,Limoneux,Brun-Grisatre,Irrigue (Continu),13,Moyen (Zezika Omby),très chaud,46
+1328,Argileux (Madity),Orange / Rouge,Pluvial,6,Moyen (Zezika Omby),tres froid,10
+1329,Sableux,Noiratre (Rich),Pluvial,8,Fort (Zezika + NPK),froid,13
+1330,Sableux,Brun-Grisatre,Irrigue (Continu),13,Fort (Zezika + NPK),froid,29
+1331,Limoneux,Orange / Rouge,Irrigue (Continu),5,Fort (Zezika + NPK),chaud,37
+1332,Argileux (Madity),Noiratre (Rich),Pluvial,9,Nul,tres froid,45
+1333,Argileux (Madity),Orange / Rouge,Irrigue (Continu),14,Nul,très chaud,30
+1334,Limoneux,Noiratre (Rich),Irrigue (Continu),15,Nul,tres froid,14
+1335,Sableux,Orange / Rouge,Irrigue (Continu),9,Moyen (Zezika Omby),froid,24
+1336,Sableux,Brun-Grisatre,Irrigue (Continu),6,Fort (Zezika + NPK),chaud,31
+1337,Limoneux,Noiratre (Rich),Irrigue (Continu),14,Moyen (Zezika Omby),très chaud,43
+1338,Limoneux,Orange / Rouge,Pluvial,18,Nul,tres froid,10
+1339,Sableux,Noiratre (Rich),Pluvial,10,Nul,froid,10
+1340,Sableux,Noiratre (Rich),Pluvial,6,Fort (Zezika + NPK),humide,10
+1341,Limoneux,Noiratre (Rich),Pluvial,18,Nul,chaud,40
+1342,Argileux (Madity),Noiratre (Rich),Irrigue (Continu),17,Moyen (Zezika Omby),humide,50
+1343,Sableux,Orange / Rouge,Irrigue (Continu),16,Nul,chaud,25
+1344,Argileux (Madity),Brun-Grisatre,Pluvial,8,Fort (Zezika + NPK),froid,18
+1345,Limoneux,Noiratre (Rich),Irrigue (Continu),17,Nul,chaud,49
+1346,Limoneux,Noiratre (Rich),Irrigue (Continu),7,Fort (Zezika + NPK),froid,30
+1347,Argileux (Madity),Brun-Grisatre,Irrigue (Continu),18,Moyen (Zezika Omby),très chaud,39
+1348,Sableux,Orange / Rouge,Pluvial,13,Moyen (Zezika Omby),humide,19
+1349,Argileux (Madity),Brun-Grisatre,Pluvial,15,Moyen (Zezika Omby),très chaud,32
+1350,Limoneux,Brun-Grisatre,Pluvial,13,Moyen (Zezika Omby),froid,19
+1351,Argileux (Madity),Noiratre (Rich),Pluvial,20,Nul,froid,29
+1352,Sableux,Noiratre (Rich),Irrigue (Continu),15,Fort (Zezika + NPK),tres froid,27
+1353,Sableux,Brun-Grisatre,Pluvial,10,Moyen (Zezika Omby),tres froid,12
+1354,Limoneux,Orange / Rouge,Pluvial,20,Fort (Zezika + NPK),chaud,44
+1355,Sableux,Orange / Rouge,Pluvial,11,Moyen (Zezika Omby),humide,17
+1356,Sableux,Orange / Rouge,Pluvial,12,Nul,froid,10
+1357,Argileux (Madity),Noiratre (Rich),Pluvial,16,Fort (Zezika + NPK),froid,39
+1358,Sableux,Noiratre (Rich),Pluvial,15,Fort (Zezika + NPK),chaud,36
+1359,Argileux (Madity),Noiratre (Rich),Irrigue (Continu),14,Fort (Zezika + NPK),froid,46
+1360,Argileux (Madity),Noiratre (Rich),Pluvial,7,Nul,chaud,25
+1361,Argileux (Madity),Noiratre (Rich),Irrigue (Continu),16,Fort (Zezika + NPK),chaud,50
+1362,Sableux,Orange / Rouge,Irrigue (Continu),8,Moyen (Zezika Omby),humide,25
+1363,Argileux (Madity),Brun-Grisatre,Irrigue (Continu),18,Nul,tres froid,15
+1364,Limoneux,Noiratre (Rich),Pluvial,10,Moyen (Zezika Omby),chaud,38
+1365,Argileux (Madity),Noiratre (Rich),Irrigue (Continu),18,Moyen (Zezika Omby),humide,20
+1366,Limoneux,Brun-Grisatre,Irrigue (Continu),14,Nul,froid,23
+1367,Limoneux,Orange / Rouge,Pluvial,8,Moyen (Zezika Omby),chaud,25
+1368,Sableux,Orange / Rouge,Irrigue (Continu),9,Fort (Zezika + NPK),chaud,35
+1369,Limoneux,Brun-Grisatre,Pluvial,12,Nul,chaud,25
+1370,Sableux,Brun-Grisatre,Pluvial,11,Moyen (Zezika Omby),humide,18
+1371,Sableux,Brun-Grisatre,Irrigue (Continu),19,Fort (Zezika + NPK),humide,35
+1372,Sableux,Noiratre (Rich),Pluvial,8,Nul,chaud,25
+1373,Sableux,Brun-Grisatre,Irrigue (Continu),9,Nul,très chaud,16
+1374,Sableux,Noiratre (Rich),Irrigue (Continu),12,Moyen (Zezika Omby),très chaud,45
+1375,Sableux,Orange / Rouge,Irrigue (Continu),5,Moyen (Zezika Omby),tres froid,10
+1376,Argileux (Madity),Noiratre (Rich),Irrigue (Continu),10,Nul,froid,35
+1377,Argileux (Madity),Noiratre (Rich),Pluvial,20,Moyen (Zezika Omby),très chaud,49
+1378,Limoneux,Orange / Rouge,Pluvial,5,Nul,humide,10
+1379,Sableux,Noiratre (Rich),Irrigue (Continu),12,Fort (Zezika + NPK),humide,42
+1380,Argileux (Madity),Noiratre (Rich),Irrigue (Continu),17,Nul,humide,25
+1381,Argileux (Madity),Noiratre (Rich),Pluvial,9,Nul,humide,25
+1382,Limoneux,Orange / Rouge,Pluvial,17,Moyen (Zezika Omby),humide,26
+1383,Argileux (Madity),Noiratre (Rich),Pluvial,19,Nul,très chaud,10
+1384,Argileux (Madity),Noiratre (Rich),Pluvial,18,Moyen (Zezika Omby),froid,28
+1385,Sableux,Orange / Rouge,Pluvial,13,Nul,très chaud,10
+1386,Sableux,Brun-Grisatre,Pluvial,11,Fort (Zezika + NPK),chaud,35
+1387,Sableux,Orange / Rouge,Irrigue (Continu),15,Moyen (Zezika Omby),humide,30
+1388,Sableux,Orange / Rouge,Pluvial,13,Moyen (Zezika Omby),chaud,36
+1389,Limoneux,Noiratre (Rich),Pluvial,8,Moyen (Zezika Omby),chaud,38
+1390,Limoneux,Brun-Grisatre,Pluvial,8,Nul,très chaud,13
+1391,Sableux,Orange / Rouge,Irrigue (Continu),6,Nul,humide,10
+1392,Argileux (Madity),Orange / Rouge,Pluvial,5,Moyen (Zezika Omby),tres froid,10
+1393,Sableux,Brun-Grisatre,Pluvial,12,Nul,froid,10
+1394,Sableux,Noiratre (Rich),Irrigue (Continu),19,Nul,très chaud,38
+1395,Argileux (Madity),Orange / Rouge,Pluvial,13,Moyen (Zezika Omby),humide,25
+1396,Limoneux,Orange / Rouge,Pluvial,8,Moyen (Zezika Omby),froid,14
+1397,Sableux,Noiratre (Rich),Pluvial,6,Nul,froid,49
+1398,Sableux,Noiratre (Rich),Irrigue (Continu),14,Nul,humide,25
+1399,Sableux,Brun-Grisatre,Pluvial,5,Moyen (Zezika Omby),tres froid,10
+1400,Argileux (Madity),Orange / Rouge,Pluvial,10,Nul,très chaud,15
+1401,Limoneux,Orange / Rouge,Pluvial,11,Nul,froid,10
+1402,Sableux,Brun-Grisatre,Irrigue (Continu),14,Moyen (Zezika Omby),humide,32
+1403,Argileux (Madity),Brun-Grisatre,Irrigue (Continu),9,Moyen (Zezika Omby),humide,46
+1404,Sableux,Noiratre (Rich),Pluvial,7,Nul,humide,10
+1405,Limoneux,Brun-Grisatre,Irrigue (Continu),17,Moyen (Zezika Omby),froid,39
+1406,Limoneux,Orange / Rouge,Pluvial,7,Nul,froid,10
+1407,Sableux,Orange / Rouge,Pluvial,15,Moyen (Zezika Omby),tres froid,10
+1408,Argileux (Madity),Brun-Grisatre,Irrigue (Continu),16,Moyen (Zezika Omby),froid,37
+1409,Limoneux,Orange / Rouge,Pluvial,6,Moyen (Zezika Omby),tres froid,39
+1410,Argileux (Madity),Orange / Rouge,Irrigue (Continu),10,Nul,très chaud,19
+1411,Argileux (Madity),Brun-Grisatre,Pluvial,8,Nul,froid,12
+1412,Limoneux,Noiratre (Rich),Irrigue (Continu),18,Moyen (Zezika Omby),tres froid,30
+1413,Limoneux,Brun-Grisatre,Irrigue (Continu),8,Fort (Zezika + NPK),tres froid,24
+1414,Limoneux,Orange / Rouge,Pluvial,18,Moyen (Zezika Omby),humide,29
+1415,Limoneux,Noiratre (Rich),Irrigue (Continu),10,Moyen (Zezika Omby),chaud,50
+1416,Argileux (Madity),Orange / Rouge,Pluvial,5,Nul,tres froid,10
+1417,Sableux,Noiratre (Rich),Pluvial,8,Fort (Zezika + NPK),tres froid,16
+1418,Argileux (Madity),Noiratre (Rich),Irrigue (Continu),16,Nul,froid,37
+1419,Sableux,Orange / Rouge,Pluvial,9,Fort (Zezika + NPK),chaud,27
+1420,Sableux,Brun-Grisatre,Pluvial,6,Nul,chaud,14
+1421,Sableux,Orange / Rouge,Pluvial,13,Fort (Zezika + NPK),humide,28
+1422,Limoneux,Orange / Rouge,Irrigue (Continu),18,Moyen (Zezika Omby),humide,33
+1423,Sableux,Orange / Rouge,Irrigue (Continu),14,Fort (Zezika + NPK),très chaud,42
+1424,Limoneux,Noiratre (Rich),Pluvial,11,Moyen (Zezika Omby),humide,27
+1425,Limoneux,Noiratre (Rich),Pluvial,13,Moyen (Zezika Omby),chaud,40
+1426,Limoneux,Brun-Grisatre,Pluvial,6,Moyen (Zezika Omby),chaud,30
+1427,Sableux,Brun-Grisatre,Irrigue (Continu),5,Nul,froid,11
+1428,Sableux,Brun-Grisatre,Irrigue (Continu),14,Nul,tres froid,15
+1429,Sableux,Noiratre (Rich),Pluvial,9,Moyen (Zezika Omby),humide,27
+1430,Limoneux,Brun-Grisatre,Irrigue (Continu),6,Moyen (Zezika Omby),tres froid,15
+1431,Argileux (Madity),Noiratre (Rich),Irrigue (Continu),20,Nul,très chaud,48
+1432,Limoneux,Noiratre (Rich),Irrigue (Continu),17,Moyen (Zezika Omby),très chaud,48
+1433,Sableux,Noiratre (Rich),Irrigue (Continu),9,Moyen (Zezika Omby),humide,36
+1434,Limoneux,Noiratre (Rich),Pluvial,16,Nul,froid,18
+1435,Limoneux,Orange / Rouge,Irrigue (Continu),14,Nul,chaud,24
+1436,Sableux,Noiratre (Rich),Irrigue (Continu),12,Fort (Zezika + NPK),humide,32
+1437,Argileux (Madity),Brun-Grisatre,Pluvial,12,Fort (Zezika + NPK),humide,26
+1438,Sableux,Brun-Grisatre,Irrigue (Continu),19,Fort (Zezika + NPK),humide,43
+1439,Sableux,Noiratre (Rich),Irrigue (Continu),19,Fort (Zezika + NPK),chaud,47
+1440,Limoneux,Orange / Rouge,Pluvial,13,Moyen (Zezika Omby),humide,30
+1441,Argileux (Madity),Orange / Rouge,Irrigue (Continu),18,Nul,chaud,44
+1442,Argileux (Madity),Orange / Rouge,Pluvial,14,Fort (Zezika + NPK),tres froid,23
+1443,Limoneux,Orange / Rouge,Irrigue (Continu),17,Nul,tres froid,14
+1444,Sableux,Orange / Rouge,Pluvial,13,Fort (Zezika + NPK),tres froid,10
+1445,Argileux (Madity),Orange / Rouge,Pluvial,15,Moyen (Zezika Omby),chaud,45
+1446,Limoneux,Orange / Rouge,Irrigue (Continu),15,Fort (Zezika + NPK),chaud,50
+1447,Limoneux,Brun-Grisatre,Irrigue (Continu),17,Moyen (Zezika Omby),très chaud,38
+1448,Argileux (Madity),Brun-Grisatre,Pluvial,19,Nul,tres froid,25
+1449,Limoneux,Brun-Grisatre,Irrigue (Continu),14,Nul,tres froid,23
+1450,Sableux,Orange / Rouge,Irrigue (Continu),14,Fort (Zezika + NPK),tres froid,18
+1451,Sableux,Orange / Rouge,Pluvial,16,Moyen (Zezika Omby),très chaud,10
+1452,Argileux (Madity),Orange / Rouge,Pluvial,8,Fort (Zezika + NPK),très chaud,28
+1453,Sableux,Noiratre (Rich),Pluvial,6,Fort (Zezika + NPK),très chaud,10
+1454,Argileux (Madity),Orange / Rouge,Irrigue (Continu),15,Nul,chaud,38
+1455,Sableux,Brun-Grisatre,Irrigue (Continu),17,Nul,humide,16
+1456,Sableux,Orange / Rouge,Irrigue (Continu),6,Fort (Zezika + NPK),chaud,37
+1457,Argileux (Madity),Brun-Grisatre,Pluvial,8,Fort (Zezika + NPK),tres froid,21
+1458,Argileux (Madity),Brun-Grisatre,Pluvial,18,Fort (Zezika + NPK),très chaud,37
+1459,Limoneux,Orange / Rouge,Irrigue (Continu),15,Fort (Zezika + NPK),humide,42
+1460,Sableux,Noiratre (Rich),Pluvial,10,Moyen (Zezika Omby),humide,31
+1461,Limoneux,Brun-Grisatre,Irrigue (Continu),18,Moyen (Zezika Omby),tres froid,27
+1462,Sableux,Noiratre (Rich),Pluvial,14,Nul,chaud,38
+1463,Sableux,Noiratre (Rich),Irrigue (Continu),18,Moyen (Zezika Omby),froid,36
+1464,Sableux,Brun-Grisatre,Irrigue (Continu),19,Fort (Zezika + NPK),froid,21
+1465,Limoneux,Orange / Rouge,Irrigue (Continu),11,Moyen (Zezika Omby),froid,33
+1466,Argileux (Madity),Noiratre (Rich),Pluvial,12,Fort (Zezika + NPK),froid,30
+1467,Limoneux,Orange / Rouge,Pluvial,18,Nul,froid,10
+1468,Argileux (Madity),Noiratre (Rich),Irrigue (Continu),9,Nul,chaud,50
+1469,Argileux (Madity),Noiratre (Rich),Irrigue (Continu),20,Fort (Zezika + NPK),très chaud,50
+1470,Limoneux,Orange / Rouge,Irrigue (Continu),8,Nul,froid,15
+1471,Limoneux,Noiratre (Rich),Pluvial,14,Fort (Zezika + NPK),très chaud,34
+1472,Sableux,Orange / Rouge,Pluvial,7,Nul,tres froid,10
+1473,Limoneux,Orange / Rouge,Pluvial,17,Moyen (Zezika Omby),chaud,35
+1474,Limoneux,Brun-Grisatre,Irrigue (Continu),20,Moyen (Zezika Omby),humide,34
+1475,Argileux (Madity),Orange / Rouge,Pluvial,10,Moyen (Zezika Omby),tres froid,14
+1476,Argileux (Madity),Noiratre (Rich),Pluvial,14,Fort (Zezika + NPK),tres froid,24
+1477,Sableux,Brun-Grisatre,Pluvial,14,Moyen (Zezika Omby),très chaud,50
+1478,Argileux (Madity),Brun-Grisatre,Irrigue (Continu),19,Moyen (Zezika Omby),froid,35
+1479,Argileux (Madity),Noiratre (Rich),Pluvial,19,Nul,humide,40
+1480,Limoneux,Brun-Grisatre,Pluvial,19,Fort (Zezika + NPK),tres froid,26
+1481,Argileux (Madity),Noiratre (Rich),Pluvial,5,Moyen (Zezika Omby),très chaud,49
+1482,Sableux,Noiratre (Rich),Pluvial,7,Moyen (Zezika Omby),humide,12
+1483,Limoneux,Noiratre (Rich),Irrigue (Continu),9,Nul,très chaud,30
+1484,Limoneux,Brun-Grisatre,Pluvial,20,Nul,très chaud,12
+1485,Limoneux,Orange / Rouge,Pluvial,10,Moyen (Zezika Omby),très chaud,21
+1486,Limoneux,Orange / Rouge,Irrigue (Continu),7,Nul,tres froid,10
+1487,Sableux,Brun-Grisatre,Pluvial,15,Nul,chaud,12
+1488,Limoneux,Noiratre (Rich),Pluvial,15,Nul,tres froid,19
+1489,Limoneux,Brun-Grisatre,Pluvial,12,Moyen (Zezika Omby),très chaud,26
+1490,Sableux,Brun-Grisatre,Irrigue (Continu),17,Moyen (Zezika Omby),humide,24
+1491,Argileux (Madity),Noiratre (Rich),Irrigue (Continu),10,Moyen (Zezika Omby),humide,46
+1492,Limoneux,Orange / Rouge,Irrigue (Continu),18,Nul,chaud,33
+1493,Sableux,Brun-Grisatre,Irrigue (Continu),19,Moyen (Zezika Omby),chaud,50
+1494,Argileux (Madity),Noiratre (Rich),Pluvial,15,Nul,humide,29
+1495,Sableux,Noiratre (Rich),Irrigue (Continu),9,Nul,chaud,35
+1496,Limoneux,Orange / Rouge,Pluvial,11,Fort (Zezika + NPK),tres froid,18
+1497,Limoneux,Brun-Grisatre,Irrigue (Continu),6,Fort (Zezika + NPK),tres froid,18
+1498,Sableux,Brun-Grisatre,Irrigue (Continu),13,Nul,très chaud,23
+1499,Sableux,Noiratre (Rich),Pluvial,14,Fort (Zezika + NPK),tres froid,10
+1500,Argileux (Madity),Brun-Grisatre,Irrigue (Continu),9,Moyen (Zezika Omby),froid,35
+1501,Argileux (Madity),Brun-Grisatre,Pluvial,12,Moyen (Zezika Omby),humide,31
+1502,Limoneux,Noiratre (Rich),Pluvial,5,Nul,chaud,30
+1503,Limoneux,Noiratre (Rich),Pluvial,17,Moyen (Zezika Omby),tres froid,25
+1504,Argileux (Madity),Brun-Grisatre,Pluvial,17,Fort (Zezika + NPK),chaud,50
+1505,Argileux (Madity),Brun-Grisatre,Irrigue (Continu),18,Fort (Zezika + NPK),chaud,50
+1506,Argileux (Madity),Noiratre (Rich),Pluvial,11,Moyen (Zezika Omby),humide,35
+1507,Sableux,Brun-Grisatre,Pluvial,12,Nul,très chaud,10
+1508,Limoneux,Noiratre (Rich),Pluvial,14,Nul,chaud,47
+1509,Argileux (Madity),Brun-Grisatre,Irrigue (Continu),13,Moyen (Zezika Omby),très chaud,38
+1510,Limoneux,Orange / Rouge,Irrigue (Continu),10,Moyen (Zezika Omby),tres froid,29
+1511,Limoneux,Brun-Grisatre,Irrigue (Continu),8,Nul,chaud,42
+1512,Argileux (Madity),Orange / Rouge,Irrigue (Continu),17,Nul,chaud,41
+1513,Argileux (Madity),Orange / Rouge,Irrigue (Continu),14,Fort (Zezika + NPK),chaud,50
+1514,Argileux (Madity),Noiratre (Rich),Irrigue (Continu),18,Fort (Zezika + NPK),très chaud,50
+1515,Sableux,Noiratre (Rich),Pluvial,8,Moyen (Zezika Omby),tres froid,10
+1516,Argileux (Madity),Noiratre (Rich),Irrigue (Continu),19,Moyen (Zezika Omby),tres froid,35
+1517,Sableux,Orange / Rouge,Pluvial,14,Moyen (Zezika Omby),humide,27
+1518,Sableux,Brun-Grisatre,Irrigue (Continu),16,Fort (Zezika + NPK),froid,34
+1519,Limoneux,Noiratre (Rich),Irrigue (Continu),20,Moyen (Zezika Omby),chaud,50
+1520,Argileux (Madity),Noiratre (Rich),Pluvial,13,Moyen (Zezika Omby),froid,31
+1521,Limoneux,Orange / Rouge,Irrigue (Continu),7,Moyen (Zezika Omby),très chaud,25
+1522,Argileux (Madity),Orange / Rouge,Pluvial,19,Fort (Zezika + NPK),tres froid,16
+1523,Sableux,Noiratre (Rich),Pluvial,14,Moyen (Zezika Omby),humide,33
+1524,Sableux,Noiratre (Rich),Pluvial,7,Nul,froid,12
+1525,Sableux,Orange / Rouge,Pluvial,5,Moyen (Zezika Omby),froid,10
+1526,Limoneux,Noiratre (Rich),Pluvial,6,Fort (Zezika + NPK),très chaud,19
+1527,Limoneux,Brun-Grisatre,Irrigue (Continu),7,Nul,froid,11
+1528,Argileux (Madity),Noiratre (Rich),Irrigue (Continu),19,Moyen (Zezika Omby),chaud,50
+1529,Limoneux,Noiratre (Rich),Irrigue (Continu),6,Nul,humide,25
+1530,Limoneux,Orange / Rouge,Irrigue (Continu),16,Fort (Zezika + NPK),froid,35
+1531,Argileux (Madity),Brun-Grisatre,Irrigue (Continu),9,Fort (Zezika + NPK),froid,36
+1532,Sableux,Orange / Rouge,Irrigue (Continu),10,Moyen (Zezika Omby),froid,21
+1533,Limoneux,Brun-Grisatre,Pluvial,20,Moyen (Zezika Omby),tres froid,14
+1534,Sableux,Noiratre (Rich),Irrigue (Continu),19,Nul,très chaud,21
+1535,Argileux (Madity),Noiratre (Rich),Pluvial,11,Fort (Zezika + NPK),humide,40
+1536,Argileux (Madity),Noiratre (Rich),Pluvial,14,Nul,très chaud,24
+1537,Sableux,Brun-Grisatre,Pluvial,16,Nul,froid,10
+1538,Sableux,Orange / Rouge,Pluvial,14,Fort (Zezika + NPK),froid,23
+1539,Argileux (Madity),Noiratre (Rich),Irrigue (Continu),16,Moyen (Zezika Omby),froid,46
+1540,Sableux,Orange / Rouge,Pluvial,14,Nul,chaud,14
+1541,Argileux (Madity),Orange / Rouge,Irrigue (Continu),9,Nul,humide,26
+1542,Limoneux,Orange / Rouge,Pluvial,20,Fort (Zezika + NPK),très chaud,36
+1543,Limoneux,Noiratre (Rich),Pluvial,18,Nul,tres froid,15
+1544,Limoneux,Orange / Rouge,Irrigue (Continu),7,Nul,humide,11
+1545,Sableux,Noiratre (Rich),Pluvial,11,Fort (Zezika + NPK),froid,16
+1546,Sableux,Noiratre (Rich),Pluvial,13,Fort (Zezika + NPK),froid,22
+1547,Sableux,Brun-Grisatre,Pluvial,11,Moyen (Zezika Omby),chaud,29
+1548,Argileux (Madity),Brun-Grisatre,Pluvial,5,Fort (Zezika + NPK),humide,22
+1549,Limoneux,Brun-Grisatre,Irrigue (Continu),15,Fort (Zezika + NPK),tres froid,20
+1550,Sableux,Noiratre (Rich),Irrigue (Continu),12,Fort (Zezika + NPK),très chaud,22
+1551,Sableux,Orange / Rouge,Pluvial,16,Moyen (Zezika Omby),chaud,28
+1552,Sableux,Orange / Rouge,Irrigue (Continu),18,Moyen (Zezika Omby),humide,29
+1553,Sableux,Orange / Rouge,Pluvial,8,Moyen (Zezika Omby),froid,21
+1554,Limoneux,Orange / Rouge,Irrigue (Continu),7,Fort (Zezika + NPK),tres froid,21
+1555,Limoneux,Noiratre (Rich),Pluvial,20,Moyen (Zezika Omby),très chaud,40
+1556,Limoneux,Brun-Grisatre,Irrigue (Continu),17,Fort (Zezika + NPK),très chaud,39
+1557,Limoneux,Brun-Grisatre,Pluvial,12,Moyen (Zezika Omby),humide,20
+1558,Sableux,Orange / Rouge,Pluvial,16,Nul,froid,10
+1559,Limoneux,Orange / Rouge,Pluvial,9,Nul,froid,14
+1560,Argileux (Madity),Orange / Rouge,Pluvial,5,Fort (Zezika + NPK),froid,22
+1561,Limoneux,Brun-Grisatre,Irrigue (Continu),8,Nul,très chaud,15
+1562,Sableux,Orange / Rouge,Irrigue (Continu),18,Moyen (Zezika Omby),très chaud,37
+1563,Limoneux,Brun-Grisatre,Irrigue (Continu),18,Nul,humide,28
+1564,Argileux (Madity),Brun-Grisatre,Pluvial,9,Nul,très chaud,17
+1565,Limoneux,Brun-Grisatre,Pluvial,7,Nul,très chaud,10
+1566,Limoneux,Orange / Rouge,Irrigue (Continu),9,Moyen (Zezika Omby),tres froid,28
+1567,Limoneux,Noiratre (Rich),Irrigue (Continu),9,Moyen (Zezika Omby),tres froid,33
+1568,Sableux,Orange / Rouge,Irrigue (Continu),10,Fort (Zezika + NPK),humide,39
+1569,Sableux,Orange / Rouge,Irrigue (Continu),17,Moyen (Zezika Omby),tres froid,27
+1570,Argileux (Madity),Orange / Rouge,Irrigue (Continu),11,Fort (Zezika + NPK),chaud,47
+1571,Argileux (Madity),Noiratre (Rich),Irrigue (Continu),12,Moyen (Zezika Omby),tres froid,34
+1572,Argileux (Madity),Noiratre (Rich),Pluvial,10,Fort (Zezika + NPK),humide,39
+1573,Limoneux,Orange / Rouge,Irrigue (Continu),6,Moyen (Zezika Omby),tres froid,22
+1574,Sableux,Noiratre (Rich),Irrigue (Continu),16,Nul,très chaud,23
+1575,Sableux,Noiratre (Rich),Irrigue (Continu),13,Moyen (Zezika Omby),froid,23
+1576,Sableux,Brun-Grisatre,Irrigue (Continu),13,Nul,tres froid,10
+1577,Sableux,Brun-Grisatre,Pluvial,11,Moyen (Zezika Omby),humide,10
+1578,Limoneux,Brun-Grisatre,Irrigue (Continu),11,Moyen (Zezika Omby),très chaud,32
+1579,Argileux (Madity),Brun-Grisatre,Pluvial,16,Fort (Zezika + NPK),chaud,50
+1580,Argileux (Madity),Brun-Grisatre,Pluvial,6,Moyen (Zezika Omby),très chaud,15
+1581,Sableux,Noiratre (Rich),Irrigue (Continu),6,Moyen (Zezika Omby),chaud,15
+1582,Limoneux,Brun-Grisatre,Pluvial,13,Nul,froid,13
+1583,Argileux (Madity),Orange / Rouge,Irrigue (Continu),12,Fort (Zezika + NPK),froid,43
+1584,Argileux (Madity),Orange / Rouge,Pluvial,18,Nul,chaud,26
+1585,Argileux (Madity),Brun-Grisatre,Pluvial,6,Nul,chaud,16
+1586,Argileux (Madity),Brun-Grisatre,Pluvial,9,Nul,humide,12
+1587,Sableux,Orange / Rouge,Irrigue (Continu),14,Nul,très chaud,18
+1588,Limoneux,Noiratre (Rich),Pluvial,13,Moyen (Zezika Omby),très chaud,31
+1589,Argileux (Madity),Brun-Grisatre,Irrigue (Continu),20,Nul,tres froid,22
+1590,Sableux,Orange / Rouge,Pluvial,9,Nul,tres froid,10
+1591,Sableux,Noiratre (Rich),Irrigue (Continu),13,Moyen (Zezika Omby),froid,30
+1592,Sableux,Noiratre (Rich),Irrigue (Continu),7,Nul,humide,25
+1593,Limoneux,Orange / Rouge,Irrigue (Continu),16,Nul,très chaud,48
+1594,Sableux,Brun-Grisatre,Pluvial,5,Moyen (Zezika Omby),très chaud,10
+1595,Limoneux,Noiratre (Rich),Pluvial,10,Moyen (Zezika Omby),froid,22
+1596,Limoneux,Brun-Grisatre,Irrigue (Continu),12,Nul,humide,23
+1597,Limoneux,Brun-Grisatre,Irrigue (Continu),9,Fort (Zezika + NPK),chaud,48
+1598,Sableux,Orange / Rouge,Pluvial,8,Nul,chaud,14
+1599,Limoneux,Brun-Grisatre,Pluvial,19,Fort (Zezika + NPK),tres froid,17
+1600,Argileux (Madity),Brun-Grisatre,Irrigue (Continu),14,Moyen (Zezika Omby),chaud,44
+1601,Limoneux,Brun-Grisatre,Pluvial,12,Moyen (Zezika Omby),froid,22
+1602,Sableux,Brun-Grisatre,Pluvial,15,Nul,froid,10
+1603,Sableux,Brun-Grisatre,Irrigue (Continu),18,Nul,chaud,32
+1604,Argileux (Madity),Brun-Grisatre,Pluvial,12,Nul,très chaud,10
+1605,Sableux,Brun-Grisatre,Pluvial,8,Moyen (Zezika Omby),chaud,33
+1606,Argileux (Madity),Noiratre (Rich),Pluvial,7,Moyen (Zezika Omby),chaud,38
+1607,Argileux (Madity),Orange / Rouge,Pluvial,7,Moyen (Zezika Omby),tres froid,10
+1608,Argileux (Madity),Orange / Rouge,Irrigue (Continu),19,Moyen (Zezika Omby),tres froid,33
+1609,Argileux (Madity),Noiratre (Rich),Irrigue (Continu),14,Moyen (Zezika Omby),très chaud,48
+1610,Limoneux,Brun-Grisatre,Irrigue (Continu),18,Fort (Zezika + NPK),chaud,50
+1611,Sableux,Brun-Grisatre,Irrigue (Continu),9,Fort (Zezika + NPK),froid,23
+1612,Argileux (Madity),Noiratre (Rich),Pluvial,16,Moyen (Zezika Omby),humide,36
+1613,Sableux,Brun-Grisatre,Pluvial,15,Nul,froid,10
+1614,Sableux,Brun-Grisatre,Irrigue (Continu),7,Fort (Zezika + NPK),froid,24
+1615,Argileux (Madity),Orange / Rouge,Pluvial,16,Moyen (Zezika Omby),chaud,47
+1616,Limoneux,Brun-Grisatre,Pluvial,12,Moyen (Zezika Omby),tres froid,10
+1617,Limoneux,Noiratre (Rich),Irrigue (Continu),14,Fort (Zezika + NPK),humide,11
+1618,Argileux (Madity),Noiratre (Rich),Irrigue (Continu),16,Nul,humide,40
+1619,Sableux,Orange / Rouge,Irrigue (Continu),10,Moyen (Zezika Omby),tres froid,22
+1620,Limoneux,Orange / Rouge,Irrigue (Continu),19,Nul,humide,23
+1621,Limoneux,Brun-Grisatre,Pluvial,10,Nul,très chaud,10
+1622,Argileux (Madity),Brun-Grisatre,Pluvial,13,Fort (Zezika + NPK),chaud,46
+1623,Limoneux,Orange / Rouge,Irrigue (Continu),12,Moyen (Zezika Omby),très chaud,30
+1624,Sableux,Noiratre (Rich),Irrigue (Continu),20,Nul,tres froid,16
+1625,Sableux,Noiratre (Rich),Irrigue (Continu),18,Moyen (Zezika Omby),froid,31
+1626,Limoneux,Brun-Grisatre,Pluvial,15,Moyen (Zezika Omby),humide,21
+1627,Argileux (Madity),Brun-Grisatre,Irrigue (Continu),16,Fort (Zezika + NPK),chaud,50
+1628,Sableux,Orange / Rouge,Pluvial,14,Moyen (Zezika Omby),très chaud,24
+1629,Limoneux,Noiratre (Rich),Pluvial,7,Fort (Zezika + NPK),chaud,33
+1630,Sableux,Noiratre (Rich),Pluvial,8,Nul,froid,10
+1631,Limoneux,Brun-Grisatre,Irrigue (Continu),20,Moyen (Zezika Omby),froid,42
+1632,Limoneux,Brun-Grisatre,Pluvial,20,Moyen (Zezika Omby),humide,27
+1633,Sableux,Noiratre (Rich),Pluvial,15,Moyen (Zezika Omby),froid,10
+1634,Limoneux,Orange / Rouge,Pluvial,7,Moyen (Zezika Omby),humide,17
+1635,Sableux,Brun-Grisatre,Pluvial,10,Nul,très chaud,10
+1636,Sableux,Brun-Grisatre,Irrigue (Continu),6,Fort (Zezika + NPK),tres froid,11
+1637,Argileux (Madity),Brun-Grisatre,Pluvial,15,Moyen (Zezika Omby),chaud,37
+1638,Sableux,Orange / Rouge,Irrigue (Continu),9,Fort (Zezika + NPK),tres froid,19
+1639,Argileux (Madity),Noiratre (Rich),Irrigue (Continu),12,Nul,chaud,50
+1640,Sableux,Noiratre (Rich),Irrigue (Continu),18,Nul,chaud,42
+1641,Argileux (Madity),Noiratre (Rich),Pluvial,5,Nul,froid,21
+1642,Limoneux,Brun-Grisatre,Irrigue (Continu),8,Nul,tres froid,19
+1643,Sableux,Orange / Rouge,Irrigue (Continu),14,Nul,humide,10
+1644,Argileux (Madity),Noiratre (Rich),Irrigue (Continu),11,Moyen (Zezika Omby),tres froid,25
+1645,Argileux (Madity),Orange / Rouge,Pluvial,14,Moyen (Zezika Omby),froid,18
+1646,Limoneux,Noiratre (Rich),Irrigue (Continu),8,Moyen (Zezika Omby),froid,30
+1647,Sableux,Noiratre (Rich),Pluvial,16,Moyen (Zezika Omby),tres froid,10
+1648,Argileux (Madity),Brun-Grisatre,Pluvial,18,Moyen (Zezika Omby),humide,27
+1649,Argileux (Madity),Noiratre (Rich),Irrigue (Continu),18,Fort (Zezika + NPK),froid,49
+1650,Argileux (Madity),Noiratre (Rich),Pluvial,19,Nul,très chaud,31
+1651,Sableux,Brun-Grisatre,Irrigue (Continu),12,Nul,froid,10
+1652,Argileux (Madity),Orange / Rouge,Irrigue (Continu),19,Nul,très chaud,18
+1653,Argileux (Madity),Orange / Rouge,Pluvial,7,Moyen (Zezika Omby),froid,18
+1654,Limoneux,Brun-Grisatre,Pluvial,13,Nul,humide,12
+1655,Argileux (Madity),Brun-Grisatre,Irrigue (Continu),18,Moyen (Zezika Omby),très chaud,45
+1656,Argileux (Madity),Noiratre (Rich),Pluvial,14,Moyen (Zezika Omby),chaud,44
+1657,Sableux,Noiratre (Rich),Pluvial,16,Moyen (Zezika Omby),humide,23
+1658,Limoneux,Orange / Rouge,Pluvial,5,Fort (Zezika + NPK),très chaud,13
+1659,Argileux (Madity),Noiratre (Rich),Irrigue (Continu),10,Moyen (Zezika Omby),tres froid,48
+1660,Limoneux,Noiratre (Rich),Irrigue (Continu),7,Moyen (Zezika Omby),très chaud,29
+1661,Sableux,Orange / Rouge,Irrigue (Continu),20,Fort (Zezika + NPK),chaud,39
+1662,Limoneux,Brun-Grisatre,Irrigue (Continu),14,Moyen (Zezika Omby),humide,43
+1663,Limoneux,Orange / Rouge,Irrigue (Continu),12,Fort (Zezika + NPK),très chaud,39
+1664,Limoneux,Noiratre (Rich),Pluvial,7,Fort (Zezika + NPK),très chaud,17
+1665,Sableux,Orange / Rouge,Irrigue (Continu),8,Moyen (Zezika Omby),chaud,41
+1666,Argileux (Madity),Orange / Rouge,Irrigue (Continu),15,Nul,très chaud,29
+1667,Sableux,Orange / Rouge,Pluvial,16,Fort (Zezika + NPK),très chaud,22
+1668,Limoneux,Brun-Grisatre,Irrigue (Continu),9,Nul,très chaud,27
+1669,Sableux,Brun-Grisatre,Irrigue (Continu),17,Fort (Zezika + NPK),froid,43
+1670,Sableux,Orange / Rouge,Pluvial,11,Nul,froid,10
+1671,Limoneux,Noiratre (Rich),Irrigue (Continu),16,Fort (Zezika + NPK),froid,33
+1672,Argileux (Madity),Orange / Rouge,Irrigue (Continu),13,Fort (Zezika + NPK),chaud,50
+1673,Limoneux,Noiratre (Rich),Irrigue (Continu),16,Moyen (Zezika Omby),froid,35
+1674,Limoneux,Brun-Grisatre,Pluvial,10,Fort (Zezika + NPK),froid,17
+1675,Argileux (Madity),Orange / Rouge,Pluvial,8,Nul,froid,10
+1676,Sableux,Orange / Rouge,Pluvial,10,Moyen (Zezika Omby),tres froid,10
+1677,Argileux (Madity),Orange / Rouge,Pluvial,14,Moyen (Zezika Omby),froid,20
+1678,Argileux (Madity),Noiratre (Rich),Irrigue (Continu),11,Nul,froid,29
+1679,Sableux,Orange / Rouge,Pluvial,12,Nul,tres froid,10
+1680,Sableux,Brun-Grisatre,Pluvial,7,Fort (Zezika + NPK),froid,10
+1681,Limoneux,Orange / Rouge,Irrigue (Continu),7,Fort (Zezika + NPK),très chaud,27
+1682,Limoneux,Orange / Rouge,Irrigue (Continu),17,Moyen (Zezika Omby),chaud,48
+1683,Limoneux,Brun-Grisatre,Pluvial,12,Moyen (Zezika Omby),tres froid,13
+1684,Argileux (Madity),Noiratre (Rich),Irrigue (Continu),17,Moyen (Zezika Omby),froid,43
+1685,Argileux (Madity),Brun-Grisatre,Irrigue (Continu),16,Nul,humide,30
+1686,Limoneux,Noiratre (Rich),Irrigue (Continu),6,Nul,humide,22
+1687,Limoneux,Orange / Rouge,Pluvial,11,Moyen (Zezika Omby),humide,24
+1688,Limoneux,Noiratre (Rich),Irrigue (Continu),8,Fort (Zezika + NPK),humide,44
+1689,Limoneux,Brun-Grisatre,Pluvial,8,Fort (Zezika + NPK),très chaud,22
+1690,Sableux,Noiratre (Rich),Pluvial,7,Moyen (Zezika Omby),chaud,15
+1691,Limoneux,Noiratre (Rich),Pluvial,15,Nul,tres froid,21
+1692,Argileux (Madity),Brun-Grisatre,Irrigue (Continu),9,Nul,tres froid,10
+1693,Sableux,Brun-Grisatre,Irrigue (Continu),5,Fort (Zezika + NPK),très chaud,23
+1694,Sableux,Brun-Grisatre,Irrigue (Continu),12,Nul,tres froid,10
+1695,Limoneux,Brun-Grisatre,Irrigue (Continu),9,Moyen (Zezika Omby),très chaud,50
+1696,Argileux (Madity),Brun-Grisatre,Irrigue (Continu),9,Moyen (Zezika Omby),très chaud,37
+1697,Argileux (Madity),Noiratre (Rich),Irrigue (Continu),17,Nul,humide,44
+1698,Argileux (Madity),Orange / Rouge,Irrigue (Continu),9,Nul,chaud,34
+1699,Limoneux,Orange / Rouge,Irrigue (Continu),14,Nul,chaud,48
+1700,Sableux,Noiratre (Rich),Pluvial,6,Moyen (Zezika Omby),humide,10
+1701,Argileux (Madity),Noiratre (Rich),Pluvial,9,Fort (Zezika + NPK),très chaud,41
+1702,Limoneux,Noiratre (Rich),Irrigue (Continu),9,Fort (Zezika + NPK),très chaud,39
+1703,Limoneux,Noiratre (Rich),Pluvial,14,Fort (Zezika + NPK),humide,35
+1704,Argileux (Madity),Noiratre (Rich),Irrigue (Continu),16,Moyen (Zezika Omby),chaud,50
+1705,Sableux,Brun-Grisatre,Pluvial,14,Nul,humide,16
+1706,Sableux,Orange / Rouge,Pluvial,13,Fort (Zezika + NPK),froid,22
+1707,Argileux (Madity),Noiratre (Rich),Pluvial,19,Fort (Zezika + NPK),humide,41
+1708,Sableux,Brun-Grisatre,Pluvial,12,Fort (Zezika + NPK),humide,17
+1709,Argileux (Madity),Brun-Grisatre,Irrigue (Continu),12,Moyen (Zezika Omby),très chaud,32
+1710,Argileux (Madity),Noiratre (Rich),Pluvial,9,Moyen (Zezika Omby),très chaud,25
+1711,Sableux,Noiratre (Rich),Irrigue (Continu),7,Nul,froid,13
+1712,Limoneux,Brun-Grisatre,Irrigue (Continu),19,Nul,chaud,38
+1713,Sableux,Orange / Rouge,Pluvial,12,Fort (Zezika + NPK),très chaud,20
+1714,Sableux,Brun-Grisatre,Pluvial,15,Moyen (Zezika Omby),humide,20
+1715,Argileux (Madity),Orange / Rouge,Pluvial,16,Fort (Zezika + NPK),très chaud,38
+1716,Sableux,Noiratre (Rich),Pluvial,13,Moyen (Zezika Omby),chaud,34
+1717,Limoneux,Brun-Grisatre,Irrigue (Continu),5,Fort (Zezika + NPK),humide,39
+1718,Limoneux,Noiratre (Rich),Irrigue (Continu),6,Moyen (Zezika Omby),très chaud,30
+1719,Limoneux,Brun-Grisatre,Pluvial,6,Nul,chaud,50
+1720,Limoneux,Noiratre (Rich),Irrigue (Continu),11,Fort (Zezika + NPK),très chaud,37
+1721,Argileux (Madity),Orange / Rouge,Irrigue (Continu),10,Moyen (Zezika Omby),tres froid,23
+1722,Argileux (Madity),Brun-Grisatre,Pluvial,9,Moyen (Zezika Omby),froid,35
+1723,Sableux,Noiratre (Rich),Irrigue (Continu),17,Moyen (Zezika Omby),humide,35
+1724,Limoneux,Brun-Grisatre,Irrigue (Continu),6,Fort (Zezika + NPK),chaud,39
+1725,Argileux (Madity),Noiratre (Rich),Irrigue (Continu),16,Moyen (Zezika Omby),humide,48
+1726,Limoneux,Orange / Rouge,Irrigue (Continu),5,Fort (Zezika + NPK),humide,33
+1727,Sableux,Orange / Rouge,Pluvial,8,Fort (Zezika + NPK),tres froid,10
+1728,Limoneux,Brun-Grisatre,Irrigue (Continu),7,Fort (Zezika + NPK),froid,30
+1729,Limoneux,Brun-Grisatre,Pluvial,9,Nul,tres froid,15
+1730,Argileux (Madity),Noiratre (Rich),Irrigue (Continu),10,Moyen (Zezika Omby),très chaud,45
+1731,Sableux,Noiratre (Rich),Pluvial,13,Moyen (Zezika Omby),très chaud,17
+1732,Limoneux,Brun-Grisatre,Pluvial,18,Moyen (Zezika Omby),froid,20
+1733,Sableux,Noiratre (Rich),Irrigue (Continu),14,Moyen (Zezika Omby),chaud,49
+1734,Argileux (Madity),Noiratre (Rich),Pluvial,11,Fort (Zezika + NPK),très chaud,38
+1735,Argileux (Madity),Noiratre (Rich),Irrigue (Continu),18,Fort (Zezika + NPK),froid,46
+1736,Argileux (Madity),Orange / Rouge,Pluvial,17,Moyen (Zezika Omby),humide,34
+1737,Sableux,Orange / Rouge,Pluvial,6,Fort (Zezika + NPK),humide,10
+1738,Argileux (Madity),Brun-Grisatre,Irrigue (Continu),11,Fort (Zezika + NPK),chaud,49
+1739,Argileux (Madity),Orange / Rouge,Irrigue (Continu),11,Fort (Zezika + NPK),chaud,48
+1740,Limoneux,Orange / Rouge,Pluvial,8,Fort (Zezika + NPK),très chaud,12
+1741,Sableux,Brun-Grisatre,Pluvial,11,Moyen (Zezika Omby),chaud,19
+1742,Sableux,Orange / Rouge,Pluvial,9,Nul,humide,10
+1743,Argileux (Madity),Brun-Grisatre,Pluvial,18,Fort (Zezika + NPK),humide,46
+1744,Limoneux,Brun-Grisatre,Pluvial,20,Moyen (Zezika Omby),chaud,42
+1745,Argileux (Madity),Noiratre (Rich),Irrigue (Continu),17,Nul,humide,45
+1746,Sableux,Brun-Grisatre,Irrigue (Continu),17,Moyen (Zezika Omby),chaud,45
+1747,Argileux (Madity),Noiratre (Rich),Irrigue (Continu),14,Nul,froid,39
+1748,Argileux (Madity),Noiratre (Rich),Irrigue (Continu),14,Moyen (Zezika Omby),tres froid,30
+1749,Sableux,Brun-Grisatre,Irrigue (Continu),18,Nul,chaud,43
+1750,Limoneux,Brun-Grisatre,Pluvial,19,Nul,chaud,25
+1751,Limoneux,Orange / Rouge,Irrigue (Continu),5,Moyen (Zezika Omby),tres froid,46
+1752,Sableux,Orange / Rouge,Irrigue (Continu),9,Nul,froid,10
+1753,Sableux,Noiratre (Rich),Irrigue (Continu),7,Nul,froid,20
+1754,Limoneux,Noiratre (Rich),Pluvial,7,Moyen (Zezika Omby),très chaud,27
+1755,Argileux (Madity),Noiratre (Rich),Pluvial,15,Nul,chaud,50
+1756,Sableux,Noiratre (Rich),Pluvial,16,Moyen (Zezika Omby),froid,10
+1757,Sableux,Orange / Rouge,Pluvial,15,Nul,humide,12
+1758,Argileux (Madity),Noiratre (Rich),Irrigue (Continu),10,Nul,tres froid,32
+1759,Sableux,Brun-Grisatre,Irrigue (Continu),18,Moyen (Zezika Omby),humide,30
+1760,Sableux,Brun-Grisatre,Irrigue (Continu),12,Fort (Zezika + NPK),chaud,46
+1761,Sableux,Noiratre (Rich),Irrigue (Continu),19,Fort (Zezika + NPK),très chaud,36
+1762,Sableux,Brun-Grisatre,Pluvial,15,Nul,froid,13
+1763,Limoneux,Orange / Rouge,Irrigue (Continu),12,Nul,chaud,33
+1764,Argileux (Madity),Orange / Rouge,Pluvial,9,Nul,très chaud,19
+1765,Argileux (Madity),Noiratre (Rich),Irrigue (Continu),20,Moyen (Zezika Omby),tres froid,32
+1766,Sableux,Noiratre (Rich),Pluvial,15,Fort (Zezika + NPK),froid,19
+1767,Sableux,Orange / Rouge,Irrigue (Continu),6,Fort (Zezika + NPK),froid,15
+1768,Sableux,Orange / Rouge,Pluvial,6,Nul,humide,10
+1769,Argileux (Madity),Brun-Grisatre,Irrigue (Continu),10,Fort (Zezika + NPK),froid,34
+1770,Limoneux,Noiratre (Rich),Irrigue (Continu),9,Fort (Zezika + NPK),très chaud,39
+1771,Limoneux,Brun-Grisatre,Irrigue (Continu),14,Moyen (Zezika Omby),humide,31
+1772,Argileux (Madity),Noiratre (Rich),Pluvial,5,Nul,froid,23
+1773,Argileux (Madity),Brun-Grisatre,Pluvial,11,Fort (Zezika + NPK),humide,28
+1774,Limoneux,Orange / Rouge,Irrigue (Continu),16,Nul,humide,21
+1775,Argileux (Madity),Orange / Rouge,Irrigue (Continu),17,Nul,froid,29
+1776,Sableux,Brun-Grisatre,Irrigue (Continu),20,Nul,tres froid,16
+1777,Argileux (Madity),Noiratre (Rich),Irrigue (Continu),12,Nul,humide,43
+1778,Sableux,Brun-Grisatre,Irrigue (Continu),19,Moyen (Zezika Omby),très chaud,24
+1779,Sableux,Noiratre (Rich),Irrigue (Continu),12,Fort (Zezika + NPK),chaud,48
+1780,Sableux,Noiratre (Rich),Pluvial,6,Fort (Zezika + NPK),très chaud,12
+1781,Argileux (Madity),Orange / Rouge,Pluvial,7,Fort (Zezika + NPK),très chaud,16
+1782,Sableux,Orange / Rouge,Pluvial,5,Nul,chaud,10
+1783,Sableux,Orange / Rouge,Irrigue (Continu),7,Nul,humide,30
+1784,Argileux (Madity),Noiratre (Rich),Irrigue (Continu),13,Moyen (Zezika Omby),humide,42
+1785,Limoneux,Brun-Grisatre,Irrigue (Continu),5,Fort (Zezika + NPK),très chaud,30
+1786,Sableux,Orange / Rouge,Irrigue (Continu),5,Fort (Zezika + NPK),très chaud,22
+1787,Argileux (Madity),Noiratre (Rich),Pluvial,19,Nul,chaud,35
+1788,Sableux,Orange / Rouge,Pluvial,5,Nul,chaud,10
+1789,Argileux (Madity),Noiratre (Rich),Irrigue (Continu),10,Fort (Zezika + NPK),humide,50
+1790,Argileux (Madity),Noiratre (Rich),Pluvial,9,Fort (Zezika + NPK),froid,34
+1791,Sableux,Orange / Rouge,Irrigue (Continu),18,Fort (Zezika + NPK),chaud,47
+1792,Limoneux,Orange / Rouge,Irrigue (Continu),20,Moyen (Zezika Omby),froid,36
+1793,Sableux,Brun-Grisatre,Pluvial,8,Nul,chaud,22
+1794,Sableux,Orange / Rouge,Pluvial,12,Moyen (Zezika Omby),tres froid,10
+1795,Sableux,Brun-Grisatre,Irrigue (Continu),19,Moyen (Zezika Omby),chaud,36
+1796,Limoneux,Orange / Rouge,Irrigue (Continu),9,Moyen (Zezika Omby),très chaud,24
+1797,Argileux (Madity),Orange / Rouge,Irrigue (Continu),13,Fort (Zezika + NPK),tres froid,38
+1798,Limoneux,Noiratre (Rich),Irrigue (Continu),8,Nul,humide,37
+1799,Argileux (Madity),Brun-Grisatre,Pluvial,9,Moyen (Zezika Omby),chaud,38
+1800,Sableux,Brun-Grisatre,Pluvial,9,Nul,froid,10
+1801,Limoneux,Orange / Rouge,Pluvial,16,Fort (Zezika + NPK),humide,33
+1802,Sableux,Brun-Grisatre,Pluvial,9,Nul,froid,10
+1803,Sableux,Orange / Rouge,Irrigue (Continu),16,Moyen (Zezika Omby),humide,33
+1804,Sableux,Orange / Rouge,Irrigue (Continu),19,Nul,froid,13
+1805,Sableux,Noiratre (Rich),Irrigue (Continu),15,Moyen (Zezika Omby),chaud,32
+1806,Sableux,Brun-Grisatre,Pluvial,15,Moyen (Zezika Omby),très chaud,22
+1807,Sableux,Orange / Rouge,Irrigue (Continu),19,Fort (Zezika + NPK),chaud,41
+1808,Limoneux,Noiratre (Rich),Pluvial,19,Nul,chaud,42
+1809,Limoneux,Orange / Rouge,Irrigue (Continu),12,Nul,tres froid,10
+1810,Argileux (Madity),Noiratre (Rich),Irrigue (Continu),17,Moyen (Zezika Omby),très chaud,47
+1811,Limoneux,Noiratre (Rich),Irrigue (Continu),15,Fort (Zezika + NPK),très chaud,46
+1812,Limoneux,Noiratre (Rich),Irrigue (Continu),11,Moyen (Zezika Omby),tres froid,25
+1813,Sableux,Noiratre (Rich),Pluvial,12,Nul,très chaud,11
+1814,Limoneux,Brun-Grisatre,Irrigue (Continu),12,Fort (Zezika + NPK),chaud,50
+1815,Sableux,Brun-Grisatre,Irrigue (Continu),7,Moyen (Zezika Omby),chaud,18
+1816,Argileux (Madity),Brun-Grisatre,Irrigue (Continu),12,Fort (Zezika + NPK),tres froid,11
+1817,Argileux (Madity),Brun-Grisatre,Pluvial,12,Nul,chaud,30
+1818,Sableux,Orange / Rouge,Irrigue (Continu),16,Fort (Zezika + NPK),tres froid,17
+1819,Argileux (Madity),Noiratre (Rich),Pluvial,13,Nul,tres froid,22
+1820,Argileux (Madity),Brun-Grisatre,Pluvial,6,Moyen (Zezika Omby),froid,20
+1821,Sableux,Orange / Rouge,Pluvial,14,Fort (Zezika + NPK),très chaud,46
+1822,Sableux,Orange / Rouge,Irrigue (Continu),14,Fort (Zezika + NPK),tres froid,22
+1823,Sableux,Orange / Rouge,Irrigue (Continu),9,Nul,froid,10
+1824,Argileux (Madity),Noiratre (Rich),Pluvial,7,Nul,très chaud,26
+1825,Sableux,Noiratre (Rich),Pluvial,6,Moyen (Zezika Omby),froid,11
+1826,Sableux,Orange / Rouge,Irrigue (Continu),5,Fort (Zezika + NPK),tres froid,10
+1827,Limoneux,Orange / Rouge,Irrigue (Continu),7,Fort (Zezika + NPK),tres froid,14
+1828,Limoneux,Noiratre (Rich),Pluvial,13,Fort (Zezika + NPK),très chaud,39
+1829,Argileux (Madity),Brun-Grisatre,Irrigue (Continu),19,Moyen (Zezika Omby),humide,44
+1830,Limoneux,Noiratre (Rich),Pluvial,12,Nul,très chaud,13
+1831,Limoneux,Orange / Rouge,Irrigue (Continu),18,Fort (Zezika + NPK),humide,35
+1832,Limoneux,Brun-Grisatre,Pluvial,5,Moyen (Zezika Omby),très chaud,14
+1833,Sableux,Orange / Rouge,Irrigue (Continu),8,Nul,très chaud,10
+1834,Argileux (Madity),Noiratre (Rich),Pluvial,19,Nul,froid,33
+1835,Argileux (Madity),Brun-Grisatre,Pluvial,6,Nul,très chaud,10
+1836,Argileux (Madity),Brun-Grisatre,Pluvial,14,Nul,humide,25
+1837,Limoneux,Orange / Rouge,Irrigue (Continu),11,Moyen (Zezika Omby),froid,39
+1838,Limoneux,Orange / Rouge,Irrigue (Continu),7,Moyen (Zezika Omby),très chaud,14
+1839,Limoneux,Noiratre (Rich),Pluvial,20,Nul,tres froid,16
+1840,Sableux,Brun-Grisatre,Irrigue (Continu),14,Fort (Zezika + NPK),humide,39
+1841,Limoneux,Brun-Grisatre,Pluvial,20,Nul,humide,25
+1842,Limoneux,Brun-Grisatre,Irrigue (Continu),18,Moyen (Zezika Omby),humide,34
+1843,Argileux (Madity),Brun-Grisatre,Pluvial,19,Moyen (Zezika Omby),humide,36
+1844,Limoneux,Noiratre (Rich),Irrigue (Continu),13,Fort (Zezika + NPK),froid,38
+1845,Sableux,Noiratre (Rich),Pluvial,9,Moyen (Zezika Omby),chaud,36
+1846,Argileux (Madity),Noiratre (Rich),Pluvial,10,Moyen (Zezika Omby),froid,33
+1847,Argileux (Madity),Orange / Rouge,Irrigue (Continu),11,Fort (Zezika + NPK),froid,36
+1848,Argileux (Madity),Orange / Rouge,Pluvial,16,Fort (Zezika + NPK),froid,40
+1849,Sableux,Brun-Grisatre,Pluvial,9,Fort (Zezika + NPK),froid,10
+1850,Sableux,Noiratre (Rich),Irrigue (Continu),20,Nul,chaud,48
+1851,Limoneux,Orange / Rouge,Pluvial,14,Nul,chaud,11
+1852,Argileux (Madity),Brun-Grisatre,Irrigue (Continu),10,Fort (Zezika + NPK),chaud,50
+1853,Argileux (Madity),Noiratre (Rich),Irrigue (Continu),9,Moyen (Zezika Omby),froid,40
+1854,Argileux (Madity),Noiratre (Rich),Pluvial,7,Fort (Zezika + NPK),chaud,44
+1855,Limoneux,Orange / Rouge,Irrigue (Continu),19,Fort (Zezika + NPK),chaud,50
+1856,Sableux,Noiratre (Rich),Irrigue (Continu),5,Fort (Zezika + NPK),très chaud,23
+1857,Argileux (Madity),Brun-Grisatre,Irrigue (Continu),15,Nul,chaud,36
+1858,Limoneux,Brun-Grisatre,Pluvial,11,Moyen (Zezika Omby),chaud,35
+1859,Argileux (Madity),Noiratre (Rich),Irrigue (Continu),9,Fort (Zezika + NPK),froid,46
+1860,Limoneux,Orange / Rouge,Irrigue (Continu),13,Nul,chaud,30
+1861,Sableux,Noiratre (Rich),Irrigue (Continu),14,Fort (Zezika + NPK),très chaud,34
+1862,Sableux,Orange / Rouge,Pluvial,15,Fort (Zezika + NPK),tres froid,10
+1863,Sableux,Orange / Rouge,Pluvial,6,Fort (Zezika + NPK),chaud,16
+1864,Limoneux,Noiratre (Rich),Irrigue (Continu),9,Moyen (Zezika Omby),très chaud,34
+1865,Argileux (Madity),Brun-Grisatre,Irrigue (Continu),20,Fort (Zezika + NPK),tres froid,36
+1866,Limoneux,Orange / Rouge,Pluvial,9,Fort (Zezika + NPK),chaud,31
+1867,Sableux,Noiratre (Rich),Irrigue (Continu),5,Nul,tres froid,10
+1868,Sableux,Brun-Grisatre,Pluvial,8,Fort (Zezika + NPK),très chaud,15
+1869,Limoneux,Noiratre (Rich),Pluvial,14,Nul,tres froid,15
+1870,Sableux,Orange / Rouge,Pluvial,11,Nul,très chaud,10
+1871,Limoneux,Noiratre (Rich),Pluvial,8,Nul,tres froid,12
+1872,Argileux (Madity),Noiratre (Rich),Irrigue (Continu),20,Fort (Zezika + NPK),humide,46
+1873,Sableux,Orange / Rouge,Irrigue (Continu),10,Fort (Zezika + NPK),froid,26
+1874,Sableux,Noiratre (Rich),Pluvial,8,Nul,chaud,25
+1875,Limoneux,Noiratre (Rich),Irrigue (Continu),5,Moyen (Zezika Omby),froid,20
+1876,Sableux,Brun-Grisatre,Irrigue (Continu),9,Moyen (Zezika Omby),tres froid,11
+1877,Limoneux,Orange / Rouge,Pluvial,9,Moyen (Zezika Omby),humide,10
+1878,Sableux,Orange / Rouge,Irrigue (Continu),6,Fort (Zezika + NPK),chaud,37
+1879,Limoneux,Noiratre (Rich),Irrigue (Continu),15,Fort (Zezika + NPK),tres froid,32
+1880,Limoneux,Brun-Grisatre,Irrigue (Continu),10,Fort (Zezika + NPK),tres froid,26
+1881,Limoneux,Orange / Rouge,Pluvial,12,Moyen (Zezika Omby),froid,17
+1882,Sableux,Brun-Grisatre,Pluvial,10,Nul,très chaud,10
+1883,Limoneux,Noiratre (Rich),Pluvial,7,Moyen (Zezika Omby),froid,12
+1884,Limoneux,Noiratre (Rich),Irrigue (Continu),16,Fort (Zezika + NPK),tres froid,28
+1885,Argileux (Madity),Orange / Rouge,Irrigue (Continu),16,Moyen (Zezika Omby),humide,41
+1886,Argileux (Madity),Noiratre (Rich),Irrigue (Continu),14,Nul,chaud,50
+1887,Limoneux,Orange / Rouge,Pluvial,9,Moyen (Zezika Omby),froid,20
+1888,Sableux,Orange / Rouge,Irrigue (Continu),17,Moyen (Zezika Omby),humide,24
+1889,Argileux (Madity),Noiratre (Rich),Pluvial,20,Nul,froid,33
+1890,Limoneux,Orange / Rouge,Irrigue (Continu),14,Nul,humide,27
+1891,Limoneux,Orange / Rouge,Pluvial,19,Moyen (Zezika Omby),humide,32
+1892,Argileux (Madity),Noiratre (Rich),Pluvial,20,Fort (Zezika + NPK),très chaud,39
+1893,Limoneux,Brun-Grisatre,Pluvial,19,Fort (Zezika + NPK),humide,29
+1894,Limoneux,Noiratre (Rich),Pluvial,18,Nul,très chaud,26
+1895,Limoneux,Orange / Rouge,Irrigue (Continu),14,Nul,froid,16
+1896,Argileux (Madity),Orange / Rouge,Pluvial,20,Moyen (Zezika Omby),froid,29
+1897,Argileux (Madity),Noiratre (Rich),Pluvial,16,Moyen (Zezika Omby),humide,37
+1898,Limoneux,Orange / Rouge,Irrigue (Continu),12,Moyen (Zezika Omby),froid,26
+1899,Limoneux,Brun-Grisatre,Pluvial,16,Nul,humide,10
+1900,Argileux (Madity),Brun-Grisatre,Pluvial,6,Nul,très chaud,10
+1901,Limoneux,Noiratre (Rich),Pluvial,20,Nul,chaud,36
+1902,Sableux,Noiratre (Rich),Irrigue (Continu),20,Nul,humide,33
+1903,Sableux,Noiratre (Rich),Pluvial,11,Moyen (Zezika Omby),chaud,31
+1904,Limoneux,Noiratre (Rich),Pluvial,18,Nul,humide,32
+1905,Limoneux,Brun-Grisatre,Irrigue (Continu),6,Moyen (Zezika Omby),humide,26
+1906,Argileux (Madity),Orange / Rouge,Irrigue (Continu),13,Fort (Zezika + NPK),chaud,50
+1907,Limoneux,Orange / Rouge,Pluvial,18,Fort (Zezika + NPK),humide,36
+1908,Limoneux,Orange / Rouge,Irrigue (Continu),20,Fort (Zezika + NPK),humide,39
+1909,Limoneux,Brun-Grisatre,Irrigue (Continu),18,Fort (Zezika + NPK),chaud,38
+1910,Limoneux,Orange / Rouge,Irrigue (Continu),10,Nul,humide,17
+1911,Argileux (Madity),Orange / Rouge,Pluvial,5,Moyen (Zezika Omby),chaud,34
+1912,Sableux,Noiratre (Rich),Pluvial,13,Nul,froid,11
+1913,Limoneux,Brun-Grisatre,Pluvial,9,Nul,tres froid,10
+1914,Sableux,Orange / Rouge,Irrigue (Continu),8,Moyen (Zezika Omby),très chaud,25
+1915,Argileux (Madity),Orange / Rouge,Irrigue (Continu),10,Moyen (Zezika Omby),tres froid,24
+1916,Argileux (Madity),Orange / Rouge,Pluvial,14,Nul,tres froid,10
+1917,Sableux,Noiratre (Rich),Pluvial,10,Moyen (Zezika Omby),tres froid,10
+1918,Argileux (Madity),Brun-Grisatre,Irrigue (Continu),19,Fort (Zezika + NPK),humide,47
+1919,Sableux,Brun-Grisatre,Pluvial,15,Moyen (Zezika Omby),très chaud,26
+1920,Argileux (Madity),Noiratre (Rich),Pluvial,13,Moyen (Zezika Omby),tres froid,32
+1921,Argileux (Madity),Orange / Rouge,Irrigue (Continu),11,Fort (Zezika + NPK),très chaud,40
+1922,Argileux (Madity),Orange / Rouge,Pluvial,7,Nul,tres froid,10
+1923,Sableux,Noiratre (Rich),Pluvial,9,Moyen (Zezika Omby),froid,15
+1924,Argileux (Madity),Noiratre (Rich),Pluvial,5,Moyen (Zezika Omby),humide,31
+1925,Argileux (Madity),Brun-Grisatre,Pluvial,17,Moyen (Zezika Omby),très chaud,35
+1926,Sableux,Brun-Grisatre,Pluvial,14,Fort (Zezika + NPK),froid,21
+1927,Sableux,Brun-Grisatre,Irrigue (Continu),16,Moyen (Zezika Omby),humide,21
+1928,Limoneux,Orange / Rouge,Irrigue (Continu),14,Moyen (Zezika Omby),très chaud,28
+1929,Argileux (Madity),Orange / Rouge,Pluvial,20,Moyen (Zezika Omby),tres froid,27
+1930,Limoneux,Brun-Grisatre,Irrigue (Continu),7,Fort (Zezika + NPK),chaud,41
+1931,Argileux (Madity),Orange / Rouge,Pluvial,20,Fort (Zezika + NPK),tres froid,50
+1932,Sableux,Brun-Grisatre,Irrigue (Continu),9,Moyen (Zezika Omby),chaud,31
+1933,Sableux,Brun-Grisatre,Pluvial,16,Moyen (Zezika Omby),froid,15
+1934,Argileux (Madity),Orange / Rouge,Pluvial,5,Nul,chaud,23
+1935,Sableux,Orange / Rouge,Irrigue (Continu),7,Nul,chaud,12
+1936,Argileux (Madity),Noiratre (Rich),Pluvial,14,Fort (Zezika + NPK),froid,36
+1937,Sableux,Brun-Grisatre,Pluvial,9,Fort (Zezika + NPK),très chaud,18
+1938,Argileux (Madity),Brun-Grisatre,Irrigue (Continu),12,Nul,humide,32
+1939,Limoneux,Noiratre (Rich),Irrigue (Continu),6,Nul,froid,19
+1940,Argileux (Madity),Noiratre (Rich),Irrigue (Continu),11,Nul,chaud,48
+1941,Argileux (Madity),Noiratre (Rich),Pluvial,12,Fort (Zezika + NPK),humide,32
+1942,Argileux (Madity),Brun-Grisatre,Pluvial,11,Fort (Zezika + NPK),froid,31
+1943,Limoneux,Brun-Grisatre,Pluvial,11,Fort (Zezika + NPK),froid,28
+1944,Sableux,Noiratre (Rich),Pluvial,15,Nul,froid,19
+1945,Argileux (Madity),Orange / Rouge,Pluvial,9,Moyen (Zezika Omby),humide,34
+1946,Sableux,Orange / Rouge,Pluvial,8,Moyen (Zezika Omby),tres froid,10
+1947,Limoneux,Brun-Grisatre,Pluvial,16,Moyen (Zezika Omby),chaud,32
+1948,Sableux,Noiratre (Rich),Irrigue (Continu),8,Moyen (Zezika Omby),chaud,44
+1949,Sableux,Orange / Rouge,Pluvial,9,Moyen (Zezika Omby),froid,10
+1950,Limoneux,Orange / Rouge,Pluvial,15,Moyen (Zezika Omby),humide,23
+1951,Limoneux,Orange / Rouge,Irrigue (Continu),12,Nul,humide,22
+1952,Limoneux,Orange / Rouge,Irrigue (Continu),20,Moyen (Zezika Omby),chaud,44
+1953,Sableux,Orange / Rouge,Pluvial,6,Nul,froid,10
+1954,Limoneux,Orange / Rouge,Irrigue (Continu),20,Moyen (Zezika Omby),humide,26
+1955,Sableux,Noiratre (Rich),Pluvial,11,Moyen (Zezika Omby),froid,10
+1956,Argileux (Madity),Orange / Rouge,Irrigue (Continu),13,Fort (Zezika + NPK),très chaud,46
+1957,Argileux (Madity),Brun-Grisatre,Pluvial,20,Fort (Zezika + NPK),chaud,50
+1958,Sableux,Orange / Rouge,Irrigue (Continu),9,Fort (Zezika + NPK),tres froid,12
+1959,Limoneux,Noiratre (Rich),Irrigue (Continu),6,Fort (Zezika + NPK),froid,30
+1960,Sableux,Brun-Grisatre,Irrigue (Continu),14,Fort (Zezika + NPK),tres froid,23
+1961,Limoneux,Orange / Rouge,Irrigue (Continu),8,Nul,chaud,33
+1962,Sableux,Orange / Rouge,Pluvial,15,Moyen (Zezika Omby),tres froid,10
+1963,Argileux (Madity),Brun-Grisatre,Irrigue (Continu),18,Fort (Zezika + NPK),humide,42
+1964,Sableux,Brun-Grisatre,Pluvial,7,Nul,chaud,13
+1965,Limoneux,Brun-Grisatre,Irrigue (Continu),17,Nul,froid,18
+1966,Sableux,Orange / Rouge,Pluvial,10,Moyen (Zezika Omby),tres froid,10
+1967,Limoneux,Noiratre (Rich),Pluvial,18,Nul,froid,21
+1968,Sableux,Brun-Grisatre,Irrigue (Continu),9,Nul,chaud,27
+1969,Sableux,Orange / Rouge,Irrigue (Continu),6,Fort (Zezika + NPK),tres froid,10
+1970,Sableux,Noiratre (Rich),Pluvial,8,Nul,tres froid,10
+1971,Sableux,Orange / Rouge,Pluvial,14,Nul,humide,13
+1972,Sableux,Noiratre (Rich),Irrigue (Continu),8,Fort (Zezika + NPK),chaud,49
+1973,Limoneux,Orange / Rouge,Pluvial,10,Moyen (Zezika Omby),humide,25
+1974,Sableux,Brun-Grisatre,Irrigue (Continu),16,Moyen (Zezika Omby),tres froid,20
+1975,Argileux (Madity),Noiratre (Rich),Irrigue (Continu),19,Moyen (Zezika Omby),tres froid,49
+1976,Sableux,Noiratre (Rich),Pluvial,13,Moyen (Zezika Omby),très chaud,25
+1977,Argileux (Madity),Noiratre (Rich),Irrigue (Continu),20,Fort (Zezika + NPK),froid,50
+1978,Limoneux,Brun-Grisatre,Pluvial,18,Moyen (Zezika Omby),chaud,32
+1979,Argileux (Madity),Brun-Grisatre,Irrigue (Continu),11,Moyen (Zezika Omby),chaud,47
+1980,Sableux,Orange / Rouge,Irrigue (Continu),16,Nul,humide,20
+1981,Sableux,Orange / Rouge,Pluvial,10,Fort (Zezika + NPK),froid,12
+1982,Argileux (Madity),Orange / Rouge,Irrigue (Continu),18,Moyen (Zezika Omby),froid,33
+1983,Sableux,Orange / Rouge,Irrigue (Continu),8,Nul,chaud,20
+1984,Sableux,Brun-Grisatre,Pluvial,15,Moyen (Zezika Omby),froid,21
+1985,Limoneux,Noiratre (Rich),Pluvial,19,Fort (Zezika + NPK),froid,29
+1986,Limoneux,Orange / Rouge,Irrigue (Continu),20,Nul,tres froid,10
+1987,Argileux (Madity),Noiratre (Rich),Irrigue (Continu),20,Fort (Zezika + NPK),tres froid,38
+1988,Sableux,Noiratre (Rich),Irrigue (Continu),17,Nul,très chaud,32
+1989,Limoneux,Orange / Rouge,Pluvial,9,Nul,tres froid,11
+1990,Argileux (Madity),Orange / Rouge,Irrigue (Continu),16,Moyen (Zezika Omby),tres froid,38
+1991,Sableux,Noiratre (Rich),Pluvial,13,Nul,froid,21
+1992,Argileux (Madity),Orange / Rouge,Pluvial,9,Moyen (Zezika Omby),froid,28
+1993,Argileux (Madity),Noiratre (Rich),Pluvial,6,Fort (Zezika + NPK),très chaud,21
+1994,Limoneux,Orange / Rouge,Pluvial,15,Moyen (Zezika Omby),humide,26
+1995,Argileux (Madity),Orange / Rouge,Pluvial,17,Nul,chaud,34
+1996,Argileux (Madity),Orange / Rouge,Pluvial,11,Moyen (Zezika Omby),chaud,43
+1997,Limoneux,Noiratre (Rich),Irrigue (Continu),16,Nul,très chaud,32
+1998,Limoneux,Orange / Rouge,Irrigue (Continu),10,Moyen (Zezika Omby),tres froid,30
+1999,Argileux (Madity),Orange / Rouge,Pluvial,15,Fort (Zezika + NPK),chaud,40
+2000,Sableux,Brun-Grisatre,Irrigue (Continu),11,Fort (Zezika + NPK),froid,11

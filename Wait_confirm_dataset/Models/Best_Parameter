@@ -1,0 +1,210 @@
+fish_life_quality_classifier:
+Starting Grid Search for Logistic Regression...
+Best parameters for Logistic Regression: {'C': 0.1, 'max_iter': 1000, 'penalty': 'l2', 'solver': 'saga'}
+Best CV Score: 0.7866
+----------------------------------------
+Starting Grid Search for Decision Tree...
+Best parameters for Decision Tree: {'criterion': 'gini', 'max_depth': 10, 'min_samples_leaf': 4, 'min_samples_split': 5}
+Best CV Score: 0.9081
+----------------------------------------
+Starting Grid Search for Random Forest...
+Best parameters for Random Forest: {'max_depth': None, 'max_features': 'sqrt', 'min_samples_split': 5, 'n_estimators': 100}
+Best CV Score: 0.9211
+----------------------------------------
+Starting Grid Search for SVM...
+Best parameters for SVM: {'C': 1, 'gamma': 'scale', 'kernel': 'rbf'}
+Best CV Score: 0.9001
+----------------------------------------
+Starting Grid Search for XGBoost...
+Best parameters for XGBoost: {'learning_rate': 0.1, 'max_depth': 7, 'n_estimators': 50}
+Best CV Score: 0.9208
+----------------------------------------
+
+densite_poisson:
+Starting Grid Search for Linear Regression...
+Best parameters for Linear Regression: {'fit_intercept': False}
+Best CV Score: 0.5284
+----------------------------------------
+Starting Grid Search for Decision Tree...
+Best parameters for Decision Tree: {'ccp_alpha': 0.0, 'criterion': 'squared_error', 'max_depth': None, 'max_features': None, 'min_samples_leaf': 4, 'min_samples_split': 10, 'splitter': 'random'}
+Best CV Score: 0.5462
+----------------------------------------
+Starting Grid Search for Random Forest...
+Best parameters for Random Forest: {'max_depth': None, 'max_features': 'sqrt', 'min_samples_split': 5, 'n_estimators': 200}
+Best CV Score: 0.6264
+----------------------------------------
+Starting Grid Search for SVM...
+Best parameters for SVM: {'C': 10, 'epsilon': 0.1, 'gamma': 'scale', 'kernel': 'rbf'}
+Best CV Score: 0.6211
+----------------------------------------
+Starting Grid Search for XGBoost...
+Best parameters for XGBoost: {'gamma': 0, 'learning_rate': 0.1, 'max_depth': 3, 'min_child_weight': 5, 'n_estimators': 100}
+Best CV Score: 0.6740
+----------------------------------------
+
+Water Quality
+Starting Grid Search for Logistic Regression...
+Best parameters for Logistic Regression: {'C': 0.1, 'max_iter': 1000, 'penalty': 'l1', 'solver': 'saga'}
+Best CV Score: 0.6884
+----------------------------------------
+Starting Grid Search for Decision Tree...
+Best parameters for Decision Tree: {'criterion': 'gini', 'max_depth': 10, 'min_samples_leaf': 2, 'min_samples_split': 10}
+Best CV Score: 0.9099
+----------------------------------------
+Starting Grid Search for Random Forest...
+Best parameters for Random Forest: {'max_depth': 10, 'max_features': 'sqrt', 'min_samples_split': 2, 'n_estimators': 20}
+Best CV Score: 0.9137
+----------------------------------------
+Starting Grid Search for SVM...
+Best parameters for SVM: {'C': 1, 'gamma': 'scale', 'kernel': 'rbf'}
+Best CV Score: 0.8503
+----------------------------------------
+Starting Grid Search for XGBoost...
+Best parameters for XGBoost: {'learning_rate': 0.2, 'max_depth': 3, 'n_estimators': 100}
+Best CV Score: 0.9198
+----------------------------------------
+
+
+Seasonally adjusted Timeseries
+============================================================
+Column : PH
+============================================================
+--------------------
+Component : adjusted
+--------------------
+Starting Grid Search for Linear Regression...
+Best parameters for Linear Regression: {'fit_intercept': True}
+Best CV Score: 0.1164
+----------------------------------------
+Starting Grid Search for Decision Tree...
+Best parameters for Decision Tree: {'ccp_alpha': 0.01, 'criterion': 'absolute_error', 'splitter': 'random'}
+Best CV Score: 0.0475
+----------------------------------------
+Starting Grid Search for Random Forest...
+Best parameters for Random Forest: {'criterion': 'absolute_error', 'max_features': 'sqrt', 'n_estimators': 30}
+Best CV Score: -0.2750
+----------------------------------------
+Starting Grid Search for XGBoost...
+Best parameters for XGBoost: {'gamma': 0.2, 'learning_rate': 0.1, 'n_estimators': 50}
+Best CV Score: 0.1148
+----------------------------------------
+============================================================
+Column : TEMP
+============================================================
+--------------------
+Component : adjusted
+--------------------
+Starting Grid Search for Linear Regression...
+Best parameters for Linear Regression: {'fit_intercept': True}
+Best CV Score: 0.1119
+----------------------------------------
+Starting Grid Search for Decision Tree...
+Best parameters for Decision Tree: {'ccp_alpha': 0.01, 'criterion': 'absolute_error', 'splitter': 'best'}
+Best CV Score: 0.1498
+----------------------------------------
+Starting Grid Search for Random Forest...
+Best parameters for Random Forest: {'criterion': 'absolute_error', 'max_features': 'sqrt', 'n_estimators': 50}
+Best CV Score: -0.4168
+----------------------------------------
+Starting Grid Search for XGBoost...
+Best parameters for XGBoost: {'gamma': 0.1, 'learning_rate': 0.1, 'n_estimators': 50}
+Best CV Score: 0.1505
+----------------------------------------
+============================================================
+Column : DO
+============================================================
+--------------------
+Component : adjusted
+--------------------
+Starting Grid Search for Linear Regression...
+Best parameters for Linear Regression: {'fit_intercept': True}
+Best CV Score: 0.2183
+----------------------------------------
+Starting Grid Search for Decision Tree...
+
+/usr/local/lib/python3.12/dist-packages/sklearn/model_selection/_validation.py:528: FitFailedWarning: 
+18 fits failed out of a total of 72.
+The score on these train-test partitions for these parameters will be set to nan.
+If these failures are not expected, you can try to debug them by setting error_score='raise'.
+
+Below are more details about the failures:
+--------------------------------------------------------------------------------
+18 fits failed with the following error:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/dist-packages/sklearn/model_selection/_validation.py", line 866, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "/usr/local/lib/python3.12/dist-packages/sklearn/base.py", line 1389, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/sklearn/tree/_classes.py", line 1404, in fit
+    super()._fit(
+  File "/usr/local/lib/python3.12/dist-packages/sklearn/tree/_classes.py", line 269, in _fit
+    raise ValueError(
+ValueError: Some value(s) of y are negative which is not allowed for Poisson regression.
+
+  warnings.warn(some_fits_failed_message, FitFailedWarning)
+/usr/local/lib/python3.12/dist-packages/sklearn/model_selection/_search.py:1108: UserWarning: One or more of the test scores are non-finite: [-0.42553554 -0.42485111 -0.42553554 -0.42491759 -0.42553554 -0.42160173
+         nan         nan  0.34384428  0.35266451  0.34384428  0.35088046
+  0.3342252   0.32798135         nan         nan  0.3371947   0.34143005
+  0.3371947   0.32162753  0.29301522  0.30253421         nan         nan]
+  warnings.warn(
+
+Best parameters for Decision Tree: {'ccp_alpha': 0.01, 'criterion': 'squared_error', 'splitter': 'random'}
+Best CV Score: 0.2465
+----------------------------------------
+Starting Grid Search for Random Forest...
+
+/usr/local/lib/python3.12/dist-packages/sklearn/model_selection/_validation.py:528: FitFailedWarning: 
+18 fits failed out of a total of 72.
+The score on these train-test partitions for these parameters will be set to nan.
+If these failures are not expected, you can try to debug them by setting error_score='raise'.
+
+Below are more details about the failures:
+--------------------------------------------------------------------------------
+18 fits failed with the following error:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/dist-packages/sklearn/model_selection/_validation.py", line 866, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "/usr/local/lib/python3.12/dist-packages/sklearn/base.py", line 1389, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/sklearn/ensemble/_forest.py", line 407, in fit
+    raise ValueError(
+ValueError: Some value(s) of y are negative which is not allowed for Poisson regression.
+
+  warnings.warn(some_fits_failed_message, FitFailedWarning)
+/usr/local/lib/python3.12/dist-packages/sklearn/model_selection/_search.py:1108: UserWarning: One or more of the test scores are non-finite: [-0.02278676 -0.01224077 -0.02071613 -0.01393525 -0.01697172 -0.01033923
+  0.00113315  0.00221884 -0.00475316  0.00110434 -0.00315663  0.00040522
+         nan         nan         nan         nan         nan         nan
+ -0.01710052 -0.01532336 -0.02207083 -0.01045897 -0.02080578 -0.01210966]
+  warnings.warn(
+
+Best parameters for Random Forest: {'criterion': 'absolute_error', 'max_features': None, 'n_estimators': 50}
+Best CV Score: -0.1398
+----------------------------------------
+Starting Grid Search for XGBoost...
+Best parameters for XGBoost: {'gamma': 0, 'learning_rate': 0.1, 'n_estimators': 50}
+Best CV Score: 0.2443
+----------------------------------------
+============================================================
+Column : TURBIDITY
+============================================================
+--------------------
+Component : adjusted
+--------------------
+Starting Grid Search for Linear Regression...
+Best parameters for Linear Regression: {'fit_intercept': True}
+Best CV Score: 0.1215
+----------------------------------------
+Starting Grid Search for Decision Tree...
+Best parameters for Decision Tree: {'ccp_alpha': 0.01, 'criterion': 'absolute_error', 'splitter': 'random'}
+Best CV Score: 0.1668
+----------------------------------------
+Starting Grid Search for Random Forest...
+Best parameters for Random Forest: {'criterion': 'absolute_error', 'max_features': 'log2', 'n_estimators': 50}
+Best CV Score: -0.3155
+----------------------------------------
+Starting Grid Search for XGBoost...
+Best parameters for XGBoost: {'gamma': 0, 'learning_rate': 0.1, 'n_estimators': 50}
+Best CV Score: 0.1685
+----------------------------------------

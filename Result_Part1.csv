@@ -1,0 +1,7 @@
+,Wrapper,Model,Best_Params,Execution_Time_Sec,Temperature_RMSE,Temperature_R2,Dissolved_Oxygen_RMSE,Dissolved_Oxygen_R2,pH_RMSE,pH_R2,Turbidity_RMSE,Turbidity_R2
+0,MultiOutput,LinearRegression,{'model__estimator__fit_intercept': True},0.23,0.6137,-0.005,0.6271,-0.0029,0.2073,-0.0012,0.425,-0.0024
+1,MultiOutput,DecisionTree,"{'model__estimator__max_depth': 3, 'model__estimator__min_samples_leaf': 2, 'model__estimator__min_samples_split': 10}",19.66,0.6171,-0.016,0.6304,-0.0136,0.2087,-0.015,0.4295,-0.0235
+2,MultiOutput,RandomForest,"{'model__estimator__max_depth': 3, 'model__estimator__min_samples_split': 3, 'model__estimator__n_estimators': 20}",769.37,0.6138,-0.0053,0.627,-0.0028,0.2074,-0.0017,0.4244,0.0006
+3,RegressorChain,LinearRegression,{'model__base_estimator__fit_intercept': True},0.12,0.6137,-0.005,0.6271,-0.0029,0.2073,-0.0012,0.425,-0.0024
+4,RegressorChain,DecisionTree,"{'model__base_estimator__max_depth': 3, 'model__base_estimator__min_samples_leaf': 2, 'model__base_estimator__min_samples_split': 10}",23.55,0.6171,-0.016,0.6304,-0.0136,0.2087,-0.015,0.4288,-0.0202
+5,RegressorChain,RandomForest,"{'model__base_estimator__max_depth': 3, 'model__base_estimator__min_samples_split': 2, 'model__base_estimator__n_estimators': 100}",920.18,0.6139,-0.0054,0.6269,-0.0024,0.207,0.0017,0.4248,-0.0015
