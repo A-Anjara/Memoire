@@ -1,6 +1,7 @@
-\documentclass[a4paper,12pt, oneside]{book}
+\documentclass[a4paper,11pt, oneside]{article}
 
 \usepackage[utf8]{inputenc}
+\usepackage[french]{babel}
 \usepackage{url}  % Pour utiliser \url{...} dans les références
 \usepackage{graphicx} % Pour insérer des images
 \usepackage{setspace} % Pour gérer l'interligne
@@ -9,12 +10,12 @@
 \usepackage[T1]{fontenc} 
 \usepackage{newtxtext} % Texte en Times New Roman
 \usepackage{newtxmath} % Symboles mathématiques compatibles Times
-
-\usepackage[margin=2cm, bottom=2.5cm]{geometry} 
+\usepackage{array} % Vertical Alignement Table
+\usepackage[margin=1.75cm, bottom=2.5cm]{geometry} 
 %packages pour ajouter le code python 
 \usepackage{listings}
 \usepackage{xcolor} % déjà présent, utile pour les couleurs dans le code
-
+\usepackage{longtable}
 \usepackage{fancyhdr}
 \pagestyle{fancy}
 \fancyhf{} % Completely clears the default top headers and bottom footers
@@ -40,19 +41,19 @@ Sommaire
 }
 
 % 2. Limit ToC depth to Level-2 headings (\subsection)
-\setcounter{tocdepth}{2}
-\makeatletter
-\let\oldcontentsline\contentsline
-\renewcommand{\contentsline}[4]{%
+%\setcounter{tocdepth}{2}
+%\makeatletter
+%\let\oldcontentsline\contentsline
+%\renewcommand{\contentsline}[4]{%
   % This strips out the page number variable (#3) from compiling inside the ToC rows
-  \oldcontentsline{#1}{#2}{}{#4}%
-}
+ % \oldcontentsline{#1}{#2}{}{#4}%
+%}
 %\renewcommand{\@dotsep}{10000} % Enlève les pointillés sur la TOC
-\makeatother
+%\makeatother
 
 
 
-\renewcommand{\chaptername}{Chapitre} 
+% \renewcommand{\chaptername}{Chapitre} 
 \usepackage{float}
 
 \begin{document}
@@ -83,18 +84,67 @@ Enfin, je ne saurais oublier ma famille et mes proches, dont le soutien indéfec
 \newpage
 
 \begin{center}
-\LARGE LISTE DES ABREVIATIONS, SIGLES ET ACRONYMES
+\Large LISTE DES ABREVIATIONS, SIGLES ET ACRONYMES
 \end{center}
+
+
+\begin{tabular}{ll}
+APDRA & : Association Pisciculture et Développement Rural en Afrique\\
+FAO & : Food and Agriculture Organization\\
+IISD & : Institut International du Développement Durable\\
+PADM & : Projet d'Aquaculture Durable à Madagascar \\
+\end{tabular}
+
 
 \vspace*{\fill}
 \newpage
+
 \begin{center}
 \LARGE GLOSSAIRE
 \end{center}
 
-\chapter{Présentation de l'INSI}
+\vspace*{\fill}
+\newpage
+
+\begin{center}
+\LARGE LISTE DES TABLEAUX
+\end{center}
+
+\listoftables
+
+\vspace*{\fill}
+\newpage
+
+\begin{center}
+\LARGE LISTE DES FIGURES
+\end{center}
+
+\listoffigures
+
+\vspace*{\fill}
+\newpage
 \pagenumbering{arabic}
-\section{Information d'ordre général}
+\section{Introduction}
+
+La sécurité alimentaire et la gestion des ressources aquatiques sont des enjeux importants aujourd'hui, car la population mondiale augmente et la pression sur les systèmes agricoles et halieutiques augmente aussi. Dans ce contexte, l'aquaculture devient une solution de plus en plus utilisée en complément de la pêche traditionnelle, dont les stocks naturels diminuent. Le tilapia est l'une des espèces les plus élevées dans le monde, car il s'adapte facilement à différents environnements. À Madagascar, on retrouve cette tendance à travers la rizipisciculture, une pratique qui consiste à associer l'élevage de poissons à la culture du riz dans les mêmes parcelles. Cependant, IISD constate que seulement environ 20 \% des rizières qui pourraient accueillir la rizipisciculture à Madagascar sont réellement exploitées à cet effet, ce qui montre qu'il reste une grande marge de progression, notamment freinée par le manque d'outils fiables pour surveiller et anticiper les problèmes de qualité de l'eau.\\
+
+C'est de ce constat que découle la problématique de ce mémoire : comment analyser la qualité de l'eau et les conditions environnementales d'une parcelle de rizipisciculture afin de protéger, anticiper et optimiser la production de Tilapia ?\\
+
+Pour répondre à cette problématique, l'objectif général de ce mémoire est de concevoir un système intelligent capable d'analyser les conditions environnementales d'une parcelle rizipiscicole, afin d'aider les exploitants à protéger, anticiper et optimiser leur production de tilapia. Cet objectif se décompose en trois objectifs spécifiques, correspondant aux trois fonctionnalités du système :\\
+D'abord, construire un modèle prédictif capable d'estimer la densité de tilapia atteignable à partir des caractéristiques du sol rizicole, en comparant plusieurs algorithmes de machine learning et en optimisant leurs hyperparamètres par GridSearch.\\
+Ensuite, construire un modèle de classification capable de déterminer si l'état actuel de l'eau est bon ou mauvais pour le tilapia, avec la même démarche de comparaison et d'optimisation.\\
+Enfin, développer un modèle prédictif capable d'estimer l'évolution de la qualité de l'eau dans l'heure qui suit, en combinant une décomposition de série temporelle (STL) et un modèle LSTM, afin de déclencher une alerte en cas de dégradation anticipée.\\
+
+Pour atteindre ces objectifs, la méthodologie utilisée repose sur une démarche de science des données. Elle comprend la collecte de données environnementales et physico-chimiques (caractéristiques du sol, paramètres de l'eau), leur nettoyage et leur préparation, puis leur exploitation à travers des modèles de machine learning de régression et de classification, évalués et optimisés par validation croisée et GridSearch. Pour la partie prédiction temporelle, une décomposition STL est appliquée avant d'entraîner un modèle LSTM. Les outils utilisés sont principalement issus de l'écosystème Python, avec les bibliothèques scikit-learn, statsmodels et TensorFlow/Keras.\\
+
+Ce projet présente un intérêt sur plusieurs plans. Sur le plan pédagogique, il permet de mettre en pratique, sur un cas concret, l'ensemble des étapes d'un projet de science des données, de la collecte des données jusqu'au déploiement de modèles prédictifs. Sur le plan professionnel, il s'inscrit dans la dynamique de digitalisation de l'agriculture soutenue par l'État malagasy. Sur le plan sociétal, il vise à donner aux exploitants rizipisciculteurs un outil simple pour anticiper les problèmes et protéger leur production.\\
+
+Ce mémoire est organisé en plusieurs chapitres. Le premier chapitre présente un état de l'art et le cadre théorique du sujet. Le deuxième chapitre présente la méthodologie du projet, avec la description des données, leur préparation et l'architecture générale du système. Le troisième chapitre présente la mise en œuvre des trois fonctionnalités et l'évaluation comparative des modèles obtenus. Le dernier chapitre discute des résultats ainsi que des pistes d'amélioration pour le système.
+\vspace*{\fill}
+\newpage
+
+\section{Présentation de l'INSI}
+\subsection{Information d'ordre général}
 
 INSI (Institut National Supérieur d'Informatique) est un institut universitaire situé à Antananarivo, spécialisé dans le domaine de l'informatique. Il accueille principalement des bacheliers ayant choisi cette filière, mais reste également ouvert à toute personne manifestant un intérêt particulier pour les métiers du numérique, à travers son centre de formation professionnelle.
 
@@ -103,7 +153,7 @@ L'établissement a été fondé le 17 août 2021 et son siège se trouve à Anka
 Pour tout renseignement, vous pouvez nous contacter par email à contact@insi.mg ou visiter notre site web : www.insi.mg.
 
 INSI University bénéficie du soutien d'entreprises partenaires, dont Ilo Madagascar SARLU et Data Pulse Center, qui sont également à l'origine de sa création.
-\section{Missions et historiques}
+\subsection{Missions et historiques}
 
 INSI University a été fondée le 17 août 2021 à Antananarivo, dans un contexte marqué par une forte demande de compétences dans le domaine de l'informatique et des technologies numériques.
 
@@ -113,13 +163,13 @@ Depuis sa création, INSI ne cesse d'évoluer en adaptant ses formations aux enj
 
 La mission principale de l'INSI est de former des experts compétents, éthiques et innovants dans le domaine de l'informatique, capables de contribuer activement au développement économique et numérique de Madagascar.
 
-\section{Organigramme de l'INSI}
+\subsection{Organigramme de l'INSI}
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=10cm]{organigramme.png}
     \caption{Organigramme de l’INSI }
-        \caption*{\textit{Source : INSI, 2025}} % n'apparaît pas dans la liste des figures
+    \textit{Source : INSI, 2025}
     \label{fig:organigramme}
 \end{figure}
 
@@ -154,11 +204,11 @@ D’autres structures, bien que non représentées sur cet organigramme, contrib
 \end{itemize}
 
 Cette structure témoigne d’une organisation à la fois pédagogique, administrative et tournée vers l’international et l’employabilité, assurant une formation complète et professionnalisante aux étudiants.
-\section{Domaine de spécialisation}
+\subsection{Domaine de spécialisation}
 
 INSI University propose des parcours académiques professionnalisants dans le domaine de l’informatique et des technologies numériques, articulés autour de licences professionnelles, de masters spécialisés, de formations professionnelles continues et d’opportunités de mobilité internationale.
 
-\subsection{Licences professionnelles}
+\subsubsection{Licences professionnelles}
 
 Les programmes de licence offrent une formation de base solide, axée sur la pratique, et préparant à une insertion rapide dans le monde professionnel :
 
@@ -168,7 +218,7 @@ Les programmes de licence offrent une formation de base solide, axée sur la pra
     \item \textbf{IAD (Intelligence Artificielle et Data Science)} : Introduction aux algorithmes d’IA, au traitement de données et à l’apprentissage automatique.
 \end{itemize}
 
-\subsection{Masters professionnels}
+\subsubsection{Masters professionnels}
 
 Les masters permettent d’approfondir les compétences techniques et managériales, en lien étroit avec les évolutions du secteur :
 
@@ -178,13 +228,13 @@ Les masters permettent d’approfondir les compétences techniques et managéria
     \item \textbf{I2AD (Intelligence Artificielle, Analyse de Données et Automatisation)} : Applications avancées de l’IA, automatisation des processus et science des données.
 \end{itemize}
 
-\subsection{Formations professionnelles continues}
+\subsubsection{Formations professionnelles continues}
 
 INSI University propose également des formations professionnelles continues, spécifiquement conçues pour les professionnels déjà en poste souhaitant approfondir leurs compétences ou se spécialiser dans l’un des domaines proposés.
 
 Ces formations sont adaptées aux contraintes des professionnels (horaires flexibles, modules pratiques) et visent à renforcer leur employabilité ou à accompagner leur évolution de carrière.
 
-\subsection{Mobilité internationale et double diplôme}
+\subsubsection{Mobilité internationale et double diplôme}
 
 Dans une optique d’ouverture et de reconnaissance internationale, INSI propose à ses étudiants des opportunités de mobilité académique et de double diplôme, à partir de la deuxième année (L2) :
 
@@ -204,14 +254,14 @@ Dans une optique d’ouverture et de reconnaissance internationale, INSI propose
     \item Niveau B2 ou C1 en anglais pour les destinations anglophones.
 \end{itemize}
 
-\section{Architectures des formations pédagogiques}
+\subsection{Architectures des formations pédagogiques}
 
 Le recrutement des étudiants à l’INSI s’effectue exclusivement par sélection de dossiers pour l’entrée en première année de Licence (L1), et par voie de concours pour l’admission en Master 1.
 
 Au sein de l’INSI, une seule mention est proposée : \textbf{Informatique}, déclinée en trois parcours distincts aux niveaux Licence et Master.
 
 
-\begin{table}
+\begin{table}[H]
 \centering
 \begin{tabular}{|l|l|}
 \hline
@@ -225,7 +275,7 @@ Intelligence Artificielle et Data Science (IAD) & Intelligence Artificielle, Ana
 \hline
 \end{tabular}
 \caption{Parcours Licence et Master proposés à l’INSI}
-\caption*{\textit{Source : INSI, 2025}}
+\textit{Source : INSI, 2025}
 \label{tab:parcours}
 \end{table} 
 
@@ -246,7 +296,7 @@ Le MASTER PROFESSIONNEL est un diplôme destiné à la recherche emploi au terme
     Hackathons, soutenances exposées, projets réels en entreprise
 \end{itemize}
 
-\textbf{VI. Relations de l’INSI avec les entreprises et les organismes} 
+\subsubsection{Relations de l’INSI avec les entreprises et les organismes} 
 L’Institut National Supérieur en Informatique (INSI) entretient des liens étroits avec le monde professionnel. L’INSI collabore activement avec de nombreux organismes publics, semi-publics et privés, tant au niveau national qu’international. Cette collaboration se traduit concrètement par l’organisation régulière de stages obligatoires pour les étudiants, favorisant leur immersion professionnelle et leur employabilité.\\
 
 Parmi les entreprises et institutions partenaires accueillant nos étudiants en stage chaque année :
@@ -277,7 +327,7 @@ Parmi les entreprises ayant accueilli ces initiatives :
 
 Cette dynamique de partenariat permanent constitue un pilier de la pédagogie à l’INSI, en lien avec son objectif de former des professionnels compétents, opérationnels et ancrés dans les besoins du marché.\\
 
-\textbf{VII. Partenariat au niveau international} 
+\subsubsection{Partenariat au niveau international} 
 L’INSI s’est inscrit dans une dynamique d’ouverture à l’international grâce à son partenaire fondateur, ILO Madagascar, représentant de l’Organisation Internationale du Travail. Cette orientation se renforce aujourd’hui à travers des partenariats stratégiques avec des institutions académiques et des entreprises internationales, permettant à l’Institut de proposer une formation alignée sur les standards mondiaux.\\
 
 L’INSI bénéficie actuellement de programmes de co-diplomation et de double diplôme en collaboration avec plusieurs établissements internationaux de renom :
@@ -296,7 +346,7 @@ Par ailleurs, à travers les stages annuels et projets pédagogiques, l’INSI c
     \item NOVITY
 \end{itemize}
 
-\textbf{VIII. Parcours professionnels des diplômés} 
+\subsubsection{Parcours professionnels des diplômés} 
 Les diplômés de la Licence en Informatique de l’INSI disposent d’un socle solide de compétences en programmation, systèmes, réseaux, bases de données et développement logiciel. Cette polyvalence leur permet d’intégrer directement le marché du travail ou de poursuivre en Master. À ce niveau, ils peuvent exercer en tant que :
 \begin{itemize}
     \item Technicien système et réseau
@@ -343,7 +393,7 @@ La formation de Master proposée à l’INSI, grâce à ses parcours spécialis�
 
 Grâce aux partenariats internationaux et aux projets en entreprise, les diplômés du Master peuvent également prétendre à des postes dans des structures multinationales, ou poursuivre une carrière académique et de recherche (doctorat, enseignement supérieur).\\
 
-\textbf{IX. Ressources humaines} 
+\subsubsection{Ressources humaines} 
 L’INSI s’appuie sur une équipe pédagogique et administrative compétente, dynamique et engagée dans la réussite de ses étudiants. Ses ressources humaines se répartissent comme suit :
 \begin{itemize}
     \item Président Directeur de l’INSI : Dr RAMASONDRANO Andriamanjaka
@@ -355,6 +405,253 @@ L’INSI s’appuie sur une équipe pédagogique et administrative compétente, 
     \item Nombres des personnels administratives : 04
     \item Personnels d’appui : 6
 \end{itemize}
+
+\vfill*{}
+\newpage
+
+\section{État de l'art et Cadre théorique}
+\subsection{Contexte et analyse sectorielle de la rizipisciculture à Madagascar}
+Le tilapia est l'une des espèces les plus élevées dans le monde, car il s'adapte facilement à différents environnements. La rizipisciculture est une pratique qui consiste à associer l'élevage de poissons à la culture du riz dans les mêmes parcelles. Cette technique est utilisée depuis le milieu du XX\textsuperscript{ème} siècle et présente un avantage simple : le riz protège les poissons et leur sert de nourriture, tandis que les poissons fertilisent naturellement les rizières. Des études réalisées sur les Hautes-Terres malgaches par l'APDRA montrent que l'ajout de poissons dans une rizière peut augmenter le rendement du riz de 10 \% à 20 \%, sans réduire la surface cultivable.\\
+
+Pour situer ce sujet, plusieurs aspects peuvent être analysés. Du côté politique, l'État malgache met en place une stratégie de modernisation numérique de l'agriculture. La Stratégie Nationale de Transformation Digitale de l'Agriculture (2024-2028), portée par le Ministère de l'Agriculture et de la Souveraineté Alimentaire avec le Ministère du Développement Numérique, prévoit la mise en place d'une Infrastructure Publique Numérique Agricole. Cette infrastructure doit relier les différents acteurs du secteur (institutions publiques, instituts de recherche comme le FOFIFA, organisations de producteurs) et garantir que les données agricoles restent maîtrisées par le pays. Cette stratégie est aussi soutenue par des partenaires comme la Banque mondiale et la FAO.\\
+
+Du côté économique, la rizipisciculture permet aux paysans d'obtenir deux produits (riz et poisson) sur la même parcelle, pour un coût d'installation réduit, ce qui en fait une source de revenu supplémentaire intéressante.\\
+
+Du côté socioculturel, la rizipisciculture est une pratique ancienne à Madagascar utilisée par les paysans à travers le pays. Le tilapia est bien connu et apprécié par les consommateurs locaux, notamment parce qu'il grandit vite. Pourtant, la grande majorité des riziculteurs malgaches cultivent uniquement le riz et ne pratiquent pas l'élevage de tilapia dans leurs parcelles, souvent par manque de connaissance de la pratique ou par manque d'outils pour la mener sereinement.\\
+
+Du côté technologique, l'usage de capteurs et de modèles de machine learning pour surveiller la qualité de l'eau se développe déjà dans l'aquaculture intensive à l'échelle mondiale. Mais à Madagascar, ces outils sont encore peu utilisés dans la rizipisciculture, où le suivi de l'eau se fait encore principalement à l'œil ou de façon manuelle.\\
+
+Du côté environnemental, la rizipisciculture est considérée comme un système de production qui a un faible impact écologique. IISD affirme une réduction des émissions de gaz à effet de serre d'environ 0,81 kg de CO\textsubscript{2} équivalent par kilogramme de riz produit, par rapport à des systèmes de pisciculture plus intensifs. Mais la qualité de l'eau dans une parcelle rizipiscicole peut varier rapidement (température, oxygène, nutriments), et si ces variations ne sont pas surveillées et anticipées, elles peuvent mettre en danger les poissons élevés.\\
+
+Enfin, du côté légal, le développement de l'aquaculture à Madagascar est encadré depuis le milieu des années 2000 par une stratégie nationale de développement durable de l'aquaculture, mise en place par le Ministère chargé de la Pêche avec la FAO. Plus récemment, la feuille de route de l'Infrastructure Publique Numérique Agricole insiste sur la gouvernance et la maîtrise des données du secteur.\\
+
+Face à ces défis environnementaux et techniques, l'application de l'intelligence artificielle offre une opportunité de suivi automatisé. La section suivante présente les fondements théoriques des algorithmes retenus pour cette étude.
+
+\subsection{Fondements théoriques des modèles d'apprentissage et de traitement de données}
+
+Après avoir situé le contexte sectoriel de la rizipisciculture, il est nécessaire de poser les bases théoriques des outils qui seront utilisés dans ce mémoire. Cette section présente d'abord les algorithmes de machine learning mobilisés pour les tâches de régression et de classification, ainsi que la méthode d'optimisation retenue, puis les techniques d'analyse temporelle et de deep learning utilisées pour la prédiction à court terme de la qualité de l'eau.\\
+
+\subsubsection{Algorithmes de Machine Learning}
+\paragraph{Régression Linéaire\\}
+
+La régression linéaire est le modèle le plus simple pour prédire une valeur numérique continue à partir d'un ensemble de variables explicatives. Le modèle suppose qu'il existe une relation linéaire entre les variables d'entrée ( $x_1, x_2, \dots, x_n$ ) et la variable de sortie ( y ). Pour une observation donnée, la prédiction ( $\hat{y}$ ) s'écrit :
+\[
+\hat{y} = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \dots + \beta_n x_n
+\]
+où :\\
+$\hat{y}$ est la valeur prédite\\
+$\beta_0$ est l'ordonnée à l'origine (biais), c'est-à-dire la valeur prédite lorsque toutes les variables d'entrée sont nulles\\
+$\beta_1, \dots, \beta_n$ sont les coefficients associés à chaque variable, indiquant le poids et le sens de l'influence de chaque caractéristique du sol sur la densité prédite.\\
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|m{5cm}|m{12cm}|}
+\hline
+\textbf{Hyperparamètre} & \textbf{Interprétation} \\
+\hline
+\texttt{fit\_intercept} & Indique si le modèle doit calculer l'ordonnée à l'origine $\beta_0$, ou la fixer à zéro. \texttt{True} : le biais est estimé normalement. \newline \texttt{False} : le modèle est contraint à passer par l'origine, ce qui n'est pertinent que si l'on sait a priori que $y=0$ lorsque toutes les variables sont nulles. \\
+\hline
+\texttt{alpha} (Ridge/Lasso) & Contrôle l'intensité de la pénalisation appliquée aux coefficients $\beta_i$ pour limiter le surapprentissage : plus $\alpha$ est élevé, plus les coefficients sont contraints vers de petites valeurs. \\
+\hline
+\end{tabular}
+\caption{Hyperparamètres -- Régression Linéaire}
+\end{table}
+
+\paragraph{Régression Logistique\\}
+Contrairement à la régression linéaire, la régression logistique n'est pas utilisée pour prédire une valeur continue, mais pour résoudre un problème de classification.\\
+Le problème d'une régression linéaire directe pour cette tâche est que $ \hat{y} = \beta_0 + \beta_1 x_1 + \dots + \beta_n x_n $ peut prendre n'importe quelle valeur réelle, positive ou négative, ce qui n'a pas de sens pour représenter une classe. La régression logistique résout ce problème en appliquant une fonction supplémentaire à la combinaison linéaire des variables : la fonction sigmoïde, notée $ \sigma $, qui transforme n'importe quelle valeur réelle en une valeur comprise entre 0 et 1, interprétable comme une probabilité :
+\[
+\sigma(z) = \frac{1}{1 + e^{-z}}
+\]
+En posant $ z = \beta_0 + \beta_1 x_1 + \dots + \beta_n x_n $, la probabilité que l'observation appartienne à la classe positive s'écrit :
+\[
+P(y = 1 \mid x) = \sigma(z) = \frac{1}{1 + e^{-(\beta_0 + \beta_1 x_1 + \dots + \beta_n x_n)}}
+\]
+
+\begin{longtable}{|m{5cm}|m{12cm}|}
+\hline
+\textbf{Hyperparamètre} & \textbf{Interprétation} \\
+\hline
+\texttt{C} & Inverse de la force de régularisation : une valeur faible impose une forte régularisation, une valeur élevée laisse le modèle s'ajuster plus librement aux données. \\
+\hline
+\texttt{penalty} & Type de régularisation appliquée aux coefficients.\newline\texttt{l2} : pénalise le carré des coefficients, les réduit sans les annuler \newline\texttt{l1} : pénalise leur valeur absolue, ce qui peut annuler certains coefficients (sélection de variables) \newline \texttt{elasticnet} : combinaison pondérée de l1 et l2 \newline \texttt{none} : aucune régularisation appliquée. \\
+\hline
+\texttt{solver} & Algorithme d'optimisation utilisé pour minimiser la fonction de coût logistique.\newline \texttt{lbfgs} : méthode quasi-Newton, adaptée aux jeux de données de taille moyenne avec pénalité l2 \newline \texttt{liblinear} : adapté aux petits jeux de données et compatible avec la pénalité l1 \newline \texttt{saga} : adapté aux grands jeux de données et compatible avec l1, l2 et elasticnet \newline \texttt{newton-cg} et \texttt{sag} : variantes alternatives d'optimisation, plus rapides sur de grands volumes de données avec pénalité l2. \\
+\hline
+\caption{Hyperparamètres -- Régression Logistique}
+\end{longtable}
+
+
+\paragraph{Machines à Vecteurs de Support (SVM)\\}
+Les Machines à Vecteurs de Support cherchent à séparer les données en deux classes en traçant un hyperplan (une droite, ou son équivalent en plusieurs dimensions) entre elles. Parmi tous les hyperplans possibles, le SVM choisit celui qui maximise la marge, c'est-à-dire la distance entre l'hyperplan et les points les plus proches de chaque classe, appelés vecteurs de support :
+\[
+f(x) = \mathbf{w}^T x + b
+\]
+où $\mathbf{w}$ et $b$ définissent la position et l'orientation de l'hyperplan. Un hyperplan qui maximise cette marge généralise en principe mieux sur de nouvelles données. Lorsque les données ne sont pas séparables par une simple droite, le SVM utilise l'astuce du noyau (kernel trick), qui permet de les séparer comme si elles avaient été projetées dans un espace de dimension supérieure, sans avoir à calculer cette projection. Le SVM se décline en deux variantes : le SVC pour la classification et le SVR pour la régression.
+
+\begin{longtable}{|m{5cm}|m{12cm}|}
+\hline
+\textbf{Hyperparamètre} & \textbf{Interprétation} \\
+\hline
+\texttt{C} & Contrôle le compromis entre la maximisation de la marge et la tolérance aux erreurs de classification. \\
+\hline
+\texttt{kernel} & Type de noyau utilisé pour séparer les données. \newline \texttt{linear} : suppose une séparation linéaire des données, sans transformation \newline \texttt{poly} : introduit des combinaisons polynomiales des variables, utile pour des frontières courbes simples \newline \texttt{rbf} (par défaut) : noyau gaussien, adapté à des frontières de décision complexes et non linéaires. \\
+\hline
+\texttt{gamma} & Dans le noyau RBF, contrôle l'influence de chaque point d'entraînement sur la frontière de décision. \\
+\hline
+\texttt{epsilon} (SVR) & Définit la largeur du tube de tolérance autour des prédictions, à l'intérieur duquel aucune pénalité n'est appliquée. \\
+\hline
+\end{longtable}
+
+\paragraph{Arbre de Décision\\}
+L'Arbre de Décision construit une succession de règles de décision simples sous forme d'arbre. À chaque nœud, une question binaire est posée sur une variable (par exemple : $x_j > s$ ?), ce qui dirige l'observation vers l'enfant de gauche ou de droite, jusqu'à atteindre une feuille contenant la prédiction finale. Le découpage à chaque nœud est choisi selon un critère d'homogénéité, mesuré principalement de deux façons en classification :
+
+L'impureté de Gini, qui mesure la probabilité de mal classer une observation si elle était étiquetée aléatoirement selon la distribution des classes du nœud :
+\[
+G = 1 - \sum_{k=1}^{K} p_k^2
+\]
+
+L'Entropie, issue de la théorie de l'information, qui mesure le désordre ou l'incertitude présente dans le nœud :
+\[
+H = - \sum_{k=1}^{K} p_k \log_2(p_k)
+\]
+
+où $p_k$ est la proportion d'observations de la classe $k$ dans le nœud considéré. Dans les deux cas, une valeur de 0 correspond à un nœud parfaitement homogène (une seule classe présente), tandis que la valeur est maximale lorsque les classes sont réparties de façon égale dans le nœud.
+
+\begin{longtable}{|m{5cm}|m{12cm}|}
+\hline
+\textbf{Hyperparamètre} & \textbf{Interprétation} \\
+\hline
+\texttt{max\_depth} & Profondeur maximale de l'arbre : une valeur élevée capture des relations plus complexes mais augmente le risque de surapprentissage. \\
+\hline
+\texttt{min\_samples\_split} & Nombre minimal d'observations requises dans un nœud pour autoriser un nouveau découpage. \\
+\hline
+\texttt{min\_samples\_leaf} & Nombre minimal d'observations requises dans une feuille. \\
+\hline
+\texttt{criterion} & Critère utilisé pour évaluer la qualité d'un découpage. \newline En classification : \newline \texttt{gini} mesure la probabilité de mal classer une observation tirée au hasard selon la distribution du nœud \newline \texttt{entropy} mesure le désordre des classes présentes, avec une pénalisation légèrement plus forte des nœuds très mélangés.\newline En régression : \newline \texttt{squared\_error} (erreur quadratique) est le critère standard \newline \texttt{absolute\_error} est moins sensible aux valeurs extrêmes \newline \texttt{friedman\_mse} est une variante de l'erreur quadratique optimisée pour les découpages successifs. \\
+\hline
+\caption{Hyperparamètres -- Arbre de Décision}
+\end{longtable}
+
+\paragraph{Random Forest\\}
+La Random Forest combine un grand nombre d'arbres de décision entraînés sur des échantillons différents des données (tirés aléatoirement avec remise, ou Bagging), et sur un sous-ensemble aléatoire des variables à chaque nœud. Cette double source d'aléa décorrèle les arbres entre eux et réduit la variance globale du modèle. Les prédictions sont ensuite combinées différemment selon la tâche :
+\[
+\hat{y} = \text{mode}\left(\hat{y}^{(1)}, \dots, \hat{y}^{(T)}\right) \quad \text{(classification, vote majoritaire)}
+\]
+\[
+\hat{y} = \frac{1}{T}\sum_{t=1}^{T} \hat{y}^{(t)} \quad \text{(régression, moyenne des arbres)}
+\]
+
+
+
+\begin{longtable}{|m{5cm}|m{12cm}|}
+\hline
+\textbf{Hyperparamètre} & \textbf{Interprétation} \\
+\hline
+\texttt{n\_estimators} & Nombre d'arbres constituant la forêt : plus il y en a, plus la variance du modèle est réduite, au prix d'un temps de calcul plus long. \\
+\hline
+\texttt{max\_depth} & Profondeur maximale de chaque arbre de la forêt. \\
+\hline
+\texttt{max\_features} & Nombre de variables tirées aléatoirement à considérer à chaque nœud. \newline \texttt{sqrt} : considère la racine carrée du nombre total de variables (valeur courante en classification) \newline \texttt{log2} : considère le logarithme en base 2 du nombre total de variables, un choix plus restrictif \newline\texttt{None} : considère l'ensemble des variables à chaque nœud, ce qui réduit la décorrélation entre les arbres. \\
+\hline
+\texttt{min\_samples\_leaf} & Nombre minimal d'observations requises dans une feuille de chaque arbre. \\
+\hline
+\caption{Hyperparamètres -- Random Forest}
+\end{longtable}
+
+\paragraph{XGBoost (Extreme Gradient Boosting)\\}
+XGBoost est également un algorithme basé sur des arbres de décision, mais il repose sur un principe différent du Bagging : le Boosting. Plutôt que d'entraîner les arbres indépendamment les uns des autres, XGBoost les construit de manière séquentielle, chaque nouvel arbre étant entraîné pour corriger les erreurs commises par l'ensemble des arbres précédents. La prédiction finale est la somme pondérée des prédictions de tous les arbres construits :
+\[
+\hat{y} = \sum_{t=1}^{T} f_t(x)
+\]
+où chaque $f_t$ est un arbre de décision entraîné à corriger l'erreur résiduelle laissée par les arbres $f_1, \dots, f_{t-1}$. Ce fonctionnement séquentiel et cette correction intégrée expliquent pourquoi XGBoost obtient souvent de meilleures performances que le Bagging, aussi bien pour des tâches de régression (la sortie $\hat{y}$ est directement une valeur continue) que pour des tâches de classification (la somme des arbres est passée dans une fonction sigmoïde, comme pour la régression logistique, afin d'obtenir une probabilité de classe), au prix d'un temps d'entraînement plus long et d'un réglage plus sensible de ses hyperparamètres.
+
+\begin{longtable}{|m{5cm}|m{12cm}|}
+\hline
+\textbf{Hyperparamètre} & \textbf{Interprétation} \\
+\hline
+\texttt{n\_estimators} & Nombre d'arbres construits séquentiellement lors du Boosting. \\
+\hline
+\texttt{learning\_rate} & Poids appliqué à la contribution de chaque nouvel arbre : une valeur faible ralentit l'apprentissage mais le rend plus stable. \\
+\hline
+\texttt{max\_depth} & Profondeur maximale de chaque arbre, contrôlant la complexité des corrections apportées à chaque étape. \\
+\hline
+\texttt{subsample} & Proportion des données utilisées pour entraîner chaque arbre, introduisant de l'aléa pour limiter le surapprentissage. \\
+\hline
+\texttt{booster} & Type de modèle utilisé à chaque étape du Boosting. \newline\texttt{gbtree} (par défaut) : utilise des arbres de décision comme apprenants faibles \newline \texttt{gblinear} : utilise des fonctions linéaires à la place des arbres \newline \texttt{dart} : variante de \texttt{gbtree} qui ignore aléatoirement certains arbres à chaque étape pour limiter le surapprentissage. \\
+\hline
+\texttt{reg\_lambda / reg\_alpha} & Termes de régularisation (L2 et L1) pénalisant la complexité des arbres, correspondant au terme $\Omega(f_t)$ de la fonction de coût. \\
+\hline
+\caption{Hyperparamètres -- XGBoost}
+\end{longtable}
+
+
+\subsubsection{Analyse Temporelle et Deep Learning}
+\paragraph{Décomposition STL\\}
+La décomposition STL (Seasonal-Trend decomposition using Loess) est une méthode qui permet de décomposer une série temporelle en trois composantes distinctes : la tendance, la saisonnalité et le résidu. Une série temporelle $Y_t$ s'écrit ainsi :
+\[
+Y_t = T_t + S_t + R_t
+\]
+où $T_t$ est la tendance (évolution générale de la série sur le long terme), $S_t$ la composante saisonnière (variations qui se répètent à intervalles réguliers, comme un cycle jour/nuit) et $R_t$ le résidu, c'est-à-dire les fluctuations restantes non expliquées par les deux premières composantes.
+
+\subparagraph{La méthode Loess\\}
+Loess (Locally Estimated Scatterplot Smoothing) est une méthode de lissage qui estime une courbe régulière à partir de données bruitées, sans supposer de forme mathématique globale. Pour estimer la valeur lissée en un point $x_0$, seules les observations voisines sont utilisées, chacune pondérée selon sa proximité, généralement via une fonction tricube :
+\[
+w_i = \left(1 - \left|\frac{x_i - x_0}{d}\right|^3\right)^3
+\]
+où $d$ est la distance au point voisin le plus éloigné inclus dans le voisinage considéré. Plus une observation $x_i$ est proche de $x_0$, plus son poids $w_i$ est élevé. Une régression pondérée est ensuite ajustée sur ce voisinage, en minimisant l'erreur quadratique pondérée :
+\[
+\min_{\beta} \sum_{i} w_i \left(y_i - \beta_0 - \beta_1 x_i\right)^2
+\]
+et seule sa valeur en $x_0$ est retenue comme estimation lissée. Ce calcul est répété en glissant le voisinage le long de la série, ce qui produit une courbe qui s'adapte localement aux données.
+
+Dans la décomposition STL, Loess est appliqué successivement : d'abord pour estimer la tendance $T_t$ (variations lentes), puis pour extraire la saisonnalité $S_t$ à partir des données privées de cette tendance, le résidu $R_t$ étant ce qui reste après soustraction des deux composantes.
+
+\paragraph{Réseaux LSTM\\}
+Les modèles de machine learning classiques (régression, SVM, arbres de décision) traitent chaque observation de manière indépendante et ne conservent aucune mémoire des observations précédentes. Cette limite les rend peu adaptés aux données séquentielles, comme une série temporelle, où la valeur à un instant donné dépend fortement des valeurs passées.
+
+Les réseaux de neurones récurrents (RNN) ont été conçus pour ce type de données : à chaque instant $t$, ils combinent l'entrée courante avec une information héritée de l'étape précédente, ce qui leur permet de propager un contexte d'une étape à l'autre. Cependant, sur une séquence longue, cette information a tendance à s'atténuer au fil des étapes, jusqu'à disparaître presque complètement. C'est le problème de la disparition du gradient (vanishing gradient), qui empêche le RNN classique de retenir une information sur de longues séquences.
+
+Les réseaux LSTM (Long Short-Term Memory) ont été conçus pour résoudre ce problème. L'idée centrale est d'ajouter une mémoire à long terme, appelée état de la cellule, qui circule d'une étape à l'autre en étant peu modifiée, ce qui lui permet de conserver une information sur de longues séquences sans qu'elle ne s'efface. L'accès à cette mémoire est contrôlé par trois portes (gates), qui décident respectivement :
+\begin{itemize}
+\item la \textbf{porte d'oubli}, quelle partie de la mémoire passée doit être conservée ou supprimée.
+\item la \textbf{porte d'entrée}, quelle nouvelle information, apportée par l'observation courante, doit être ajoutée à cette mémoire.
+\item la \textbf{porte de sortie}, quelle partie de cette mémoire doit être transmise comme résultat à l'instant courant, et servir de base pour l'étape suivante.
+\end{itemize}
+
+Chaque porte est une petite couche de neurones qui produit une valeur entre 0 et 1, agissant comme un filtre : une valeur proche de 0 bloque l'information, une valeur proche de 1 la laisse passer. Grâce à ce mécanisme, la cellule LSTM peut choisir de garder une information pertinente sur de nombreuses étapes, ou de l'oublier rapidement si elle ne l'est plus, ce qui permet au réseau de capter des dépendances temporelles aussi bien courtes que longues, sans souffrir de la disparition du gradient qui limite les RNN classiques.
+
+
+\subsection{Approche méthodologique et cartographie des modules}
+
+Les notions théoriques présentées dans la section précédente ne sont pas utilisées séparément : elles sont réparties dans trois modules distincts, chacun correspondant à une fonctionnalité du système. Le premier module estime la densité de tilapia à partir des caractéristiques du sol, le second détermine l'état actuel de la qualité de l'eau, et le troisième anticipe son évolution dans l'heure qui suit. Le tableau suivant présente, pour chaque module, l'objectif technique visé, le type de données utilisées et les algorithmes théoriques mobilisés parmi ceux vus précédemment
+
+\begin{longtable}{|m{3cm}|m{4cm}|m{3cm}|m{5cm}|}
+\hline
+\textbf{Module} & \textbf{Objectif technique} & \textbf{Type de données} & \textbf{Algorithmes mobilisés} \\
+\hline
+
+Module 1 -- Densité du tilapia via le sol &
+Régression : estimer une valeur continue de densité &
+Données tabulaires (paramètres du sol rizicole) &
+Régression Linéaire, SVR, Arbre de Décision, Random Forest, XGBoost -- optimisés par GridSearch \\
+\hline
+Module 2 -- Classification de l'état actuel de l'eau &
+Classification binaire : bonne ou mauvaise qualité &
+Données tabulaires (paramètres physico-chimiques de l'eau) &
+Régression Logistique, SVC, Arbre de Décision, Random Forest, XGBoost -- optimisés par GridSearch \\
+\hline
+Module 3 -- Anticipation de la qualité de l'eau à H+1 &
+Prédiction temporelle : estimer l'état probable de l'eau une heure à l'avance &
+Séries temporelles (mesures successives de l'eau) &
+Décomposition STL combinée à un modèle LSTM \\
+\hline
+\caption{Cartographie des trois modules du système}
+\end{longtable}
+
+On remarque que les deux premiers modules reposent sur les mêmes familles d'algorithmes de machine learning, adaptées d'un côté à la régression et de l'autre à la classification, tandis que le troisième module suit une approche différente, combinant traitement du signal et deep learning, plus adaptée à des données séquentielles.
+
+Le chapitre suivant présente la mise en œuvre pratique de ces trois modules, en détaillant la collecte, l'exploration et la préparation des données.
 
 \end{document}
 
