@@ -1,4 +1,4 @@
-\documentclass[a4paper,11pt, oneside]{article}
+\documentclass[a4paper,12pt, oneside]{article}
 
 \usepackage[utf8]{inputenc}
 \usepackage[french]{babel}
@@ -19,9 +19,35 @@
 \usepackage{fancyhdr}
 \pagestyle{fancy}
 \fancyhf{} % Completely clears the default top headers and bottom footers
-
 % Put page number in the Center of the Footer for ALL pages
 \fancyfoot[C]{\thepage} 
+\renewcommand{\arraystretch}{1.2} 
+\usepackage{titletoc}
+
+% Redefine the List of Tables entry format
+\titlecontents{table}
+  [0pt]                                 % Left indent
+  {\addvspace{0.5pc}}                   % Space above entry
+  {Tableau \thecontentslabel : }                              
+  {\hspace{0pt}}                        % Code for unnumbered entry
+  {\titlerule*[0.5pc]{.}\quad page~\thecontentspage} % Filler dots + "page X"
+
+% Note: Swapping the actual string data perfectly using native layout engines requires 
+% the manual macro method above, because LaTeX natively passes the number *before* the caption.
+
+
+% --- LIST OF FIGURES CUSTOMIZATION ---
+\titlecontents{figure}
+  [0pt]                                          % Left indent
+  {\addvspace{0.5pc}}                            % Space above entry
+  {Figure \thecontentslabel : }                      % FRONT NUMBERING: Prints "f1", "f2", etc.
+  {\hspace{0pt}}                                 % Code for unnumbered entry
+  {\titlerule*[0.5pc]{.}\quad page~\thecontentspage} % Filler dots + "page X"
+
+
+
+
+
 
 % Remove the horizontal lines
 \renewcommand{\headrulewidth}{0pt}
@@ -106,18 +132,10 @@ PADM & : Projet d'Aquaculture Durable à Madagascar \\
 \vspace*{\fill}
 \newpage
 
-\begin{center}
-\LARGE LISTE DES TABLEAUX
-\end{center}
-
 \listoftables
 
 \vspace*{\fill}
 \newpage
-
-\begin{center}
-\LARGE LISTE DES FIGURES
-\end{center}
 
 \listoffigures
 
@@ -653,5 +671,234 @@ On remarque que les deux premiers modules reposent sur les mêmes familles d'alg
 
 Le chapitre suivant présente la mise en œuvre pratique de ces trois modules, en détaillant la collecte, l'exploration et la préparation des données.
 
-\end{document}
 
+\section{Méthodologie et préparation des données}
+\subsection{Origine et collecte des données}
+
+Ce mémoire s'appuie sur deux jeux de données distincts, correspondant respectivement au module de prédiction de densité (Module 1) et aux modules de classification et de prédiction de la qualité de l'eau (Modules 2 et 3)
+
+\paragraph{Données pour le Module 1 (densité de tilapia)\\}
+
+Les données utilisées pour l'estimation de la densité de tilapia à partir des caractéristiques du sol rizicole n'ont pas pu être collectées directement sur le terrain, faute d'accès à des parcelles instrumentées dans le cadre de ce mémoire. Un jeu de données synthétique a donc été généré pour ce module, à partir de connaissances contextualisées sur les pratiques rizipiscicoles malagasy (types de sol rencontrés sur les Hautes-Terres, pratiques d'irrigation et de fertilisation locales). Cette approche, courante lorsqu'un accès direct aux données de terrain n'est pas possible, permet de disposer d'un jeu de données cohérent avec le contexte étudié pour développer et tester la démarche méthodologique. Ses limites - notamment l'absence de validation par des mesures réelles - sont discutées dans le chapitre de conclusion, et une piste d'amélioration du projet consistera à confronter ce modèle à des données de terrain réelles.
+
+\paragraph{Données pour les Modules 2 et 3 (qualité de l'eau)\\}
+
+Les données utilisées pour la classification et la prédiction de la qualité de l'eau proviennent d'un jeu de données public, mis à disposition sur la plateforme Kaggle, rassemblant des mesures physico-chimiques d'eau destinées à l'élevage piscicole associées à une étiquette de qualité de l'eau. Le recours à un jeu de données public se justifie par la difficulté d'obtenir, dans le cadre d'un mémoire de Licence, des séries de mesures continues et fiables sur plusieurs mois directement depuis une parcelle rizipiscicole équipée de capteurs. Ce jeu de données présente néanmoins l'intérêt de couvrir les mêmes variables physico-chimiques que celles pertinentes pour le tilapia, ce qui permet de développer et valider la démarche de classification et de prédiction temporelle proposée dans ce mémoire.
+
+\subsection{Structure des datasets}
+
+\paragraph{Module 1 (densité de tilapia)\\}
+Ce dataset comprend 2000 observations, chacune correspondant à une parcelle rizipiscicole caractérisée par ses propriétés de sol, ses conditions d'irrigation et de fertilisation, ainsi que la densité de tilapia associée
+
+\begin{longtable}{|m{0.3\textwidth}|c|m{0.5\textwidth}|}
+\hline
+\textbf{Variable} & \textbf{Type} & \textbf{Description} \\
+\hline
+\texttt{Texture\_sol} & Catégorielle & Texture du sol (sableux, limoneux, argileux) \\
+\hline
+\texttt{Couleur\_sol} & Catégorielle & Couleur du sol (indicateur de composition organique) \\
+\hline
+\texttt{Type\_irrigation} & Catégorielle & Mode d'irrigation de la parcelle (irrigué en continu, pluvial) \\
+\hline
+\texttt{Hauteur\_Eau} & Numérique (int) & Hauteur d'eau dans la parcelle (cm) \\
+\hline
+\texttt{Niveau\_Engrais} & Catégorielle & Niveau de fertilisation appliqué \\
+\hline
+\texttt{Temperature\_Actuelle} & Catégorielle & Catégorie de température ambiante \\
+\hline
+\texttt{Densite\_Tilapia\_Are} & Numérique (int) & Variable cible : densité de tilapia par are \\
+\hline
+\caption{Structure du dataset -- Module 1}
+\end{longtable}
+
+\paragraph{Modules 2 et 3 (qualité de l'eau)\\}
+Ce dataset comprend environ 74 700 observations horodatées, correspondant à des relevés physico-chimiques successifs de l'eau, avec un pas de temps régulier de l'ordre de 20 minutes. Cette granularité temporelle fine en fait un jeu de données adapté aussi bien à la classification immédiate (Module 2) qu'à l'analyse temporelle et à la prédiction à court terme (Module 3)
+
+\begin{longtable}{|m{0.2\textwidth}|c|m{0.6\textwidth}|}
+\caption{Structure du dataset -- Modules 2 et 3}\\
+\hline
+\textbf{Variable} & \textbf{Type} & \textbf{Description} \\
+\hline
+
+
+\texttt{Date} & Catégorielle (date) & Date de la mesure \\
+\hline
+\texttt{Time} & Catégorielle(heure) & Heure de la mesure \\
+\hline
+\texttt{PH} & Numérique (float) & pH de l'eau \\
+\hline
+\texttt{TEMP} & Numérique (float) & Température de l'eau \\
+\hline
+\texttt{DO} & Numérique (float) & Oxygène dissous \\
+\hline
+\texttt{TURBIDITY} & Numérique (float) & Turbidité de l'eau \\
+\hline
+\texttt{tempC} & Numérique (int) & Température ambiante (°C) \\
+\hline
+\texttt{label} & Catégorielle & Variable cible :qualité de l'eau (0 = mauvaise, 1 = bonne) \\
+\hline
+
+\end{longtable}
+
+\subsection{Visualisation et analyse}
+Avant d'entraîner les modèles, une analyse exploratoire visuelle a été réalisée afin d'observer la distribution de la variable cible et son comportement en fonction des différentes caractéristiques.
+
+\paragraph{Module 1 -- Densité du tilapia\\}
+
+La Figure~\ref{fig:displot_densite} présente la distribution de la variable cible \texttt{Densite\_Tilapia\_Are}.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.6\textwidth]{Densite_tilapia/Displot Densite_Tilapia_Are.png}
+\caption{Distribution de la variable Densite\_Tilapia\_Are}
+\label{fig:displot_densite}
+\end{figure}
+
+
+On observe que la distribution de la densité de tilapia n'est pas normale : une forte concentration d'observations se situe dans la tranche des faibles densités (10 à 13 tilapias par are), avec une seconde concentration notable dans la tranche des densités élevées (45 à 50). Cette répartition suggère l'existence de deux régimes de production distincts dans le jeu de données, plutôt qu'une évolution progressive et homogène de la densité.
+
+Les figures suivantes présentent, sous forme de violin plots, la relation entre la densité de tilapia et chacune des variables du dataset.
+
+\begin{figure}[H]
+\centering
+\begin{minipage}{0.48\textwidth}
+\centering
+\includegraphics[width=\textwidth]{Densite_tilapia/ViolinPlot Hauteur_Eau.png}
+\caption{Densité de tilapia selon la hauteur d'eau}
+\label{fig:violin_hauteur_eau}
+\end{minipage}
+\hfill
+\begin{minipage}{0.48\textwidth}
+\centering
+\includegraphics[width=\textwidth]{Densite_tilapia/Violin Plot Temperature_Actuelle.png}
+\caption{Densité de tilapia selon la température actuelle}
+\label{fig:violin_temperature}
+\end{minipage}
+\end{figure}
+
+
+La Figure~\ref{fig:violin_hauteur_eau} montre une tendance croissante claire : la médiane de densité passe d'environ 17 tilapias/are pour une hauteur d'eau de 5-8 cm, à environ 27 pour 9-14 cm, puis à environ 32 pour 15-20 cm. Sur le plan pratique, cela confirme une réalité bien connue des rizipisciculteurs : une lame d'eau trop faible limite l'espace de vie et de nage des poissons et les expose davantage aux variations de température, tandis qu'une hauteur d'eau suffisante offre un habitat plus stable et plus propice à leur croissance.
+
+La Figure~\ref{fig:violin_temperature} révèle quant à elle que la catégorie « chaud » est associée à la médiane de densité la plus élevée (environ 38), tandis que la catégorie « tres froid » présente la médiane la plus basse (environ 17) et la distribution la plus resserrée vers les faibles valeurs, confirmant la sensibilité du tilapia aux températures basses.
+
+
+\begin{figure}[H]
+\centering
+\begin{minipage}{0.48\textwidth}
+\centering
+\includegraphics[width=\textwidth]{Densite_tilapia/Violin Plot Niveau_Engrais.png}
+\caption{Densité de tilapia selon le niveau d'engrais}
+\label{fig:violin_engrais}
+\end{minipage}
+\hfill
+\begin{minipage}{0.48\textwidth}
+\centering
+\includegraphics[width=\textwidth]{Densite_tilapia/Violin Plot Type_irrigation.png}
+\caption{Densité de tilapia selon le type d'irrigation}
+\label{fig:violin_irrigation}
+\end{minipage}
+\end{figure}
+
+La Figure~\ref{fig:violin_engrais} met en évidence une relation croissante entre le niveau de fertilisation et la densité de tilapia : la médiane passe d'environ 19 pour un niveau d'engrais nul, à environ 29 pour un niveau moyen, puis à environ 33 pour un niveau fort. cela s'explique par le fait que la fertilisation (notamment organique, comme le zezika traditionnellement utilisé à Madagascar) stimule le développement du plancton et des micro-organismes dont se nourrit le tilapia.
+
+La Figure~\ref{fig:violin_irrigation} montre par ailleurs que les parcelles en irrigation continue présentent une médiane de densité nettement plus élevée (environ 33) que les parcelles en irrigation pluviale (environ 22), suggérant qu'un apport d'eau régulier favorise la croissance du cheptel piscicole.
+
+\begin{figure}[H]
+\centering
+\begin{minipage}{0.48\textwidth}
+\centering
+\includegraphics[width=\textwidth]{Densite_tilapia/Violin Plot Couleur_sol.png}
+\caption{Densité de tilapia selon la couleur du sol}
+\label{fig:violin_couleur}
+\end{minipage}
+\hfill
+\begin{minipage}{0.48\textwidth}
+\centering
+\includegraphics[width=\textwidth]{Densite_tilapia/Violin Plot Texture_sol.png}
+\caption{Densité de tilapia selon la texture du sol}
+\label{fig:violin_texture}
+\end{minipage}
+\end{figure}
+
+La Figure~\ref{fig:violin_couleur} montre des médianes assez proches entre les couleurs de sol « Brun-Grisâtre » et « Orange/Rouge » (autour de 25-26), tandis que le sol « Noirâtre (Rich) » présente une médiane légèrement supérieure (environ 31), cohérente avec sa richesse organique généralement plus élevée.
+
+Enfin, la Figure~\ref{fig:violin_texture} révèle une tendance croissante selon la texture du sol : le sol sableux présente la médiane la plus basse (environ 20), le sol limoneux une médiane intermédiaire (environ 27), et le sol argileux la médiane la plus élevée (environ 34), ce dernier retenant probablement mieux l'eau et les nutriments nécessaires au développement du tilapia.
+
+
+
+
+
+
+
+\paragraph{Modules 2 et 3 -- Qualité de l'eau\\}
+
+Une analyse similaire a été menée sur le dataset de qualité de l'eau, en observant la distribution de chaque variable physico-chimique selon la classe de qualité (\texttt{label} = 0 pour mauvaise qualité, \texttt{label} = 1 pour bonne qualité), ainsi que l'équilibre général des classes.
+
+\begin{figure}[H]
+\centering
+\begin{minipage}{0.48\textwidth}
+\centering
+\includegraphics[width=\textwidth]{Qualite_eau/Distribution Plot TURBIDITY.png}
+\caption{Distribution de la Turbidité selon la qualité de l'eau}
+\label{fig:dist_turbidity}
+\end{minipage}
+\hfill
+\begin{minipage}{0.48\textwidth}
+\centering
+\includegraphics[width=\textwidth]{Qualite_eau/Distribution Plot TEMP.png}
+\caption{Distribution de la Température selon la qualité de l'eau}
+\label{fig:dist_temp}
+\end{minipage}
+\end{figure}
+
+La Figure~\ref{fig:dist_turbidity} montre une séparation assez nette entre les deux classes : les eaux de bonne qualité (label 1) se concentrent essentiellement entre 15 et 40 NTU, tandis que les eaux de mauvaise qualité (label 0) se répartissent surtout au-delà de 45 NTU, avec un pic marqué autour de 55-65. Concrètement, cela confirme qu'une eau trop trouble, chargée en particules en suspension, est un signal facilement identifiable de dégradation .
+
+La Figure~\ref{fig:dist_temp} révèle une séparation encore plus marquée : les eaux de bonne qualité se situent majoritairement entre 15°C et 35°C, tandis que les eaux de mauvaise qualité se concentrent au-delà de 37°C. Cela correspond à une réalité bien connue : l'eau perd sa capacité à retenir l'oxygène nécessaire à la respiration des poissons, ce qui la rend rapidement dangereuse.
+
+\begin{figure}[H]
+\centering
+\begin{minipage}{0.48\textwidth}
+\centering
+\includegraphics[width=\textwidth]{Qualite_eau/Distribution Plot PH.png}
+\caption{Distribution du pH selon la qualité de l'eau}
+\label{fig:dist_ph}
+\end{minipage}
+\hfill
+\begin{minipage}{0.48\textwidth}
+\centering
+\includegraphics[width=\textwidth]{Qualite_eau/Distribution Plot DO.png}
+\caption{Distribution de l'Oxygène Dissous selon la qualité de l'eau}
+\label{fig:dist_do}
+\end{minipage}
+\end{figure}
+
+La Figure~\ref{fig:dist_ph} montre que les eaux de bonne qualité se concentrent surtout entre 5 et 7,5, avec un pic net autour de 6, tandis que les eaux de mauvaise qualité se répartissent plus largement au-delà de 7,5 et se prolongent jusqu'à 9. Un pH trop élevé (une eau trop basique) peut dégrader la santé des poissons.
+
+La Figure~\ref{fig:dist_do} montre que les oxygènes dissous dans les eaux de bonne qualité se concentrent principalement entre 4 et 10 mg/L, avec un pic vers 6-7, tandis que les eaux de mauvaise qualité se répartissent sur une plage plus large, avec une proportion notable de valeurs très faibles (proches de 0) et très élevées (au-delà de 20). Un manque d'oxygène dissous est l'une des causes les plus fréquentes et les plus rapides de mortalité massive des poissons, souvent la nuit ou par forte chaleur.
+
+La Figure~\ref{fig:heatmap_corr} présente la matrice de corrélation entre les différentes variables physico-chimiques et la variable cible.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.55\textwidth]{Qualite_eau/Heatmap Correlation.png}
+\caption{Matrice de corrélation entre les composants de l'eau}
+\label{fig:heatmap_corr}
+\end{figure}
+
+On observe que la variable \texttt{TURBIDITY} présente la corrélation la plus forte avec la qualité de l'eau (-0,48), ce qui confirme l'observation faite précédemment sur sa distribution : plus l'eau est trouble, plus elle a tendance à être classée en mauvaise qualité. La \texttt{TEMP} suit avec une corrélation de -0,35, cohérente avec la sensibilité du tilapia aux eaux trop chaudes. Le \texttt{PH} présente quant à lui une corrélation positive de 0,25, indiquant qu'un pH plus élevé est associé plus souvent à une bonne qualité dans ce dataset, tandis que le \texttt{DO} (oxygène dissous) affiche une corrélation plus faible (-0,13), ce qui peut sembler surprenant compte tenu de son importance biologique connue pour la survie des poissons, mais qui s'explique par le fait que son influence n'est pas linéaire : c'est surtout un déficit sévère en oxygène qui devient critique, plutôt qu'une simple variation continue de sa valeur. Cela justifie qu'un modèle non linéaire (comme la Random Forest ou XGBoost) puisse mieux capter cette relation qu'un simple coefficient de corrélation. On note enfin que les variables explicatives sont globalement peu corrélées entre elles (par exemple 0,094 entre PH et DO), ce qui limite les risques de multicolinéarité pour les modèles de classification développés dans le Module 2.
+
+La Figure~\ref{fig:dist_qualite} présente enfin la répartition globale des deux classes dans le dataset.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.4\textwidth]{Qualite_eau/Distibution Qualite d'Eau.png}
+\caption{Répartition des classes de qualité de l'eau}
+\label{fig:dist_qualite}
+\end{figure}
+
+On observe un déséquilibre notable entre les deux classes : 54,746 observations sont étiquetées comme « bonne qualité » contre environ 20,012 comme « mauvaise qualité », soit une proportion d'environ 73~\% / 27~\%. Ce déséquilibre reflète une réalité plutôt rassurante sur le terrain : dans la majorité du temps, une parcelle correctement gérée conserve une eau de bonne qualité, les épisodes de dégradation restant l'exception plutôt que la norme. Cela confirme tout l'intérêt d'un système d'alerte : puisque les mauvais épisodes sont rares mais potentiellement lourds de conséquences (mortalité des poissons), il est essentiel de ne pas les manquer lorsqu'ils surviennent, ce qui devra être pris en compte dans le choix des métriques d'évaluation du modèle de classification (Module 2), afin de ne pas privilégier artificiellement la classe majoritaire au détriment de la détection des cas critiques.
+
+
+
+
+\end{document}

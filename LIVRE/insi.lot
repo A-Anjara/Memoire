@@ -1,8 +1,11 @@
 \babel@toc {french}{}\relax 
-\contentsline {table}{\numberline {1}{\ignorespaces Parcours Licence et Master proposés à l’INSI}}{4}{}%
+\contentsline {table}{\numberline {1}{\ignorespaces Parcours Licence et Master proposés à l’INSI}}{5}{}%
 \contentsline {table}{\numberline {2}{\ignorespaces Hyperparamètres -- Régression Linéaire}}{9}{}%
 \contentsline {table}{\numberline {3}{Hyperparamètres -- Régression Logistique}}{10}{}%
-\contentsline {table}{\numberline {5}{Hyperparamètres -- Arbre de Décision}}{11}{}%
-\contentsline {table}{\numberline {6}{Hyperparamètres -- Random Forest}}{11}{}%
-\contentsline {table}{\numberline {7}{Hyperparamètres -- XGBoost}}{12}{}%
-\contentsline {table}{\numberline {8}{Cartographie des trois modules du système}}{14}{}%
+\contentsline {table}{\numberline {5}{Hyperparamètres -- Arbre de Décision}}{12}{}%
+\contentsline {table}{\numberline {6}{Hyperparamètres -- Random Forest}}{12}{}%
+\contentsline {table}{\numberline {7}{Hyperparamètres -- XGBoost}}{13}{}%
+\contentsline {table}{\numberline {8}{Cartographie des trois modules du système}}{15}{}%
+\contentsline {table}{\numberline {9}{Structure du dataset -- Module 1}}{16}{}%
+\contentsline {table}{\numberline {10}{Structure du dataset -- Modules 2 et 3}}{16}{}%
+\contentsfinish 

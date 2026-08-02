@@ -5,27 +5,38 @@
 \contentsline {subsection}{\numberline {2.2}Missions et historiques}{2}{}%
 \contentsline {subsection}{\numberline {2.3}Organigramme de l'INSI}{2}{}%
 \contentsline {subsection}{\numberline {2.4}Domaine de spécialisation}{3}{}%
-\contentsline {subsubsection}{\numberline {2.4.1}Licences professionnelles}{3}{}%
+\contentsline {subsubsection}{\numberline {2.4.1}Licences professionnelles}{4}{}%
 \contentsline {subsubsection}{\numberline {2.4.2}Masters professionnels}{4}{}%
 \contentsline {subsubsection}{\numberline {2.4.3}Formations professionnelles continues}{4}{}%
 \contentsline {subsubsection}{\numberline {2.4.4}Mobilité internationale et double diplôme}{4}{}%
 \contentsline {subsection}{\numberline {2.5}Architectures des formations pédagogiques}{4}{}%
 \contentsline {subsubsection}{\numberline {2.5.1}Relations de l’INSI avec les entreprises et les organismes}{5}{}%
-\contentsline {subsubsection}{\numberline {2.5.2}Partenariat au niveau international}{5}{}%
+\contentsline {subsubsection}{\numberline {2.5.2}Partenariat au niveau international}{6}{}%
 \contentsline {subsubsection}{\numberline {2.5.3}Parcours professionnels des diplômés}{6}{}%
 \contentsline {subsubsection}{\numberline {2.5.4}Ressources humaines}{7}{}%
 \contentsline {section}{\numberline {3}État de l'art et Cadre théorique}{8}{}%
 \contentsline {subsection}{\numberline {3.1}Contexte et analyse sectorielle de la rizipisciculture à Madagascar}{8}{}%
-\contentsline {subsection}{\numberline {3.2}Fondements théoriques des modèles d'apprentissage et de traitement de données}{8}{}%
+\contentsline {subsection}{\numberline {3.2}Fondements théoriques des modèles d'apprentissage et de traitement de données}{9}{}%
 \contentsline {subsubsection}{\numberline {3.2.1}Algorithmes de Machine Learning}{9}{}%
 \contentsline {paragraph}{Régression Linéaire\\}{9}{}%
 \contentsline {paragraph}{Régression Logistique\\}{9}{}%
 \contentsline {paragraph}{Machines à Vecteurs de Support (SVM)\\}{10}{}%
-\contentsline {paragraph}{Arbre de Décision\\}{10}{}%
-\contentsline {paragraph}{Random Forest\\}{11}{}%
-\contentsline {paragraph}{XGBoost (Extreme Gradient Boosting)\\}{11}{}%
-\contentsline {subsubsection}{\numberline {3.2.2}Analyse Temporelle et Deep Learning}{12}{}%
-\contentsline {paragraph}{Décomposition STL\\}{12}{}%
-\contentsline {subparagraph}{La méthode Loess\\}{12}{}%
-\contentsline {paragraph}{Réseaux LSTM\\}{13}{}%
-\contentsline {subsection}{\numberline {3.3}Approche méthodologique et cartographie des modules}{13}{}%
+\contentsline {paragraph}{Arbre de Décision\\}{11}{}%
+\contentsline {paragraph}{Random Forest\\}{12}{}%
+\contentsline {paragraph}{XGBoost (Extreme Gradient Boosting)\\}{12}{}%
+\contentsline {subsubsection}{\numberline {3.2.2}Analyse Temporelle et Deep Learning}{13}{}%
+\contentsline {paragraph}{Décomposition STL\\}{13}{}%
+\contentsline {subparagraph}{La méthode Loess\\}{13}{}%
+\contentsline {paragraph}{Réseaux LSTM\\}{14}{}%
+\contentsline {subsection}{\numberline {3.3}Approche méthodologique et cartographie des modules}{14}{}%
+\contentsline {section}{\numberline {4}Méthodologie et préparation des données}{15}{}%
+\contentsline {subsection}{\numberline {4.1}Origine et collecte des données}{15}{}%
+\contentsline {paragraph}{Données pour le Module 1 (densité de tilapia)\\}{15}{}%
+\contentsline {paragraph}{Données pour les Modules 2 et 3 (qualité de l'eau)\\}{16}{}%
+\contentsline {subsection}{\numberline {4.2}Structure des datasets}{16}{}%
+\contentsline {paragraph}{Module 1 (densité de tilapia)\\}{16}{}%
+\contentsline {paragraph}{Modules 2 et 3 (qualité de l'eau)\\}{16}{}%
+\contentsline {subsection}{\numberline {4.3}Visualisation et analyse}{17}{}%
+\contentsline {paragraph}{Module 1 -- Densité du tilapia\\}{17}{}%
+\contentsline {paragraph}{Modules 2 et 3 -- Qualité de l'eau\\}{19}{}%
+\contentsfinish 
