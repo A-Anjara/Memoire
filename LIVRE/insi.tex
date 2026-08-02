@@ -14,6 +14,16 @@
 \usepackage[margin=1.75cm, bottom=2.5cm]{geometry} 
 %packages pour ajouter le code python 
 \usepackage{listings}
+\definecolor{codebackground}{rgb}{0.95, 0.95, 0.92}
+
+% Set up the styling rules globally
+\lstset{
+    backgroundcolor=\color{codebackground}, % Background color
+    basicstyle=\ttfamily\small,            % Font style (monospaced)
+    breaklines=true,                       % Wrap long lines automatically
+    frame=single,                          % Draw a clean thin box border
+    rulecolor=\color{lightgray}            % Border line color
+}
 \usepackage{xcolor} % déjà présent, utile pour les couleurs dans le code
 \usepackage{longtable}
 \usepackage{fancyhdr}
@@ -639,6 +649,39 @@ Les réseaux LSTM (Long Short-Term Memory) ont été conçus pour résoudre ce p
 
 Chaque porte est une petite couche de neurones qui produit une valeur entre 0 et 1, agissant comme un filtre : une valeur proche de 0 bloque l'information, une valeur proche de 1 la laisse passer. Grâce à ce mécanisme, la cellule LSTM peut choisir de garder une information pertinente sur de nombreuses étapes, ou de l'oublier rapidement si elle ne l'est plus, ce qui permet au réseau de capter des dépendances temporelles aussi bien courtes que longues, sans souffrir de la disparition du gradient qui limite les RNN classiques.
 
+\subsubsection{Optimisation par GridSearch}
+
+Il faut distinguer les paramètres d'un modèle, qui sont appris automatiquement pendant l'entraînement (par exemple les coefficients $\beta_i$ d'une régression, ou la structure des arbres d'une Random Forest), des hyperparamètres, qui sont fixés avant l'entraînement et qui contrôlent le comportement général du modèle (par exemple le nombre d'arbres ou leur profondeur maximale, le paramètre de régularisation $C$ d'un SVM, ou le taux d'apprentissage de XGBoost).
+
+Le choix de ces hyperparamètres influence fortement la performance d'un modèle, mais il n'existe pas de formule directe pour les déterminer : ils doivent être testés empiriquement. Le GridSearch (recherche par grille) consiste à définir, pour chaque hyperparamètre, un ensemble de valeurs candidates, puis à tester méthodiquement toutes les combinaisons possibles entre ces valeurs.
+
+Pour évaluer chaque combinaison de façon fiable, le GridSearch est combiné à une validation croisée (cross-validation). Cette technique divise les données d'entraînement en $k$ sous-ensembles (folds) de taille égale ; le modèle est entraîné $k$ fois, en utilisant à chaque fois $k-1$ folds pour l'entraînement et le fold restant pour l'évaluation, puis les $k$ scores obtenus sont moyennés :
+\[
+\text{Score}_{CV} = \frac{1}{k}\sum_{i=1}^{k} \text{Score}_i
+\]
+
+La combinaison d'hyperparamètres obtenant le meilleur score moyen en validation croisée est retenue comme configuration finale du modèle. Cette démarche, plus coûteuse en temps de calcul qu'un simple entraînement, permet d'éviter de choisir des hyperparamètres qui donneraient de bons résultats sur un seul découpage des données par hasard, mais qui généraliseraient mal.
+
+\subsubsection{Mise à l'échelle des données}
+
+Avant d'entraîner certains modèles, les variables numériques doivent souvent être ramenées sur une échelle comparable. En effet, des modèles comme la Régression Linéaire, la Régression Logistique ou le SVM sont sensibles à l'amplitude des variables, car ils reposent sur des combinaisons linéaires ou des calculs de distance directement influencés par cette amplitude : une variable dont les valeurs sont beaucoup plus grandes que les autres risquerait de dominer artificiellement l'apprentissage du modèle, indépendamment de sa réelle importance explicative. Deux techniques principales permettent de corriger ce problème.
+
+\paragraph{Standardisation (Z-score)\\}
+La standardisation transforme chaque variable de façon à obtenir une moyenne nulle et un écart-type unitaire :
+\[
+x' = \frac{x - \mu}{\sigma}
+\]
+où $\mu$ et $\sigma$ sont respectivement la moyenne et l'écart-type de la variable. Cette technique conserve la forme de la distribution d'origine tout en la recentrant, ce qui la rend adaptée à des variables continues dont les bornes réelles ne sont pas nécessairement connues à l'avance, ou qui peuvent contenir des valeurs extrêmes.
+
+\paragraph{Normalisation Min-Max\\}
+La normalisation Min-Max ramène quant à elle chaque variable dans un intervalle fixe, généralement $[0,1]$, selon la formule suivante :
+\[
+x' = \frac{x - x_{min}}{x_{max} - x_{min}}
+\]
+où $x_{min}$ et $x_{max}$ sont respectivement les valeurs minimale et maximale observées pour la variable considérée. Cette technique est particulièrement adaptée lorsque les bornes réelles d'une variable sont connues et fixes, mais elle est plus sensible à la présence de valeurs extrêmes, qui peuvent écraser la répartition du reste des données dans l'intervalle.
+
+Dans les deux cas, les modèles à base d'arbres (Arbre de Décision, Random Forest, XGBoost), qui raisonnent par seuils successifs plutôt que par distance ou combinaison linéaire, restent insensibles à cette mise à l'échelle.
+
 
 \subsection{Approche méthodologique et cartographie des modules}
 
@@ -711,6 +754,9 @@ Ce dataset comprend 2000 observations, chacune correspondant à une parcelle riz
 \caption{Structure du dataset -- Module 1}
 \end{longtable}
 
+
+Pour ce module, les variables \texttt{Texture\_sol}, \texttt{Couleur\_sol}, \texttt{Type\_irrigation}, \texttt{Hauteur\_Eau}, \texttt{Niveau\_Engrais} et \texttt{Temperature\_Actuelle} sont utilisées comme variables explicatives, tandis que \texttt{Densite\_Tilapia\_Are} constitue la variable cible à prédire.
+
 \paragraph{Modules 2 et 3 (qualité de l'eau)\\}
 Ce dataset comprend environ 74 700 observations horodatées, correspondant à des relevés physico-chimiques successifs de l'eau, avec un pas de temps régulier de l'ordre de 20 minutes. Cette granularité temporelle fine en fait un jeu de données adapté aussi bien à la classification immédiate (Module 2) qu'à l'analyse temporelle et à la prédiction à court terme (Module 3)
 
@@ -740,6 +786,9 @@ Ce dataset comprend environ 74 700 observations horodatées, correspondant à de
 
 \end{longtable}
 
+Pour le Module 2, les variables \texttt{PH}, \texttt{TEMP}, \texttt{DO} et \texttt{TURBIDITY} sont utilisées comme variables explicatives à un instant donné, avec \texttt{label} comme variable cible à prédire.
+Pour le Module 3, ces mêmes variables physico-chimiques sont réorganisées en séries temporelles grâce aux champs \texttt{Date} et \texttt{Time}, afin d'alimenter la décomposition STL puis le modèle LSTM chargé d'anticiper l'évolution de la qualité de l'eau à une heure.
+
 \subsection{Visualisation et analyse}
 Avant d'entraîner les modèles, une analyse exploratoire visuelle a été réalisée afin d'observer la distribution de la variable cible et son comportement en fonction des différentes caractéristiques.
 
@@ -753,9 +802,6 @@ La Figure~\ref{fig:displot_densite} présente la distribution de la variable cib
 \caption{Distribution de la variable Densite\_Tilapia\_Are}
 \label{fig:displot_densite}
 \end{figure}
-
-
-On observe que la distribution de la densité de tilapia n'est pas normale : une forte concentration d'observations se situe dans la tranche des faibles densités (10 à 13 tilapias par are), avec une seconde concentration notable dans la tranche des densités élevées (45 à 50). Cette répartition suggère l'existence de deux régimes de production distincts dans le jeu de données, plutôt qu'une évolution progressive et homogène de la densité.
 
 Les figures suivantes présentent, sous forme de violin plots, la relation entre la densité de tilapia et chacune des variables du dataset.
 
@@ -822,13 +868,18 @@ La Figure~\ref{fig:violin_irrigation} montre par ailleurs que les parcelles en i
 
 La Figure~\ref{fig:violin_couleur} montre des médianes assez proches entre les couleurs de sol « Brun-Grisâtre » et « Orange/Rouge » (autour de 25-26), tandis que le sol « Noirâtre (Rich) » présente une médiane légèrement supérieure (environ 31), cohérente avec sa richesse organique généralement plus élevée.
 
-Enfin, la Figure~\ref{fig:violin_texture} révèle une tendance croissante selon la texture du sol : le sol sableux présente la médiane la plus basse (environ 20), le sol limoneux une médiane intermédiaire (environ 27), et le sol argileux la médiane la plus élevée (environ 34), ce dernier retenant probablement mieux l'eau et les nutriments nécessaires au développement du tilapia.
+Enfin, la Figure~\ref{fig:violin_texture} révèle une tendance croissante selon la texture du sol : le sol sableux présente la médiane la plus basse (environ 20), le sol limoneux une médiane intermédiaire (environ 27), et le sol argileux la médiane la plus élevée (environ 34), ce dernier retenant probablement mieux l'eau et les nutriments nécessaires au développement du tilapia.\\
 
+La Figure~\ref{fig:heatmap_densite} présente la matrice de corrélation entre les variables explicatives encodées et la variable cible \texttt{Densite\_Tilapia\_Are}.
 
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.55\textwidth]{Densite_tilapia/Heatmap Correlation.png}
+\caption{Matrice de corrélation des variables du Module 1}
+\label{fig:heatmap_densite}
+\end{figure}
 
-
-
-
+On retrouve dans cette matrice les tendances déjà observées sur les violin plots précédents, désormais quantifiées. On remarque également que les variables explicatives sont globalement très peu corrélées entre elles , ce qui est plutôt favorable pour les modèles de régression linéaire, en limitant les risques de multicolinéarité. Cela confirme aussi que chacune de ces six variables apporte une information relativement indépendante et complémentaire à la prédiction de la densité de tilapia, justifiant leur intégration conjointe dans les modèles du Module 1.
 
 \paragraph{Modules 2 et 3 -- Qualité de l'eau\\}
 
@@ -898,6 +949,54 @@ La Figure~\ref{fig:dist_qualite} présente enfin la répartition globale des deu
 
 On observe un déséquilibre notable entre les deux classes : 54,746 observations sont étiquetées comme « bonne qualité » contre environ 20,012 comme « mauvaise qualité », soit une proportion d'environ 73~\% / 27~\%. Ce déséquilibre reflète une réalité plutôt rassurante sur le terrain : dans la majorité du temps, une parcelle correctement gérée conserve une eau de bonne qualité, les épisodes de dégradation restant l'exception plutôt que la norme. Cela confirme tout l'intérêt d'un système d'alerte : puisque les mauvais épisodes sont rares mais potentiellement lourds de conséquences (mortalité des poissons), il est essentiel de ne pas les manquer lorsqu'ils surviennent, ce qui devra être pris en compte dans le choix des métriques d'évaluation du modèle de classification (Module 2), afin de ne pas privilégier artificiellement la classe majoritaire au détriment de la détection des cas critiques.
 
+\subsection{Prétraitement des données}
+
+Avant l'entraînement des modèles, chaque dataset a fait l'objet d'étapes de nettoyage et de transformation spécifiques, adaptées à sa nature et à l'usage qui en est fait dans chacun des trois modules.
+
+\subsubsection{Module 1 -- Densité du tilapia\\}
+Le dataset contiens 75 doublons qui a été supprimé. Contrairement à une variable catégorielle sans relation d'ordre, chacune des variables catégorielles explicatives de ce dataset possède en réalité une progression logique entre ses modalités : la température va du plus froid au plus chaud, le niveau d'engrais du plus faible au plus fort, la texture du sol du plus filtrant (sableux) au plus retenant (argileux), la couleur du sol du plus clair au plus foncé (indicateur croissant de richesse organique), et le type d'irrigation d'un apport ponctuel (pluvial) à un apport continu. Un encodage one-hot ferait perdre cette information d'ordre, pourtant pertinente pour les modèles. Un encodage ordinal a donc été appliqué à la place, en associant à chaque modalité un entier croissant reflétant cette progression :
+
+
+\begin{lstlisting}[language=Python]
+temperature_encoder = {
+    "TresFroid":0,
+    "Froid":1,
+    "Humide":2,
+    "Chaud":3,
+    "TresChaud":4,
+}
+niveaux_engrais_encoder = {
+    "Nul":0,
+    "Moyen":1,
+    "Fort":2
+}
+texture_sol_encoder = {
+    "Sableux":0,
+    "Limoneux":1,
+    "Argileux":2,
+}
+couleur_sol_encoder = {
+    "Orange_Rouge":1,
+    "Brun_Grisatre":2,
+    "Noir":3
+}
+type_irrigation_encoder = {
+    "Pluvial":0,
+    "Continu":1
+}
+\end{lstlisting}
+
+Cet encodage permet aux modèles, notamment ceux sensibles à la structure des variables comme la Régression Linéaire ou le SVR, d'exploiter directement la relation d'ordre entre les modalités, plutôt que de les traiter comme des catégories indépendantes sans lien entre elles.
+
+\paragraph{Mise à l'échelle\\}
+Conformément à la méthode de standardisation présentée en 3.2.4, les variables explicatives encodées du Module 1 (température, niveau d'engrais, texture et couleur du sol, type d'irrigation, hauteur d'eau) sont standardisées, afin de les ramener sur une échelle comparable avant l'entraînement des modèles sensibles à l'amplitude des variables, tels que la Régression Linéaire et le SVR.
+
+
+\subsubsection{Module 2 -- Classification de l'état actuel de l'eau\\}
+Le dataset brut contenait 51 valeurs manquantes réparties sur ses 74 758 observations, soit une proportion négligeable (moins de 0,01 \% des cellules). Ces lignes incomplètes ont été supprimées plutôt qu'imputées, cette faible proportion ne justifiant pas de complexifier le traitement par une méthode d'imputation. Aucun doublon n'a par ailleurs été détecté. La variable cible \texttt{label} étant déjà représentée sous forme binaire (0/1), aucun encodage supplémentaire n'est nécessaire pour celle-ci.
+
+\subsubsection{Module 3 -- Anticipation de la qualité de l'eau à H+1\\}
+Le dataset brut, échantillonné toutes les 20 minutes, a  été rééchantillonné à un pas de temps horaire, plus adapté à l'horizon de prédiction visé d'une heure, ce qui a réduit le dataset à 24 920 lignes, sans aucune valeur manquante après ce rééchantillonnage. Ce nouveau pas de temps régulier est indispensable pour appliquer la décomposition STL, qui nécessite une série temporelle à fréquence constante.
 
 
 

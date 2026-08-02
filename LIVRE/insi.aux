@@ -59,58 +59,69 @@
 \@writefile{toc}{\contentsline {paragraph}{Décomposition STL\\}{13}{}\protected@file@percent }
 \@writefile{toc}{\contentsline {subparagraph}{La méthode Loess\\}{13}{}\protected@file@percent }
 \@writefile{toc}{\contentsline {paragraph}{Réseaux LSTM\\}{14}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Approche méthodologique et cartographie des modules}{14}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.3}Optimisation par GridSearch}{14}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.4}Mise à l'échelle des données}{15}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Standardisation (Z-score)\\}{15}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Normalisation Min-Max\\}{15}{}\protected@file@percent }
 \gdef \LT@vi {\LT@entry 
     {1}{98.15825pt}\LT@entry 
     {1}{126.21101pt}\LT@entry 
     {1}{97.75826pt}\LT@entry 
     {1}{154.66377pt}}
-\@writefile{lot}{\contentsline {table}{\numberline {8}{Cartographie des trois modules du système}}{15}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {4}Méthodologie et préparation des données}{15}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Origine et collecte des données}{15}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Données pour le Module 1 (densité de tilapia)\\}{15}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Approche méthodologique et cartographie des modules}{16}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {8}{Cartographie des trois modules du système}}{16}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {4}Méthodologie et préparation des données}{16}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Origine et collecte des données}{16}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Données pour le Module 1 (densité de tilapia)\\}{16}{}\protected@file@percent }
 \gdef \LT@vii {\LT@entry 
     {1}{162.17847pt}\LT@entry 
     {1}{89.87201pt}\LT@entry 
     {1}{261.36162pt}}
+\@writefile{toc}{\contentsline {paragraph}{Données pour les Modules 2 et 3 (qualité de l'eau)\\}{17}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Structure des datasets}{17}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Module 1 (densité de tilapia)\\}{17}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {9}{Structure du dataset -- Module 1}}{17}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Modules 2 et 3 (qualité de l'eau)\\}{17}{}\protected@file@percent }
 \gdef \LT@viii {\LT@entry 
     {1}{112.38312pt}\LT@entry 
     {1}{105.94003pt}\LT@entry 
     {1}{311.15697pt}}
-\@writefile{toc}{\contentsline {paragraph}{Données pour les Modules 2 et 3 (qualité de l'eau)\\}{16}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Structure des datasets}{16}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Module 1 (densité de tilapia)\\}{16}{}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {9}{Structure du dataset -- Module 1}}{16}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Modules 2 et 3 (qualité de l'eau)\\}{16}{}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {10}{Structure du dataset -- Modules 2 et 3}}{16}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Visualisation et analyse}{17}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Module 1 -- Densité du tilapia\\}{17}{}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Distribution de la variable Densite\_Tilapia\_Are}}{17}{}\protected@file@percent }
-\newlabel{fig:displot_densite}{{2}{17}}
+\@writefile{lot}{\contentsline {table}{\numberline {10}{Structure du dataset -- Modules 2 et 3}}{18}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Visualisation et analyse}{18}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Module 1 -- Densité du tilapia\\}{18}{}\protected@file@percent }
 \@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Densité de tilapia selon la hauteur d'eau}}{18}{}\protected@file@percent }
 \newlabel{fig:violin_hauteur_eau}{{3}{18}}
 \@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Densité de tilapia selon la température actuelle}}{18}{}\protected@file@percent }
 \newlabel{fig:violin_temperature}{{4}{18}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Densité de tilapia selon le niveau d'engrais}}{18}{}\protected@file@percent }
-\newlabel{fig:violin_engrais}{{5}{18}}
-\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Densité de tilapia selon le type d'irrigation}}{18}{}\protected@file@percent }
-\newlabel{fig:violin_irrigation}{{6}{18}}
-\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Densité de tilapia selon la couleur du sol}}{19}{}\protected@file@percent }
-\newlabel{fig:violin_couleur}{{7}{19}}
-\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Densité de tilapia selon la texture du sol}}{19}{}\protected@file@percent }
-\newlabel{fig:violin_texture}{{8}{19}}
-\@writefile{toc}{\contentsline {paragraph}{Modules 2 et 3 -- Qualité de l'eau\\}{19}{}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Distribution de la Turbidité selon la qualité de l'eau}}{19}{}\protected@file@percent }
-\newlabel{fig:dist_turbidity}{{9}{19}}
-\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces Distribution de la Température selon la qualité de l'eau}}{19}{}\protected@file@percent }
-\newlabel{fig:dist_temp}{{10}{19}}
-\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces Distribution du pH selon la qualité de l'eau}}{20}{}\protected@file@percent }
-\newlabel{fig:dist_ph}{{11}{20}}
-\@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces Distribution de l'Oxygène Dissous selon la qualité de l'eau}}{20}{}\protected@file@percent }
-\newlabel{fig:dist_do}{{12}{20}}
-\@writefile{lof}{\contentsline {figure}{\numberline {13}{\ignorespaces Matrice de corrélation entre les composants de l'eau}}{21}{}\protected@file@percent }
-\newlabel{fig:heatmap_corr}{{13}{21}}
-\@writefile{lof}{\contentsline {figure}{\numberline {14}{\ignorespaces Répartition des classes de qualité de l'eau}}{21}{}\protected@file@percent }
-\newlabel{fig:dist_qualite}{{14}{21}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Distribution de la variable Densite\_Tilapia\_Are}}{19}{}\protected@file@percent }
+\newlabel{fig:displot_densite}{{2}{19}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Densité de tilapia selon le niveau d'engrais}}{19}{}\protected@file@percent }
+\newlabel{fig:violin_engrais}{{5}{19}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Densité de tilapia selon le type d'irrigation}}{19}{}\protected@file@percent }
+\newlabel{fig:violin_irrigation}{{6}{19}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Densité de tilapia selon la couleur du sol}}{20}{}\protected@file@percent }
+\newlabel{fig:violin_couleur}{{7}{20}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Densité de tilapia selon la texture du sol}}{20}{}\protected@file@percent }
+\newlabel{fig:violin_texture}{{8}{20}}
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Matrice de corrélation des variables du Module 1}}{20}{}\protected@file@percent }
+\newlabel{fig:heatmap_densite}{{9}{20}}
+\@writefile{toc}{\contentsline {paragraph}{Modules 2 et 3 -- Qualité de l'eau\\}{21}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces Distribution de la Turbidité selon la qualité de l'eau}}{21}{}\protected@file@percent }
+\newlabel{fig:dist_turbidity}{{10}{21}}
+\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces Distribution de la Température selon la qualité de l'eau}}{21}{}\protected@file@percent }
+\newlabel{fig:dist_temp}{{11}{21}}
+\@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces Distribution du pH selon la qualité de l'eau}}{22}{}\protected@file@percent }
+\newlabel{fig:dist_ph}{{12}{22}}
+\@writefile{lof}{\contentsline {figure}{\numberline {13}{\ignorespaces Distribution de l'Oxygène Dissous selon la qualité de l'eau}}{22}{}\protected@file@percent }
+\newlabel{fig:dist_do}{{13}{22}}
+\@writefile{lof}{\contentsline {figure}{\numberline {14}{\ignorespaces Matrice de corrélation entre les composants de l'eau}}{22}{}\protected@file@percent }
+\newlabel{fig:heatmap_corr}{{14}{22}}
+\@writefile{lof}{\contentsline {figure}{\numberline {15}{\ignorespaces Répartition des classes de qualité de l'eau}}{23}{}\protected@file@percent }
+\newlabel{fig:dist_qualite}{{15}{23}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4}Prétraitement des données}{23}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.4.1}Module 1 -- Densité du tilapia\\}{23}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Mise à l'échelle\\}{24}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.4.2}Module 2 -- Classification de l'état actuel de l'eau\\}{24}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.4.3}Module 3 -- Anticipation de la qualité de l'eau à H+1\\}{25}{}\protected@file@percent }
 \ttl@finishall
-\gdef \@abspage@last{29}
+\gdef \@abspage@last{32}

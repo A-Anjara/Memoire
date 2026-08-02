@@ -28,15 +28,24 @@
 \contentsline {paragraph}{Décomposition STL\\}{13}{}%
 \contentsline {subparagraph}{La méthode Loess\\}{13}{}%
 \contentsline {paragraph}{Réseaux LSTM\\}{14}{}%
-\contentsline {subsection}{\numberline {3.3}Approche méthodologique et cartographie des modules}{14}{}%
-\contentsline {section}{\numberline {4}Méthodologie et préparation des données}{15}{}%
-\contentsline {subsection}{\numberline {4.1}Origine et collecte des données}{15}{}%
-\contentsline {paragraph}{Données pour le Module 1 (densité de tilapia)\\}{15}{}%
-\contentsline {paragraph}{Données pour les Modules 2 et 3 (qualité de l'eau)\\}{16}{}%
-\contentsline {subsection}{\numberline {4.2}Structure des datasets}{16}{}%
-\contentsline {paragraph}{Module 1 (densité de tilapia)\\}{16}{}%
-\contentsline {paragraph}{Modules 2 et 3 (qualité de l'eau)\\}{16}{}%
-\contentsline {subsection}{\numberline {4.3}Visualisation et analyse}{17}{}%
-\contentsline {paragraph}{Module 1 -- Densité du tilapia\\}{17}{}%
-\contentsline {paragraph}{Modules 2 et 3 -- Qualité de l'eau\\}{19}{}%
+\contentsline {subsubsection}{\numberline {3.2.3}Optimisation par GridSearch}{14}{}%
+\contentsline {subsubsection}{\numberline {3.2.4}Mise à l'échelle des données}{15}{}%
+\contentsline {paragraph}{Standardisation (Z-score)\\}{15}{}%
+\contentsline {paragraph}{Normalisation Min-Max\\}{15}{}%
+\contentsline {subsection}{\numberline {3.3}Approche méthodologique et cartographie des modules}{16}{}%
+\contentsline {section}{\numberline {4}Méthodologie et préparation des données}{16}{}%
+\contentsline {subsection}{\numberline {4.1}Origine et collecte des données}{16}{}%
+\contentsline {paragraph}{Données pour le Module 1 (densité de tilapia)\\}{16}{}%
+\contentsline {paragraph}{Données pour les Modules 2 et 3 (qualité de l'eau)\\}{17}{}%
+\contentsline {subsection}{\numberline {4.2}Structure des datasets}{17}{}%
+\contentsline {paragraph}{Module 1 (densité de tilapia)\\}{17}{}%
+\contentsline {paragraph}{Modules 2 et 3 (qualité de l'eau)\\}{17}{}%
+\contentsline {subsection}{\numberline {4.3}Visualisation et analyse}{18}{}%
+\contentsline {paragraph}{Module 1 -- Densité du tilapia\\}{18}{}%
+\contentsline {paragraph}{Modules 2 et 3 -- Qualité de l'eau\\}{21}{}%
+\contentsline {subsection}{\numberline {4.4}Prétraitement des données}{23}{}%
+\contentsline {subsubsection}{\numberline {4.4.1}Module 1 -- Densité du tilapia\\}{23}{}%
+\contentsline {paragraph}{Mise à l'échelle\\}{24}{}%
+\contentsline {subsubsection}{\numberline {4.4.2}Module 2 -- Classification de l'état actuel de l'eau\\}{24}{}%
+\contentsline {subsubsection}{\numberline {4.4.3}Module 3 -- Anticipation de la qualité de l'eau à H+1\\}{25}{}%
 \contentsfinish 

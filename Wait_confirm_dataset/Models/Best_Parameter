@@ -20,26 +20,26 @@ Best parameters for XGBoost: {'learning_rate': 0.1, 'max_depth': 7, 'n_estimator
 Best CV Score: 0.9208
 ----------------------------------------
 
-densite_poisson:
-Starting Grid Search for Linear Regression...
-Best parameters for Linear Regression: {'fit_intercept': False}
-Best CV Score: 0.5284
+densite_poisson: Standard Scaler
+Grid Search pour Linear Regression...
+Meilleur Paramètre pour Linear Regression: {'fit_intercept': True}
+Meilleur Score: 0.5494
 ----------------------------------------
-Starting Grid Search for Decision Tree...
-Best parameters for Decision Tree: {'ccp_alpha': 0.0, 'criterion': 'squared_error', 'max_depth': None, 'max_features': None, 'min_samples_leaf': 4, 'min_samples_split': 10, 'splitter': 'random'}
-Best CV Score: 0.5462
+Grid Search pour Decision Tree...
+Meilleur Paramètre pour Decision Tree: {'ccp_alpha': 0.01, 'criterion': 'friedman_mse', 'max_depth': None, 'max_features': None, 'min_samples_leaf': 4, 'min_samples_split': 10}
+Meilleur Score: 0.5759
 ----------------------------------------
-Starting Grid Search for Random Forest...
-Best parameters for Random Forest: {'max_depth': None, 'max_features': 'sqrt', 'min_samples_split': 5, 'n_estimators': 200}
-Best CV Score: 0.6264
+Grid Search pour Random Forest...
+Meilleur Paramètre pour Random Forest: {'max_depth': 10, 'max_features': 'sqrt', 'min_samples_split': 5, 'n_estimators': 200}
+Meilleur Score: 0.6542
 ----------------------------------------
-Starting Grid Search for SVM...
-Best parameters for SVM: {'C': 10, 'epsilon': 0.1, 'gamma': 'scale', 'kernel': 'rbf'}
-Best CV Score: 0.6211
+Grid Search pour SVM...
+Meilleur Paramètre pour SVM: {'C': 10, 'epsilon': 0.1, 'gamma': 'scale', 'kernel': 'rbf'}
+Meilleur Score: 0.6518
 ----------------------------------------
-Starting Grid Search for XGBoost...
-Best parameters for XGBoost: {'gamma': 0, 'learning_rate': 0.1, 'max_depth': 3, 'min_child_weight': 5, 'n_estimators': 100}
-Best CV Score: 0.6740
+Grid Search pour XGBoost...
+Meilleur Paramètre pour XGBoost: {'gamma': 0, 'learning_rate': 0.1, 'max_depth': 3, 'min_child_weight': 5, 'n_estimators': 100}
+Meilleur Score: 0.6945
 ----------------------------------------
 
 Water Quality
