@@ -44,8 +44,26 @@
 \contentsline {paragraph}{Module 1 -- Densité du tilapia\\}{18}{}%
 \contentsline {paragraph}{Modules 2 et 3 -- Qualité de l'eau\\}{21}{}%
 \contentsline {subsection}{\numberline {4.4}Prétraitement des données}{23}{}%
-\contentsline {subsubsection}{\numberline {4.4.1}Module 1 -- Densité du tilapia\\}{23}{}%
+\contentsline {subsubsection}{\numberline {4.4.1}Module 1}{23}{}%
 \contentsline {paragraph}{Mise à l'échelle\\}{24}{}%
-\contentsline {subsubsection}{\numberline {4.4.2}Module 2 -- Classification de l'état actuel de l'eau\\}{24}{}%
-\contentsline {subsubsection}{\numberline {4.4.3}Module 3 -- Anticipation de la qualité de l'eau à H+1\\}{25}{}%
+\contentsline {subsubsection}{\numberline {4.4.2}Module 2}{24}{}%
+\contentsline {subsubsection}{\numberline {4.4.3}Module 3}{25}{}%
+\contentsline {paragraph}{Feature Engineering\\}{25}{}%
+\contentsline {subsubsection}{\numberline {4.4.4}Mise à l'échelle}{25}{}%
+\contentsline {subsection}{\numberline {4.5}Stratégie d'évaluation et découpage des données}{25}{}%
+\contentsline {subsubsection}{\numberline {4.5.1}Module 1}{26}{}%
+\contentsline {paragraph}{Découpage des données\\}{26}{}%
+\contentsline {paragraph}{Validation croisée et métriques\\}{26}{}%
+\contentsline {subsubsection}{\numberline {4.5.2}Module 2}{26}{}%
+\contentsline {paragraph}{Découpage des données\\}{26}{}%
+\contentsline {paragraph}{Validation croisée et métriques\\}{26}{}%
+\contentsline {subsubsection}{\numberline {4.5.3}Module 3}{27}{}%
+\contentsline {paragraph}{Découpage des données\\}{27}{}%
+\contentsline {paragraph}{Validation et métriques\\}{27}{}%
+\contentsline {section}{\numberline {5}Mise en œuvre et évaluation des modules}{27}{}%
+\contentsline {subsection}{\numberline {5.1}Environnement de développement et outils}{27}{}%
+\contentsline {subsubsection}{\numberline {5.1.1}Matériel et écosystème logiciel}{27}{}%
+\contentsline {subsubsection}{\numberline {5.1.2}Librairies de manipulation et de visualisation de données}{27}{}%
+\contentsline {subsubsection}{\numberline {5.1.3}Écosystème de Machine Learning et optimisation}{27}{}%
+\contentsline {subsubsection}{\numberline {5.1.4}Outils d'analyse temporelle et de Deep Learning}{28}{}%
 \contentsfinish 
