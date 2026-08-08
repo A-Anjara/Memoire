@@ -1,0 +1,26 @@
+,model_name,scorer,value
+0,Logistic Regression,accuracy,0.7717
+1,Logistic Regression,precision,0.7731
+2,Logistic Regression,recall,0.7717
+3,Logistic Regression,f1,0.7713
+4,Logistic Regression,auc_roc,0.8247
+5,Decision Tree,accuracy,0.9151
+6,Decision Tree,precision,0.9166
+7,Decision Tree,recall,0.9151
+8,Decision Tree,f1,0.915
+9,Decision Tree,auc_roc,0.9446
+10,Random Forest,accuracy,0.9253
+11,Random Forest,precision,0.926
+12,Random Forest,recall,0.9253
+13,Random Forest,f1,0.9253
+14,Random Forest,auc_roc,0.9635
+15,SVM,accuracy,0.9036
+16,SVM,precision,0.906
+17,SVM,recall,0.9036
+18,SVM,f1,0.9034
+19,SVM,auc_roc,0.9503
+20,XGBoost,accuracy,0.9241
+21,XGBoost,precision,0.925
+22,XGBoost,recall,0.9241
+23,XGBoost,f1,0.924
+24,XGBoost,auc_roc,0.9656

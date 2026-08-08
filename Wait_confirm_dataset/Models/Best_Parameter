@@ -208,3 +208,28 @@ Starting Grid Search for XGBoost...
 Best parameters for XGBoost: {'gamma': 0, 'learning_rate': 0.1, 'n_estimators': 50}
 Best CV Score: 0.1685
 ----------------------------------------
+
+
+
+
+CLASSIFICATION EAU DERNIER :
+Grid Search pour Logistic Regression...
+Meilleur Paramètre pour Logistic Regression: {'C': 0.1, 'max_iter': 1000, 'penalty': 'l2', 'solver': 'saga'}
+Meilleur Score (Accuracy): 0.7716
+----------------------------------------
+Grid Search pour Decision Tree...
+Meilleur Paramètre pour Decision Tree: {'criterion': 'gini', 'max_depth': 10}
+Meilleur Score (Accuracy): 0.9069
+----------------------------------------
+Grid Search pour Random Forest...
+Meilleur Paramètre pour Random Forest: {'max_depth': 20, 'max_features': 'sqrt', 'n_estimators': 100}
+Meilleur Score (Accuracy): 0.9243
+----------------------------------------
+Grid Search pour SVM...
+Meilleur Paramètre pour SVM: {'C': 1, 'gamma': 'scale', 'kernel': 'rbf'}
+Meilleur Score (Accuracy): 0.9035
+----------------------------------------
+Grid Search pour XGBoost...
+Meilleur Paramètre pour XGBoost: {'learning_rate': 0.1, 'max_depth': 7, 'n_estimators': 100}
+Meilleur Score (Accuracy): 0.9237
+----------------------------------------

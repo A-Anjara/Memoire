@@ -1030,16 +1030,20 @@ Ces quatre métriques sont calculées pour chacun des cinq modèles présentés 
 
 \subsubsection[Module 2]{Module 2 -- Classification de l'état actuel de l'eau\\}
 
+\paragraph{Rééquilibrage des classes\\}
+Le déséquilibre des classes observé en 4.3 risquant de biaiser l'apprentissage des modèles en faveur de la classe majoritaire, un rééquilibrage par sous-échantillonnage (downsampling) est appliqué : la classe majoritaire (« bonne qualité ») est réduite aléatoirement pour atteindre le même nombre d'observations que la classe minoritaire (« mauvaise qualité »), soit 20 012 lignes pour chacune des deux classes. Ce dataset équilibré est utilisé pour l'ensemble de la phase d'entraînement et d'évaluation du Module 2.
+
 \paragraph{Découpage des données\\}
-Comme pour le Module 1, le dataset est séparé en un ensemble d'entraînement et un ensemble de test selon une proportion de 80 \%/20 \%. Cependant, le déséquilibre des classes observé en 4.3 (environ 73 \% de bonne qualité contre 27 \% de mauvaise qualité) impose un découpage stratifié, qui conserve cette même proportion dans les deux sous-ensembles, évitant qu'un des deux ne se retrouve avec une répartition de classes trop différente de l'originale.
+Le dataset équilibré est séparé en un ensemble d'entraînement et un ensemble de test selon une proportion de 70 \% / 30 \%. Le rééquilibrage préalable des classes rend un découpage stratifié moins critique qu'auparavant, celui-ci est néanmoins conservé par souci de rigueur méthodologique, afin de garantir une répartition strictement égale des deux classes dans les deux sous-ensembles.
 
 \paragraph{Validation croisée et métriques\\}
-La validation croisée utilisée pour le GridSearch est également stratifiée, pour la même raison. Concernant l'évaluation finale, l'accuracy seule ne suffit pas à juger correctement un modèle sur un dataset déséquilibré : un modèle qui prédirait systématiquement « bonne qualité » obtiendrait déjà une accuracy proche de 73 \% sans avoir rien appris d'utile. Quatre métriques sont donc utilisées conjointement :
+Cinq métriques sont utilisées conjointement pour l'évaluation finale des modèles :
 \begin{itemize}
-    \item l'Accuracy, qui donne la proportion globale de prédictions correctes, mais qui doit être interprétée avec prudence compte tenu du déséquilibre des classes ;
+    \item l'Accuracy, qui donne la proportion globale de prédictions correctes, désormais interprétable sans biais majeur grâce à l'équilibrage des classes ;
     \item la Precision, qui mesure, parmi les observations prédites comme « mauvaise qualité », la proportion réellement mauvaise ;
-    \item le Recall (rappel), qui mesure, parmi les observations réellement de « mauvaise qualité », la proportion correctement détectée par le modèle - la métrique la plus critique ici, puisqu'un cas de mauvaise qualité non détecté (faux négatif) expose directement les poissons à un risque, alors qu'une fausse alerte (faux positif) n'a qu'un coût opérationnel limité ;
-    \item le F1-score, qui combine Precision et Recall en une seule valeur, utile pour comparer les modèles entre eux de façon synthétique.
+    \item le Recall (rappel), qui mesure, parmi les observations réellement de « mauvaise qualité », la proportion correctement détectée par le modèle -- la métrique la plus critique ici, puisqu'un cas de mauvaise qualité non détecté (faux négatif) expose directement les poissons à un risque, alors qu'une fausse alerte (faux positif) n'a qu'un coût opérationnel limité ;
+    \item le F1-score, qui combine Precision et Recall en une seule valeur, utile pour comparer les modèles entre eux de façon synthétique ;
+    \item l'AUC-ROC (Area Under the ROC Curve), qui donne une idée générale de la capacité du modèle à bien reconnaître les deux types d'eau, sans dépendre d'un seuil de décision fixe. Plus cette valeur est proche de 1, mieux le modèle arrive à distinguer une eau de mauvaise qualité d'une eau de bonne qualité
 \end{itemize}
 
 \subsubsection[Module 3]{Module 3 -- Anticipation de la qualité de l'eau à H+1\\}
@@ -1107,7 +1111,7 @@ Pour le Module 1, dédié à l'estimation de la densité de tilapia à partir de
 \end{longtable}
 
 \begin{longtable}{|p{5cm}|p{12cm}|}
-\caption{Grille d'hyperparamètres testés -- SVM (SVR)} \\
+\caption{GridSearch -- SVM (SVR)} \\
 \hline
 \textbf{Hyperparamètre} & \textbf{Valeurs testées} \\
 \hline
@@ -1122,7 +1126,7 @@ Pour le Module 1, dédié à l'estimation de la densité de tilapia à partir de
 \end{longtable}
 
 \begin{longtable}{|p{5cm}|p{12cm}|}
-\caption{Grille d'hyperparamètres testés -- XGBoost} \\
+\caption{GridSearch -- XGBoost} \\
 
 \hline
 \textbf{Hyperparamètre} & \textbf{Valeurs testées} \\
@@ -1178,20 +1182,158 @@ XGBoost & \texttt{gamma: 0, learning\_rate: 0.1, max\_depth: 3, min\_child\_weig
 \hline
 \end{longtable}
 
-On observe que le score de validation croisée s'améliore progressivement à mesure que la complexité du modèle augmente : la Régression Linéaire, modèle le plus simple, plafonne à 0,5494, tandis que XGBoost, modèle le plus sophistiqué, atteint le meilleur score avec 0,6945. Cela suggère que la relation entre les caractéristiques du sol et la densité de tilapia n'est pas purement linéaire, et qu'elle bénéficie de modèles capables de capturer des interactions plus complexes entre les variables.
+On observe que le score de validation croisée s'améliore progressivement à mesure que la complexité du modèle augmente.Cela suggère que la relation entre les caractéristiques du sol et la densité de tilapia n'est pas purement linéaire, et qu'elle bénéficie de modèles capables de capturer des interactions plus complexes entre les variables.
 
 \paragraph{Performances sur l'ensemble de test\\}
+
 La Figure~\ref{fig:eval_densite} présente la comparaison des cinq modèles selon les quatre métriques retenues (RMSE, MAE, MAPE, $R^2$), calculées cette fois sur l'ensemble de test.
 
-\begin{figure}[h]
+
+\begin{figure}[H]
 \centering
-\includegraphics[width=0.8\textwidth]{Densite_tilapia/Evaluations Densite.png}
+\includegraphics[width=0.65\textwidth]{Densite_tilapia/Evaluations Densite.png}
 \caption{Comparaison des performances des modèles -- Module 1}
 \label{fig:eval_densite}
 \end{figure}
 
-Ces résultats confirment et affinent les scores obtenus en validation croisée. La Régression Linéaire affiche les moins bonnes performances sur l'ensemble des quatre métriques (RMSE $\approx$ 29,1, MAE $\approx$ 28,6, MAPE $\approx$ 1,17, $R^2$ $\approx$ 0,55), ce qui confirme les limites d'une relation purement linéaire pour ce problème. Le SVM, malgré un score de validation croisée proche de celui de la Random Forest (0,6518 contre 0,6542), obtient une RMSE et une MAE nettement plus élevées sur l'ensemble de test (respectivement $\approx$ 11,7 et $\approx$ 10,1), ce qui suggère une performance un peu moins stable ou une plus grande sensibilité aux valeurs extrêmes de ce modèle sur des données non vues.
+Ces résultats confirment et affinent les scores obtenus en validation croisée. La Régression Linéaire affiche les moins bonnes performances sur l'ensemble des quatre métriques, ce qui confirme les limites d'une relation purement linéaire pour ce problème.
 
-La Random Forest et XGBoost se distinguent nettement des trois autres modèles, avec les RMSE les plus faibles (respectivement $\approx$ 7,9 et $\approx$ 10,5) et les $R^2$ les plus élevés (respectivement $\approx$ 0,65 et $\approx$ 0,69). XGBoost obtient le meilleur $R^2$ global ($\approx$ 0,69), confirmant sa supériorité déjà observée en validation croisée, mais c'est la Random Forest qui présente la MAPE la plus faible ($\approx$ 0,30), ce qui en fait, en termes relatifs, le modèle le plus précis pour estimer la densité de tilapia. Ces deux modèles, tous deux fondés sur des ensembles d'arbres de décision, apparaissent ainsi comme les plus adaptés pour ce module, la Random Forest et XGBoost pouvant être considérés comme équivalents en pratique, au profit de l'un ou l'autre selon que l'on privilégie l'erreur absolue relative (MAPE) ou la variance expliquée ($R^2$).
+Le SVM, malgré un score de validation croisée proche de celui de la Random Forest obtient une RMSE et une MAE nettement plus élevées sur l'ensemble de test , ce qui suggère une performance un peu moins stable ou une plus grande sensibilité aux valeurs extrêmes de ce modèle sur des données non vues.
+
+La Random Forest et XGBoost se distinguent nettement des trois autres modèles, avec les RMSE les plus faibles et les $R^2$ les plus élevés . XGBoost obtient le meilleur $R^2$ global, confirmant sa supériorité déjà observée en validation croisée, mais c'est la Random Forest qui présente la MAPE la plus faible, ce qui en fait, en termes relatifs, le modèle le plus précis pour estimer la densité de tilapia. Ces deux modèles, tous deux fondés sur des ensembles d'arbres de décision, apparaissent ainsi comme les plus adaptés pour ce module, la Random Forest et XGBoost pouvant être considérés comme équivalents en pratique, au profit de l'un ou l'autre selon que l'on privilégie l'erreur absolue relative (MAPE) ou la variance expliquée $R^2$.
+
+\subsection{Module 2 -- Classification de l'état actuel de l'eau\\}
+
+Pour le Module 2, dédié à la classification de l'état actuel de la qualité de l'eau, les cinq modèles présentés en 3.2.1 (Régression Logistique, Arbre de Décision, Random Forest, SVM, XGBoost) sont entraînés puis optimisés via GridSearchCV. Les grilles d'hyperparamètres testées pour chaque modèle sont détaillées dans les tableaux suivants.
+
+\begin{longtable}{|p{3.5cm}|p{9.5cm}|}
+\caption{Grille d'hyperparamètres testés -- Régression Logistique} \\
+\hline
+\textbf{Hyperparamètre} & \textbf{Valeurs testées} \\
+\hline
+\texttt{penalty} & \texttt{l1}, \texttt{l2} \\
+\hline
+\texttt{C} & 0.01, 0.1, 1 \\
+\hline
+\texttt{solver} & \texttt{saga} \\
+\hline
+\texttt{max\_iter} & 1000 \\
+\hline
+\end{longtable}
+
+\begin{longtable}{|p{3.5cm}|p{9.5cm}|}
+\caption{Grille d'hyperparamètres testés -- Arbre de Décision} \\
+\hline
+\textbf{Hyperparamètre} & \textbf{Valeurs testées} \\
+\hline
+
+
+\texttt{criterion} & \texttt{gini}, \texttt{entropy} \\
+\hline
+\texttt{max\_depth} & \texttt{None}, 10, 20 \\
+\hline
+\end{longtable}
+
+\begin{longtable}{|p{3.5cm}|p{9.5cm}|}
+\caption{Grille d'hyperparamètres testés -- Random Forest} \\
+\hline
+\textbf{Hyperparamètre} & \textbf{Valeurs testées} \\
+\hline
+
+\texttt{n\_estimators} & 20, 50, 100 \\
+\hline
+\texttt{max\_depth} & \texttt{None}, 10, 20 \\
+\hline
+\texttt{max\_features} & \texttt{sqrt}, \texttt{log2} \\
+\hline
+\end{longtable}
+
+\begin{longtable}{|p{3.5cm}|p{9.5cm}|}
+\caption{Grille d'hyperparamètres testés -- SVM (SVC)} \\
+\hline
+\textbf{Hyperparamètre} & \textbf{Valeurs testées} \\
+\hline
+
+\texttt{C} & 0.1, 1 \\
+\hline
+\texttt{gamma} & \texttt{scale}, \texttt{auto}, 0.01, 0.1 \\
+\hline
+\texttt{kernel} & \texttt{rbf}, \texttt{linear} \\
+\hline
+\end{longtable}
+
+\begin{longtable}{|p{3.5cm}|p{9.5cm}|}
+\caption{Grille d'hyperparamètres testés -- XGBoost} \\
+\hline
+\textbf{Hyperparamètre} & \textbf{Valeurs testées} \\
+\hline
+
+\texttt{n\_estimators} & 20, 50, 100 \\
+\hline
+\texttt{learning\_rate} & 0.01, 0.1, 0.2 \\
+\hline
+\texttt{max\_depth} & 3, 5, 7, \texttt{None} \\
+\hline
+\end{longtable}
+
+Ces cinq grilles sont explorées via \texttt{GridSearchCV}, conformément à la stratégie d'évaluation présentée précédemment.
+
+
+\subsubsection{Résultats de l'optimisation et évaluation}
+
+\paragraph{Meilleurs hyperparamètres retenus\\}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|p{3.5cm}|p{7cm}|p{1.8cm}|}
+\hline
+\textbf{Modèle} & \textbf{Meilleurs hyperparamètres} & \textbf{Score CV (Recall)} \\
+\hline
+Régression Logistique & \texttt{C: 0.1, max\_iter: 1000, penalty: l2, solver: saga} & 0,7716 \\
+\hline
+Arbre de Décision & \texttt{criterion: gini, max\_depth: 10} & 0,9069 \\
+\hline
+Random Forest & \texttt{max\_depth: 20, max\_features: sqrt, n\_estimators: 100} & 0,9243 \\
+\hline
+SVM (SVC) & \texttt{C: 1, gamma: scale, kernel: rbf} & 0,9035 \\
+\hline
+XGBoost & \texttt{learning\_rate: 0.1, max\_depth: 7, n\_estimators: 100} & 0,9237 \\
+\hline
+\end{tabular}
+\caption{Meilleurs hyperparamètres retenus par GridSearch -- Module 2}
+\end{table}
+
+On observe un écart très net entre la Régression Logistique, qui plafonne à 0,7716, et l'ensemble des quatre autres modèles, qui dépassent tous 0,90. Cet écart confirme que la frontière séparant une eau de bonne et de mauvaise qualité n'est pas linéaire : un modèle linéaire simple comme la Régression Logistique peine à capturer les interactions entre le pH, la température, l'oxygène dissous et la turbidité, contrairement aux modèles à base d'arbres et au SVM à noyau RBF, capables de modéliser des frontières de décision plus complexes.
+
+\paragraph{Performances sur l'ensemble de test\\}
+Le tableau suivant détaille les performances des cinq modèles sur l'ensemble de test, selon les cinq métriques retenues (Accuracy, Precision, Recall, F1-score, AUC-ROC).
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|p{2.8cm}|p{1.4cm}|p{1.6cm}|p{1.4cm}|p{1.1cm}|p{1.6cm}|}
+\hline
+\textbf{Modèle} & \textbf{Accuracy} & \textbf{Precision} & \textbf{Recall} & \textbf{F1} & \textbf{AUC-ROC} \\
+\hline
+Régression Logistique & 0,7717 & 0,7731 & 0,7717 & 0,7713 & 0,8247 \\
+\hline
+Arbre de Décision & 0,9151 & 0,9166 & 0,9151 & 0,9150 & 0,9446 \\
+\hline
+Random Forest & 0,9253 & 0,9260 & 0,9253 & 0,9253 & 0,9635 \\
+\hline
+SVM (SVC) & 0,9036 & 0,9060 & 0,9036 & 0,9034 & 0,9503 \\
+\hline
+XGBoost & 0,9241 & 0,9250 & 0,9241 & 0,9240 & 0,9656 \\
+\hline
+\end{tabular}
+\caption{Performances des modèles sur l'ensemble de test -- Module 2}
+\end{table}
+
+Ces résultats confirment la hiérarchie observée en validation croisée. La Régression Logistique reste nettement en retrait sur l'ensemble des cinq métriques, avec un Recall de seulement 0,7717, ce qui signifierait, en conditions réelles, qu'environ un cas sur quatre de mauvaise qualité de l'eau passerait inaperçu -- un niveau de risque difficilement acceptable pour la protection du cheptel piscicole.
+
+Les quatre autres modèles présentent des performances élevées et globalement proches. La Random Forest obtient le meilleur Recall (0,9253) ainsi que la meilleure Accuracy, Precision et F1-score, ce qui en fait le modèle le plus équilibré du Module 2. XGBoost, bien que très légèrement en retrait sur le Recall (0,9241), obtient en revanche le meilleur AUC-ROC (0,9656), ce qui indique une capacité globale de séparation des deux classes encore meilleure que celle de la Random Forest, potentiellement utile si le seuil de décision venait à être ajusté pour privilégier davantage la détection des cas critiques. Le SVM, bien qu'un peu en retrait par rapport à ces deux modèles, conserve un Recall solide (0,9036), tandis que l'Arbre de Décision (0,9151) constitue une alternative plus simple et plus interprétable, pour une performance qui reste proche.
+
+Au regard de la priorité donnée au Recall pour ce module, la Random Forest apparaît comme le choix le plus adapté, avec XGBoost comme alternative très proche, notamment si l'on souhaite exploiter sa meilleure capacité de discrimination globale (AUC-ROC) pour affiner le seuil de décision du système d'alerte.
 
 \end{document}
+
+

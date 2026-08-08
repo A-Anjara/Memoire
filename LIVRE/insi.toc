@@ -55,6 +55,7 @@
 \contentsline {paragraph}{Découpage des données\\}{26}{}%
 \contentsline {paragraph}{Validation croisée et métriques\\}{26}{}%
 \contentsline {subsubsection}{\numberline {4.5.2}Module 2}{26}{}%
+\contentsline {paragraph}{Rééquilibrage des classes\\}{26}{}%
 \contentsline {paragraph}{Découpage des données\\}{26}{}%
 \contentsline {paragraph}{Validation croisée et métriques\\}{26}{}%
 \contentsline {subsubsection}{\numberline {4.5.3}Module 3}{27}{}%
@@ -65,4 +66,8 @@
 \contentsline {subsubsection}{\numberline {5.1.1}Résultats de l'optimisation et évaluation}{28}{}%
 \contentsline {paragraph}{Meilleurs hyperparamètres retenus\\}{28}{}%
 \contentsline {paragraph}{Performances sur l'ensemble de test\\}{29}{}%
+\contentsline {subsection}{\numberline {5.2}Module 2 -- Classification de l'état actuel de l'eau\\}{30}{}%
+\contentsline {subsubsection}{\numberline {5.2.1}Résultats de l'optimisation et évaluation}{32}{}%
+\contentsline {paragraph}{Meilleurs hyperparamètres retenus\\}{32}{}%
+\contentsline {paragraph}{Performances sur l'ensemble de test\\}{32}{}%
 \contentsfinish 

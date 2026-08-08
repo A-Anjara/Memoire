@@ -11,7 +11,14 @@
 \contentsline {table}{\numberline {11}{GridSearch-- Régression Linéaire}}{27}{}%
 \contentsline {table}{\numberline {12}{GridSearch -- Arbre de Décision}}{27}{}%
 \contentsline {table}{\numberline {13}{GridSearch-- Random Forest}}{28}{}%
-\contentsline {table}{\numberline {14}{Grille d'hyperparamètres testés -- SVM (SVR)}}{28}{}%
-\contentsline {table}{\numberline {15}{Grille d'hyperparamètres testés -- XGBoost}}{28}{}%
-\contentsline {table}{\numberline {16}{Meilleurs hyperparamètres retenus par GridSearch -- Module 1}}{28}{}%
+\contentsline {table}{\numberline {14}{GridSearch -- SVM (SVR)}}{28}{}%
+\contentsline {table}{\numberline {15}{GridSearch -- XGBoost}}{28}{}%
+\contentsline {table}{\numberline {16}{Meilleurs hyperparamètres retenus par GridSearch -- Module 1}}{29}{}%
+\contentsline {table}{\numberline {17}{Grille d'hyperparamètres testés -- Régression Logistique}}{31}{}%
+\contentsline {table}{\numberline {18}{Grille d'hyperparamètres testés -- Arbre de Décision}}{31}{}%
+\contentsline {table}{\numberline {19}{Grille d'hyperparamètres testés -- Random Forest}}{31}{}%
+\contentsline {table}{\numberline {20}{Grille d'hyperparamètres testés -- SVM (SVC)}}{31}{}%
+\contentsline {table}{\numberline {21}{Grille d'hyperparamètres testés -- XGBoost}}{31}{}%
+\contentsline {table}{\numberline {22}{\ignorespaces Meilleurs hyperparamètres retenus par GridSearch -- Module 2}}{32}{}%
+\contentsline {table}{\numberline {23}{\ignorespaces Performances des modèles sur l'ensemble de test -- Module 2}}{32}{}%
 \contentsfinish 
