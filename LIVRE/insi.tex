@@ -1055,22 +1055,143 @@ La performance du modèle LSTM est évaluée sur sa capacité à prédire $T_t$ 
 
 Ce chapitre constitue le cœur empirique de ce mémoire. Là où le Chapitre 3 a posé les fondements théoriques des modèles mobilisés et où le Chapitre 4 a préparé et structuré les données nécessaires, ce chapitre concrétise cette approche en mettant réellement en œuvre les trois modules du système rizipiscicole, puis en évaluant leurs performances respectives.
 
-\subsection{Environnement de développement et outils}
+\subsection{Module 1 -- Densité Tilapia}
 
-\subsubsection{Matériel et écosystème logiciel}
-L'ensemble du projet est développé en Python (version 3), devenu depuis plusieurs années le langage de référence de l'industrie pour les projets d'intelligence artificielle et de science des données, grâce à la richesse de son écosystème de bibliothèques dédiées et à la simplicité de sa syntaxe. Le développement est réalisé au sein d'un environnement de développement interactif de type Jupyter Notebook et Google Colab.
+Pour le Module 1, dédié à l'estimation de la densité de tilapia à partir des caractéristiques du sol rizicole, les cinq modèles présentés en 3.2.1 (Régression Linéaire, Arbre de Décision, Random Forest, SVM, XGBoost) sont entraînés puis optimisés via la démarche de GridSearch présentée en 3.2.3. Pour chaque modèle, une grille d'hyperparamètres candidats est définie, et la meilleure combinaison est retenue par validation croisée. Les grilles testées pour chaque modèle sont détaillées dans les tableaux suivants.
 
-\subsubsection{Librairies de manipulation et de visualisation de données}
-La manipulation des données repose principalement sur Pandas, qui structure les données sous forme de DataFrames et facilite leur nettoyage, leur filtrage et leur transformation, ainsi que sur NumPy, qui fournit les structures de tableaux et les opérations matricielles et vectorielles nécessaires aux calculs numériques sous-jacents à la plupart des algorithmes de machine learning.
+\begin{longtable}{|p{5cm}|p{12cm}|}
+\caption{GridSearch-- Régression Linéaire} \\
+\hline
+\textbf{Hyperparamètre} & \textbf{Valeurs testées} \\
+\hline
 
-Pour la visualisation, Matplotlib et Seaborn sont utilisés conjointement : Matplotlib pour la génération de graphiques de base, et Seaborn, construit au-dessus de Matplotlib, pour des visualisations statistiques plus élaborées (distributions, violin plots, heatmaps de corrélation), ainsi que pour la représentation des courbes d'apprentissage et des matrices de confusion utilisées dans l'évaluation des modèles.
+\texttt{fit\_intercept} & \texttt{True}, \texttt{False} \\
+\hline
 
-\subsubsection{Écosystème de Machine Learning et optimisation}
-La bibliothèque Scikit-Learn constitue le socle du projet pour les modèles de machine learning classiques présentés en 1.2.1 : elle fournit une implémentation standardisée et éprouvée de la Régression Linéaire, de la Régression Logistique, des SVM (SVC/SVR), des Arbres de Décision et des Random Forest, avec une interface commune facilitant leur comparaison. Elle fournit également la classe \texttt{GridSearchCV}, qui automatise la recherche par grille combinée à la validation croisée présentée en 3.2.3, permettant d'optimiser systématiquement les hyperparamètres de chacun de ces modèles. Pour l'algorithme XGBoost, la bibliothèque officielle du même nom est utilisée, celle-ci étant spécifiquement optimisée pour l'implémentation du Boosting de gradient extrême, aussi bien pour sa variante de régression (XGBRegressor) que de classification (XGBClassifier).
+\end{longtable}
 
-\subsubsection{Outils d'analyse temporelle et de Deep Learning}
-Pour la composante temporelle du Module 3, la bibliothèque Statsmodels est utilisée afin d'extraire les composantes de tendance, de saisonnalité et de résidu de chaque variable physico-chimique de l'eau, via son implémentation de la décomposition STL présentée en 3.2.2. Enfin, le framework TensorFlow, à travers son interface Keras, est utilisé pour concevoir, compiler et entraîner l'architecture du réseau de neurones récurrent LSTM dédié à la prédiction de la qualité de l'eau à l'horizon d'une heure, ce framework étant aujourd'hui l'un des standards de l'industrie pour le développement de modèles de deep learning.
+\begin{longtable}{|p{5cm}|p{12cm}|}
+\caption{GridSearch -- Arbre de Décision} \\
+\hline
+\textbf{Hyperparamètre} & \textbf{Valeurs testées} \\
+\hline
+
+\texttt{criterion} & \texttt{squared\_error}, \texttt{friedman\_mse}, \texttt{absolute\_error}, \texttt{poisson} \\
+\hline
+\texttt{max\_depth} & \texttt{None}, 5, 10, 20 \\
+\hline
+\texttt{min\_samples\_split} & 2, 5, 10 \\
+\hline
+\texttt{min\_samples\_leaf} & 1, 2, 4 \\
+\hline
+\texttt{ccp\_alpha} & 0.0, 0.01, 0.1 \\
+\hline
+\texttt{max\_features} & \texttt{None}, \texttt{sqrt}, \texttt{log2} \\
+\hline
+\end{longtable}
+
+\begin{longtable}{|p{5cm}|p{12cm}|}
+\caption{GridSearch-- Random Forest} \\
+\hline
+\textbf{Hyperparamètre} & \textbf{Valeurs testées} \\
+\hline
+
+\texttt{n\_estimators} & 50, 100, 200 \\
+\hline
+\texttt{max\_depth} & \texttt{None}, 5, 10 \\
+\hline
+\texttt{min\_samples\_split} & 2, 5, 10 \\
+\hline
+\texttt{max\_features} & \texttt{sqrt}, \texttt{log2} \\
+\hline
+\end{longtable}
+
+\begin{longtable}{|p{5cm}|p{12cm}|}
+\caption{Grille d'hyperparamètres testés -- SVM (SVR)} \\
+\hline
+\textbf{Hyperparamètre} & \textbf{Valeurs testées} \\
+\hline
+\texttt{C} & 0.1, 1, 10 \\
+\hline
+\texttt{kernel} & \texttt{linear}, \texttt{rbf}, \texttt{poly} \\
+\hline
+\texttt{gamma} & \texttt{scale}, \texttt{auto}, 0.1, 1 \\
+\hline
+\texttt{epsilon} & 0.1, 0.01, 0.001 \\
+\hline
+\end{longtable}
+
+\begin{longtable}{|p{5cm}|p{12cm}|}
+\caption{Grille d'hyperparamètres testés -- XGBoost} \\
+
+\hline
+\textbf{Hyperparamètre} & \textbf{Valeurs testées} \\
+\hline
 
 
+\texttt{n\_estimators} & 50, 100, 200 \\
+\hline
+\texttt{learning\_rate} & 0.01, 0.1, 0.2 \\
+\hline
+\texttt{max\_depth} & 3, 5, 7, \texttt{None} \\
+\hline
+\texttt{min\_child\_weight} & 1, 3, 5 \\
+\hline
+\texttt{gamma} & 0, 0.1, 0.2 \\
+\hline
+\end{longtable}
+
+Ces cinq grilles sont explorées via \texttt{GridSearchCV}, combinée à une validation croisée, afin d'identifier pour chaque modèle la configuration d'hyperparamètres offrant la meilleure performance moyenne.
+
+\subsubsection{Résultats de l'optimisation et évaluation}
+
+\paragraph{Meilleurs hyperparamètres retenus\\}
+Le tableau suivant présente, pour chacun des cinq modèles, la meilleure combinaison d'hyperparamètres identifiée par GridSearch, ainsi que le score moyen obtenu en validation croisée (correspondant au $R^2$).
+
+\begin{longtable}{|p{3.5cm}|p{7cm}|p{1.8cm}|}
+\caption{Meilleurs hyperparamètres retenus par GridSearch -- Module 1} \\
+\hline
+\textbf{Modèle} & \textbf{Meilleurs hyperparamètres} & \textbf{Score CV ($R^2$)} \\
+\hline
+\endfirsthead
+
+\hline
+\textbf{Modèle} & \textbf{Meilleurs hyperparamètres} & \textbf{Score CV ($R^2$)} \\
+\hline
+\endhead
+
+\hline
+\endfoot
+
+\hline
+\endlastfoot
+
+Régression Linéaire & \texttt{fit\_intercept: True} & 0,5494 \\
+\hline
+Arbre de Décision & \texttt{ccp\_alpha: 0.01, criterion: friedman\_mse, max\_depth: None, max\_features: None, min\_samples\_leaf: 4, min\_samples\_split: 10} & 0,5759 \\
+\hline
+Random Forest & \texttt{max\_depth: 10, max\_features: sqrt, min\_samples\_split: 5, n\_estimators: 200} & 0,6542 \\
+\hline
+SVM (SVR) & \texttt{C: 10, epsilon: 0.1, gamma: scale, kernel: rbf} & 0,6518 \\
+\hline
+XGBoost & \texttt{gamma: 0, learning\_rate: 0.1, max\_depth: 3, min\_child\_weight: 5, n\_estimators: 100} & 0,6945 \\
+\hline
+\end{longtable}
+
+On observe que le score de validation croisée s'améliore progressivement à mesure que la complexité du modèle augmente : la Régression Linéaire, modèle le plus simple, plafonne à 0,5494, tandis que XGBoost, modèle le plus sophistiqué, atteint le meilleur score avec 0,6945. Cela suggère que la relation entre les caractéristiques du sol et la densité de tilapia n'est pas purement linéaire, et qu'elle bénéficie de modèles capables de capturer des interactions plus complexes entre les variables.
+
+\paragraph{Performances sur l'ensemble de test\\}
+La Figure~\ref{fig:eval_densite} présente la comparaison des cinq modèles selon les quatre métriques retenues (RMSE, MAE, MAPE, $R^2$), calculées cette fois sur l'ensemble de test.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.8\textwidth]{Densite_tilapia/Evaluations Densite.png}
+\caption{Comparaison des performances des modèles -- Module 1}
+\label{fig:eval_densite}
+\end{figure}
+
+Ces résultats confirment et affinent les scores obtenus en validation croisée. La Régression Linéaire affiche les moins bonnes performances sur l'ensemble des quatre métriques (RMSE $\approx$ 29,1, MAE $\approx$ 28,6, MAPE $\approx$ 1,17, $R^2$ $\approx$ 0,55), ce qui confirme les limites d'une relation purement linéaire pour ce problème. Le SVM, malgré un score de validation croisée proche de celui de la Random Forest (0,6518 contre 0,6542), obtient une RMSE et une MAE nettement plus élevées sur l'ensemble de test (respectivement $\approx$ 11,7 et $\approx$ 10,1), ce qui suggère une performance un peu moins stable ou une plus grande sensibilité aux valeurs extrêmes de ce modèle sur des données non vues.
+
+La Random Forest et XGBoost se distinguent nettement des trois autres modèles, avec les RMSE les plus faibles (respectivement $\approx$ 7,9 et $\approx$ 10,5) et les $R^2$ les plus élevés (respectivement $\approx$ 0,65 et $\approx$ 0,69). XGBoost obtient le meilleur $R^2$ global ($\approx$ 0,69), confirmant sa supériorité déjà observée en validation croisée, mais c'est la Random Forest qui présente la MAPE la plus faible ($\approx$ 0,30), ce qui en fait, en termes relatifs, le modèle le plus précis pour estimer la densité de tilapia. Ces deux modèles, tous deux fondés sur des ensembles d'arbres de décision, apparaissent ainsi comme les plus adaptés pour ce module, la Random Forest et XGBoost pouvant être considérés comme équivalents en pratique, au profit de l'un ou l'autre selon que l'on privilégie l'erreur absolue relative (MAPE) ou la variance expliquée ($R^2$).
 
 \end{document}
