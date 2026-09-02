@@ -1,24 +1,25 @@
 \babel@toc {french}{}\relax 
-\contentsline {table}{\numberline {1}{\ignorespaces Parcours Licence et Master proposés à l’INSI}}{5}{}%
-\contentsline {table}{\numberline {2}{\ignorespaces Hyperparamètres -- Régression Linéaire}}{9}{}%
-\contentsline {table}{\numberline {3}{Hyperparamètres -- Régression Logistique}}{10}{}%
-\contentsline {table}{\numberline {5}{Hyperparamètres -- Arbre de Décision}}{12}{}%
-\contentsline {table}{\numberline {6}{Hyperparamètres -- Random Forest}}{12}{}%
-\contentsline {table}{\numberline {7}{Hyperparamètres -- XGBoost}}{13}{}%
-\contentsline {table}{\numberline {8}{Cartographie des trois modules du système}}{16}{}%
-\contentsline {table}{\numberline {9}{Structure du dataset -- Module 1}}{17}{}%
-\contentsline {table}{\numberline {10}{Structure du dataset -- Modules 2 et 3}}{18}{}%
-\contentsline {table}{\numberline {11}{GridSearch-- Régression Linéaire}}{27}{}%
-\contentsline {table}{\numberline {12}{GridSearch -- Arbre de Décision}}{27}{}%
-\contentsline {table}{\numberline {13}{GridSearch-- Random Forest}}{28}{}%
-\contentsline {table}{\numberline {14}{GridSearch -- SVM (SVR)}}{28}{}%
-\contentsline {table}{\numberline {15}{GridSearch -- XGBoost}}{28}{}%
-\contentsline {table}{\numberline {16}{Meilleurs hyperparamètres retenus par GridSearch -- Module 1}}{29}{}%
-\contentsline {table}{\numberline {17}{Grille d'hyperparamètres testés -- Régression Logistique}}{31}{}%
-\contentsline {table}{\numberline {18}{Grille d'hyperparamètres testés -- Arbre de Décision}}{31}{}%
-\contentsline {table}{\numberline {19}{Grille d'hyperparamètres testés -- Random Forest}}{31}{}%
-\contentsline {table}{\numberline {20}{Grille d'hyperparamètres testés -- SVM (SVC)}}{31}{}%
-\contentsline {table}{\numberline {21}{Grille d'hyperparamètres testés -- XGBoost}}{31}{}%
-\contentsline {table}{\numberline {22}{\ignorespaces Meilleurs hyperparamètres retenus par GridSearch -- Module 2}}{32}{}%
-\contentsline {table}{\numberline {23}{\ignorespaces Performances des modèles sur l'ensemble de test -- Module 2}}{32}{}%
+\contentsline {table}{\numberline {3}{\ignorespaces Parcours Licence et Master proposés à l’INSI}}{5}{}%
+\contentsline {table}{\numberline {4}{\ignorespaces Hyperparamètres -- Régression Linéaire}}{9}{}%
+\contentsline {table}{\numberline {5}{Hyperparamètres -- Régression Logistique}}{10}{}%
+\contentsline {table}{\numberline {7}{Hyperparamètres -- Arbre de Décision}}{12}{}%
+\contentsline {table}{\numberline {8}{Hyperparamètres -- Random Forest}}{12}{}%
+\contentsline {table}{\numberline {9}{Hyperparamètres -- XGBoost}}{13}{}%
+\contentsline {table}{\numberline {10}{Cartographie des trois modules du système}}{16}{}%
+\contentsline {table}{\numberline {11}{Structure du dataset -- Module 1}}{17}{}%
+\contentsline {table}{\numberline {12}{Structure du dataset -- Modules 2 et 3}}{18}{}%
+\contentsline {table}{\numberline {13}{GridSearch-- Régression Linéaire}}{27}{}%
+\contentsline {table}{\numberline {14}{GridSearch -- Arbre de Décision}}{27}{}%
+\contentsline {table}{\numberline {15}{GridSearch-- Random Forest}}{28}{}%
+\contentsline {table}{\numberline {16}{GridSearch -- SVM (SVR)}}{28}{}%
+\contentsline {table}{\numberline {17}{GridSearch -- XGBoost}}{28}{}%
+\contentsline {table}{\numberline {18}{Meilleurs hyperparamètres retenus par GridSearch -- Module 1}}{29}{}%
+\contentsline {table}{\numberline {19}{Grille d'hyperparamètres testés -- Régression Logistique}}{31}{}%
+\contentsline {table}{\numberline {20}{Grille d'hyperparamètres testés -- Arbre de Décision}}{31}{}%
+\contentsline {table}{\numberline {21}{Grille d'hyperparamètres testés -- Random Forest}}{31}{}%
+\contentsline {table}{\numberline {22}{Grille d'hyperparamètres testés -- SVM (SVC)}}{31}{}%
+\contentsline {table}{\numberline {23}{Grille d'hyperparamètres testés -- XGBoost}}{31}{}%
+\contentsline {table}{\numberline {24}{Meilleurs hyperparamètres retenus par GridSearch -- Module 2}}{32}{}%
+\contentsline {table}{\numberline {25}{\ignorespaces Performances des modèles sur l'ensemble de test -- Module 2}}{32}{}%
+\contentsline {table}{\numberline {26}{Performances du modèle LSTM par variable -- Module 3}}{33}{}%
 \contentsfinish 

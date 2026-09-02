@@ -8,6 +8,7 @@
 \usepackage{xcolor}
 \usepackage{tcolorbox}
 \usepackage[T1]{fontenc} 
+\usepackage{booktabs}
 \usepackage{newtxtext} % Texte en Times New Roman
 \usepackage{newtxmath} % Symboles mathématiques compatibles Times
 \usepackage{array} % Vertical Alignement Table
@@ -110,11 +111,39 @@ Enfin, je ne saurais oublier ma famille et mes proches, dont le soutien indéfec
 À toutes celles et à tous ceux qui, de près ou de loin, ont contribué à la réalisation de ce travail, j'adresse mes sincères remerciements.
 \vspace*{\fill}
 \newpage
-\begin{center}
-\LARGE{RESUME}
-\end{center}
+\begin{abstract}
+\onehalfspacing
+
+La rizipisciculture, qui associe l'élevage de tilapia à la culture du riz, présente un potentiel économique, social et environnemental important à Madagascar, mais son développement reste freiné par l'absence d'outils fiables de surveillance et d'anticipation de la qualité de l'eau, exposant les exploitations à des risques de dégradation souvent détectés trop tard. Ce mémoire répond ainsi à la problématique suivante : comment analyser la qualité de l'eau et les conditions environnementales d'une parcelle de rizipisciculture afin de protéger, anticiper et optimiser la production de tilapia ? L'objectif est de concevoir un système intelligent composé de trois modules complémentaires.\\
+
+Pour atteindre cet objectif, le premier module estime la densité de tilapia atteignable à partir des caractéristiques du sol, à l'aide de modèles de régression tels que la Régression Linéaire, le SVR, l'Arbre de Décision, la Random Forest et XGBoost, optimisés par GridSearch. Le deuxième module classe l'état actuel de la qualité de l'eau en bonne ou mauvaise qualité pour le tilapia, selon la même démarche appliquée à des modèles de classification. Le troisième module anticipe l'évolution de la qualité de l'eau à l'horizon d'une heure, en combinant une décomposition STL et un réseau de neurones récurrent LSTM, afin de déclencher une alerte préventive en cas de dégradation anticipée.\\
+
+Les résultats montrent que les modèles à base d'ensembles d'arbres, en particulier la Random Forest et XGBoost, offrent les meilleures performances pour l'estimation de la densité et la classification de la qualité de l'eau, avec un rappel supérieur à 0,92 pour ce dernier module. L'approche STL-LSTM atteint un pouvoir explicatif élevé pour l'ensemble des paramètres physico-chimiques prédits. Une interface de démonstration a enfin été développée pour illustrer l'usage concret du système, constituant une première contribution vers un outil d'aide à la décision destiné aux rizipisciculteurs malgaches.
+
+\vspace{0.5cm}
+\textbf{Mots-clés :} rizipisciculture, tilapia, qualité de l'eau, machine learning, GridSearch, STL, LSTM.
+\end{abstract}
+
 \vspace*{\fill}
 \newpage
+
+\renewcommand{\abstractname}{Abstract}
+\begin{abstract}
+\onehalfspacing
+
+Rice-fish farming, which combines tilapia rearing with rice cultivation, holds significant economic, social, and environmental potential in Madagascar, but its development is hindered by the lack of reliable tools to monitor and anticipate water quality, exposing farms to degradation risks that are often detected too late. This thesis addresses the following question: how can water quality and environmental conditions of a rice-fish farming plot be analyzed to protect, anticipate, and optimize tilapia production? The objective is to design an intelligent system made up of three complementary modules.
+
+To achieve this, the first module estimates achievable tilapia density from soil characteristics, using regression models such as Linear Regression, SVR, Decision Tree, Random Forest, and XGBoost, optimized through GridSearch. The second module classifies current water quality as good or poor for tilapia, following the same approach applied to classification models. The third module anticipates water quality evolution one hour ahead, combining STL decomposition with an LSTM recurrent neural network, in order to trigger a preventive alert in case of anticipated degradation.
+
+The results show that ensemble tree-based models, particularly Random Forest and XGBoost, achieve the best performance for density estimation and water quality classification, reaching a recall above 0.92 for the latter module. The STL-LSTM approach achieves strong explanatory power across all predicted physico-chemical parameters. A demonstration interface was finally developed to illustrate the practical use of the system, forming an initial contribution toward a decision-support tool for Malagasy rice-fish farmers.
+
+\vspace{0.5cm}
+\textbf{Keywords:} rice-fish farming, tilapia, water quality, machine learning, GridSearch, STL, LSTM.
+\end{abstract}
+
+\vspace*{\fill}
+\newpage
+
 \tableofcontents
 \vspace*{\fill}
 \newpage
@@ -123,14 +152,64 @@ Enfin, je ne saurais oublier ma famille et mes proches, dont le soutien indéfec
 \Large LISTE DES ABREVIATIONS, SIGLES ET ACRONYMES
 \end{center}
 
+\begin{longtable}{|p{3.5cm}|p{13cm}|}
+\hline
+\textbf{Sigle} & \textbf{Signification} \\
+\hline
+\endfirsthead
 
-\begin{tabular}{ll}
-APDRA & : Association Pisciculture et Développement Rural en Afrique\\
-FAO & : Food and Agriculture Organization\\
-IISD & : Institut International du Développement Durable\\
-PADM & : Projet d'Aquaculture Durable à Madagascar \\
-\end{tabular}
+\hline
+\textbf{Sigle} & \textbf{Signification} \\
+\hline
+\endhead
 
+\hline
+\endfoot
+
+\hline
+\endlastfoot
+
+APDRA & Association Pisciculture et Développement Rural en Afrique \\
+\hline
+AUC & Area Under the Curve \\
+\hline
+DO & Dissolved Oxygen (oxygène dissous) \\
+\hline
+FAO & Food and Agriculture Organization (Organisation des Nations Unies pour l'alimentation et l'agriculture) \\
+\hline
+FOFIFA & Foibem-pirenena momba ny Fikarohana ampiharina amin'ny Fampandrosoana ny eny Ambanivohitra (Centre National de la Recherche Appliquée au Développement Rural) \\
+\hline
+IISD & Institut International du Développement Durable \\
+\hline
+IPNA & Infrastructure Publique Numérique Agricole \\
+\hline
+LSTM & Long Short-Term Memory \\
+\hline
+MAE & Mean Absolute Error \\
+\hline
+MAPE & Mean Absolute Percentage Error \\
+\hline
+MINAE & Ministère de l'Agriculture et de la Souveraineté Alimentaire (Madagascar) \\
+\hline
+NTU & Nephelometric Turbidity Unit \\
+\hline
+PADM & Projet d'Aquaculture Durable à Madagascar \\
+\hline
+PIB & Produit Intérieur Brut \\
+\hline
+RMSE & Root Mean Squared Error \\
+\hline
+ROC & Receiver Operating Characteristic \\
+\hline
+SVC & Support Vector Classification \\
+\hline
+SVM & Support Vector Machine \\
+\hline
+SVR & Support Vector Regression \\
+\hline
+STL & Seasonal-Trend decomposition using Loess \\
+\hline
+\end{longtable}
 
 \vspace*{\fill}
 \newpage
@@ -138,6 +217,43 @@ PADM & : Projet d'Aquaculture Durable à Madagascar \\
 \begin{center}
 \LARGE GLOSSAIRE
 \end{center}
+
+\begin{longtable}{@{}p{4cm}p{13cm}@{}}
+\textbf{Terme} & \textbf{Définition} \\
+\midrule
+
+Accuracy & Proportion globale de prédictions correctes d'un modèle de classification, sur l'ensemble des observations. \\[24pt]
+AUC-ROC & Aire sous la courbe ROC, mesurant la capacité d'un modèle de classification à distinguer les deux classes indépendamment d'un seuil de décision fixe. \\[24pt]
+Downsampling & Technique de rééquilibrage des classes consistant à réduire aléatoirement le nombre d'observations de la classe majoritaire pour l'égaliser à celui de la classe minoritaire. \\[24pt]
+Encodage ordinal & Transformation d'une variable catégorielle en valeurs numériques entières croissantes, adaptée lorsque ses modalités possèdent un ordre naturel. \\[24pt]
+Encodage one-hot & Transformation d'une variable catégorielle en plusieurs colonnes binaires distinctes, adaptée lorsque ses modalités n'ont pas de relation d'ordre entre elles. \\[24pt]
+F1-score & Métrique combinant la Precision et le Recall en une seule valeur, utile pour comparer des modèles de classification de façon synthétique. \\[24pt]
+GridSearch & Méthode d'optimisation testant systématiquement toutes les combinaisons d'une grille d'hyperparamètres candidats, généralement combinée à une validation croisée. \\[24pt]
+Hyperparamètre & Paramètre d'un modèle fixé avant l'entraînement (par exemple le nombre d'arbres d'une Random Forest), par opposition aux paramètres appris automatiquement pendant l'entraînement. \\[24pt]
+Kernel trick & Technique permettant à un modèle SVM de séparer des données non linéairement séparables, en calculant implicitement leur similarité dans un espace de dimension supérieure. \\[24pt]
+LSTM (Long Short-Term Memory) & Architecture de réseau de neurones récurrent dotée d'un système de portes, capable de retenir des dépendances temporelles sur de longues séquences. \\[24pt]
+MAE (Mean Absolute Error) & Métrique de régression correspondant à l'écart moyen absolu entre les valeurs prédites et les valeurs réelles. \\[24pt]
+MAPE (Mean Absolute Percentage Error) & Métrique de régression exprimant l'erreur moyenne en pourcentage de la valeur réelle. \\[24pt]
+Overfitting (surapprentissage) & Phénomène par lequel un modèle s'ajuste excessivement aux données d'entraînement, y compris à leur bruit, au détriment de sa capacité à généraliser sur de nouvelles données. \\[24pt]
+Precision & Parmi les observations prédites comme positives par un modèle de classification, proportion réellement positive. \\[24pt]
+Random Forest & Modèle d'ensemble combinant un grand nombre d'arbres de décision entraînés sur des échantillons et des sous-ensembles de variables différents, afin de réduire la variance et le surapprentissage. \\[24pt]
+Recall (rappel) & Parmi les observations réellement positives, proportion correctement détectée par un modèle de classification. \\[24pt]
+RMSE (Root Mean Squared Error) & Métrique de régression pénalisant davantage les erreurs importantes, exprimée dans la même unité que la variable prédite. \\[24pt]
+Rizipisciculture & Pratique agroécologique associant l'élevage de poissons à la culture du riz sur une même parcelle inondée. \\[24pt]
+$R^2$ (coefficient de détermination) & Métrique de régression indiquant la proportion de la variance de la variable cible expliquée par le modèle. \\[24pt]
+Standardisation (Z-score) & Technique de mise à l'échelle transformant une variable pour obtenir une moyenne nulle et un écart-type unitaire. \\[24pt]
+STL (Seasonal-Trend decomposition using Loess) & Méthode décomposant une série temporelle en une composante de tendance, une composante saisonnière et un résidu, à l'aide de la méthode de lissage Loess. \\[24pt]
+SVM (Support Vector Machine) & Modèle cherchant à séparer des données en classes à l'aide d'un hyperplan maximisant la marge entre les classes. \\[24pt]
+Tilapia & Espèce de poisson d'eau douce (\textit{Oreochromis niloticus}), largement élevée dans le monde pour sa croissance rapide et sa capacité d'adaptation. \\[24pt]
+Turbidité & Mesure du trouble d'une eau, lié à la présence de particules en suspension, exprimée en NTU (Nephelometric Turbidity Unit). \\[24pt]
+Validation croisée (Cross-validation) & Technique divisant les données d'entraînement en plusieurs sous-ensembles afin d'évaluer un modèle de façon plus fiable qu'avec un unique découpage entraînement/test. \\[24pt]
+Walk-forward validation & Méthode de validation adaptée aux séries temporelles, consistant à entraîner un modèle sur une fenêtre de données passées et à l'évaluer sur la période suivante, en faisant glisser cette fenêtre dans le temps. \\[24pt]
+XGBoost (Extreme Gradient Boosting) & Algorithme d'apprentissage d'ensemble construisant des arbres de décision de façon séquentielle, chaque nouvel arbre corrigeant les erreurs des arbres précédents. \\[24pt]
+Zezika & Terme malgache désignant le fumier ou l'engrais organique traditionnellement utilisé pour fertiliser les rizières. \\[24pt]
+\end{longtable}
+
+
+
 
 \vspace*{\fill}
 \newpage
@@ -993,7 +1109,10 @@ Conformément à la méthode de standardisation présentée en 3.2.4, les variab
 
 
 \subsubsection[Module 2]{Module 2 -- Classification de l'état actuel de l'eau\\}
-Le dataset brut contenait 51 valeurs manquantes réparties sur ses 74 758 observations, soit une proportion négligeable (moins de 0,01 \% des cellules). Ces lignes incomplètes ont été supprimées plutôt qu'imputées, cette faible proportion ne justifiant pas de complexifier le traitement par une méthode d'imputation. Aucun doublon n'a par ailleurs été détecté. La variable cible \texttt{label} étant déjà représentée sous forme binaire (0/1), aucun encodage supplémentaire n'est nécessaire pour celle-ci.
+Le dataset brut contenait 51 valeurs manquantes réparties sur ses 74 758 observations, soit une proportion négligeable (moins de 0,01 \% des cellules). Ces lignes incomplètes ont été supprimées plutôt qu'imputées. Aucun doublon n'a par ailleurs été détecté. La variable cible \texttt{label} étant déjà représentée sous forme binaire (0/1), aucun encodage supplémentaire n'est nécessaire pour celle-ci.
+
+\paragraph{Mise à l'échelle\\}
+Les variables physico-chimiques utilisées pour la classification (\texttt{PH}, \texttt{TEMP}, \texttt{DO}, \texttt{TURBIDITY}) possèdent des bornes physiques connues et fixes. Conformément à la méthode présentée en 3.2.4, une normalisation Min-Max (MinMaxScaler) est donc appliquée à ces variables, afin de les ramener dans un intervalle commun $[0,1]$ avant l'entraînement des modèles sensibles à l'échelle des données (Régression Logistique, SVC).
 
 \subsubsection[Module 3]{Module 3 -- Anticipation de la qualité de l'eau à H+1\\}
 Le dataset brut, échantillonné toutes les 20 minutes, a été rééchantillonné à un pas de temps horaire, plus adapté à l'horizon de prédiction visé d'une heure, ce qui a réduit le dataset à 24 920 lignes, sans aucune valeur manquante après ce rééchantillonnage. Ce nouveau pas de temps régulier est indispensable pour appliquer la décomposition STL, qui nécessite une série temporelle à fréquence constante.
@@ -1002,13 +1121,13 @@ Une fois ce rééchantillonnage effectué, chaque variable physico-chimique est 
 
 La composante de tendance $T_t$, qui capture l'évolution de fond de la série, est celle qui alimente directement le modèle LSTM chargé de la prédiction à l'horizon d'une heure. La composante saisonnière $S_t$, quant à elle, correspond à un motif cyclique récurrent: plutôt que d'être réinjectée dans le modèle, elle est stockée séparément dans une base de données, et pourra être rajoutée à la prédiction de tendance issue du LSTM pour reconstituer une estimation complète de la valeur future.
 
-Le résidu $R_t$, en revanche, est omis du pipeline de prédiction. Ce choix se justifie par le fait que la somme de la tendance et de la saisonnalité représente déjà environ 90 \% de la variance de la série originale, le résidu ne représentant donc qu'une faible part de l'information totale, correspondant essentiellement à du bruit de mesure difficilement prévisible par nature. Intégrer ce résidu dans le modèle LSTM risquerait ainsi d'introduire davantage de bruit dans l'apprentissage sans réel gain de performance, alors que son omission permet de simplifier le signal appris par le modèle et de concentrer sa capacité de prédiction sur les composantes réellement structurantes de la série.
+Le résidu $R_t$, en revanche, est omis du pipeline de prédiction. Ce choix se justifie par le fait que la somme de la tendance et de la saisonnalité représente déjà environ 90 \% de la variance de la série originale, le résidu ne représentant donc qu'une faible part de l'information totale, correspondant essentiellement à du bruit de mesure difficilement prévisible par nature.
+
+\paragraph{Mise à l'échelle\\}
+Pour la composante de tendance $T_t$ utilisée dans le Module 3, une standardisation (Z-score) est appliquée plutôt qu'une normalisation Min-Max. En effet, contrairement aux valeurs brutes du Module 2, la tendance issue de la décomposition STL n'a pas de bornes fixes et connues à l'avance : elle peut évoluer au-delà des valeurs observées.
 
 \paragraph{Feature Engineering\\}
 Pour entraîner le modèle LSTM sur la composante de tendance $T_t$, celle-ci est restructurée selon une approche de fenêtre glissante : les trois derniers pas de temps de tendance ($T_{t-3}$, $T_{t-2}$, $T_{t-1}$) constituent les variables d'entrée (lags), tandis que la valeur de tendance à l'instant présent ($T_t$) constitue la variable cible à prédire. Cette formulation permet au modèle d'apprendre la relation entre l'évolution récente de la tendance et sa valeur suivante, ce qui correspond à l'usage classique des réseaux LSTM pour la prédiction de séries temporelles à un pas.
-
-\subsubsection{Mise à l'échelle}
-Les variables physico-chimiques des Modules 2 et 3 (\texttt{PH}, \texttt{TEMP}, \texttt{DO}, \texttt{TURBIDITY}) possèdent des bornes physiques connues et fixes, propres à leur nature de mesure de capteur (par exemple un pH compris entre 0 et 14). Conformément à la méthode présentée en 3.2.4, une normalisation Min-Max (MinMaxScaler) est donc appliquée à ces variables, afin de les ramener dans un intervalle commun $[0,1]$ avant l'entraînement des modèles sensibles à l'échelle des données (Régression Logistique, SVC pour le Module 2), ainsi qu'avant leur intégration dans le réseau LSTM du Module 3, pour lequel une mise à l'échelle homogène des entrées facilite et stabilise l'apprentissage.
 
 \subsection{Stratégie d'évaluation et découpage des données}
 
@@ -1059,7 +1178,7 @@ La performance du modèle LSTM est évaluée sur sa capacité à prédire $T_t$ 
 
 Ce chapitre constitue le cœur empirique de ce mémoire. Là où le Chapitre 3 a posé les fondements théoriques des modèles mobilisés et où le Chapitre 4 a préparé et structuré les données nécessaires, ce chapitre concrétise cette approche en mettant réellement en œuvre les trois modules du système rizipiscicole, puis en évaluant leurs performances respectives.
 
-\subsection{Module 1 -- Densité Tilapia}
+\subsection{Module 1}
 
 Pour le Module 1, dédié à l'estimation de la densité de tilapia à partir des caractéristiques du sol rizicole, les cinq modèles présentés en 3.2.1 (Régression Linéaire, Arbre de Décision, Random Forest, SVM, XGBoost) sont entraînés puis optimisés via la démarche de GridSearch présentée en 3.2.3. Pour chaque modèle, une grille d'hyperparamètres candidats est définie, et la meilleure combinaison est retenue par validation croisée. Les grilles testées pour chaque modèle sont détaillées dans les tableaux suivants.
 
@@ -1186,7 +1305,7 @@ On observe que le score de validation croisée s'améliore progressivement à me
 
 \paragraph{Performances sur l'ensemble de test\\}
 
-La Figure~\ref{fig:eval_densite} présente la comparaison des cinq modèles selon les quatre métriques retenues (RMSE, MAE, MAPE, $R^2$), calculées cette fois sur l'ensemble de test.
+La Figure~\ref{fig:eval_densite} présente la comparaison des cinq modèles selon les quatre métriques retenues (RMSE, MAE, MAPE, $R^2$).
 
 
 \begin{figure}[H]
@@ -1196,13 +1315,13 @@ La Figure~\ref{fig:eval_densite} présente la comparaison des cinq modèles selo
 \label{fig:eval_densite}
 \end{figure}
 
-Ces résultats confirment et affinent les scores obtenus en validation croisée. La Régression Linéaire affiche les moins bonnes performances sur l'ensemble des quatre métriques, ce qui confirme les limites d'une relation purement linéaire pour ce problème.
+La Régression Linéaire affiche les moins bonnes performances sur l'ensemble des quatre métriques, ce qui confirme les limites d'une relation purement linéaire pour ce problème.
 
 Le SVM, malgré un score de validation croisée proche de celui de la Random Forest obtient une RMSE et une MAE nettement plus élevées sur l'ensemble de test , ce qui suggère une performance un peu moins stable ou une plus grande sensibilité aux valeurs extrêmes de ce modèle sur des données non vues.
 
-La Random Forest et XGBoost se distinguent nettement des trois autres modèles, avec les RMSE les plus faibles et les $R^2$ les plus élevés . XGBoost obtient le meilleur $R^2$ global, confirmant sa supériorité déjà observée en validation croisée, mais c'est la Random Forest qui présente la MAPE la plus faible, ce qui en fait, en termes relatifs, le modèle le plus précis pour estimer la densité de tilapia. Ces deux modèles, tous deux fondés sur des ensembles d'arbres de décision, apparaissent ainsi comme les plus adaptés pour ce module, la Random Forest et XGBoost pouvant être considérés comme équivalents en pratique, au profit de l'un ou l'autre selon que l'on privilégie l'erreur absolue relative (MAPE) ou la variance expliquée $R^2$.
+La Random Forest et XGBoost se distinguent nettement des trois autres modèles, avec les RMSE les plus faibles et les $R^2$ les plus élevés . XGBoost obtient le meilleur $R^2$ global mais c'est la Random Forest qui présente la MAPE la plus faible, ce qui en fait, en termes relatifs, le modèle le plus précis pour estimer la densité de tilapia. Ces deux modèles, tous deux fondés sur des ensembles d'arbres de décision, apparaissent ainsi comme les plus adaptés pour ce module, la Random Forest et XGBoost pouvant être considérés comme équivalents en pratique, au profit de l'un ou l'autre selon que l'on privilégie l'erreur absolue relative (MAPE) ou la variance expliquée $R^2$.
 
-\subsection{Module 2 -- Classification de l'état actuel de l'eau\\}
+\subsection{Module 2 \\}
 
 Pour le Module 2, dédié à la classification de l'état actuel de la qualité de l'eau, les cinq modèles présentés en 3.2.1 (Régression Logistique, Arbre de Décision, Random Forest, SVM, XGBoost) sont entraînés puis optimisés via GridSearchCV. Les grilles d'hyperparamètres testées pour chaque modèle sont détaillées dans les tableaux suivants.
 
@@ -1283,10 +1402,8 @@ Ces cinq grilles sont explorées via \texttt{GridSearchCV}, conformément à la 
 
 \paragraph{Meilleurs hyperparamètres retenus\\}
 
-\begin{table}[H]
+\begin{longtable}{|p{3.5cm}|p{7cm}|p{1.8cm}|}
 \centering
-\begin{tabular}{|p{3.5cm}|p{7cm}|p{1.8cm}|}
-\hline
 \textbf{Modèle} & \textbf{Meilleurs hyperparamètres} & \textbf{Score CV (Recall)} \\
 \hline
 Régression Logistique & \texttt{C: 0.1, max\_iter: 1000, penalty: l2, solver: saga} & 0,7716 \\
@@ -1299,18 +1416,17 @@ SVM (SVC) & \texttt{C: 1, gamma: scale, kernel: rbf} & 0,9035 \\
 \hline
 XGBoost & \texttt{learning\_rate: 0.1, max\_depth: 7, n\_estimators: 100} & 0,9237 \\
 \hline
-\end{tabular}
 \caption{Meilleurs hyperparamètres retenus par GridSearch -- Module 2}
-\end{table}
+\end{longtable}
 
-On observe un écart très net entre la Régression Logistique, qui plafonne à 0,7716, et l'ensemble des quatre autres modèles, qui dépassent tous 0,90. Cet écart confirme que la frontière séparant une eau de bonne et de mauvaise qualité n'est pas linéaire : un modèle linéaire simple comme la Régression Logistique peine à capturer les interactions entre le pH, la température, l'oxygène dissous et la turbidité, contrairement aux modèles à base d'arbres et au SVM à noyau RBF, capables de modéliser des frontières de décision plus complexes.
+On observe un écart très net entre la Régression Logistique, et l'ensemble des quatre autres modèles. Cet écart confirme que la frontière séparant une eau de bonne et de mauvaise qualité n'est pas linéaire : un modèle linéaire simple comme la Régression Logistique peine à capturer les interactions entre le pH, la température, l'oxygène dissous et la turbidité, contrairement aux modèles à base d'arbres et au SVM à noyau RBF, capables de modéliser des frontières de décision plus complexes.
 
 \paragraph{Performances sur l'ensemble de test\\}
-Le tableau suivant détaille les performances des cinq modèles sur l'ensemble de test, selon les cinq métriques retenues (Accuracy, Precision, Recall, F1-score, AUC-ROC).
+Le tableau suivant détaille les performances des cinq modèles selon les cinq métriques retenues (Accuracy, Precision, Recall, F1-score, AUC-ROC).
 
 \begin{table}[H]
 \centering
-\begin{tabular}{|p{2.8cm}|p{1.4cm}|p{1.6cm}|p{1.4cm}|p{1.1cm}|p{1.6cm}|}
+\begin{tabular}{|p{3.5cm}|p{1.9cm}|p{1.9cm}|p{1.9cm}|p{1.5cm}|p{1.9cm}|}
 \hline
 \textbf{Modèle} & \textbf{Accuracy} & \textbf{Precision} & \textbf{Recall} & \textbf{F1} & \textbf{AUC-ROC} \\
 \hline
@@ -1328,11 +1444,153 @@ XGBoost & 0,9241 & 0,9250 & 0,9241 & 0,9240 & 0,9656 \\
 \caption{Performances des modèles sur l'ensemble de test -- Module 2}
 \end{table}
 
-Ces résultats confirment la hiérarchie observée en validation croisée. La Régression Logistique reste nettement en retrait sur l'ensemble des cinq métriques, avec un Recall de seulement 0,7717, ce qui signifierait, en conditions réelles, qu'environ un cas sur quatre de mauvaise qualité de l'eau passerait inaperçu -- un niveau de risque difficilement acceptable pour la protection du cheptel piscicole.
+La Régression Logistique reste nettement en retrait sur l'ensemble des cinq métriques, avec un Recall de seulement 0,7717, ce qui signifierait, en conditions réelles, qu'environ un cas sur quatre de mauvaise qualité de l'eau passerait inaperçu -- un niveau de risque difficilement acceptable pour la protection du cheptel piscicole.
 
-Les quatre autres modèles présentent des performances élevées et globalement proches. La Random Forest obtient le meilleur Recall (0,9253) ainsi que la meilleure Accuracy, Precision et F1-score, ce qui en fait le modèle le plus équilibré du Module 2. XGBoost, bien que très légèrement en retrait sur le Recall (0,9241), obtient en revanche le meilleur AUC-ROC (0,9656), ce qui indique une capacité globale de séparation des deux classes encore meilleure que celle de la Random Forest, potentiellement utile si le seuil de décision venait à être ajusté pour privilégier davantage la détection des cas critiques. Le SVM, bien qu'un peu en retrait par rapport à ces deux modèles, conserve un Recall solide (0,9036), tandis que l'Arbre de Décision (0,9151) constitue une alternative plus simple et plus interprétable, pour une performance qui reste proche.
+Les quatre autres modèles présentent des performances élevées et globalement proches. La Random Forest obtient le meilleur Recall (0,9253) ainsi que la meilleure Accuracy, Precision et F1-score, ce qui en fait le modèle le plus équilibré du Module 2. XGBoost, bien que très légèrement en retrait sur le Recall (0,9241), obtient en revanche le meilleur AUC-ROC (0,9656), ce qui indique une capacité globale de séparation des deux classes encore meilleure que celle de la Random Forest.
 
-Au regard de la priorité donnée au Recall pour ce module, la Random Forest apparaît comme le choix le plus adapté, avec XGBoost comme alternative très proche, notamment si l'on souhaite exploiter sa meilleure capacité de discrimination globale (AUC-ROC) pour affiner le seuil de décision du système d'alerte.
+Au regard de la priorité donnée au Recall pour ce module, la Random Forest apparaît comme le choix le plus adapté, avec XGBoost comme alternative très proche.
+
+\subsection{Module 3\\}
+
+Pour le Module 3, dédié à l'anticipation de la qualité de l'eau à l'horizon d'une heure, un modèle LSTM distinct est entraîné pour chacune des quatre variables physico-chimiques de l'eau (PH, TEMP, DO, TURBIDITY), sur la composante de tendance $T_t$ issue de la décomposition STL, standardisée selon la méthode présentée en 3.2.4. Chaque modèle utilise une architecture LSTM, entraînée à prédire la valeur de tendance à l'instant présent à partir des trois derniers pas de temps (voir 4.3).
+
+\subsubsection{Résultats de l'évaluation}
+
+\paragraph{Performances par variable\\}
+Le tableau suivant résume les performances obtenues pour chacune des quatre variables, sur l'ensemble de test, selon les métriques retenues pour ce module (RMSE, MAE, MAPE, $R^2$).
+
+\begin{longtable}{|p{2.3cm}|p{1.7cm}|p{1.7cm}|p{1.7cm}|p{1.7cm}|}
+\caption{Performances du modèle LSTM par variable -- Module 3} \\
+\hline
+\textbf{Variable} & \textbf{RMSE} & \textbf{MAE} & \textbf{MAPE} & \textbf{$R^2$} \\
+\hline
+
+PH & 0,1617 & 0,1299 & 0,0188 & 0,9427 \\
+\hline
+TEMP & 0,6204 & 0,4677 & 0,0191 & 0,9480 \\
+\hline
+DO & 0,6228 & 0,4698 & 0,0414 & 0,9610 \\
+\hline
+TURBIDITY & 1,2058 & 0,9486 & 0,0334 & 0,9525 \\
+\hline
+\end{longtable}
+
+Le PH présente les meilleures erreurs en valeur absolue (RMSE $\approx$ 0,16, MAE $\approx$ 0,13), ce qui est cohérent avec le fait que le pH de l'eau évolue généralement de façon lente et progressive.\\
+L'Oxygène dissous obtient quant à elle le meilleur $R^2$ (0,9610), particulièrement rassurant compte tenu du rôle critique de ce paramètre dans la survie du tilapia malgré une MAPE légèrement plus élevée ($\approx$ 4,1 \%). \\
+La Température affiche des résultats globalement similaires à ceux du pH en termes de $R^2$ ($\approx$ 0,95) et de MAPE ($\approx$ 1,9 \%), ce qui reste cohérent avec l'usage prévu du système : ce qui compte pour l'alerte préventive n'est pas la précision au dixième de degré près, mais la capacité du modèle à anticiper correctement la direction et l'ampleur générale de l'évolution de la température. \\
+Enfin, la Turbidité affiche les valeurs de RMSE et de MAE les plus élevées en absolu parmi les quatre variables, ce qui s'explique par l'amplitude naturellement plus grande de cette variable observée précédemment (valeurs s'étendant globalement de 10 à plus de 80 NTU), plutôt que par une réelle difficulté supplémentaire du modèle à la prédire, comme le confirme son $R^2$ tout de même élevé (0,9525) et sa MAPE modérée ($\approx$ 3,3 \%).\\
+
+Dans l'ensemble, ces résultats confirment la pertinence de l'approche combinant décomposition STL et LSTM pour anticiper l'évolution de la qualité de l'eau à l'horizon d'une heure, avec des performances homogènes et satisfaisantes sur les quatre variables physico-chimiques du système.
+
+
+
+\section{Déploiement, discussion et perspectives}
+
+Afin de rendre les trois modules développés dans le chapitre précédent concrètement utilisables, une interface de démonstration a été mise en place sous la forme d'une application web simple. Elle permet de présenter de façon interactive le fonctionnement des trois modèles développés, en simulant leur usage à partir de valeurs saisies manuellement par l'utilisateur.
+
+L'interface est organisée en trois onglets, correspondant chacun à l'un des trois modules du système.\\
+Le premier onglet ,\textbf{Densité Tilapia} , l'utilisateur y renseigne les caractéristiques de sa parcelle (texture et couleur du sol, type d'irrigation, hauteur d'eau, niveau d'engrais, température actuelle) puis obtient une estimation de la densité de tilapia atteignable en cliquant sur « Prédire la densité ».
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.85\textwidth]{Plateforme/Densite_Tilapia.jpg}
+\caption{Interface du Module 1 -- Estimation de la densité de tilapia}
+\label{fig:interface_module1}
+\end{figure}
+
+Le deuxième onglet, \textbf{Qualité actuelle de l'eau}, l'utilisateur y saisit les quatre paramètres physico-chimiques mesurés à l'instant présent (PH, température, oxygène dissous, turbidité), et le bouton « Prédire la qualité » déclenche la classification de l'eau en bonne ou mauvaise qualité.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.85\textwidth]{Plateforme/Prediction_Qualite_Eau.jpg}
+\caption{Interface du Module 2 -- Classification de la qualité actuelle de l'eau}
+\label{fig:interface_module2}
+\end{figure}
+
+Le troisième onglet, « Anticipation de la qualité d'eau H+1 », l'utilisateur doit y renseigner les mêmes quatre paramètres physico-chimiques, mais pour trois instants successifs (deux heures avant, une heure avant, et l'heure actuelle), avant de cliquer sur « Anticiper » pour obtenir une estimation de l'état probable de l'eau une heure plus tard.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.85\textwidth]{Plateforme/Classification_Qualite_Eau.jpg}
+\caption{Interface du Module 3 -- Anticipation de la qualité de l'eau à H+1}
+\label{fig:interface_module3}
+\end{figure}
+
+Cette interface, volontairement simple, illustre la façon dont les trois modules pourraient être intégrés dans un outil unique et cohérent à
+
+
+\section*{Conclusion générale}
+\addcontentsline{toc}{section}{Conclusion générale}
+
+La protection et l'optimisation de la production piscicole constituent un enjeu central pour le développement de la rizipisciculture, notamment dans un contexte comme celui de Madagascar, où cette pratique reste encore largement empirique malgré son fort potentiel. Ce mémoire a exploré cette problématique en combinant une analyse contextuelle du secteur rizipiscicole malgache, une exploration approfondie des données disponibles, et l'application de techniques avancées d'apprentissage automatique et de deep learning.
+
+L'utilisation de modèles prédictifs plus avancés tels que la Random Forest, XGBoost, le SVM et les réseaux de neurones récurrents de type LSTM a permis de mieux capter ces dynamiques sous-jacentes. Les résultats obtenus montrent une amélioration significative des performances par rapport aux approches linéaires, offrant aux exploitants rizipisciculteurs des bases concrètes pour un futur outil d'aide à la décision, aussi bien pour estimer la densité de tilapia atteignable que pour surveiller et anticiper l'état de leur eau.
+
+Ces outils permettraient non seulement de réduire les pertes liées à une mortalité évitable du cheptel piscicole, mais aussi d'encourager davantage de riziculteurs, aujourd'hui hésitants faute d'accompagnement technique, à se tourner vers la rizipisciculture, contribuant ainsi à la diversification de leurs revenus et à la sécurité alimentaire locale. Par ailleurs, ce travail met en lumière l'importance d'une démarche rigoureuse de collecte et de validation des données de terrain, condition indispensable pour bâtir un système fiable et véritablement adapté aux réalités agricoles malgaches.
+
+En somme, ce projet offre une première contribution concrète à l'amélioration du suivi de la production rizipiscicole, et ouvre la voie à des travaux futurs portant sur la validation des modèles à partir de données de terrain réelles, l'intégration de capteurs connectés pour une collecte continue des données, ainsi que le déploiement de l'interface développée sous une forme réellement accessible aux exploitants, par exemple via une application mobile adaptée à un usage au bord de la parcelle. À l'avenir, il serait également pertinent d'explorer l'ajout de nouvelles variables environnementales ainsi que l'automatisation de la mise à jour des modèles au fil du temps, afin de renforcer la robustesse et la fiabilité du système en conditions réelles d'exploitation.
+
+\renewcommand{\refname}{Bibliographie}
+\begin{thebibliography}{99}
+
+\bibitem{iisd2023}
+Institut International du Développement Durable (IISD).
+\newline \textit{Fish for the future: From intensive to extensive aquaculture in Madagascar}. 2023. Disponible sur : \url{https://nbi.iisd.org/fr-fish-for-the-future-from-intensive-to-extensive-aquaculture-in-madagascar/}
+
+\bibitem{apdra2023}
+APDRA (Association Pisciculture et Développement Rural en Afrique).
+\newline \textit{Rizipisciculture sur les hautes terres malagasy}. Résultats obtenus dans le cadre du Projet d'Aquaculture Durable à Madagascar (PADM), Janvier 2023.
+
+\bibitem{minae}
+Ministère de l'Agriculture et de la Souveraineté Alimentaire de Madagascar (MINAE).
+\newline \textit{Agriculture à Madagascar : l'État déploie l'Infrastructure Publique Numérique Agricole pour soutenir les producteurs}. Disponible sur : \url{https://www.minae.gov.mg/agriculture-a-madagascar-letat-deploie-linfrastructure-publique-numerique-agricole-pour-soutenir-les-producteurs/}
+
+\bibitem{lehnhoff2024}
+\textit{Etho-acoustique et intelligence artificielle : application à la protection des cétacés}. Thèse de doctorat, 16 Septembre 2024. Disponible sur : \url{https://theses.hal.science/tel-04973790/}
+
+\bibitem{nagpal2024}
+\textit{Optimisation du traitement des eaux usées par intelligence artificielle}. 2024. DOI : \url{https://doi.org/10.2166/wst.2024.259}
+
+\bibitem{abangan2023}
+\textit{Intelligence artificielle pour la reconnaissance du comportement des poissons}. 23 Février 2023. DOI : \url{https://doi.org/10.3389/fmars.2023.1010761}
+
+\bibitem{kilicarslan2024}
+\textit{Détection de la fraîcheur du poisson par des approches d'intelligence artificielle}. 2024. DOI : \url{https://doi.org/10.24925/turjaf.v12i2.290-295.6670}
+
+\bibitem{cao2021}
+\textit{Prédiction de la teneur en oxygène dissous en aquaculture basée sur le regroupement et un ELM amélioré}. 4 Mars 2021. Disponible sur : \url{https://scispace.com/pdf/prediction-of-dissolved-oxygen-content-in-aquaculture-based4p8eytgpkn.pdf}
+
+\bibitem{ozdemir2025}
+\textit{Méthodes de Machine Learning pour évaluer l'impact des caractéristiques physico-chimiques de l'eau sur la consommation alimentaire dans les fermes piscicoles}. 14 Janvier 2025. DOI : \url{https://doi.org/10.15832/ankutbd.1470111}
+
+\end{thebibliography}
+
+\newpage
+
+\renewcommand{\refname}{Webographie}
+\begin{thebibliography}{99}
+
+\bibitem{scikitlearn}
+\textit{Scikit-learn: Machine Learning in Python}. Disponible sur : \url{https://scikit-learn.org/stable/documentation.html}
+
+\bibitem{xgboostdoc}
+\textit{XGBoost Documentation}. Disponible sur : \url{https://xgboost.readthedocs.io/}
+
+\bibitem{tensorflowdoc}
+\textit{TensorFlow Documentation}. Disponible sur : \url{https://www.tensorflow.org/guide}
+
+\bibitem{statsmodelsdoc}
+\textit{Statsmodels Documentation -- STL Decomposition}. Disponible sur : \url{https://www.statsmodels.org/stable/generated/statsmodels.tsa.seasonal.STL.html}
+
+\bibitem{fpp3}
+\textit{Forecasting: Principles and Practice (3rd edition)}. Disponible sur : \url{https://otexts.com/fpp3/}
+
+\bibitem{streamlitdoc}
+\textit{Streamlit Documentation}. Disponible sur : \url{https://docs.streamlit.io/}
+
+\end{thebibliography}
+
+
 
 \end{document}
 
