@@ -43,37 +43,37 @@
 \contentsline {subsection}{\numberline {4.3}Visualisation et analyse}{18}{}%
 \contentsline {paragraph}{Module 1 -- Densité du tilapia\\}{18}{}%
 \contentsline {paragraph}{Modules 2 et 3 -- Qualité de l'eau\\}{21}{}%
-\contentsline {subsection}{\numberline {4.4}Prétraitement des données}{23}{}%
-\contentsline {subsubsection}{\numberline {4.4.1}Module 1}{23}{}%
-\contentsline {paragraph}{Mise à l'échelle\\}{24}{}%
-\contentsline {subsubsection}{\numberline {4.4.2}Module 2}{24}{}%
-\contentsline {paragraph}{Mise à l'échelle\\}{24}{}%
-\contentsline {subsubsection}{\numberline {4.4.3}Module 3}{25}{}%
+\contentsline {subsection}{\numberline {4.4}Prétraitement des données}{24}{}%
+\contentsline {subsubsection}{\numberline {4.4.1}Module 1}{24}{}%
 \contentsline {paragraph}{Mise à l'échelle\\}{25}{}%
-\contentsline {paragraph}{Feature Engineering\\}{25}{}%
-\contentsline {subsection}{\numberline {4.5}Stratégie d'évaluation et découpage des données}{25}{}%
-\contentsline {subsubsection}{\numberline {4.5.1}Module 1}{25}{}%
-\contentsline {paragraph}{Découpage des données\\}{25}{}%
-\contentsline {paragraph}{Validation croisée et métriques\\}{26}{}%
-\contentsline {subsubsection}{\numberline {4.5.2}Module 2}{26}{}%
-\contentsline {paragraph}{Rééquilibrage des classes\\}{26}{}%
+\contentsline {subsubsection}{\numberline {4.4.2}Module 2}{25}{}%
+\contentsline {paragraph}{Mise à l'échelle\\}{25}{}%
+\contentsline {subsubsection}{\numberline {4.4.3}Module 3}{25}{}%
+\contentsline {paragraph}{Mise à l'échelle\\}{26}{}%
+\contentsline {paragraph}{Feature Engineering\\}{26}{}%
+\contentsline {subsection}{\numberline {4.5}Stratégie d'évaluation et découpage des données}{26}{}%
+\contentsline {subsubsection}{\numberline {4.5.1}Module 1}{26}{}%
 \contentsline {paragraph}{Découpage des données\\}{26}{}%
 \contentsline {paragraph}{Validation croisée et métriques\\}{26}{}%
+\contentsline {subsubsection}{\numberline {4.5.2}Module 2}{27}{}%
+\contentsline {paragraph}{Rééquilibrage des classes\\}{27}{}%
+\contentsline {paragraph}{Découpage des données\\}{27}{}%
+\contentsline {paragraph}{Validation croisée et métriques\\}{27}{}%
 \contentsline {subsubsection}{\numberline {4.5.3}Module 3}{27}{}%
 \contentsline {paragraph}{Découpage des données\\}{27}{}%
-\contentsline {paragraph}{Validation et métriques\\}{27}{}%
-\contentsline {section}{\numberline {5}Mise en œuvre et évaluation des modules}{27}{}%
-\contentsline {subsection}{\numberline {5.1}Module 1}{27}{}%
-\contentsline {subsubsection}{\numberline {5.1.1}Résultats de l'optimisation et évaluation}{28}{}%
-\contentsline {paragraph}{Meilleurs hyperparamètres retenus\\}{28}{}%
-\contentsline {paragraph}{Performances sur l'ensemble de test\\}{29}{}%
-\contentsline {subsection}{\numberline {5.2}Module 2 \\}{30}{}%
-\contentsline {subsubsection}{\numberline {5.2.1}Résultats de l'optimisation et évaluation}{31}{}%
-\contentsline {paragraph}{Meilleurs hyperparamètres retenus\\}{31}{}%
+\contentsline {paragraph}{Validation et métriques\\}{28}{}%
+\contentsline {section}{\numberline {5}Mise en œuvre et évaluation des modules}{28}{}%
+\contentsline {subsection}{\numberline {5.1}Module 1}{28}{}%
+\contentsline {subsubsection}{\numberline {5.1.1}Résultats de l'optimisation et évaluation}{29}{}%
+\contentsline {paragraph}{Meilleurs hyperparamètres retenus\\}{29}{}%
+\contentsline {paragraph}{Performances sur l'ensemble de test\\}{30}{}%
+\contentsline {subsection}{\numberline {5.2}Module 2}{31}{}%
+\contentsline {subsubsection}{\numberline {5.2.1}Résultats de l'optimisation et évaluation}{32}{}%
+\contentsline {paragraph}{Meilleurs hyperparamètres retenus\\}{32}{}%
 \contentsline {paragraph}{Performances sur l'ensemble de test\\}{32}{}%
-\contentsline {subsection}{\numberline {5.3}Module 3\\}{33}{}%
+\contentsline {subsection}{\numberline {5.3}Module 3}{33}{}%
 \contentsline {subsubsection}{\numberline {5.3.1}Résultats de l'évaluation}{33}{}%
 \contentsline {paragraph}{Performances par variable\\}{33}{}%
-\contentsline {section}{\numberline {6}Déploiement, discussion et perspectives}{33}{}%
-\contentsline {section}{Conclusion générale}{35}{}%
+\contentsline {section}{\numberline {6}Déploiement}{34}{}%
+\contentsline {section}{Conclusion générale}{36}{}%
 \contentsfinish 
