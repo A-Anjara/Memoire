@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2026.7.31)  3 SEP 2026 08:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2026.7.31)  4 SEP 2026 10:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -797,6 +797,9 @@ Package: fancyhdr 2022/11/09 v4.1 Extensive control of page headers and footers
 Package: titletoc 2021/07/05 v2.14 TOC entries
 \ttl@leftsep=\dimen293
 )
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2020/03/24 1.8d listings language file
+)
 (/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count334
@@ -806,13 +809,13 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@floatcapt=\box123
 )
 LaTeX Font Info:    Trying to load font information for T1+ntxtlf on input line
- 97.
+ 183.
 
 (/usr/share/texlive/texmf-dist/tex/latex/newtx/t1ntxtlf.fd
 File: t1ntxtlf.fd 2021/05/24 v1.1 font definition file for T1/ntx/tlf
 )
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 12.0pt on input line 97.
+(Font)              scaled to size 12.0pt on input line 183.
 
 (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
@@ -822,49 +825,49 @@ File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
 (./insi.aux)
 \openout1 = `insi.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 97.
+LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 183.
 LaTeX Font Info:    Trying to load font information for OML+ntxmi on input line
- 97.
+ 183.
  (/usr/share/texlive/texmf-dist/tex/latex/newtx/omlntxmi.fd
 File: omlntxmi.fd 2015/08/25 Fontinst v1.933 font definitions for OML/ntxmi.
 )
-LaTeX Font Info:    ... okay on input line 97.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 97.
-LaTeX Font Info:    ... okay on input line 97.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 97.
-LaTeX Font Info:    ... okay on input line 97.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 97.
-LaTeX Font Info:    ... okay on input line 97.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 97.
-LaTeX Font Info:    ... okay on input line 97.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 97.
-LaTeX Font Info:    ... okay on input line 97.
-LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 97.
+LaTeX Font Info:    ... okay on input line 183.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 183.
+LaTeX Font Info:    ... okay on input line 183.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 183.
+LaTeX Font Info:    ... okay on input line 183.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 183.
+LaTeX Font Info:    ... okay on input line 183.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 183.
+LaTeX Font Info:    ... okay on input line 183.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 183.
+LaTeX Font Info:    ... okay on input line 183.
+LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 183.
 LaTeX Font Info:    Trying to load font information for U+ntxexa on input line 
-97.
+183.
 
 (/usr/share/texlive/texmf-dist/tex/latex/newtx/untxexa.fd
 File: untxexa.fd 2012/04/16 Fontinst v1.933 font definitions for U/ntxexa.
 )
-LaTeX Font Info:    ... okay on input line 97.
-LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 97.
+LaTeX Font Info:    ... okay on input line 183.
+LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 183.
 LaTeX Font Info:    Trying to load font information for LMS+ntxsy on input line
- 97.
+ 183.
 
 (/usr/share/texlive/texmf-dist/tex/latex/newtx/lmsntxsy.fd
 File: lmsntxsy.fd 2016/07/02 Fontinst v1.933 font definitions for LMS/ntxsy.
 )
-LaTeX Font Info:    ... okay on input line 97.
-LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 97.
+LaTeX Font Info:    ... okay on input line 183.
+LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 183.
 LaTeX Font Info:    Trying to load font information for LMX+ntxexx on input lin
-e 97.
+e 183.
 
 (/usr/share/texlive/texmf-dist/tex/latex/newtx/lmxntxexx.fd
 File: lmxntxexx.fd 2016/07/03 Fontinst v1.933 font definitions for LMX/ntxexx.
 )
-LaTeX Font Info:    ... okay on input line 97.
-LaTeX Info: Redefining \degres on input line 97.
-LaTeX Info: Redefining \up on input line 97.
+LaTeX Font Info:    ... okay on input line 183.
+LaTeX Info: Redefining \degres on input line 183.
+LaTeX Info: Redefining \up on input line 183.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -890,8 +893,8 @@ e
 ))
 \c@mv@tabular=\count342
 \c@mv@boldtabular=\count343
-LaTeX Info: Command `\dddot' is already robust on input line 97.
-LaTeX Info: Command `\ddddot' is already robust on input line 97.
+LaTeX Info: Command `\dddot' is already robust on input line 183.
+LaTeX Info: Command `\ddddot' is already robust on input line 183.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -928,712 +931,752 @@ LaTeX Info: Command `\ddddot' is already robust on input line 97.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 \c@lstlisting=\count344
-LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 20.74pt on input line 101.
-
-Underfull \hbox (badness 10000) in paragraph at lines 104--105
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 106--107
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 108--109
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 110--111
-
- []
-
+<logo_insi.png, id=4, 108.90688pt x 86.3225pt>
+File: logo_insi.png Graphic file (type png)
+<use logo_insi.png>
+Package pdftex.def Info: logo_insi.png  used on input line 190.
+(pdftex.def)             Requested size: 142.26378pt x 112.76187pt.
+LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
+(Font)              scaled to size 12.0pt on input line 199.
+LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
+(Font)              scaled to size 14.4pt on input line 199.
+LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
+(Font)              scaled to size 17.28pt on input line 219.
 [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 120--121
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./logo_insi.png>]
+[1]
+LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
+(Font)              scaled to size 20.74pt on input line 254.
+
+Underfull \hbox (badness 10000) in paragraph at lines 257--258
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 122--123
+Underfull \hbox (badness 10000) in paragraph at lines 259--260
 
  []
 
-LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 12.0pt on input line 127.
+
+Underfull \hbox (badness 10000) in paragraph at lines 261--262
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 263--264
+
+ []
+
+[1]
+Underfull \hbox (badness 10000) in paragraph at lines 273--274
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 275--276
+
+ []
+
 [2] [3]
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 17.28pt on input line 149.
+(Font)              scaled to size 17.28pt on input line 302.
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 17.28pt on input line 149.
- (./insi.toc
+(Font)              scaled to size 20.74pt on input line 302.
+ (./insi.toc [4])
+\tf@toc=\write4
+\openout4 = `insi.toc'.
+
+ [5] [6]
+Underfull \hbox (badness 1112) in paragraph at lines 394--394
+[]|\T1/ntxtlf/m/n/12 Fenêtre glis-sante (sli-
+ []
+
+
+Underfull \hbox (badness 4001) in paragraph at lines 399--399
+[]|\T1/ntxtlf/m/n/12 LSTM (Long Short-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 406--406
+[]|\T1/ntxtlf/m/n/12 RMSE (Root Mean
+ []
+
 LaTeX Font Info:    Trying to load font information for OT1+minntx on input lin
-e 4.
- (/usr/share/texlive/texmf-dist/tex/latex/newtx/ot1minntx.fd
+e 408.
+(/usr/share/texlive/texmf-dist/tex/latex/newtx/ot1minntx.fd
 File: ot1minntx.fd 2022/01/20 v1.0 font definition file for OT1/minntx
 )
 LaTeX Font Info:    Trying to load font information for U+ntxmia on input line 
-4.
- (/usr/share/texlive/texmf-dist/tex/latex/newtx/untxmia.fd
+408.
+
+(/usr/share/texlive/texmf-dist/tex/latex/newtx/untxmia.fd
 File: untxmia.fd 2018/04/14 Fontinst v1.933 font definitions for U/ntxmia.
 )
 LaTeX Font Info:    Trying to load font information for U+ntxsym on input line 
-4.
+408.
 
 (/usr/share/texlive/texmf-dist/tex/latex/newtx/untxsym.fd
 File: untxsym.fd 2015/03/20 Fontinst v1.933 font definitions for U/ntxsym.
 )
 LaTeX Font Info:    Trying to load font information for U+ntxsyc on input line 
-4.
+408.
 
 (/usr/share/texlive/texmf-dist/tex/latex/newtx/untxsyc.fd
 File: untxsyc.fd 2012/04/12 Fontinst v1.933 font definitions for U/ntxsyc.
-))
-\tf@toc=\write4
-\openout4 = `insi.toc'.
-
- [4] [5] [6]
-Underfull \hbox (badness 4001) in paragraph at lines 226--226
-[]|\T1/ntxtlf/m/n/12 LSTM (Long Short-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 233--233
-[]|\T1/ntxtlf/m/n/12 RMSE (Root Mean
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 236--236
+)
+Underfull \hbox (badness 10000) in paragraph at lines 409--409
 []|\T1/ntxtlf/m/n/12 Standardisation (Z-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 237--237
+Underfull \hbox (badness 10000) in paragraph at lines 410--410
 []|\T1/ntxtlf/m/n/12 STL (Seasonal-Trend
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 237--237
+Underfull \hbox (badness 10000) in paragraph at lines 410--410
 \T1/ntxtlf/m/n/12 de-com-po-si-tion using
  []
 
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/it' will be
-(Font)              scaled to size 12.0pt on input line 239.
+(Font)              scaled to size 12.0pt on input line 412.
 
-Underfull \hbox (badness 10000) in paragraph at lines 241--241
+Underfull \hbox (badness 10000) in paragraph at lines 414--414
 []|\T1/ntxtlf/m/n/12 Validation croi-sée
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 242--242
+Underfull \hbox (badness 10000) in paragraph at lines 415--415
 []|\T1/ntxtlf/m/n/12 Walk-forward va-li-da-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 243--243
+Underfull \hbox (badness 10000) in paragraph at lines 416--416
 []|\T1/ntxtlf/m/n/12 XGBoost (Ex-treme
  []
 
-[7] [8] (./insi.lot)
+[7] [8] [9] (./insi.lot)
 \tf@lot=\write5
 \openout5 = `insi.lot'.
 
- [9] (./insi.lof)
+ [10] (./insi.lof)
 \tf@lof=\write6
 \openout6 = `insi.lof'.
 
- [10]
-Underfull \hbox (badness 10000) in paragraph at lines 265--266
+ [11]
+Underfull \hbox (badness 10000) in paragraph at lines 438--439
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 267--268
+Underfull \hbox (badness 10000) in paragraph at lines 440--441
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 269--273
+Underfull \hbox (badness 10000) in paragraph at lines 442--446
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 274--275
+Underfull \hbox (badness 10000) in paragraph at lines 447--448
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 276--277
+Underfull \hbox (badness 10000) in paragraph at lines 449--450
 
  []
 
 [1]
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 14.4pt on input line 283.
-LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 14.4pt on input line 283.
-<organigramme.png, id=45, 346.29375pt x 295.60437pt>
-File: organigramme.png Graphic file (type png)
-<use organigramme.png>
-Package pdftex.def Info: organigramme.png  used on input line 306.
-(pdftex.def)             Requested size: 284.52756pt x 242.88428pt.
+(Font)              scaled to size 14.4pt on input line 456.
+<organigramme.jpg, id=58, 845.559pt x 597.9138pt>
+File: organigramme.jpg Graphic file (type jpg)
+<use organigramme.jpg>
+Package pdftex.def Info: organigramme.jpg  used on input line 479.
+(pdftex.def)             Requested size: 341.43306pt x 241.44214pt.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/sc' will be
-(Font)              scaled to size 12.0pt on input line 307.
- [2 <./organigramme.png>] [3]
-Overfull \hbox (1.69295pt too wide) in paragraph at lines 369--370
+(Font)              scaled to size 12.0pt on input line 480.
+ [2 <./organigramme.jpg>] [3]
+Overfull \hbox (1.69295pt too wide) in paragraph at lines 542--543
 []\T1/ntxtlf/m/n/12 INSI Uni-ver-sity pro-pose éga-le-ment des for-ma-tions pro
 -fes-sion-nelles conti-nues, spé-ci-fi-que-ment conçues
  []
 
 [4]
-Underfull \hbox (badness 10000) in paragraph at lines 418--423
+Underfull \hbox (badness 10000) in paragraph at lines 591--596
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 436--437
+Underfull \hbox (badness 10000) in paragraph at lines 609--610
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 453--454
+Underfull \hbox (badness 10000) in paragraph at lines 626--627
 
  []
 
 [5]
-Underfull \hbox (badness 10000) in paragraph at lines 464--465
+Underfull \hbox (badness 10000) in paragraph at lines 637--638
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 467--468
+Underfull \hbox (badness 10000) in paragraph at lines 640--641
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 497--498
+Underfull \hbox (badness 10000) in paragraph at lines 670--671
 
  []
 
 [6]
-Underfull \hbox (badness 10000) in paragraph at lines 530--531
+Underfull \hbox (badness 10000) in paragraph at lines 703--704
 
  []
 
 [7]
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 8.8pt on input line 550.
+(Font)              scaled to size 8.8pt on input line 723.
 
-Underfull \hbox (badness 10000) in paragraph at lines 550--551
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 552--553
+Underfull \hbox (badness 10000) in paragraph at lines 723--724
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 554--555
+Underfull \hbox (badness 10000) in paragraph at lines 725--726
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 556--557
+Underfull \hbox (badness 10000) in paragraph at lines 727--728
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 558--559
+Underfull \hbox (badness 10000) in paragraph at lines 729--730
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 560--561
+Underfull \hbox (badness 10000) in paragraph at lines 731--732
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 562--563
+Underfull \hbox (badness 10000) in paragraph at lines 733--734
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 735--736
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 741--742
 
  []
 
 [8]
-Underfull \hbox (badness 10000) in paragraph at lines 568--569
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 576--581
+Underfull \hbox (badness 10000) in paragraph at lines 749--754
 
  []
 
 LaTeX Font Info:    Trying to load font information for T1+ntxtt on input line 
-588.
+761.
 (/usr/share/texlive/texmf-dist/tex/latex/newtx/t1ntxtt.fd
 File: t1ntxtt.fd 2012/04/20 v3.1
 )
 LaTeX Font Info:    Font shape `T1/ntxtt/m/n' will be
-(Font)              scaled to size 12.0pt on input line 588.
+(Font)              scaled to size 12.0pt on input line 761.
 
-Overfull \hbox (10.97357pt too wide) in paragraph at lines 584--593
+Overfull \hbox (10.97357pt too wide) in paragraph at lines 757--764
  [][] 
  []
 
-[9]
-Overfull \hbox (10.97357pt too wide) in alignment at lines 608--619
+
+Overfull \hbox (10.97357pt too wide) in alignment at lines 779--792
  [] [] 
  []
 
-
-Overfull \hbox (10.97357pt too wide) in alignment at lines 633--646
+[9]
+Overfull \hbox (10.97357pt too wide) in alignment at lines 806--819
  [] [] 
  []
 
 [10]
-Overfull \hbox (10.97357pt too wide) in alignment at lines 667--680
+Overfull \hbox (10.97357pt too wide) in alignment at lines 840--857
  [] [] 
  []
 
 [11]
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 6.6pt on input line 689.
+(Font)              scaled to size 6.6pt on input line 866.
 
-Overfull \hbox (10.97357pt too wide) in alignment at lines 697--710
+Overfull \hbox (10.97357pt too wide) in alignment at lines 874--887
  [] [] 
  []
 
 [12]
-Overfull \hbox (10.97357pt too wide) in alignment at lines 723--740
+Overfull \hbox (10.97357pt too wide) in alignment at lines 900--915
  [] [] 
  []
 
-[13] [14] [15]
-Underfull \hbox (badness 3803) in paragraph at lines 825--825
+[13] [14] [15] [16]
+Underfull \hbox (badness 3803) in paragraph at lines 1077--1077
 []|\T1/ntxtlf/m/n/12 Régression : es-ti-mer
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 826--826
+Underfull \hbox (badness 10000) in paragraph at lines 1078--1078
 []|\T1/ntxtlf/m/n/12 Données ta-bu-
  []
 
 
-Underfull \hbox (badness 2521) in paragraph at lines 827--828
+Underfull \hbox (badness 2521) in paragraph at lines 1079--1080
 []|\T1/ntxtlf/m/n/12 Régression Li-néaire, SVR,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 831--831
+Underfull \hbox (badness 10000) in paragraph at lines 1083--1083
 []|\T1/ntxtlf/m/n/12 Données ta-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 831--831
+Underfull \hbox (badness 10000) in paragraph at lines 1083--1083
 \T1/ntxtlf/m/n/12 bu-laires (pa-ra-
  []
 
 
-Underfull \hbox (badness 6592) in paragraph at lines 831--831
+Underfull \hbox (badness 6592) in paragraph at lines 1083--1083
 \T1/ntxtlf/m/n/12 mètres physico-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 831--831
+Underfull \hbox (badness 10000) in paragraph at lines 1083--1083
 \T1/ntxtlf/m/n/12 chimiques de
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 836--836
+Underfull \hbox (badness 10000) in paragraph at lines 1088--1088
 []|\T1/ntxtlf/m/n/12 Séries tem-po-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 836--836
+Underfull \hbox (badness 10000) in paragraph at lines 1088--1088
 \T1/ntxtlf/m/n/12 relles (me-sures
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 836--836
+Underfull \hbox (badness 10000) in paragraph at lines 1088--1088
 \T1/ntxtlf/m/n/12 suc-ces-sives de
  []
 
-[16]
-Overfull \hbox (15.48885pt too wide) in alignment at lines 869--888
+[17] [18]
+Overfull \hbox (15.48885pt too wide) in alignment at lines 1121--1140
  [] [] [] 
  []
 
 LaTeX Font Info:    Trying to load font information for TS1+ntxtlf on input lin
-e 917.
+e 1169.
 (/usr/share/texlive/texmf-dist/tex/latex/newtx/ts1ntxtlf.fd
 File: ts1ntxtlf.fd 2015/01/18 v1.0 fd file for TS1/ntxtlf
 )
 LaTeX Font Info:    Font shape `TS1/ntxtlf/m/n' will be
-(Font)              scaled to size 12.0pt on input line 917.
+(Font)              scaled to size 12.0pt on input line 1169.
 
-Overfull \hbox (31.55687pt too wide) in alignment at lines 899--922
+Overfull \hbox (31.55687pt too wide) in alignment at lines 1151--1174
  [] [] [] 
  []
 
-[17]
-<Densite_tilapia/Displot Densite_Tilapia_Are.png, id=106, 361.35pt x 361.35pt>
+[19]
+<Densite_tilapia/Displot Densite_Tilapia_Are.png, id=124, 361.35pt x 361.35pt>
 File: Densite_tilapia/Displot Densite_Tilapia_Are.png Graphic file (type png)
 <use Densite_tilapia/Displot Densite_Tilapia_Are.png>
 Package pdftex.def Info: Densite_tilapia/Displot Densite_Tilapia_Are.png  used 
-on input line 940.
-(pdftex.def)             Requested size: 298.75697pt x 298.75702pt.
- [18]
-<Densite_tilapia/ViolinPlot Hauteur_Eau.png, id=111, 462.528pt x 346.896pt>
+on input line 1192.
+(pdftex.def)             Requested size: 199.16626pt x 199.16766pt.
+<Densite_tilapia/ViolinPlot Hauteur_Eau.png, id=125, 462.528pt x 346.896pt>
 File: Densite_tilapia/ViolinPlot Hauteur_Eau.png Graphic file (type png)
 <use Densite_tilapia/ViolinPlot Hauteur_Eau.png>
 Package pdftex.def Info: Densite_tilapia/ViolinPlot Hauteur_Eau.png  used on in
-put line 953.
+put line 1205.
 (pdftex.def)             Requested size: 239.00102pt x 179.2542pt.
-<Densite_tilapia/Violin Plot Temperature_Actuelle.png, id=112, 462.528pt x 346.
+<Densite_tilapia/Violin Plot Temperature_Actuelle.png, id=126, 462.528pt x 346.
 896pt>
 File: Densite_tilapia/Violin Plot Temperature_Actuelle.png Graphic file (type p
 ng)
 <use Densite_tilapia/Violin Plot Temperature_Actuelle.png>
 Package pdftex.def Info: Densite_tilapia/Violin Plot Temperature_Actuelle.png  
-used on input line 961.
+used on input line 1213.
 (pdftex.def)             Requested size: 239.00102pt x 179.2542pt.
- [19 <./Densite_tilapia/Displot Densite_Tilapia_Are.png> <./Densite_tilapia/Vio
+ [20 <./Densite_tilapia/Displot Densite_Tilapia_Are.png> <./Densite_tilapia/Vio
 linPlot Hauteur_Eau.png> <./Densite_tilapia/Violin Plot Temperature_Actuelle.pn
 g>]
-<Densite_tilapia/Violin Plot Niveau_Engrais.png, id=119, 462.528pt x 346.896pt>
+<Densite_tilapia/Violin Plot Niveau_Engrais.png, id=133, 462.528pt x 346.896pt>
 
 File: Densite_tilapia/Violin Plot Niveau_Engrais.png Graphic file (type png)
 <use Densite_tilapia/Violin Plot Niveau_Engrais.png>
 Package pdftex.def Info: Densite_tilapia/Violin Plot Niveau_Engrais.png  used o
-n input line 978.
+n input line 1230.
 (pdftex.def)             Requested size: 239.00102pt x 179.2542pt.
-<Densite_tilapia/Violin Plot Type_irrigation.png, id=120, 462.528pt x 346.896pt
+<Densite_tilapia/Violin Plot Type_irrigation.png, id=134, 462.528pt x 346.896pt
 >
 File: Densite_tilapia/Violin Plot Type_irrigation.png Graphic file (type png)
 <use Densite_tilapia/Violin Plot Type_irrigation.png>
 Package pdftex.def Info: Densite_tilapia/Violin Plot Type_irrigation.png  used 
-on input line 986.
+on input line 1238.
 (pdftex.def)             Requested size: 239.00102pt x 179.2542pt.
-<Densite_tilapia/Violin Plot Couleur_sol.png, id=121, 462.528pt x 346.896pt>
+<Densite_tilapia/Violin Plot Couleur_sol.png, id=135, 462.528pt x 346.896pt>
 File: Densite_tilapia/Violin Plot Couleur_sol.png Graphic file (type png)
 <use Densite_tilapia/Violin Plot Couleur_sol.png>
 Package pdftex.def Info: Densite_tilapia/Violin Plot Couleur_sol.png  used on i
-nput line 1001.
+nput line 1253.
 (pdftex.def)             Requested size: 239.00102pt x 179.2542pt.
-<Densite_tilapia/Violin Plot Texture_sol.png, id=122, 462.528pt x 346.896pt>
+<Densite_tilapia/Violin Plot Texture_sol.png, id=136, 462.528pt x 346.896pt>
 File: Densite_tilapia/Violin Plot Texture_sol.png Graphic file (type png)
 <use Densite_tilapia/Violin Plot Texture_sol.png>
 Package pdftex.def Info: Densite_tilapia/Violin Plot Texture_sol.png  used on i
-nput line 1009.
+nput line 1261.
 (pdftex.def)             Requested size: 239.00102pt x 179.2542pt.
- [20 <./Densite_tilapia/Violin Plot Niveau_Engrais.png> <./Densite_tilapia/Viol
+ [21 <./Densite_tilapia/Violin Plot Niveau_Engrais.png> <./Densite_tilapia/Viol
 in Plot Type_irrigation.png> <./Densite_tilapia/Violin Plot Couleur_sol.png> <.
 /Densite_tilapia/Violin Plot Texture_sol.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 1019--1020
+Underfull \hbox (badness 10000) in paragraph at lines 1271--1272
 
  []
 
-<Densite_tilapia/Heatmap Correlation.png, id=130, 462.528pt x 346.896pt>
+<Densite_tilapia/Heatmap Correlation.png, id=144, 462.528pt x 346.896pt>
 File: Densite_tilapia/Heatmap Correlation.png Graphic file (type png)
 <use Densite_tilapia/Heatmap Correlation.png>
 Package pdftex.def Info: Densite_tilapia/Heatmap Correlation.png  used on input
- line 1025.
+ line 1277.
 (pdftex.def)             Requested size: 273.8593pt x 205.4026pt.
-<Qualite_eau/Distribution Plot TURBIDITY.png, id=131, 403.2666pt x 361.35pt>
+<Qualite_eau/Distribution Plot TURBIDITY.png, id=145, 403.2666pt x 361.35pt>
 File: Qualite_eau/Distribution Plot TURBIDITY.png Graphic file (type png)
 <use Qualite_eau/Distribution Plot TURBIDITY.png>
 Package pdftex.def Info: Qualite_eau/Distribution Plot TURBIDITY.png  used on i
-nput line 1041.
+nput line 1293.
 (pdftex.def)             Requested size: 239.00102pt x 214.16507pt.
-<Qualite_eau/Distribution Plot TEMP.png, id=132, 403.2666pt x 361.35pt>
+<Qualite_eau/Distribution Plot TEMP.png, id=146, 403.2666pt x 361.35pt>
 File: Qualite_eau/Distribution Plot TEMP.png Graphic file (type png)
 <use Qualite_eau/Distribution Plot TEMP.png>
 Package pdftex.def Info: Qualite_eau/Distribution Plot TEMP.png  used on input 
-line 1049.
+line 1301.
 (pdftex.def)             Requested size: 239.00102pt x 214.16507pt.
-[21 <./Densite_tilapia/Heatmap Correlation.png>]
-<Qualite_eau/Distribution Plot PH.png, id=138, 403.2666pt x 361.35pt>
+[22 <./Densite_tilapia/Heatmap Correlation.png>]
+<Qualite_eau/Distribution Plot PH.png, id=151, 403.2666pt x 361.35pt>
 File: Qualite_eau/Distribution Plot PH.png Graphic file (type png)
 <use Qualite_eau/Distribution Plot PH.png>
 Package pdftex.def Info: Qualite_eau/Distribution Plot PH.png  used on input li
-ne 1065.
+ne 1317.
 (pdftex.def)             Requested size: 239.00102pt x 214.16507pt.
-<Qualite_eau/Distribution Plot DO.png, id=139, 403.2666pt x 361.35pt>
+<Qualite_eau/Distribution Plot DO.png, id=152, 403.2666pt x 361.35pt>
 File: Qualite_eau/Distribution Plot DO.png Graphic file (type png)
 <use Qualite_eau/Distribution Plot DO.png>
 Package pdftex.def Info: Qualite_eau/Distribution Plot DO.png  used on input li
-ne 1073.
+ne 1325.
 (pdftex.def)             Requested size: 239.00102pt x 214.16507pt.
- [22 <./Qualite_eau/Distribution Plot TURBIDITY.png> <./Qualite_eau/Distributio
+ [23 <./Qualite_eau/Distribution Plot TURBIDITY.png> <./Qualite_eau/Distributio
 n Plot TEMP.png> <./Qualite_eau/Distribution Plot PH.png> <./Qualite_eau/Distri
 bution Plot DO.png>]
-<Qualite_eau/Heatmap Correlation.png, id=147, 462.528pt x 346.896pt>
+<Qualite_eau/Heatmap Correlation.png, id=160, 462.528pt x 346.896pt>
 File: Qualite_eau/Heatmap Correlation.png Graphic file (type png)
 <use Qualite_eau/Heatmap Correlation.png>
 Package pdftex.def Info: Qualite_eau/Heatmap Correlation.png  used on input lin
-e 1088.
+e 1340.
 (pdftex.def)             Requested size: 273.8593pt x 205.4026pt.
-<Qualite_eau/Distibution Qualite d'Eau.png, id=148, 462.528pt x 346.896pt>
+<Qualite_eau/Distibution Qualite d'Eau.png, id=161, 462.528pt x 346.896pt>
 File: Qualite_eau/Distibution Qualite d'Eau.png Graphic file (type png)
 <use Qualite_eau/Distibution Qualite d'Eau.png>
 Package pdftex.def Info: Qualite_eau/Distibution Qualite d'Eau.png  used on inp
-ut line 1100.
+ut line 1352.
 (pdftex.def)             Requested size: 199.16626pt x 149.37408pt.
- [23 <./Qualite_eau/Heatmap Correlation.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 1112--1112
+ [24 <./Qualite_eau/Heatmap Correlation.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 1364--1364
 
  []
 
-(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2020/03/24 1.8d listings language file
-)
 LaTeX Font Info:    Font shape `T1/ntxtt/m/n' will be
-(Font)              scaled to size 10.95pt on input line 1116.
+(Font)              scaled to size 10.0pt on input line 1368.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 10.95pt on input line 1128.
- [24 <./Qualite_eau/Distibution Qualite d'Eau.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 1151--1151
+(Font)              scaled to size 10.0pt on input line 1369.
+LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
+(Font)              scaled to size 6.0pt on input line 1369.
+[25 <./Qualite_eau/Distibution Qualite d'Eau.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 1402--1402
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1157--1157
-
- []
-
-[25]
-Underfull \hbox (badness 10000) in paragraph at lines 1176--1176
+Underfull \hbox (badness 10000) in paragraph at lines 1408--1408
 
  []
 
 [26]
-Underfull \hbox (badness 10000) in paragraph at lines 1190--1190
+Underfull \hbox (badness 10000) in paragraph at lines 1427--1427
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1208--1208
+Underfull \hbox (badness 10000) in paragraph at lines 1441--1441
 
  []
 
 [27]
-Overfull \hbox (10.97357pt too wide) in alignment at lines 1225--1233
- [] [] 
- []
+Underfull \hbox (badness 10000) in paragraph at lines 1458--1458
 
-
-Overfull \hbox (10.97357pt too wide) in alignment at lines 1243--1261
- [] [] 
- []
-
-
-Overfull \hbox (10.97357pt too wide) in alignment at lines 1267--1280
- [] [] 
  []
 
 [28]
-Overfull \hbox (10.97357pt too wide) in alignment at lines 1286--1299
+Underfull \hbox (badness 10000) in paragraph at lines 1471--1471
+
+ []
+
+
+Overfull \hbox (10.97357pt too wide) in alignment at lines 1475--1483
  [] [] 
  []
 
 
-Overfull \hbox (10.97357pt too wide) in alignment at lines 1305--1322
+Overfull \hbox (10.97357pt too wide) in alignment at lines 1493--1511
  [] [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1342--1342
+Overfull \hbox (10.97357pt too wide) in alignment at lines 1517--1530
+ [] [] 
+ []
+
+
+Overfull \hbox (10.97357pt too wide) in alignment at lines 1536--1549
+ [] [] 
+ []
+
+
+Overfull \hbox (10.97357pt too wide) in alignment at lines 1555--1572
+ [] [] 
+ []
+
+[29]
+Underfull \hbox (badness 10000) in paragraph at lines 1592--1592
 []|\T1/ntxtt/m/n/12 ccp_alpha: 0.01, criterion:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1342--1342
+Underfull \hbox (badness 10000) in paragraph at lines 1592--1592
 \T1/ntxtt/m/n/12 friedman_mse, max_depth:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1342--1342
+Underfull \hbox (badness 10000) in paragraph at lines 1592--1592
 \T1/ntxtt/m/n/12 None, max_features: None,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1342--1342
+Underfull \hbox (badness 10000) in paragraph at lines 1592--1592
 \T1/ntxtt/m/n/12 min_samples_leaf: 4,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1344--1344
+Underfull \hbox (badness 10000) in paragraph at lines 1594--1594
 []|\T1/ntxtt/m/n/12 max_depth: 10, max_features:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1344--1344
+Underfull \hbox (badness 10000) in paragraph at lines 1594--1594
 \T1/ntxtt/m/n/12 sqrt, min_samples_split: 5,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1346--1346
+Underfull \hbox (badness 10000) in paragraph at lines 1596--1596
 []|\T1/ntxtt/m/n/12 C: 10, epsilon: 0.1, gamma:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1348--1348
+Underfull \hbox (badness 10000) in paragraph at lines 1598--1598
 []|\T1/ntxtt/m/n/12 gamma: 0, learning_rate: 0.1,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1348--1348
+Underfull \hbox (badness 10000) in paragraph at lines 1598--1598
 \T1/ntxtt/m/n/12 max_depth: 3, min_child_weight:
  []
 
-[29]
-<Densite_tilapia/Evaluations Densite.png, id=173, 722.7pt x 722.7pt>
+<Densite_tilapia/Evaluations Densite.png, id=183, 722.7pt x 722.7pt>
 File: Densite_tilapia/Evaluations Densite.png Graphic file (type png)
 <use Densite_tilapia/Evaluations Densite.png>
 Package pdftex.def Info: Densite_tilapia/Evaluations Densite.png  used on input
- line 1367.
+ line 1617.
 (pdftex.def)             Requested size: 323.64706pt x 323.64609pt.
- [30 <./Densite_tilapia/Evaluations Densite.png>] [31]
-Underfull \hbox (badness 10000) in paragraph at lines 1483--1483
+[30]
+Underfull \hbox (badness 10000) in paragraph at lines 1629--1629
+
+ []
+
+[31 <./Densite_tilapia/Evaluations Densite.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 1733--1733
 []|\T1/ntxtlf/m/n/12 Régression Lo-gis-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1483--1483
+Underfull \hbox (badness 10000) in paragraph at lines 1733--1733
 []|\T1/ntxtt/m/n/12 C: 0.1, max_iter: 1000,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1487--1487
+Underfull \hbox (badness 10000) in paragraph at lines 1737--1737
 []|\T1/ntxtt/m/n/12 max_depth: 20, max_features:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1491--1491
+Underfull \hbox (badness 10000) in paragraph at lines 1741--1741
 []|\T1/ntxtt/m/n/12 learning_rate: 0.1, max_depth:
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 1509--1510
-[]|\T1/ntxtlf/b/n/12 AUC-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1511--1511
+[32]
+Underfull \hbox (badness 10000) in paragraph at lines 1761--1761
 []|\T1/ntxtlf/m/n/12 Régression Lo-gis-
  []
 
-[32]
-Underfull \hbox (badness 10000) in paragraph at lines 1563--1567
+
+Underfull \hbox (badness 10000) in paragraph at lines 1783--1783
 
  []
 
 [33]
-<Plateforme/Densite_Tilapia.jpg, id=188, 925.20656pt x 328.22626pt>
+Underfull \hbox (badness 10000) in paragraph at lines 1813--1817
+
+ []
+
+[34]
+<Plateforme/Densite_Tilapia.jpg, id=201, 925.20656pt x 328.22626pt>
 File: Plateforme/Densite_Tilapia.jpg Graphic file (type jpg)
 <use Plateforme/Densite_Tilapia.jpg>
-Package pdftex.def Info: Plateforme/Densite_Tilapia.jpg  used on input line 158
+Package pdftex.def Info: Plateforme/Densite_Tilapia.jpg  used on input line 183
 1.
 (pdftex.def)             Requested size: 423.2378pt x 150.1495pt.
-<Plateforme/Prediction_Qualite_Eau.jpg, id=189, 967.36406pt x 438.8897pt>
-File: Plateforme/Prediction_Qualite_Eau.jpg Graphic file (type jpg)
-<use Plateforme/Prediction_Qualite_Eau.jpg>
-Package pdftex.def Info: Plateforme/Prediction_Qualite_Eau.jpg  used on input l
-ine 1592.
-(pdftex.def)             Requested size: 423.2378pt x 192.02046pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<Plateforme/Classification_Qualite_Eau.jpg, id=190, 923.70094pt x 342.5297pt>
+<Plateforme/Classification_Qualite_Eau.jpg, id=202, 923.70094pt x 342.5297pt>
 File: Plateforme/Classification_Qualite_Eau.jpg Graphic file (type jpg)
 <use Plateforme/Classification_Qualite_Eau.jpg>
 Package pdftex.def Info: Plateforme/Classification_Qualite_Eau.jpg  used on inp
-ut line 1602.
+ut line 1842.
 (pdftex.def)             Requested size: 423.2378pt x 156.9436pt.
-[34 <./Plateforme/Densite_Tilapia.jpg>] [35 <./Plateforme/Prediction_Qualite_Ea
-u.jpg> <./Plateforme/Classification_Qualite_Eau.jpg>] [36]
-Underfull \hbox (badness 10000) in paragraph at lines 1629--1631
+<Plateforme/Prediction_Qualite_Eau.jpg, id=203, 967.36406pt x 438.8897pt>
+File: Plateforme/Prediction_Qualite_Eau.jpg Graphic file (type jpg)
+<use Plateforme/Prediction_Qualite_Eau.jpg>
+Package pdftex.def Info: Plateforme/Prediction_Qualite_Eau.jpg  used on input l
+ine 1852.
+(pdftex.def)             Requested size: 423.2378pt x 192.02046pt.
+ [35 <./Plateforme/Densite_Tilapia.jpg> <./Plateforme/Classification_Qualite_Ea
+u.jpg>] [36 <./Plateforme/Prediction_Qualite_Eau.jpg>] [37]
+Underfull \hbox (badness 10000) in paragraph at lines 1883--1885
 \T1/ntxtlf/m/it/12 Fish for the fu-ture : From in-ten-sive to ex-ten-sive aqua-
 cul-ture
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1629--1631
+Underfull \hbox (badness 10000) in paragraph at lines 1883--1885
 \T1/ntxtlf/m/it/12 in Ma-da-gas-car\T1/ntxtlf/m/n/12 . 2023. Dis-po-nible sur :
  $\T1/ntxtt/m/n/12 https : / / nbi . iisd . org /
  []
 
 
-Overfull \hbox (18.54276pt too wide) in paragraph at lines 1629--1631
+Overfull \hbox (18.54276pt too wide) in paragraph at lines 1883--1885
 \T1/ntxtt/m/n/12 fr-[]fish-[]for-[]the-[]future-[]from-[]intensive-[]to-[]exten
 sive-[]aquaculture-[]in-[]madagascar/$ 
  []
 
 
-Underfull \hbox (badness 2460) in paragraph at lines 1637--1639
+Underfull \hbox (badness 2460) in paragraph at lines 1891--1893
 \T1/ntxtlf/m/it/12 Agriculture à Ma-da-gas-car : l'État dé-ploie l'In-fra-struc
 -ture Pu-blique Nu-mé-rique Agri-
  []
 
 
-Underfull \hbox (badness 3758) in paragraph at lines 1637--1639
+Underfull \hbox (badness 3758) in paragraph at lines 1891--1893
 \T1/ntxtlf/m/it/12 cole pour sou-te-nir les pro-duc-teurs\T1/ntxtlf/m/n/12 . Di
 s-po-nible sur : $\T1/ntxtt/m/n/12 https : / / www . minae . gov . mg /
  []
 
 
-Overfull \hbox (245.84232pt too wide) in paragraph at lines 1637--1639
+Overfull \hbox (245.84232pt too wide) in paragraph at lines 1891--1893
 \T1/ntxtt/m/n/12 agriculture-[]a-[]madagascar-[]letat-[]deploie-[]linfrastructu
 re-[]publique-[]numerique-[]agricole-[]pour-[]soutenir-[]les-[]producteurs/$ 
  []
 
 
-Underfull \hbox (badness 1062) in paragraph at lines 1653--1654
+Underfull \hbox (badness 1062) in paragraph at lines 1907--1908
 []\T1/ntxtlf/m/it/12 Prédiction de la te-neur en oxy-gène dis-sous en aqua-cul-
 ture ba-sée sur le re-grou-pe-ment
  []
 
 
-Underfull \hbox (badness 2119) in paragraph at lines 1653--1654
+Underfull \hbox (badness 2119) in paragraph at lines 1907--1908
 \T1/ntxtlf/m/it/12 et un ELM amé-lioré\T1/ntxtlf/m/n/12 . 4 Mars 2021. Dis-po-n
 ible sur : $\T1/ntxtt/m/n/12 https : / / scispace . com / pdf /
  []
 
-[37]
-Underfull \hbox (badness 10000) in paragraph at lines 1719--1720
+[1] [2]
+Underfull \hbox (badness 10000) in paragraph at lines 1999--2000
 []\T1/ntxtlf/m/it/12 Imbalanced-learn Do-cu-men-ta-tion -- Under-sampling\T1/nt
 xtlf/m/n/12 . Dis-po-nible sur : $\T1/ntxtt/m/n/12 https :
  []
 
-[38] (./insi.aux) ) 
+[3]
+LaTeX Font Info:    Trying to load font information for T1+txtt on input line 2
+013.
+ (/usr/share/texlive/texmf-dist/tex/latex/txfonts/t1txtt.fd
+File: t1txtt.fd 2000/12/15 v3.1
+)
+LaTeX Font Info:    Font shape `T1/ntxtt/b/n' in size <12> not available
+(Font)              Font shape `T1/txtt/bx/n' tried instead on input line 2013.
+
+LaTeX Font Info:    Font shape `T1/ntxtt/m/n' will be
+(Font)              scaled to size 8.0pt on input line 2016.
+LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
+(Font)              scaled to size 8.0pt on input line 2017.
+LaTeX Font Info:    Font shape `T1/ntxtt/b/n' in size <8> not available
+(Font)              Font shape `T1/txtt/bx/n' tried instead on input line 2017.
+
+ [4] [5]
+[6]
+Overfull \hbox (23.99997pt too wide) in alignment at lines 2237--2244
+ [] [] 
+ []
+
+[7] (./insi.aux) ) 
 Here is how much of TeX's memory you used:
- 21395 strings out of 478022
- 384954 string characters out of 5839674
- 1902330 words of memory out of 5000000
- 41130 multiletter control sequences out of 15000+600000
- 571101 words of font info for 97 fonts, out of 8000000 for 9000
+ 21531 strings out of 478022
+ 386885 string characters out of 5839674
+ 2729330 words of memory out of 5000000
+ 41260 multiletter control sequences out of 15000+600000
+ 580511 words of font info for 103 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 83i,12n,80p,1398b,1982s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{/usr/share/texmf/fonts/enc/dvips/tex-gyre/q-ts1.enc}{/usr/s
-hare/texlive/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc}{/usr/share/texli
-ve/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf-pc.enc}{/usr/share/texlive/texmf
--dist/fonts/enc/dvips/newtx/ntx-ec-tlf.enc}</usr/share/texlive/texmf-dist/fonts
-/type1/public/newtx/NewTXMI.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
-ic/newtx/NewTXMI7.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qtmr.pfb></
-usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/t1xtt.pfb></usr/share/t
-exlive/texmf-dist/fonts/type1/public/newtx/txexs.pfb></usr/share/texlive/texmf-
-dist/fonts/type1/public/newtx/txmiaX.pfb></usr/share/texlive/texmf-dist/fonts/t
-ype1/public/newtx/txsys.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/n
-ewtx/ztmb.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/ztmr.pfb>
-</usr/share/texlive/texmf-dist/fonts/type1/public/newtx/ztmri.pfb>
-Output written on insi.pdf (48 pages, 1184881 bytes).
+ 83i,12n,95p,1398b,1976s stack positions out of 10000i,1000n,20000p,200000b,200000s
+{/usr/share/texmf/fonts/enc/dvips/tex-gyre/q-ts1.enc}{/usr/sh
+are/texlive/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc}{/usr/share/texliv
+e/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf-pc.enc}{/usr/share/texlive/texmf-
+dist/fonts/enc/dvips/newtx/ntx-ec-tlf.enc}</usr/share/texlive/texmf-dist/fonts/
+type1/public/newtx/NewTXMI.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
+c/newtx/NewTXMI7.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qtmr.pfb></u
+sr/share/texlive/texmf-dist/fonts/type1/public/txfonts/t1xbtt.pfb></usr/share/t
+exlive/texmf-dist/fonts/type1/public/txfonts/t1xtt.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/newtx/txexs.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/newtx/txmiaX.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
+/newtx/txsys.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/ztmb.p
+fb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/ztmr.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/public/newtx/ztmri.pfb>
+Output written on insi.pdf (57 pages, 1490687 bytes).
 PDF statistics:
- 262 PDF objects out of 1000 (max. 8388607)
- 152 compressed objects within 2 object streams
+ 297 PDF objects out of 1000 (max. 8388607)
+ 175 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 108 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 113 words of extra memory for PDF output out of 10000 (max. 10000000)
 

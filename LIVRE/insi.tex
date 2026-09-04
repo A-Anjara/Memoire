@@ -58,6 +58,63 @@
 
 
 
+\titlecontents{section}
+  [1.5em]                               % Retrait à gauche
+  {\addvspace{0.4pc}\bfseries}          % Espace au-dessus + Gras pour les sections
+  {\contentslabel{1.5em}}               % Espace pour le numéro (ex: 1.)
+  {\hspace{-1.5em}}                     % Si pas de numéro
+  {\titlerule*[0.5pc]{.}\quad\thecontentspage}
+
+% Pour les Subsections (Niveau 2)
+\titlecontents{subsection}
+  [3.8em]                               % Retrait plus grand pour décaler vers la droite
+  {\addvspace{0.2pc}}                   % Espace léger au-dessus
+  {\contentslabel{2.3em}}               % Espace pour le numéro (ex: 1.1.)
+  {\hspace{-2.3em}}
+  {\titlerule*[0.5pc]{.}\quad\thecontentspage}
+
+% Pour les Subsubsections (Niveau 3)
+\titlecontents{subsubsection}
+  [6.8em]                               % Retrait encore plus grand
+  {\addvspace{0.1pc}}
+  {\contentslabel{3.0em}}               % Espace pour le numéro (ex: 1.1.1.)
+  {\hspace{-3.0em}}
+  {\titlerule*[0.5pc]{.}\quad\thecontentspage}
+
+
+
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.97,0.97,0.98}
+\definecolor{codeblue}{rgb}{0,0,0.8}
+
+\lstdefinestyle{pythonstyle}{
+    backgroundcolor=\color{backcolour},
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{codeblue}\bfseries,
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,
+    breaklines=true,
+    captionpos=b,
+    keepspaces=true,
+    numbers=left,
+    numbersep=5pt,
+    showspaces=false,
+    showstringspaces=false,
+    showtabs=false,
+    tabsize=4,
+    frame=single,
+    rulecolor=\color{codegray},
+    language=Python
+}
+
+\lstset{style=pythonstyle}
+
+
 
 
 
@@ -74,9 +131,38 @@
 % 1. Change the title from "Contents" to your preference (e.g., "Table des matières")
 \renewcommand{\contentsname}{
 \begin{center}
-Sommaire
+\LARGE
+SOMMAIRE
 \end{center}
 }
+
+\addto\captionsfrench{
+  % Pour le Sommaire
+  \renewcommand{\contentsname}{
+    \begin{center}
+    \LARGE
+    SOMMAIRE
+    \end{center}
+  }
+  % Pour la Liste des Tableaux (LoT)
+  \renewcommand{\listtablename}{
+    \begin{center}
+    \Large
+    LISTE DES TABLEAUX
+    \end{center}
+  }
+  % Pour la Liste des Figures (LoF)
+  \renewcommand{\listfigurename}{
+    \begin{center}
+    \Large
+    LISTE DES FIGURES
+    \end{center}
+  }
+}
+
+\definecolor{monbleu}{RGB}{0,0,255} % bleu pur RGB
+\definecolor{bleuciel}{RGB}{90,170,210} % bleu ciel
+
 
 % 2. Limit ToC depth to Level-2 headings (\subsection)
 %\setcounter{tocdepth}{2}
@@ -95,6 +181,73 @@ Sommaire
 \usepackage{float}
 
 \begin{document}
+
+\begin{titlepage}
+\centering
+
+\vspace*{0.5cm}
+
+\includegraphics[width=5cm]{logo_insi.png}
+
+\vspace{0.3cm}
+
+
+\noindent\rule{0.7\textwidth}{0.4pt}
+
+\vspace{0.8cm}
+
+\textbf{\large INSTITUT NATIONAL SUPERIEUR D'INFORMATIQUE}
+
+\vspace{0.8cm}
+
+\textbf{Mémoire de projet en vue de la validation de la Licence 2}
+
+\vspace{0.6cm}
+
+Domaine : Sciences et Technologie
+
+Mention : Informatique
+
+Parcours : Intelligence Artificielle et Data Science
+
+\vspace{0.8cm}
+
+\textbf{Par :} ANDRIAMIHAJAMANANA Anjara \\
+
+\vspace{1cm}
+
+\textbf{\Large Système Intelligent d'Analyse des Productions Halieutiques}
+
+\vspace{0.8cm}
+
+Soutenu le 07 Septembre 2026, devant la commission d'examen composée de :
+
+\vspace{0.5cm}
+
+Président du Jury :
+Docteur RAKOTOMANANA René
+
+\vspace{0.5cm}
+
+Examinateur :
+Docteur RANDRIAMAMONJY Liantsoa Joharinirina
+
+\vspace{0.5cm}
+
+Encadreur :
+Docteur ANDRIAMANJAKA Ramasondrano
+
+\vfill
+
+\textbf{Année Universitaire : 2025-2026}
+
+\end{titlepage}
+
+
+\thispagestyle{empty}
+\vspace*{\fill}
+\newpage
+
 
 \pagenumbering{roman}
 \begin{center}
@@ -131,7 +284,7 @@ Les résultats montrent que les modèles à base d'ensembles d'arbres, en partic
 \newpage
 \begin{spacing}{1.5}
 \begin{center}
-\LARGE{RÉSUMÉ}
+\LARGE{ABSTRACT}
 \end{center}
 Rice-fish farming, which combines tilapia rearing with rice cultivation, holds significant economic, social, and environmental potential in Madagascar, but its development is hindered by the lack of reliable tools to monitor and anticipate water quality, exposing farms to degradation risks that are often detected too late. This thesis addresses the following question: how can water quality and environmental conditions of a rice-fish farming plot be analyzed to protect, anticipate, and optimize tilapia production? The objective is to design an intelligent system made up of three complementary modules.
 
@@ -160,17 +313,33 @@ The results show that ensemble tree-based models, particularly Random Forest and
 \hline
 APDRA & Association Pisciculture et Développement Rural en Afrique \\
 \hline
-AUC & Area Under the Curve \\
+ARSB & Administration Réseaux et Systèmes et Bases de données \\
+\hline
+CV & Cross-Validation (validation croisée) \\
 \hline
 DO & Dissolved Oxygen (oxygène dissous) \\
 \hline
 FAO & Food and Agriculture Organization (Organisation des Nations Unies pour l'alimentation et l'agriculture) \\
 \hline
-FOFIFA & Foibem-pirenena momba ny Fikarohana ampiharina amin'ny Fampandrosoana ny eny Ambanivohitra (Centre National de la Recherche Appliquée au Développement Rural) \\
+FOFIFA & Foibem-pirenena momba ny Fikarohana ampiharina amin'ny Fampandrosoana ny eny Ambanivohitra\\
+\hline
+GL & Génie Logiciel \\
+\hline
+I2AD & Intelligence Artificielle, Analyse de Données et Automatisation \\
+\hline
+IAD & Intelligence Artificielle et Data Science \\
+\hline
+IC & Infrastructures et Cybersécurités \\
 \hline
 IISD & Institut International du Développement Durable \\
 \hline
+INSI & Institut National Supérieur d'Informatique \\
+\hline
+IoT & Internet of Things (Internet des objets) \\
+\hline
 IPNA & Infrastructure Publique Numérique Agricole \\
+\hline
+LMD & Licence-Master-Doctorat \\
 \hline
 LSTM & Long Short-Term Memory \\
 \hline
@@ -179,6 +348,8 @@ MAE & Mean Absolute Error \\
 MAPE & Mean Absolute Percentage Error \\
 \hline
 MINAE & Ministère de l'Agriculture et de la Souveraineté Alimentaire (Madagascar) \\
+\hline
+MSI & Management des Systèmes d'Information \\
 \hline
 NTU & Nephelometric Turbidity Unit \\
 \hline
@@ -189,8 +360,6 @@ PIB & Produit Intérieur Brut \\
 RMSE & Root Mean Squared Error \\
 \hline
 RNN & Recurrent Neural Network \\
-\hline
-ROC & Receiver Operating Characteristic \\
 \hline
 SVC & Support Vector Classification \\
 \hline
@@ -213,13 +382,17 @@ STL & Seasonal-Trend decomposition using Loess \\
 \textbf{Terme} & \textbf{Définition} \\
 \midrule
 
-
 Accuracy & Proportion globale de prédictions correctes d'un modèle de classification, sur l'ensemble des observations \cite{scikitlearn}. \\[24pt]
-AUC-ROC & Aire sous la courbe ROC, mesurant la capacité d'un modèle de classification à distinguer les deux classes indépendamment d'un seuil de décision fixe \cite{scikitlearn}. \\[24pt]
+Disparition du gradient (vanishing gradient) & Phénomène par lequel le gradient utilisé pour ajuster les poids d'un réseau de neurones récurrent devient de plus en plus faible à mesure qu'il est rétropropagé sur une séquence longue, empêchant le modèle de retenir une information sur le long terme \cite{hochreiter1997}. \\[24pt]
 Downsampling & Technique de rééquilibrage des classes consistant à réduire aléatoirement le nombre d'observations de la classe majoritaire pour l'égaliser à celui de la classe minoritaire \cite{imblearndoc}. \\[24pt]
+Élagage (pruning) & Technique consistant à supprimer, après la construction d'un arbre de décision, les branches apportant peu de gain prédictif, afin de réduire sa complexité et de limiter le surapprentissage \cite{scikitlearn}. \\[24pt]
 Encodage ordinal & Transformation d'une variable catégorielle en valeurs numériques entières croissantes, adaptée lorsque ses modalités possèdent un ordre naturel \cite{scikitlearn}. \\[24pt]
 Encodage one-hot & Transformation d'une variable catégorielle en plusieurs colonnes binaires distinctes, adaptée lorsque ses modalités n'ont pas de relation d'ordre entre elles \cite{scikitlearn}. \\[24pt]
+Entropie & Mesure du désordre ou de l'incertitude des classes présentes dans un nœud d'un arbre de décision, utilisée comme critère alternatif à l'impureté de Gini pour évaluer la qualité d'un découpage \cite{scikitlearn}. \\[24pt]
 F1-score & Métrique combinant la Precision et le Recall en une seule valeur, utile pour comparer des modèles de classification de façon synthétique \cite{scikitlearn}. \\[24pt]
+Feature Engineering & Ensemble des techniques de transformation, de sélection ou de création de variables à partir des données brutes, afin d'améliorer la capacité d'un modèle à apprendre une tâche donnée \cite{scikitlearn}. \\[24pt]
+Fenêtre glissante (sliding window) & Méthode de structuration d'une série temporelle consistant à utiliser un nombre fixe d'observations passées consécutives comme variables d'entrée pour prédire l'observation suivante \cite{fpp3}. \\[24pt]
+Impureté de Gini & Mesure de la probabilité de mal classer une observation tirée au hasard selon la distribution des classes d'un nœud, utilisée comme critère de découpage dans un arbre de décision \cite{scikitlearn}. \\[24pt]
 GridSearch & Méthode d'optimisation testant systématiquement toutes les combinaisons d'une grille d'hyperparamètres candidats, généralement combinée à une validation croisée \cite{scikitlearn}. \\[24pt]
 Hyperparamètre & Paramètre d'un modèle fixé avant l'entraînement, par opposition aux paramètres appris automatiquement pendant l'entraînement \cite{scikitlearn}. \\[24pt]
 Kernel trick & Technique permettant à un modèle SVM de séparer des données non linéairement séparables, en calculant implicitement leur similarité dans un espace de dimension supérieure \cite{cortesvapnik1995}. \\[24pt]
@@ -303,7 +476,7 @@ La mission principale de l'INSI est de former des experts compétents, éthiques
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=10cm]{organigramme.png}
+    \includegraphics[width=12cm]{organigramme.jpg}
     \caption{Organigramme de l’INSI }
     \textit{Source : INSI, 2025}
     \label{fig:organigramme}
@@ -535,7 +708,7 @@ L’INSI s’appuie sur une équipe pédagogique et administrative compétente, 
     \item Président Directeur de l’INSI : Dr RAMASONDRANO Andriamanjaka
     \item Responsable parcours ARSB \& IC : Mr RATIANARISON Hery Mampionona
     \item Responsable parcours tronc commun : Dr RAKOTONDRAMANANA R, Sitraka
-    \item Responsable parcours GL \& MSI : Mr ANDRIaAMIADANA TANTELY ANTOINE
+    \item Responsable parcours GL \& MSI : Mr ANDRIAMIADANA TANTELY ANTOINE
     \item Responsable parcours IAD \& I2AD : par intérim PDG
     \item Nombres d'enseignants : 40
     \item Nombres des personnels administratives : 04
@@ -561,7 +734,7 @@ Du côté environnemental, la rizipisciculture est considérée comme un systèm
 
 Enfin, du côté légal, le développement de l'aquaculture à Madagascar est encadré depuis le milieu des années 2000 par une stratégie nationale de développement durable de l'aquaculture, mise en place par le Ministère chargé de la Pêche avec la FAO. Plus récemment, la feuille de route de l'Infrastructure Publique Numérique Agricole insiste sur la gouvernance et la maîtrise des données du secteur.\\
 
-Face à ces défis environnementaux et techniques, l'application de l'intelligence artificielle offre une opportunité de suivi automatisé. La section suivante présente les fondements théoriques des algorithmes retenus pour cette étude.
+Face à ces défis environnementaux et techniques, l'application de l'intelligence artificielle offre une opportunité de suivi automatisé.
 
 \subsection{Fondements théoriques des modèles d'apprentissage et de traitement de données}
 
@@ -587,8 +760,6 @@ $\beta_1, \dots, \beta_n$ sont les coefficients associés à chaque variable, in
 \hline
 \texttt{fit\_intercept} & Indique si le modèle doit calculer l'ordonnée à l'origine $\beta_0$, ou la fixer à zéro. \texttt{True} : le biais est estimé normalement. \newline \texttt{False} : le modèle est contraint à passer par l'origine, ce qui n'est pertinent que si l'on sait a priori que $y=0$ lorsque toutes les variables sont nulles. \\
 \hline
-\texttt{alpha} (Ridge/Lasso) & Contrôle l'intensité de la pénalisation appliquée aux coefficients $\beta_i$ pour limiter le surapprentissage : plus $\alpha$ est élevé, plus les coefficients sont contraints vers de petites valeurs. \\
-\hline
 \end{tabular}
 \caption{Hyperparamètres -- Régression Linéaire}
 \textit{Source : Réalisation Personnelle}
@@ -596,7 +767,7 @@ $\beta_1, \dots, \beta_n$ sont les coefficients associés à chaque variable, in
 
 \paragraph{Régression Logistique\\}
 Contrairement à la régression linéaire, la régression logistique n'est pas utilisée pour prédire une valeur continue, mais pour résoudre un problème de classification.\\
-Le problème d'une régression linéaire directe pour cette tâche est que $ \hat{y} = \beta_0 + \beta_1 x_1 + \dots + \beta_n x_n $ peut prendre n'importe quelle valeur réelle, positive ou négative, ce qui n'a pas de sens pour représenter une classe. La régression logistique résout ce problème en appliquant une fonction supplémentaire à la combinaison linéaire des variables : la fonction sigmoïde, notée $ \sigma $, qui transforme n'importe quelle valeur réelle en une valeur comprise entre 0 et 1, interprétable comme une probabilité :
+La régression logistique résout ce problème en appliquant une fonction supplémentaire à la combinaison linéaire des variables : la fonction sigmoïde, notée $ \sigma $, qui transforme n'importe quelle valeur réelle en une valeur comprise entre 0 et 1, interprétable comme une probabilité :
 \[
 \sigma(z) = \frac{1}{1 + e^{-z}}
 \]
@@ -614,6 +785,8 @@ P(y = 1 \mid x) = \sigma(z) = \frac{1}{1 + e^{-(\beta_0 + \beta_1 x_1 + \dots + 
 \texttt{penalty} & Type de régularisation appliquée aux coefficients.\newline\texttt{l2} : pénalise le carré des coefficients, les réduit sans les annuler \newline\texttt{l1} : pénalise leur valeur absolue, ce qui peut annuler certains coefficients (sélection de variables) \newline \texttt{elasticnet} : combinaison pondérée de l1 et l2 \newline \texttt{none} : aucune régularisation appliquée. \\
 \hline
 \texttt{solver} & Algorithme d'optimisation utilisé pour minimiser la fonction de coût logistique.\newline \texttt{lbfgs} : méthode quasi-Newton, adaptée aux jeux de données de taille moyenne avec pénalité l2 \newline \texttt{liblinear} : adapté aux petits jeux de données et compatible avec la pénalité l1 \newline \texttt{saga} : adapté aux grands jeux de données et compatible avec l1, l2 et elasticnet \newline \texttt{newton-cg} et \texttt{sag} : variantes alternatives d'optimisation, plus rapides sur de grands volumes de données avec pénalité l2. \\
+\hline
+\texttt{max\_iter} & Nombre maximal d'itérations autorisées à l'algorithme d'optimisation pour converger vers une solution. \\
 \hline
 \caption{Hyperparamètres -- Régression Logistique}
 \end{longtable}
@@ -650,7 +823,7 @@ où $\mathbf{w}$ et $b$ définissent la position et l'orientation de l'hyperplan
 \end{center}
 
 \paragraph{Arbre de Décision\\}
-L'Arbre de Décision construit une succession de règles de décision simples sous forme d'arbre. À chaque nœud, une question binaire est posée sur une variable (par exemple : $x_j > s$ ?), ce qui dirige l'observation vers l'enfant de gauche ou de droite, jusqu'à atteindre une feuille contenant la prédiction finale. Le découpage à chaque nœud est choisi selon un critère d'homogénéité, mesuré principalement de deux façons en classification :
+L'Arbre de Décision construit une succession de règles de décision simples sous forme d'arbre. À chaque nœud, une question binaire est posée sur une variable , ce qui dirige l'observation vers l'enfant de gauche ou de droite, jusqu'à atteindre une feuille contenant la prédiction finale. Le découpage à chaque nœud est choisi selon un critère d'homogénéité, mesuré principalement de deux façons en classification :
 
 L'impureté de Gini, qui mesure la probabilité de mal classer une observation si elle était étiquetée aléatoirement selon la distribution des classes du nœud :
 \[
@@ -676,6 +849,10 @@ où $p_k$ est la proportion d'observations de la classe $k$ dans le nœud consid
 \hline
 \texttt{criterion} & Critère utilisé pour évaluer la qualité d'un découpage. \newline En classification : \newline \texttt{gini} mesure la probabilité de mal classer une observation tirée au hasard selon la distribution du nœud \newline \texttt{entropy} mesure le désordre des classes présentes, avec une pénalisation légèrement plus forte des nœuds très mélangés.\newline En régression : \newline \texttt{squared\_error} (erreur quadratique) est le critère standard \newline \texttt{absolute\_error} est moins sensible aux valeurs extrêmes \newline \texttt{friedman\_mse} est une variante de l'erreur quadratique optimisée pour les découpages successifs. \\
 \hline
+\texttt{ccp\_alpha} & Paramètre de complexité utilisé pour l'élagage (pruning) de l'arbre après sa construction : plus sa valeur est élevée, plus les branches apportant peu de gain sont supprimées, ce qui limite le surapprentissage. \\
+\hline
+\texttt{max\_features} & Nombre de variables considérées lors de la recherche du meilleur découpage à chaque nœud :\newline \texttt{None} (toutes les variables), \newline \texttt{sqrt} ou \texttt{log2} (un sous-ensemble restreint), ce qui introduit de la variabilité entre les découpages. \\
+\hline
 \caption{Hyperparamètres -- Arbre de Décision}
 \end{longtable}
 \begin{center}
@@ -684,7 +861,7 @@ où $p_k$ est la proportion d'observations de la classe $k$ dans le nœud consid
 \end{center}
 
 \paragraph{Random Forest\\}
-La Random Forest combine un grand nombre d'arbres de décision entraînés sur des échantillons différents des données (tirés aléatoirement avec remise, ou Bagging), et sur un sous-ensemble aléatoire des variables à chaque nœud. Cette double source d'aléa décorrèle les arbres entre eux et réduit la variance globale du modèle. Les prédictions sont ensuite combinées différemment selon la tâche :
+La Random Forest combine un grand nombre d'arbres de décision entraînés sur des échantillons différents des données , et sur un sous-ensemble aléatoire des variables à chaque nœud. Cette double source d'aléa décorrèle les arbres entre eux et réduit la variance globale du modèle. Les prédictions sont ensuite combinées différemment selon la tâche :
 \[
 \hat{y} = \text{mode}\left(\hat{y}^{(1)}, \dots, \hat{y}^{(T)}\right) \quad \text{(classification, vote majoritaire)}
 \]
@@ -704,21 +881,21 @@ La Random Forest combine un grand nombre d'arbres de décision entraînés sur d
 \hline
 \texttt{max\_features} & Nombre de variables tirées aléatoirement à considérer à chaque nœud. \newline \texttt{sqrt} : considère la racine carrée du nombre total de variables (valeur courante en classification) \newline \texttt{log2} : considère le logarithme en base 2 du nombre total de variables, un choix plus restrictif \newline\texttt{None} : considère l'ensemble des variables à chaque nœud, ce qui réduit la décorrélation entre les arbres. \\
 \hline
-\texttt{min\_samples\_leaf} & Nombre minimal d'observations requises dans une feuille de chaque arbre. \\
+\texttt{min\_samples\_split} & Nombre minimal d'observations requises dans un nœud pour autoriser un nouveau découpage, appliqué à chaque arbre de la forêt. \\
 \hline
 \caption{Hyperparamètres -- Random Forest\\}
 \end{longtable}
 \begin{center}
-\vspace{-0.85cm}
+\vspace{-0.7cm}
 \textit{Source : Réalisation Personnelle}
 \end{center}
 
 \paragraph{XGBoost (Extreme Gradient Boosting)\\}
-XGBoost est également un algorithme basé sur des arbres de décision, mais il repose sur un principe différent du Bagging : le Boosting. Plutôt que d'entraîner les arbres indépendamment les uns des autres, XGBoost les construit de manière séquentielle, chaque nouvel arbre étant entraîné pour corriger les erreurs commises par l'ensemble des arbres précédents. La prédiction finale est la somme pondérée des prédictions de tous les arbres construits :
+XGBoost est également un algorithme basé sur des arbres de décision, mais il repose sur un principe différent. Plutôt que d'entraîner les arbres indépendamment les uns des autres, XGBoost les construit de manière séquentielle, chaque nouvel arbre étant entraîné pour corriger les erreurs commises par l'ensemble des arbres précédents. La prédiction finale est la somme pondérée des prédictions de tous les arbres construits :
 \[
 \hat{y} = \sum_{t=1}^{T} f_t(x)
 \]
-où chaque $f_t$ est un arbre de décision entraîné à corriger l'erreur résiduelle laissée par les arbres $f_1, \dots, f_{t-1}$. Ce fonctionnement séquentiel et cette correction intégrée expliquent pourquoi XGBoost obtient souvent de meilleures performances que le Bagging, aussi bien pour des tâches de régression (la sortie $\hat{y}$ est directement une valeur continue) que pour des tâches de classification (la somme des arbres est passée dans une fonction sigmoïde, comme pour la régression logistique, afin d'obtenir une probabilité de classe), au prix d'un temps d'entraînement plus long et d'un réglage plus sensible de ses hyperparamètres.
+où chaque $f_t$ est un arbre de décision entraîné à corriger l'erreur résiduelle laissée par les arbres $f_1, \dots, f_{t-1}$. Ce fonctionnement séquentiel et cette correction intégrée expliquent pourquoi XGBoost obtient souvent de meilleures performances, aussi bien pour des tâches de régression (la sortie $\hat{y}$ est directement une valeur continue) que pour des tâches de classification (la somme des arbres est passée dans une fonction sigmoïde, comme pour la régression logistique, afin d'obtenir une probabilité de classe), au prix d'un temps d'entraînement plus long et d'un réglage plus sensible de ses hyperparamètres.
 
 \begin{longtable}{|m{5cm}|m{12cm}|}
 \hline
@@ -730,11 +907,9 @@ où chaque $f_t$ est un arbre de décision entraîné à corriger l'erreur rési
 \hline
 \texttt{max\_depth} & Profondeur maximale de chaque arbre, contrôlant la complexité des corrections apportées à chaque étape. \\
 \hline
-\texttt{subsample} & Proportion des données utilisées pour entraîner chaque arbre, introduisant de l'aléa pour limiter le surapprentissage. \\
+\texttt{min\_child\_weight} & Somme minimale des poids des observations requise dans un nœud enfant pour qu'un découpage soit effectué ; une valeur plus élevée rend le modèle plus conservateur et limite le surapprentissage sur des groupes d'observations trop petits. \\
 \hline
-\texttt{booster} & Type de modèle utilisé à chaque étape du Boosting. \newline\texttt{gbtree} (par défaut) : utilise des arbres de décision comme apprenants faibles \newline \texttt{gblinear} : utilise des fonctions linéaires à la place des arbres \newline \texttt{dart} : variante de \texttt{gbtree} qui ignore aléatoirement certains arbres à chaque étape pour limiter le surapprentissage. \\
-\hline
-\texttt{reg\_lambda / reg\_alpha} & Termes de régularisation (L2 et L1) pénalisant la complexité des arbres, correspondant au terme $\Omega(f_t)$ de la fonction de coût. \\
+\texttt{gamma} & Réduction minimale de la fonction de perte requise pour justifier un nouveau découpage d'une feuille ; plus sa valeur est élevée, plus l'algorithme est prudent avant de complexifier l'arbre. \\
 \hline
 \caption{Hyperparamètres -- XGBoost\\}
 \end{longtable}
@@ -749,8 +924,7 @@ La décomposition STL (Seasonal-Trend decomposition using Loess) est une méthod
 \[
 Y_t = T_t + S_t + R_t
 \]
-où $T_t$ est la tendance (évolution générale de la série sur le long terme), $S_t$ la composante saisonnière (variations qui se répètent à intervalles réguliers, comme un cycle jour/nuit) et $R_t$ le résidu, c'est-à-dire les fluctuations restantes non expliquées par les deux premières composantes.
-
+où $T_t$ est la tendance (évolution générale de la série sur le long terme), $S_t$ la composante saisonnière (variations qui se répètent à intervalles réguliers) et $R_t$ le résidu, c'est-à-dire les fluctuations restantes non expliquées par les deux premières composantes. Comme son nom l'indique, cette décomposition repose sur la méthode de lissage Loess, appliquée successivement pour extraire chacune de ces trois composantes à partir de la série brute.
 \subparagraph{La méthode Loess\\}
 Loess (Locally Estimated Scatterplot Smoothing) est une méthode de lissage qui estime une courbe régulière à partir de données bruitées, sans supposer de forme mathématique globale. Pour estimer la valeur lissée en un point $x_0$, seules les observations voisines sont utilisées, chacune pondérée selon sa proximité, généralement via une fonction tricube :
 \[
@@ -769,18 +943,37 @@ Les modèles de machine learning classiques (régression, SVM, arbres de décisi
 
 Les réseaux de neurones récurrents (RNN) ont été conçus pour ce type de données : à chaque instant $t$, ils combinent l'entrée courante avec une information héritée de l'étape précédente, ce qui leur permet de propager un contexte d'une étape à l'autre. Cependant, sur une séquence longue, cette information a tendance à s'atténuer au fil des étapes, jusqu'à disparaître presque complètement. C'est le problème de la disparition du gradient (vanishing gradient), qui empêche le RNN classique de retenir une information sur de longues séquences.
 
-Les réseaux LSTM (Long Short-Term Memory) ont été conçus pour résoudre ce problème. L'idée centrale est d'ajouter une mémoire à long terme, appelée état de la cellule, qui circule d'une étape à l'autre en étant peu modifiée, ce qui lui permet de conserver une information sur de longues séquences sans qu'elle ne s'efface. L'accès à cette mémoire est contrôlé par trois portes (gates), qui décident respectivement :
+Les réseaux LSTM (Long Short-Term Memory) ont été conçus pour résoudre ce problème. L'idée centrale est d'ajouter une mémoire à long terme, appelée état de la cellule $C_t$, qui circule d'une étape à l'autre en étant peu modifiée, ce qui lui permet de conserver une information sur de longues séquences sans qu'elle ne s'efface. L'accès à cette mémoire est contrôlé par trois portes (gates), chacune étant une couche de neurones à activation sigmoïde $\sigma$, qui produit une valeur entre 0 (« bloquer ») et 1 (« laisser passer »), et qui décident respectivement :
+
 \begin{itemize}
-\item la \textbf{porte d'oubli}, quelle partie de la mémoire passée doit être conservée ou supprimée.
-\item la \textbf{porte d'entrée}, quelle nouvelle information, apportée par l'observation courante, doit être ajoutée à cette mémoire.
-\item la \textbf{porte de sortie}, quelle partie de cette mémoire doit être transmise comme résultat à l'instant courant, et servir de base pour l'étape suivante.
+\item la \textbf{porte d'oubli}, quelle partie de la mémoire passée doit être conservée ou supprimée :
+\[
+f_t = \sigma(W_f \cdot [h_{t-1}, x_t] + b_f)
+\]
+\item la \textbf{porte d'entrée}, quelle nouvelle information, apportée par l'observation courante, doit être ajoutée à cette mémoire :
+\[
+i_t = \sigma(W_i \cdot [h_{t-1}, x_t] + b_i)
+\]
+\item la \textbf{porte de sortie}, quelle partie de cette mémoire doit être transmise comme résultat à l'instant courant, et servir de base pour l'étape suivante :
+\[
+o_t = \sigma(W_o \cdot [h_{t-1}, x_t] + b_o)
+\]
 \end{itemize}
+
+où $x_t$ est l'entrée à l'instant $t$, $h_{t-1}$ l'état caché de l'étape précédente, et $W$, $b$ les poids et biais propres à chaque porte. La mémoire de la cellule est ensuite mise à jour en combinant ce qui a été conservé de l'ancienne mémoire et ce que la porte d'entrée autorise à ajouter :
+\[
+C_t = f_t \odot C_{t-1} + i_t \odot \tanh(W_C \cdot [h_{t-1}, x_t] + b_C)
+\]
+où $\odot$ désigne une multiplication élément par élément. Enfin, l'état caché transmis à l'étape suivante est obtenu en filtrant cette mémoire mise à jour à travers la porte de sortie :
+\[
+h_t = o_t \odot \tanh(C_t)
+\]
 
 Chaque porte est une petite couche de neurones qui produit une valeur entre 0 et 1, agissant comme un filtre : une valeur proche de 0 bloque l'information, une valeur proche de 1 la laisse passer. Grâce à ce mécanisme, la cellule LSTM peut choisir de garder une information pertinente sur de nombreuses étapes, ou de l'oublier rapidement si elle ne l'est plus, ce qui permet au réseau de capter des dépendances temporelles aussi bien courtes que longues, sans souffrir de la disparition du gradient qui limite les RNN classiques.
 
 \subsubsection{Optimisation par GridSearch}
 
-Il faut distinguer les paramètres d'un modèle, qui sont appris automatiquement pendant l'entraînement (par exemple les coefficients $\beta_i$ d'une régression, ou la structure des arbres d'une Random Forest), des hyperparamètres, qui sont fixés avant l'entraînement et qui contrôlent le comportement général du modèle (par exemple le nombre d'arbres ou leur profondeur maximale, le paramètre de régularisation $C$ d'un SVM, ou le taux d'apprentissage de XGBoost).
+Il faut distinguer les paramètres d'un modèle, qui sont appris automatiquement pendant l'entraînement, des hyperparamètres, qui sont fixés avant l'entraînement et qui contrôlent le comportement général du modèle.
 
 Le choix de ces hyperparamètres influence fortement la performance d'un modèle, mais il n'existe pas de formule directe pour les déterminer : ils doivent être testés empiriquement. Le GridSearch (recherche par grille) consiste à définir, pour chaque hyperparamètre, un ensemble de valeurs candidates, puis à tester méthodiquement toutes les combinaisons possibles entre ces valeurs.
 
@@ -790,6 +983,65 @@ Pour évaluer chaque combinaison de façon fiable, le GridSearch est combiné à
 \]
 
 La combinaison d'hyperparamètres obtenant le meilleur score moyen en validation croisée est retenue comme configuration finale du modèle. Cette démarche, plus coûteuse en temps de calcul qu'un simple entraînement, permet d'éviter de choisir des hyperparamètres qui donneraient de bons résultats sur un seul découpage des données par hasard, mais qui généraliseraient mal.
+
+\subsubsection{Métriques d'évaluation des modèles}
+
+Une fois un modèle entraîné, il est nécessaire de mesurer objectivement sa performance à l'aide de métriques adaptées à la nature du problème traité. Cette section présente les métriques utilisées dans ce mémoire, en distinguant les problèmes de régression et les problèmes de classification.
+
+\paragraph{Métriques de régression\\}
+Pour un problème de régression, où le modèle prédit une valeur continue $\hat{y}_i$ à comparer à la valeur réelle $y_i$, sur un ensemble de $m$ observations, les métriques suivantes sont utilisées.
+
+La RMSE (Root Mean Squared Error) pénalise davantage les erreurs importantes, en élevant chaque écart au carré avant de le moyenner, et s'exprime dans la même unité que la variable prédite :
+\[
+RMSE = \sqrt{\frac{1}{m}\sum_{i=1}^{m}\left(y_i - \hat{y}_i\right)^2}
+\]
+
+La MAE (Mean Absolute Error) donne l'écart moyen absolu entre les valeurs prédites et réelles, sans pénaliser davantage les erreurs importantes :
+\[
+MAE = \frac{1}{m}\sum_{i=1}^{m}\left|y_i - \hat{y}_i\right|
+\]
+
+La MAPE (Mean Absolute Percentage Error) exprime cette erreur moyenne en pourcentage de la valeur réelle, ce qui facilite son interprétation indépendamment de l'échelle de la variable prédite :
+\[
+MAPE = \frac{1}{m}\sum_{i=1}^{m}\left|\frac{y_i - \hat{y}_i}{y_i}\right| \times 100
+\]
+
+Enfin, le $R^2$ (coefficient de détermination) indique la proportion de la variance de la variable cible expliquée par le modèle, une valeur proche de 1 traduisant un bon pouvoir explicatif :
+\[
+R^2 = 1 - \frac{\sum_{i=1}^{m}\left(y_i - \hat{y}_i\right)^2}{\sum_{i=1}^{m}\left(y_i - \bar{y}\right)^2}
+\]
+où $\bar{y}$ est la moyenne des valeurs réelles.
+
+\paragraph{Métriques de classification\\}
+Pour un problème de classification binaire, les métriques suivantes reposent sur quatre quantités de base, généralement présentées sous la forme d'une matrice de confusion :
+
+\begin{itemize}
+\item les \textbf{vrais positifs} ($VP$) : observations réellement positives, correctement prédites comme positives par le modèle ;
+\item les \textbf{vrais négatifs} ($VN$) : observations réellement négatives, correctement prédites comme négatives par le modèle ;
+\item les \textbf{faux positifs} ($FP$) : observations réellement négatives, mais prédites à tort comme positives par le modèle (erreur de type I) ;
+\item les \textbf{faux négatifs} ($FN$) : observations réellement positives, mais prédites à tort comme négatives par le modèle (erreur de type II).
+\end{itemize}
+
+L'Accuracy mesure la proportion globale de prédictions correctes :
+\[
+Accuracy = \frac{VP + VN}{VP + VN + FP + FN}
+\]
+
+La Precision mesure, parmi les observations prédites comme positives, la proportion réellement positive :
+\[
+Precision = \frac{VP}{VP + FP}
+\]
+
+Le Recall (rappel) mesure, parmi les observations réellement positives, la proportion correctement détectée par le modèle :
+\[
+Recall = \frac{VP}{VP + FN}
+\]
+
+Le F1-score combine Precision et Recall en une seule valeur, sous la forme de leur moyenne harmonique, utile pour comparer des modèles de façon synthétique :
+\[
+F1 = 2 \times \frac{Precision \times Recall}{Precision + Recall}
+\]
+
 
 \subsubsection{Mise à l'échelle des données}
 
@@ -859,7 +1111,7 @@ Les données utilisées pour l'estimation de la densité de tilapia à partir de
 
 \paragraph{Données pour les Modules 2 et 3 (qualité de l'eau)\\}
 
-Les données utilisées pour la classification et la prédiction de la qualité de l'eau proviennent d'un jeu de données public, mis à disposition sur la plateforme Kaggle, rassemblant des mesures physico-chimiques d'eau destinées à l'élevage piscicole associées à une étiquette de qualité de l'eau. Le recours à un jeu de données public se justifie par la difficulté d'obtenir, dans le cadre d'un mémoire de Licence, des séries de mesures continues et fiables sur plusieurs mois directement depuis une parcelle rizipiscicole équipée de capteurs. Ce jeu de données présente néanmoins l'intérêt de couvrir les mêmes variables physico-chimiques que celles pertinentes pour le tilapia, ce qui permet de développer et valider la démarche de classification et de prédiction temporelle proposée dans ce mémoire.
+Les données utilisées pour la classification et la prédiction de la qualité de l'eau proviennent d'un jeu de données public, mis à disposition sur la plateforme Kaggle\cite{kagglefishlife}, rassemblant des mesures physico-chimiques d'eau destinées à l'élevage piscicole associées à une étiquette de qualité de l'eau. Le recours à un jeu de données public se justifie par la difficulté d'obtenir, dans le cadre d'un mémoire de Licence, des séries de mesures continues et fiables sur plusieurs mois directement depuis une parcelle rizipiscicole équipée de capteurs. Ce jeu de données présente néanmoins l'intérêt de couvrir les mêmes variables physico-chimiques que celles pertinentes pour le tilapia, ce qui permet de développer et valider la démarche de classification et de prédiction temporelle proposée dans ce mémoire.
 
 \subsection{Structure des datasets}
 
@@ -931,13 +1183,13 @@ Pour le Module 3, ces mêmes variables physico-chimiques sont réorganisées en 
 \subsection{Visualisation et analyse}
 Avant d'entraîner les modèles, une analyse exploratoire visuelle a été réalisée afin d'observer la distribution de la variable cible et son comportement en fonction des différentes caractéristiques.
 
-\paragraph{Module 1 -- Densité du tilapia\\}
+\subsubsection{Densité du tilapia}
 
 La Figure~\ref{fig:displot_densite} présente la distribution de la variable cible \texttt{Densite\_Tilapia\_Are}.
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.6\textwidth]{Densite_tilapia/Displot Densite_Tilapia_Are.png}
+\includegraphics[width=0.4\textwidth]{Densite_tilapia/Displot Densite_Tilapia_Are.png}
 \caption{Distribution de la variable Densite\_Tilapia\_Are}
 \label{fig:displot_densite}
 \textit{Source : Réalisation Personnelle}
@@ -1030,7 +1282,7 @@ La Figure~\ref{fig:heatmap_densite} présente la matrice de corrélation entre l
 
 On retrouve dans cette matrice les tendances déjà observées sur les violin plots précédents, désormais quantifiées. On remarque également que les variables explicatives sont globalement très peu corrélées entre elles , ce qui est plutôt favorable pour les modèles de régression linéaire, en limitant les risques de multicolinéarité. Cela confirme aussi que chacune de ces six variables apporte une information relativement indépendante et complémentaire à la prédiction de la densité de tilapia, justifiant leur intégration conjointe dans les modèles du Module 1.
 
-\paragraph{Modules 2 et 3 -- Qualité de l'eau\\}
+\subsubsection{Qualité de l'eau}
 
 Une analyse similaire a été menée sur le dataset de qualité de l'eau, en observant la distribution de chaque variable physico-chimique selon la classe de qualité (\texttt{label} = 0 pour mauvaise qualité, \texttt{label} = 1 pour bonne qualité), ainsi que l'équilibre général des classes.
 
@@ -1109,7 +1361,7 @@ On observe un déséquilibre notable entre les deux classes : 54,746 observation
 
 Avant l'entraînement des modèles, chaque dataset a fait l'objet d'étapes de nettoyage et de transformation spécifiques, adaptées à sa nature et à l'usage qui en est fait dans chacun des trois modules.
 
-\subsubsection[Module 1]{Module 1 -- Densité du tilapia\\}
+\subsubsection[Densité du tilapia]{Module 1 -- Densité du tilapia\\}
 Le dataset contiens 75 doublons qui a été supprimé. Contrairement à une variable catégorielle sans relation d'ordre, chacune des variables catégorielles explicatives de ce dataset possède en réalité une progression logique entre ses modalités : la température va du plus froid au plus chaud, le niveau d'engrais du plus faible au plus fort, la texture du sol du plus filtrant (sableux) au plus retenant (argileux), la couleur du sol du plus clair au plus foncé (indicateur croissant de richesse organique), et le type d'irrigation d'un apport ponctuel (pluvial) à un apport continu. Un encodage one-hot ferait perdre cette information d'ordre, pourtant pertinente pour les modèles. Un encodage ordinal a donc été appliqué à la place, en associant à chaque modalité un entier croissant reflétant cette progression :
 
 
@@ -1147,14 +1399,13 @@ Cet encodage permet aux modèles, notamment ceux sensibles à la structure des v
 \paragraph{Mise à l'échelle\\}
 Conformément à la méthode de standardisation présentée en 3.2.4, les variables explicatives encodées du Module 1 (température, niveau d'engrais, texture et couleur du sol, type d'irrigation, hauteur d'eau) sont standardisées, afin de les ramener sur une échelle comparable avant l'entraînement des modèles sensibles à l'amplitude des variables, tels que la Régression Linéaire et le SVR.
 
-
-\subsubsection[Module 2]{Module 2 -- Classification de l'état actuel de l'eau\\}
+\subsubsection[Classification de l'état actuel de l'eau]{Module 2 -- Classification de l'état actuel de l'eau\\}
 Le dataset brut contenait 51 valeurs manquantes réparties sur ses 74 758 observations, soit une proportion négligeable (moins de 0,01 \% des cellules). Ces lignes incomplètes ont été supprimées plutôt qu'imputées. Aucun doublon n'a par ailleurs été détecté. La variable cible \texttt{label} étant déjà représentée sous forme binaire (0/1), aucun encodage supplémentaire n'est nécessaire pour celle-ci.
 
 \paragraph{Mise à l'échelle\\}
 Les variables physico-chimiques utilisées pour la classification (\texttt{PH}, \texttt{TEMP}, \texttt{DO}, \texttt{TURBIDITY}) possèdent des bornes physiques connues et fixes. Conformément à la méthode présentée en 3.2.4, une normalisation Min-Max (MinMaxScaler) est donc appliquée à ces variables, afin de les ramener dans un intervalle commun $[0,1]$ avant l'entraînement des modèles sensibles à l'échelle des données (Régression Logistique, SVC).
 
-\subsubsection[Module 3]{Module 3 -- Anticipation de la qualité de l'eau à H+1\\}
+\subsubsection[Anticipation de la qualité de l'eau à H+1]{Module 3 -- Anticipation de la qualité de l'eau à H+1\\}
 Le dataset brut, échantillonné toutes les 20 minutes, a été rééchantillonné à un pas de temps horaire, plus adapté à l'horizon de prédiction visé d'une heure, ce qui a réduit le dataset à 24 920 lignes, sans aucune valeur manquante après ce rééchantillonnage. Ce nouveau pas de temps régulier est indispensable pour appliquer la décomposition STL, qui nécessite une série temporelle à fréquence constante.
 
 Une fois ce rééchantillonnage effectué, chaque variable physico-chimique est décomposée selon la méthode STL présentée en 3.2.2, en trois composantes : la tendance $T_t$, la saisonnalité $S_t$ et le résidu $R_t$. Ces trois composantes ne sont cependant pas traitées de la même façon dans la suite du pipeline.
@@ -1173,21 +1424,21 @@ Pour entraîner le modèle LSTM sur la composante de tendance $T_t$, celle-ci es
 
 Une fois les données prétraitées, une stratégie d'évaluation adaptée à la nature de chaque tâche (régression, classification, prédiction temporelle) est nécessaire afin de mesurer honnêtement la capacité des modèles à généraliser, et de choisir des métriques pertinentes au regard des enjeux propres à chaque module.
 
-\subsubsection[Module 1]{Module 1 -- Densité du tilapia\\}
+\subsubsection[Densité du tilapia]{Module 1 -- Densité du tilapia\\}
 \paragraph{Découpage des données\\}
 Le dataset est séparé en un ensemble d'entraînement et un ensemble de test selon une proportion de 80 \%/20 \%. Le découpage est réalisé de façon aléatoire, la variable cible étant continue et ne présentant pas de déséquilibre de classes à préserver. L'ensemble de test n'intervient à aucun moment dans la phase d'entraînement ou d'optimisation des hyperparamètres, afin de fournir une estimation non biaisée de la performance finale des modèles.
 
 \paragraph{Validation croisée et métriques\\}
 Sur l'ensemble d'entraînement, une validation croisée à 3 folds est utilisée conjointement au GridSearch (voir 3.2.3) pour sélectionner les meilleurs hyperparamètres de chaque modèle. La performance finale de chaque modèle est ensuite mesurée sur l'ensemble de test à l'aide de quatre métriques adaptées à un problème de régression :
 \begin{itemize}
-    \item la RMSE (Root Mean Squared Error), qui pénalise davantage les erreurs importantes et s'exprime dans la même unité que la variable cible ;
-    \item la MAE (Mean Absolute Error), plus simple à interpréter, qui donne l'écart moyen absolu entre la densité prédite et la densité réelle ;
-    \item la MAPE (Mean Absolute Percentage Error), qui exprime cette erreur moyenne en pourcentage de la valeur réelle, facilitant l'interprétation relative de l'erreur indépendamment de l'échelle de la densité ;
-    \item le $R^2$ (coefficient de détermination), qui indique la proportion de la variance de la densité de tilapia expliquée par le modèle.
+    \item la RMSE (Root Mean Squared Error)
+    \item la MAE (Mean Absolute Error)
+    \item la MAPE (Mean Absolute Percentage Error)
+    \item le $R^2$ (coefficient de détermination)
 \end{itemize}
 Ces quatre métriques sont calculées pour chacun des cinq modèles présentés en 3.2.1 (Régression Linéaire, SVM, Arbre de Décision, Random Forest, XGBoost), afin de les comparer sur une base commune.
 
-\subsubsection[Module 2]{Module 2 -- Classification de l'état actuel de l'eau\\}
+\subsubsection[Classification de l'état actuel de l'eau]{Module 2 -- Classification de l'état actuel de l'eau\\}
 
 \paragraph{Rééquilibrage des classes\\}
 Le déséquilibre des classes observé en 4.3 risquant de biaiser l'apprentissage des modèles en faveur de la classe majoritaire, un rééquilibrage par sous-échantillonnage (downsampling) est appliqué : la classe majoritaire (« bonne qualité ») est réduite aléatoirement pour atteindre le même nombre d'observations que la classe minoritaire (« mauvaise qualité »), soit 20 012 lignes pour chacune des deux classes. Ce dataset équilibré est utilisé pour l'ensemble de la phase d'entraînement et d'évaluation du Module 2.
@@ -1201,11 +1452,10 @@ Cinq métriques sont utilisées conjointement pour l'évaluation finale des mod�
     \item l'Accuracy, qui donne la proportion globale de prédictions correctes, désormais interprétable sans biais majeur grâce à l'équilibrage des classes ;
     \item la Precision, qui mesure, parmi les observations prédites comme « mauvaise qualité », la proportion réellement mauvaise ;
     \item le Recall (rappel), qui mesure, parmi les observations réellement de « mauvaise qualité », la proportion correctement détectée par le modèle -- la métrique la plus critique ici, puisqu'un cas de mauvaise qualité non détecté (faux négatif) expose directement les poissons à un risque, alors qu'une fausse alerte (faux positif) n'a qu'un coût opérationnel limité ;
-    \item le F1-score, qui combine Precision et Recall en une seule valeur, utile pour comparer les modèles entre eux de façon synthétique ;
-    \item l'AUC-ROC (Area Under the ROC Curve), qui donne une idée générale de la capacité du modèle à bien reconnaître les deux types d'eau, sans dépendre d'un seuil de décision fixe. Plus cette valeur est proche de 1, mieux le modèle arrive à distinguer une eau de mauvaise qualité d'une eau de bonne qualité
+    \item le F1-score, qui combine Precision et Recall en une seule valeur, utile pour comparer les modèles entre eux de façon synthétique;
 \end{itemize}
 
-\subsubsection[Module 3]{Module 3 -- Anticipation de la qualité de l'eau à H+1\\}
+\subsubsection[Anticipation de la qualité de l'eau à H+1]{Module 3 -- Anticipation de la qualité de l'eau à H+1\\}
 
 \paragraph{Découpage des données\\}
 Contrairement aux deux modules précédents, le découpage entraînement/test ne peut pas être aléatoire pour une série temporelle : il doit respecter l'ordre chronologique des observations, afin d'éviter que le modèle n'apprenne à partir d'informations futures qu'il ne posséderait pas en conditions réelles d'utilisation. L'ensemble d'entraînement correspond ainsi à la première partie chronologique de la composante de tendance $T_t$ restructurée en fenêtres glissantes, et l'ensemble de test à la période la plus récente.
@@ -1218,7 +1468,7 @@ La performance du modèle LSTM est évaluée sur sa capacité à prédire $T_t$ 
 
 Ce chapitre constitue le cœur empirique de ce mémoire. Là où le Chapitre 3 a posé les fondements théoriques des modèles mobilisés et où le Chapitre 4 a préparé et structuré les données nécessaires, ce chapitre concrétise cette approche en mettant réellement en œuvre les trois modules du système rizipiscicole, puis en évaluant leurs performances respectives.
 
-\subsection{Module 1}
+\subsection[Densité du tilapia]{Module 1 -- Densité du tilapia\\}
 
 Pour le Module 1, dédié à l'estimation de la densité de tilapia à partir des caractéristiques du sol rizicole, les cinq modèles présentés en 3.2.1 (Régression Linéaire, Arbre de Décision, Random Forest, SVM, XGBoost) sont entraînés puis optimisés via la démarche de GridSearch présentée en 3.2.3. Pour chaque modèle, une grille d'hyperparamètres candidats est définie, et la meilleure combinaison est retenue par validation croisée. Les grilles testées pour chaque modèle sont détaillées dans les tableaux suivants.
 
@@ -1376,7 +1626,7 @@ Le SVM, malgré un score de validation croisée proche de celui de la Random For
 
 La Random Forest et XGBoost se distinguent nettement des trois autres modèles, avec les RMSE les plus faibles et les $R^2$ les plus élevés . XGBoost obtient le meilleur $R^2$ global mais c'est la Random Forest qui présente la MAPE la plus faible, ce qui en fait, en termes relatifs, le modèle le plus précis pour estimer la densité de tilapia. Ces deux modèles, tous deux fondés sur des ensembles d'arbres de décision, apparaissent ainsi comme les plus adaptés pour ce module, la Random Forest et XGBoost pouvant être considérés comme équivalents en pratique, au profit de l'un ou l'autre selon que l'on privilégie l'erreur absolue relative (MAPE) ou la variance expliquée $R^2$.
 
-\subsection{Module 2}
+\subsection[Classification de l'état actuel de l'eau]{Module 2 -- Classification de l'état actuel de l'eau\\}
 
 Pour le Module 2, dédié à la classification de l'état actuel de la qualité de l'eau, les cinq modèles présentés en 3.2.1 (Régression Logistique, Arbre de Décision, Random Forest, SVM, XGBoost) sont entraînés puis optimisés via GridSearchCV. Les grilles d'hyperparamètres testées pour chaque modèle sont détaillées dans les tableaux suivants.
 
@@ -1500,23 +1750,23 @@ XGBoost & \texttt{learning\_rate: 0.1, max\_depth: 7, n\_estimators: 100} & 0,92
 On observe un écart très net entre la Régression Logistique, et l'ensemble des quatre autres modèles. Cet écart confirme que la frontière séparant une eau de bonne et de mauvaise qualité n'est pas linéaire : un modèle linéaire simple comme la Régression Logistique peine à capturer les interactions entre le pH, la température, l'oxygène dissous et la turbidité, contrairement aux modèles à base d'arbres et au SVM à noyau RBF, capables de modéliser des frontières de décision plus complexes.
 
 \paragraph{Performances sur l'ensemble de test\\}
-Le tableau suivant détaille les performances des cinq modèles selon les cinq métriques retenues (Accuracy, Precision, Recall, F1-score, AUC-ROC).
+Le tableau suivant détaille les performances des cinq modèles selon les 4 métriques retenues (Accuracy, Precision, Recall, F1-score).
 
 \begin{table}[H]
 \centering
 \begin{tabular}{|p{3.5cm}|p{1.9cm}|p{1.9cm}|p{1.9cm}|p{1.5cm}|p{1.9cm}|}
 \hline
-\textbf{Modèle} & \textbf{Accuracy} & \textbf{Precision} & \textbf{Recall} & \textbf{F1} & \textbf{AUC-ROC} \\
+\textbf{Modèle} & \textbf{Accuracy} & \textbf{Precision} & \textbf{Recall} & \textbf{F1} \\
 \hline
-Régression Logistique & 0,7717 & 0,7731 & 0,7717 & 0,7713 & 0,8247 \\
+Régression Logistique & 0,7717 & 0,7731 & 0,7717 & 0,7713 \\
 \hline
-Arbre de Décision & 0,9151 & 0,9166 & 0,9151 & 0,9150 & 0,9446 \\
+Arbre de Décision & 0,9151 & 0,9166 & 0,9151 & 0,9150  \\
 \hline
-Random Forest & 0,9253 & 0,9260 & 0,9253 & 0,9253 & 0,9635 \\
+Random Forest & 0,9253 & 0,9260 & 0,9253 & 0,9253  \\
 \hline
-SVM (SVC) & 0,9036 & 0,9060 & 0,9036 & 0,9034 & 0,9503 \\
+SVM (SVC) & 0,9036 & 0,9060 & 0,9036 & 0,9034  \\
 \hline
-XGBoost & 0,9241 & 0,9250 & 0,9241 & 0,9240 & 0,9656 \\
+XGBoost & 0,9241 & 0,9250 & 0,9241 & 0,9240  \\
 \hline
 \end{tabular}
 \caption{Performances des modèles sur l'ensemble de test -- Module 2}
@@ -1524,13 +1774,13 @@ XGBoost & 0,9241 & 0,9250 & 0,9241 & 0,9240 & 0,9656 \\
 \end{table}
 
 
-La Régression Logistique reste nettement en retrait sur l'ensemble des cinq métriques, avec un Recall de seulement 0,7717, ce qui signifierait, en conditions réelles, qu'environ un cas sur quatre de mauvaise qualité de l'eau passerait inaperçu -- un niveau de risque difficilement acceptable pour la protection du cheptel piscicole.
+La Régression Logistique reste nettement en retrait sur l'ensemble des quatres métriques, avec un Recall de seulement 0,7717, ce qui signifierait, en conditions réelles, qu'environ un cas sur quatre de mauvaise qualité de l'eau passerait inaperçu -- un niveau de risque difficilement acceptable pour la protection du cheptel piscicole.
 
-Les quatre autres modèles présentent des performances élevées et globalement proches. La Random Forest obtient le meilleur Recall (0,9253) ainsi que la meilleure Accuracy, Precision et F1-score, ce qui en fait le modèle le plus équilibré du Module 2. XGBoost, bien que très légèrement en retrait sur le Recall (0,9241), obtient en revanche le meilleur AUC-ROC (0,9656), ce qui indique une capacité globale de séparation des deux classes encore meilleure que celle de la Random Forest.
+Les quatre autres modèles présentent des performances élevées et globalement proches. La Random Forest obtient le meilleur Recall (0,9253) ainsi que la meilleure Accuracy, Precision et F1-score, ce qui en fait le modèle le plus équilibré du Module 2. 
 
 Au regard de la priorité donnée au Recall pour ce module, la Random Forest apparaît comme le choix le plus adapté, avec XGBoost comme alternative très proche.
 
-\subsection{Module 3}
+\subsection[Anticipation de la qualité de l'eau à H+1]{Module 3 -- Anticipation de la qualité de l'eau à H+1\\}
 
 Pour le Module 3, dédié à l'anticipation de la qualité de l'eau à l'horizon d'une heure, un modèle LSTM distinct est entraîné pour chacune des quatre variables physico-chimiques de l'eau (PH, TEMP, DO, TURBIDITY), sur la composante de tendance $T_t$ issue de la décomposition STL, standardisée selon la méthode présentée en 3.2.4. Chaque modèle utilise une architecture LSTM, entraînée à prédire la valeur de tendance à l'instant présent à partir des trois derniers pas de temps (voir 4.3).
 
@@ -1587,9 +1837,9 @@ Le premier onglet ,\textbf{Densité Tilapia} , l'utilisateur y renseigne les car
 
 Le deuxième onglet, \textbf{Qualité actuelle de l'eau}, l'utilisateur y saisit les quatre paramètres physico-chimiques mesurés à l'instant présent (PH, température, oxygène dissous, turbidité), et le bouton « Prédire la qualité » déclenche la classification de l'eau en bonne ou mauvaise qualité.
 
-\begin{figure}[h]
+\begin{figure}[H]
 \centering
-\includegraphics[width=0.85\textwidth]{Plateforme/Prediction_Qualite_Eau.jpg}
+\includegraphics[width=0.85\textwidth]{Plateforme/Classification_Qualite_Eau.jpg}
 \caption{Interface du Module 2 -- Classification de la qualité actuelle de l'eau}
 \textit{Source : Réalisation Personnelle}
 \label{fig:interface_module2}
@@ -1599,30 +1849,34 @@ Le troisième onglet, « Anticipation de la qualité d'eau H+1 », l'utilisateur
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.85\textwidth]{Plateforme/Classification_Qualite_Eau.jpg}
+\includegraphics[width=0.85\textwidth]{Plateforme/Prediction_Qualite_Eau.jpg}
 \caption{Interface du Module 3 -- Anticipation de la qualité de l'eau à H+1}
 \textit{Source : Réalisation Personnelle}
 \label{fig:interface_module3}
 \end{figure}
 
-Cette interface, volontairement simple, illustre la façon dont les trois modules pourraient être intégrés dans un outil unique et cohérent à
 \vspace*{\fill}
 \newpage
-\section*{Conclusion générale}
-\addcontentsline{toc}{section}{Conclusion générale}
+\section*{\hfil \Large CONCLUSION \hfil}
+\addcontentsline{toc}{section}{Conclusion}
 
-La protection et l'optimisation de la production piscicole constituent un enjeu central pour le développement de la rizipisciculture, notamment dans un contexte comme celui de Madagascar, où cette pratique reste encore largement empirique malgré son fort potentiel. Ce mémoire a exploré cette problématique en combinant une analyse contextuelle du secteur rizipiscicole malgache, une exploration approfondie des données disponibles, et l'application de techniques avancées d'apprentissage automatique et de deep learning.
+La protection et l'optimisation de la production piscicole constituent un enjeu central pour le développement de la rizipisciculture, notamment dans un contexte comme celui de Madagascar, où cette pratique reste encore largement empirique malgré son fort potentiel. Ce mémoire a exploré cette problématique en combinant une analyse contextuelle du secteur rizipiscicole malgache, une exploration approfondie des données disponibles, et l'application de techniques avancées d'apprentissage automatique et de deep learning, afin de concevoir un Système Intelligent d'Analyse de Production Halieutique, composé de trois modules : l'estimation de la densité de tilapia, la classification de l'état actuel de la qualité de l'eau, et l'anticipation de son évolution à l'horizon d'une heure.
 
-L'utilisation de modèles prédictifs plus avancés tels que la Random Forest, XGBoost, le SVM et les réseaux de neurones récurrents de type LSTM a permis de mieux capter ces dynamiques sous-jacentes. Les résultats obtenus montrent une amélioration significative des performances par rapport aux approches linéaires, offrant aux exploitants rizipisciculteurs des bases concrètes pour un futur outil d'aide à la décision, aussi bien pour estimer la densité de tilapia atteignable que pour surveiller et anticiper l'état de leur eau.
+L'utilisation de modèles prédictifs plus avancés tels que la Random Forest, XGBoost, le SVM et les réseaux de neurones récurrents de type LSTM a permis de mieux capter des dynamiques sous-jacentes, avec des performances globalement satisfaisantes sur les trois modules développés. Ces résultats confirment qu'une analyse intelligente de la production halieutique, fondée sur les données, peut apporter une réponse concrète aux besoins de protection, d'anticipation et d'optimisation identifiés en introduction.
 
-Ces outils permettraient non seulement de réduire les pertes liées à une mortalité évitable du cheptel piscicole, mais aussi d'encourager davantage de riziculteurs, aujourd'hui hésitants faute d'accompagnement technique, à se tourner vers la rizipisciculture, contribuant ainsi à la diversification de leurs revenus et à la sécurité alimentaire locale. Par ailleurs, ce travail met en lumière l'importance d'une démarche rigoureuse de collecte et de validation des données de terrain, condition indispensable pour bâtir un système fiable et véritablement adapté aux réalités agricoles malgaches.
+Ce travail présente néanmoins certaines limites qu'il convient de rappeler. Les données utilisées pour le module de densité de tilapia demeurent d'origine synthétique, faute d'accès à des mesures de terrain, et devront être confrontées à des données réelles. L'interface développée reste, elle aussi, un prototype de démonstration, reposant sur une saisie manuelle plutôt que sur une remontée automatique de données de capteurs.
 
-En somme, ce projet offre une première contribution concrète à l'amélioration du suivi de la production rizipiscicole, et ouvre la voie à des travaux futurs portant sur la validation des modèles à partir de données de terrain réelles, l'intégration de capteurs connectés pour une collecte continue des données, ainsi que le déploiement de l'interface développée sous une forme réellement accessible aux exploitants, par exemple via une application mobile adaptée à un usage au bord de la parcelle. À l'avenir, il serait également pertinent d'explorer l'ajout de nouvelles variables environnementales ainsi que l'automatisation de la mise à jour des modèles au fil du temps, afin de renforcer la robustesse et la fiabilité du système en conditions réelles d'exploitation.
+Plusieurs perspectives peuvent ainsi être envisagées pour prolonger ce travail. Sur le plan des données, la priorité serait de valider les modèles à partir de mesures collectées directement sur des parcelles rizipiscicoles malgaches instrumentées, afin de confirmer la pertinence des résultats obtenus sur des données synthétiques ou issues d'autres contextes. Sur le plan technique, l'intégration de capteurs IoT permettrait une alimentation automatique et continue du système, réduisant la dépendance à une saisie manuelle et ouvrant la voie à des alertes réellement temps réel, rapprochant ainsi le système d'un véritable outil d'analyse intelligente de la production halieutique déployé au plus près du terrain.
+
+En somme, ce projet offre une première contribution concrète à l'amélioration du suivi de la production rizipiscicole, à travers un système intelligent d'analyse de production halieutique encore perfectible mais fonctionnel, et ouvre la voie à des travaux futurs portant sur la validation des modèles à partir de données de terrain réelles, l'intégration de capteurs connectés, ainsi que le déploiement de l'interface développée sous une forme réellement accessible aux exploitants.
+
+
 
 \vspace*{\fill}
 \newpage
-
-\renewcommand{\refname}{Bibliographie}
+\pagenumbering{Roman}
+\onehalfspacing
+\renewcommand{\refname}{\hfil BIBLIOGRAPHIE \hfil}
 \begin{thebibliography}{99}
 
 \bibitem{iisd2023}
@@ -1679,11 +1933,37 @@ United States Geological Survey (USGS).
 \newline \textit{Turbidity and Water -- Water Science School}. Disponible sur : \url{https://www.usgs.gov/water-science-school/science/turbidity-and-water}
 
 \end{thebibliography}
+{\noindent\Large{\textbf{Cours Suivis:}}}
+\begin{itemize}
+\item{Docteur ANDRIAMANJAKA Ramasondrano : 
+	\begin{itemize}
+		\item{Python pour la Data Science}
+		\item{Apprentissage Supervisé}
+		\item{Apprentissage Non Supervisé}
+	\end{itemize}
+}
+\vspace{0.5cm}
+\item{Docteur RANDRIAMAMONJY Liantsoa Joharinirina : 
+	\begin{itemize}
+		\item{Introduction au Deep Learning}
+	\end{itemize}
+}
+\vspace{0.5cm}
+\item{Docteur RANDRIANIRINA Jean Marc Fabien :
+	\begin{itemize}
+		\item{Analyse de donnée}
+	\end{itemize}
+}
+\end{itemize}
 
 \newpage
 
-\renewcommand{\refname}{Webographie}
+\renewcommand{\refname}{\hfil WEBOGRPAHIE \hfil}
 \begin{thebibliography}{99}
+
+\bibitem{kagglefishlife}
+Muzamil Aslam.
+\newline \textit{Fish Life Prediction Dataset}. Kaggle. Disponible sur : \url{https://www.kaggle.com/datasets/muzamilaslam/fish-life-prediction/data}
 
 \bibitem{scikitlearn}
 \textit{Scikit-learn: Machine Learning in Python}. Disponible sur : \url{https://scikit-learn.org/stable/documentation.html}
@@ -1722,8 +2002,247 @@ United States Geological Survey (USGS).
 \textit{Streamlit Documentation}. Disponible sur : \url{https://docs.streamlit.io/}
 
 \end{thebibliography}
+\vspace*{\fill}
+\newpage
+\singlespacing 
+\section*{\hfil ANNEXES \hfill}
+\addcontentsline{toc}{section}{ANNEXES}
+
+\subsection*{Extraits de code -- Classes de prédiction du système}
+
+\subsubsection*{Module 1 -- Densité de tilapia (\texttt{DensiteTilapia.py})}
+
+Cette classe charge le modèle XGBoost retenu pour l'estimation de la densité de tilapia , ainsi que les dictionnaires d'encodage ordinal, nécessaires pour convertir les variables catégorielles saisies par l'utilisateur en valeurs numériques avant de les transmettre au modèle.
+\begin{lstlisting}[style=pythonstyle,language=Python, caption={Classe DensiteTilapia -- Module 1}, basicstyle=\ttfamily\scriptsize]
+import pickle
+import os
+
+class DensiteTilapia:
+    # Variables d'entree attendues :
+    # Texture_sol, Couleur_sol, Type_irrigation, Hauteur_Eau, Niveau_Engrais, Temperature_Actuelle
+    def __init__(self):
+        # Dictionnaires d'encodage ordinal, refletant la progression logique de chaque
+        self.temperature_encoder = {
+            "TresFroid": 0,
+            "Froid": 1,
+            "Humide": 2,
+            "Chaud": 3,
+            "TresChaud": 4,
+        }
+        self.niveaux_engrais_encoder = {
+            "Nul": 0,
+            "Moyen": 1,
+            "Fort": 2
+        }
+        self.texture_sol_encoder = {
+            "Sableux": 0,
+            "Limoneux": 1,
+            "Argileux": 2,
+        }
+        self.couleur_sol_encoder = {
+            "Orange_Rouge": 1,
+            "Brun_Grisatre": 2,
+            "Noir": 3
+        }
+        self.type_irrigation_encoder = {
+            "Pluvial": 0,
+            "Continu": 1
+        }
+
+        print("Chargement Du modele de Prediction de Densite Tilapia ... ")
+
+        # Chargement du modele XGBoost retenu apres optimisation par GridSearch
+        with open(os.path.join("models", "densite_tilapia_xgboost.pkl"), "rb") as file:
+            model = pickle.load(file)
+
+        print("Chargement avec Succes ... ")
+        self.model = model
+
+    def predict(self, texture, couleur, type_irrigation, hauteur_eau, engrais, temperature):
+        # Encodage ordinal des variables categorielles saisies par l'utilisateur
+        encoded_features = [
+            self.texture_sol_encoder[texture],
+            self.couleur_sol_encoder[couleur],
+            self.type_irrigation_encoder[type_irrigation],
+            hauteur_eau,
+            self.niveaux_engrais_encoder[engrais],
+            self.temperature_encoder[temperature]
+        ]
+
+        # Prediction de la densite de tilapia (nombre d'individus par are)
+        prediction = self.model.predict([encoded_features])
+        return prediction[0]
+\end{lstlisting}
 
 
+\subsubsection*{Module 2 -- Classification de la qualité de l'eau (\texttt{QualiteEau.py})}
+
+Cette classe charge le modèle XGBoost retenu à l'issue de l'optimisation par GridSearch, et l'utilise pour classer l'état de l'eau en bonne ou mauvaise qualité à partir des quatre paramètres physico-chimiques mesurés à l'instant présent.
+
+\begin{lstlisting}[style=pythonstyle,language=Python, caption={Classe QualiteEau -- Module 2},basicstyle=\ttfamily\scriptsize]
+import pickle
+import os
+
+class QualiteEau:
+    # Donnee d'entree attendue : PH, TEMP, DO, TURBIDITY (mesures a l'instant present)
+    def __init__(self):
+        print("Chargement Du modele de Classification d'Eau ... ")
+
+        # Chargement du modele XGBoost retenu apres optimisation par GridSearch
+        with open(os.path.join("models", "qualite_eau_xgboost.pkl"), "rb") as file:
+            model = pickle.load(file)
+
+        print("Chargement avec Succes ... ")
+        self.model = model
+
+    def predict(self, ph, temp, do, turbidity):
+        # Mise en forme des 4 parametres en une seule observation
+        input_data = [[ph, temp, do, turbidity]]
+
+        # Classification : 0 = mauvaise qualite, 1 = bonne qualite
+        prediction = self.model.predict(input_data)
+        return prediction[0]
+\end{lstlisting}
+
+\subsubsection*{Module 3 -- Anticipation de la qualité de l'eau (\texttt{PredictionEau.py})}
+
+Cette classe charge les quatre modèles LSTM entraînés (un par variable physico-chimique : PH, TEMP, DO, TURBIDITY), ainsi que les objets de standardisation (scalers) associés, nécessaires pour ramener les données d'entrée à l'échelle utilisée lors de l'entraînement, avant de les fournir au modèle.
+
+\begin{lstlisting}[style=pythonstyle, caption={Classe PredictionEau -- Module 3},,basicstyle=\ttfamily\scriptsize]
+import pickle
+import os
+import numpy as np
+from statsmodels.tsa.seasonal import STL
+from db import get_saisonnalite
+
+class PredictionEau:
+    # Liste des quatre variables physico-chimiques prises en charge par le module
+    VARS = ["PH", "TEMP", "DO", "TURBIDITY"]
+
+    # Correspondance entre le nom de la variable et le nom de sa colonne de saisonnalite en base
+    COL_MAP = {"PH": "s_ph", "TEMP": "s_temp", "DO": "s_do", "TURBIDITY": "s_turbidity"}
+
+    # Donnee d'entree attendue : PH, TEMP, DO, TURBIDITY (aux 3 derniers pas de temps)
+    def __init__(self):
+        print("Chargement Du modele de Prediction d'Eau ... ")
+        self.model = {}
+        self.scaler = {}
+
+        # Chargement du modele LSTM entraine sur la composante de tendance du PH
+        with open(os.path.join("models", "Timeseries_DL_PH_trend_LSTM_64.pkl"), "rb") as file:
+            model = pickle.load(file)
+        self.model["PH"] = model
+
+        # Chargement du modele LSTM entraine sur la composante de tendance de la temperature
+        with open(os.path.join("models", "Timeseries_DL_TEMP_trend_LSTM_64.pkl"), "rb") as file:
+            model = pickle.load(file)
+        self.model["TEMP"] = model
+
+        # Chargement du modele LSTM entraine sur la composante de tendance de l'oxygene dissous
+        with open(os.path.join("models", "Timeseries_DL_DO_trend_LSTM_64.pkl"), "rb") as file:
+            model = pickle.load(file)
+        self.model["DO"] = model
+
+        # Chargement du modele LSTM entraine sur la composante de tendance de la turbidite
+        with open(os.path.join("models", "Timeseries_DL_TURBIDITY_trend_LSTM_64.pkl"), "rb") as file:
+            model = pickle.load(file)
+        self.model["TURBIDITY"] = model
+
+        # Chargement du scaler (standardisation) associe a chaque variable, utilise pour
+        # ramener les donnees d'entree sur la meme echelle que celle vue a l'entrainement
+        with open(os.path.join("models", "PH_trend_scaler.pkl"), "rb") as file:
+            scaler = pickle.load(file)
+        self.scaler["PH"] = scaler
+
+        with open(os.path.join("models", "TEMP_trend_scaler.pkl"), "rb") as file:
+            scaler = pickle.load(file)
+        self.scaler["TEMP"] = scaler
+
+        with open(os.path.join("models", "DO_trend_scaler.pkl"), "rb") as file:
+            scaler = pickle.load(file)
+        self.scaler["DO"] = scaler
+
+        with open(os.path.join("models", "TURBIDITY_trend_scaler.pkl"), "rb") as file:
+            scaler = pickle.load(file)
+        self.scaler["TURBIDITY"] = scaler
+
+        print("Chargement avec Succes ... ")
+
+    def predict(self, ph_list, temp_list, do_list, turbidity_list, hour_of_year_target):
+        """
+        ph_list, temp_list, etc. : liste de 3 valeurs (lags H-2, H-1, H)
+        hour_of_year_target : index de l'heure H+1 a predire (1 a ~8800 sur l'annee)
+        """
+        inputs = {
+            "PH": ph_list,
+            "TEMP": temp_list,
+            "DO": do_list,
+            "TURBIDITY": turbidity_list
+        }
+
+        predictions_finales = {}
+
+        for var in self.VARS:
+            # 1. Extraction de la tendance via la decomposition STL
+            res = STL(inputs[var], period=3, robust=True).fit()
+            tendance = res.trend
+
+            # 2. Reshape en (3, 1) pour appliquer le scaler sur les donnees brutes
+            tendance_3_1 = np.array(tendance).reshape(3, 1)
+            tendance_scaled = self.scaler[var].transform(tendance_3_1)
+
+            # 3. Reshape en (1, 3, 1) [Samples, Timesteps, Features] pour l'entree du modele LSTM
+            input_modele = tendance_scaled.reshape(1, 3, 1)
+
+            # 4. Prediction de la tendance standardisee pour l'instant H+1
+            pred_trend_scaled = self.model[var].predict(input_modele)
+
+            # 5. Inversion de la standardisation pour retrouver la vraie valeur de la tendance
+            pred_trend = self.scaler[var].inverse_transform(pred_trend_scaled.reshape(1, 1))[0][0]
+
+            # 6. Recuperation de la saisonnalite stockee en base pour l'heure ciblee
+            nom_composant_sql = self.COL_MAP[var]
+            saisonnalite_sql = get_saisonnalite(nom_composant_sql, hour_of_year_target)
+
+            # 7. Reconstruction du signal final (tendance predite + saisonnalite)
+            predictions_finales[var] = pred_trend + saisonnalite_sql
+
+        return predictions_finales
+\end{lstlisting}
+
+\vspace*{\fill}
+\newpage
+\vspace*{\fill}
+\begin{center}
+
+	{\bfseries\large FICHE DE RENSEIGNEMENTS}
+\end{center}
+
+\vspace*{1cm}
+\begin{flushleft}
+    \begin{tabular}{@{}ll}
+        \textbf{Nom :} & ANDRIAMIHAJAMANANA\\[0.3cm]
+        \textbf{Prénom :} & Anjara \\[0.3cm]
+        \textbf{Adresse :} & Lot 56 Bis Ankadiaivo Alasora \\[0.3cm]
+        \textbf{Téléphone :} & 0381502522 \\[0.3cm]
+        \textbf{Email :} & andriamihajamananaanjara@gmail.com
+    \end{tabular}
+    
+    \vspace*{1.5cm}
+    
+    \noindent \textbf{Titre : SYSTÈME INTELLIGENT D'ANALYSE DES PRODUCTIONS HALIEUTIQUES}
+    
+    \vspace*{1.5cm}
+    
+    \begin{longtable}{p{4.5cm}p{13cm}}
+        \textbf{Nombre de pages :} & 57 \\[0.3cm]
+        \textbf{Mots clés :} & productions halieutiques, rizipisciculture, qualité de l'eau, machine learning, séries temporelles, LSTM, aide à la décision.\\[0.3cm]
+        \textbf{Encadreur :} & Docteur RAMASONDRANO Andriamanjaka\\[0.3cm]
+        \textbf{Grade :} & Docteur \\[0.3cm]
+        \textbf{Téléphone :} & 0347289632 \\[0.3cm]
+        \textbf{Email :} & ramasondranoandriamanjaka@gmail.com
+    \end{longtable}
+\end{flushleft}
+\vspace*{\fill}
 \end{document}
-
 

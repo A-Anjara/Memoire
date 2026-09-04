@@ -1,3 +1,13 @@
+logistique : max_iter
+arbre de decision : ccp_alpha , max_features
+random_forest : min_samples_split
+xgboost : min_child_weight , gamma
+
+
+
+
+
+
 IMAGE INSI ORGANIGRAMME
 \usepackage{float}
 \begin{figure}[H]
