@@ -2,7 +2,7 @@ import pickle
 import os
 import numpy as np
 from statsmodels.tsa.seasonal import STL
-from db import get_saisonnalite
+from services.db import get_saisonnalite
 
 class PredictionEau:
     VARS = ["PH", "TEMP", "DO", "TURBIDITY"]
@@ -12,34 +12,42 @@ class PredictionEau:
         print("Chargement Du modèle de Prédiction d'Eau ... ")
         self.model = {}
         self.scaler = {}
+        print("here")
         with open(os.path.join("models", "Timeseries_DL_PH_trend_LSTM_64.pkl"), "rb") as file:
             model = pickle.load(file)
         self.model["PH"] = model
 
+        print("here")
         with open(os.path.join("models", "Timeseries_DL_TEMP_trend_LSTM_64.pkl"), "rb") as file:
             model = pickle.load(file)
         self.model["TEMP"] = model
 
+        print("here")
         with open(os.path.join("models", "Timeseries_DL_DO_trend_LSTM_64.pkl"), "rb") as file:
             model = pickle.load(file)
         self.model["DO"] = model
 
+        print("here")
         with open(os.path.join("models", "Timeseries_DL_TURBIDITY_trend_LSTM_64.pkl"), "rb") as file:
             model = pickle.load(file)
         self.model["TURBIDITY"] = model
 
+        print("here")
         with open(os.path.join("models", "PH_trend_scaler.pkl"), "rb") as file:
             scaler = pickle.load(file)
         self.scaler["PH"] = scaler
 
+        print("here")
         with open(os.path.join("models", "TEMP_trend_scaler.pkl"), "rb") as file:
             scaler = pickle.load(file)
         self.scaler["TEMP"] = scaler
 
+        print("here")
         with open(os.path.join("models", "DO_trend_scaler.pkl"), "rb") as file:
             scaler = pickle.load(file)
         self.scaler["DO"] = scaler
 
+        print("here")
         with open(os.path.join("models", "TURBIDITY_trend_scaler.pkl"), "rb") as file:
             scaler = pickle.load(file)
         self.scaler["TURBIDITY"] = scaler
@@ -63,9 +71,8 @@ class PredictionEau:
 
         for var in self.VARS:
             # 1. Extraction de la tendance via la décomposition STL
-            # period=2 est utilisé ici comme configuration minimale pour 3 points
-            res = STL(inputs[var], period=2, robust=True).fit()
-            tendance = res.trend 
+            res = STL(inputs[var], period=3, robust=True).fit()
+            tendance = res.trend
             
             # 2. Reshape en (3, 1) pour appliquer le Scaler sur les données brutes
             tendance_3_1 = np.array(tendance).reshape(3, 1)

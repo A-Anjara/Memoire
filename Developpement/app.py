@@ -1,14 +1,17 @@
 import streamlit as st
 import pandas as pd
 from datetime import datetime, timedelta
-import db
-from DensiteTilapia import DensiteTilapia
-from QualiteEau import QualiteEau
-from PredictionEau import PredictionEau
+from services import db
+from modules.DensiteTilapia import DensiteTilapia
+from modules.QualiteEau import QualiteEau
+from modules.PredictionEau import PredictionEau
 import math
+
 db.init_db()
+
 densiteTilapia = DensiteTilapia()
 qualiteEau = QualiteEau()
+predictionEau = PredictionEau()
 st.set_page_config(page_title="Système Rizipisciculture Intelligent", layout="wide")
 
 st.title("Système Intelligent de Rizipisciculture")
@@ -109,10 +112,31 @@ with tab_m3:
     do_h = c3.number_input("Oxygène dissous (mg/L)", 0.0, 30.0, 7.0, 0.5, key="do_h")
     turbidity_h = c4.number_input("Turbidité (NTU)", 0.0, 100.0, 30.0, 1.0, key="turb_h")
 
+    
+
 
     
     if st.button("Anticiper"):
-        st.success("Data compiled successfully!")
+        ph_list = [ph_h2, ph_h1, ph_h]
+        temp_list = [temp_h2, temp_h1, temp_h]
+        do_list = [do_h2, do_h1, do_h]
+        turbidity_list = [turbidity_h2, turbidity_h1, turbidity]
+        # Calcul de l'heure cible H+1
+        now = datetime.now()
+        
+
+        # Arrondir à l'heure
+        current_hour = datetime(now.year,now.month,now.day,now.hour)
+        first_year = datetime(now.year,1,1,0)
+
+        delta = current_hour - first_year
+        hours = delta.total_seconds()//3600
+
+        pred = PredictionEau.predict(ph_list, temp_list, do_list, turbidity_list, hours)
+
+        st.metric("Estimation De l'eau dans une heure", pred)
+        
+
         
 
 
