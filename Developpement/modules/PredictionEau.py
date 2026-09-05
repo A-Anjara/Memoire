@@ -4,6 +4,13 @@ import numpy as np
 from statsmodels.tsa.seasonal import STL
 from services.db import get_saisonnalite
 
+from pathlib import Path
+#Trouve le dossier où se trouve le script Streamlit actuel
+CURRENT_DIR = Path(__file__).parent
+BASE_DIR = CURRENT_DIR.parent  # Remonte d'un niveau pour atteindre le dossier "modules"
+MODEL_DIR = BASE_DIR / "models"  # Chemin vers le dossier "models"
+
+
 class PredictionEau:
     VARS = ["PH", "TEMP", "DO", "TURBIDITY"]
     COL_MAP = {"PH": "s_ph", "TEMP": "s_temp", "DO": "s_do", "TURBIDITY": "s_turbidity"}
@@ -13,42 +20,42 @@ class PredictionEau:
         self.model = {}
         self.scaler = {}
         print("here")
-        with open(os.path.join("models", "Timeseries_DL_PH_trend_LSTM_64.pkl"), "rb") as file:
+        with open(os.path.join(MODEL_DIR, "Timeseries_DL_PH_trend_LSTM_64.pkl"), "rb") as file:
             model = pickle.load(file)
         self.model["PH"] = model
 
         print("here")
-        with open(os.path.join("models", "Timeseries_DL_TEMP_trend_LSTM_64.pkl"), "rb") as file:
+        with open(os.path.join(MODEL_DIR, "Timeseries_DL_TEMP_trend_LSTM_64.pkl"), "rb") as file:
             model = pickle.load(file)
         self.model["TEMP"] = model
 
         print("here")
-        with open(os.path.join("models", "Timeseries_DL_DO_trend_LSTM_64.pkl"), "rb") as file:
+        with open(os.path.join(MODEL_DIR, "Timeseries_DL_DO_trend_LSTM_64.pkl"), "rb") as file:
             model = pickle.load(file)
         self.model["DO"] = model
 
         print("here")
-        with open(os.path.join("models", "Timeseries_DL_TURBIDITY_trend_LSTM_64.pkl"), "rb") as file:
+        with open(os.path.join(MODEL_DIR, "Timeseries_DL_TURBIDITY_trend_LSTM_64.pkl"), "rb") as file:
             model = pickle.load(file)
         self.model["TURBIDITY"] = model
 
         print("here")
-        with open(os.path.join("models", "PH_trend_scaler.pkl"), "rb") as file:
+        with open(os.path.join(MODEL_DIR, "PH_trend_scaler.pkl"), "rb") as file:
             scaler = pickle.load(file)
         self.scaler["PH"] = scaler
 
         print("here")
-        with open(os.path.join("models", "TEMP_trend_scaler.pkl"), "rb") as file:
+        with open(os.path.join(MODEL_DIR, "TEMP_trend_scaler.pkl"), "rb") as file:
             scaler = pickle.load(file)
         self.scaler["TEMP"] = scaler
 
         print("here")
-        with open(os.path.join("models", "DO_trend_scaler.pkl"), "rb") as file:
+        with open(os.path.join(MODEL_DIR, "DO_trend_scaler.pkl"), "rb") as file:
             scaler = pickle.load(file)
         self.scaler["DO"] = scaler
 
         print("here")
-        with open(os.path.join("models", "TURBIDITY_trend_scaler.pkl"), "rb") as file:
+        with open(os.path.join(MODEL_DIR, "TURBIDITY_trend_scaler.pkl"), "rb") as file:
             scaler = pickle.load(file)
         self.scaler["TURBIDITY"] = scaler
         

@@ -1,5 +1,12 @@
 import pickle
 import os
+
+from pathlib import Path
+
+# 1. Trouve le dossier où se trouve le script Streamlit actuel
+CURRENT_DIR = Path(__file__).parent
+BASE_DIR = CURRENT_DIR.parent  # Remonte d'un niveau pour atteindre le dossier "modules"
+MODEL_DIR = BASE_DIR / "models"  # Chemin vers le dossier "models"
 class DensiteTilapia:
     # Variable d'entrée : Texture_sol,	Couleur_sol, Type_irrigation, Hauteur_Eau, Niveau_Engrais, Temperature_Actuelle
     def __init__(self):
@@ -31,7 +38,7 @@ class DensiteTilapia:
         }
 
         print("Chargement Du modèle de Prédiction de Densité Tilapia ... ")
-        with open(os.path.join("models", "densite_tilapia_xgboost.pkl"), "rb") as file:
+        with open(os.path.join(MODEL_DIR, "densite_tilapia_xgboost.pkl"), "rb") as file:
             model = pickle.load(file)
         print("Chargement avec Succes ... ")
 

@@ -2,8 +2,14 @@ import sqlite3
 from pathlib import Path
 import pandas as pd
 
+from pathlib import Path
+# 1. Trouve le dossier où se trouve le script Streamlit actuel
+CURRENT_DIR = Path(__file__).parent
+BASE_DIR = CURRENT_DIR.parent  # Remonte d'un niveau pour atteindre le dossier "modules"
 
-DB_PATH = "seasonality.db"
+DB_PATH = BASE_DIR / "services" / "seasonality.db"
+SEASONALITY_CSV_PATH = BASE_DIR / "services" / "seasonality.csv"
+
 # df  = pd.read_csv(r"seasonality.csv")
 
 def get_conn():
@@ -31,13 +37,13 @@ def init_db():
     print("Creation Avec succes ...")
     conn = get_conn()
     cursor = conn.cursor()
-    df  = pd.read_csv("services/seasonality.csv")
+    df  = pd.read_csv(SEASONALITY_CSV_PATH)
     df.to_sql("seasonality", conn, if_exists="replace", index=False)
     print("Mise de saisonnalité ... ")
     
-    # conn.commit()
-    # cursor.close()
-    # conn.close()
+    conn.commit()
+    cursor.close()
+    conn.close()
     
 
 
