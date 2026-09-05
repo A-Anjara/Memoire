@@ -131,8 +131,13 @@ with tab_m3:
         hours = delta.total_seconds()//3600
 
         pred = predictionEau.predict(ph_list, temp_list, do_list, turbidity_list, hours)
-
-        st.metric("Estimation De l'eau dans une heure", pred)
+        st.metric("PH", f"{pred['PH']:.2f}")
+        st.markdown("- - -")
+        st.metric("Température", f"{pred['TEMP']:.2f}")
+        st.markdown("- - -")
+        st.metric("Oxygène dissous", f"{pred['DO']:.2f}")
+        st.markdown("- - -")
+        st.metric("Turbidité", f"{pred['TURBIDITY']:.2f}")
         
 
         
