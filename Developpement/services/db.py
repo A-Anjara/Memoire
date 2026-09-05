@@ -44,3 +44,4 @@ def get_saisonnalite(nom_composant_sql: str, index_heure: int) -> float:
         
             
         return result[nom_composant_sql]
+        cursor.close()
