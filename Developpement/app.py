@@ -10,6 +10,19 @@ import math
 densiteTilapia = DensiteTilapia()
 qualiteEau = QualiteEau()
 predictionEau = PredictionEau()
+
+@st.cache_resource
+def initialiser_classes():
+    st.write("Chargement initial des modules en cours...") 
+    
+    densite = DensiteTilapia()
+    eau = QualiteEau()
+    prediction = PredictionEau()
+    
+    return densite, eau, prediction
+
+densiteTilapia, qualiteEau, predictionEau = initialiser_classes()
+
 st.set_page_config(page_title="Système Rizipisciculture Intelligent", layout="wide")
 
 st.title("Système Intelligent de Rizipisciculture")
@@ -131,6 +144,7 @@ with tab_m3:
         hours = delta.total_seconds()//3600
 
         pred = predictionEau.predict(ph_list, temp_list, do_list, turbidity_list, hours)
+        pred_qualite_eau = qualiteEau.predict(pred['PH'], pred['TEMP'], pred['DO'], pred['TURBIDITY'])
         st.metric("PH", f"{pred['PH']:.2f}")
         st.markdown("- - -")
         st.metric("Température", f"{pred['TEMP']:.2f}")
@@ -138,6 +152,8 @@ with tab_m3:
         st.metric("Oxygène dissous", f"{pred['DO']:.2f}")
         st.markdown("- - -")
         st.metric("Turbidité", f"{pred['TURBIDITY']:.2f}")
+        st.markdown("- - -")
+        st.metric("Qualité de l'eau estimée", "Bonne qualité" if pred_qualite_eau == 1 else "Mauvaise qualité")
         
 
         

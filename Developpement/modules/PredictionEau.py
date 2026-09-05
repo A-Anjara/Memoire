@@ -19,42 +19,42 @@ class PredictionEau:
         print("Chargement Du modèle de Prédiction d'Eau ... ")
         self.model = {}
         self.scaler = {}
-        print("here")
+        
         with open(os.path.join(MODEL_DIR, "Timeseries_DL_PH_trend_LSTM_64.pkl"), "rb") as file:
             model = pickle.load(file)
         self.model["PH"] = model
 
-        print("here")
+        
         with open(os.path.join(MODEL_DIR, "Timeseries_DL_TEMP_trend_LSTM_64.pkl"), "rb") as file:
             model = pickle.load(file)
         self.model["TEMP"] = model
 
-        print("here")
+        
         with open(os.path.join(MODEL_DIR, "Timeseries_DL_DO_trend_LSTM_64.pkl"), "rb") as file:
             model = pickle.load(file)
         self.model["DO"] = model
 
-        print("here")
+        
         with open(os.path.join(MODEL_DIR, "Timeseries_DL_TURBIDITY_trend_LSTM_64.pkl"), "rb") as file:
             model = pickle.load(file)
         self.model["TURBIDITY"] = model
 
-        print("here")
+        
         with open(os.path.join(MODEL_DIR, "PH_trend_scaler.pkl"), "rb") as file:
             scaler = pickle.load(file)
         self.scaler["PH"] = scaler
 
-        print("here")
+        
         with open(os.path.join(MODEL_DIR, "TEMP_trend_scaler.pkl"), "rb") as file:
             scaler = pickle.load(file)
         self.scaler["TEMP"] = scaler
 
-        print("here")
+        
         with open(os.path.join(MODEL_DIR, "DO_trend_scaler.pkl"), "rb") as file:
             scaler = pickle.load(file)
         self.scaler["DO"] = scaler
 
-        print("here")
+        
         with open(os.path.join(MODEL_DIR, "TURBIDITY_trend_scaler.pkl"), "rb") as file:
             scaler = pickle.load(file)
         self.scaler["TURBIDITY"] = scaler
