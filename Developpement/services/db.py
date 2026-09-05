@@ -10,21 +10,21 @@ DB_PATH = BASE_DIR / "services" / "seasonality.db"
 SEASONALITY_CSV_PATH = BASE_DIR / "services" / "seasonality.csv"
 
 def get_conn():
-    # Ajout d'un timeout de 30 secondes pour donner le temps aux requêtes concurrentes de finir
+    
     conn = sqlite3.connect(DB_PATH, check_same_thread=False)
     conn.row_factory = sqlite3.Row
     return conn
 
 
-def init_db():
-    """Initialise et remplace les données de la table proprement."""
-    df = pd.read_csv(SEASONALITY_CSV_PATH)
+# def init_db():
+#     """Initialise et remplace les données de la table proprement."""
+#     df = pd.read_csv(SEASONALITY_CSV_PATH)
     
-    # Le bloc "with" garantit la fermeture de la connexion, quoi qu'il arrive
-    with get_conn() as conn:
-        print("Remplacement de la table seasonality...")
-        df.to_sql("seasonality", conn, if_exists="replace", index=False)
-        print("Mise à jour de la saisonnalité effectuée avec succès !")
+#     # Le bloc "with" garantit la fermeture de la connexion, quoi qu'il arrive
+#     with get_conn() as conn:
+#         print("Remplacement de la table seasonality...")
+#         df.to_sql("seasonality", conn, if_exists="replace", index=False)
+#         print("Mise à jour de la saisonnalité effectuée avec succès !")
 
 
 def get_saisonnalite(nom_composant_sql: str, index_heure: int) -> float:

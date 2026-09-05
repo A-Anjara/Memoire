@@ -1,13 +1,11 @@
 import streamlit as st
 import pandas as pd
 from datetime import datetime, timedelta
-from services import db
 from modules.DensiteTilapia import DensiteTilapia
 from modules.QualiteEau import QualiteEau
 from modules.PredictionEau import PredictionEau
 import math
 
-db.init_db()
 
 densiteTilapia = DensiteTilapia()
 qualiteEau = QualiteEau()
