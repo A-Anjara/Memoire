@@ -130,7 +130,7 @@ with tab_m3:
         delta = current_hour - first_year
         hours = delta.total_seconds()//3600
 
-        pred = PredictionEau.predict(ph_list, temp_list, do_list, turbidity_list, hours)
+        pred = predictionEau.predict(ph_list, temp_list, do_list, turbidity_list, hours)
 
         st.metric("Estimation De l'eau dans une heure", pred)
         
