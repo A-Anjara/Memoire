@@ -11,6 +11,7 @@ DB_PATH = BASE_DIR / "services" / "seasonality.db"
 SEASONALITY_CSV_PATH = BASE_DIR / "services" / "seasonality.csv"
 
 # df  = pd.read_csv(r"seasonality.csv")
+print(SEASONALITY_CSV_PATH)
 
 def get_conn():
     conn = sqlite3.connect(DB_PATH, check_same_thread=False)
